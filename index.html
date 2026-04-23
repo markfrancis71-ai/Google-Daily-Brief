@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Brief – Wednesday, April 22, 2026</title>
+    <title>Daily Brief – Thursday, April 23, 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
@@ -148,6 +148,49 @@
             color: var(--amber);
         }
 
+        /* Meeting reviews */
+        .meeting {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--divider);
+        }
+        .meeting:last-child { border-bottom: none; padding-bottom: 0; }
+        .meeting:first-child { padding-top: 0; }
+        .meeting-title {
+            font-size: 0.97rem;
+            font-weight: 600;
+            color: var(--off-white);
+            margin-bottom: 0.5rem;
+        }
+        .meeting-summary {
+            font-size: 0.9rem;
+            line-height: 1.65;
+            color: rgba(247, 247, 242, 0.78);
+            margin-bottom: 0.75rem;
+        }
+        .meeting-label {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--teal);
+            margin-bottom: 0.5rem;
+        }
+        .meeting-takeaways { list-style: none; padding: 0; }
+        .meeting-takeaways li {
+            font-size: 0.87rem;
+            line-height: 1.55;
+            color: rgba(247, 247, 242, 0.82);
+            padding: 0.3rem 0 0.3rem 1rem;
+            position: relative;
+        }
+        .meeting-takeaways li::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: var(--teal);
+            font-weight: 700;
+        }
+
         /* Empty state */
         .empty {
             font-size: 0.9rem;
@@ -169,85 +212,68 @@
     <div class="container">
         <header>
             <div class="header-eyebrow">Daily Brief</div>
-            <h1>Wednesday, April 22, 2026</h1>
-            <p class="header-meta">Generated at 7:57 AM</p>
+            <h1>Thursday, April 23, 2026</h1>
+            <p class="header-meta">Generated at 6:12 AM</p>
             <hr class="header-rule">
         </header>
 
         <div class="card">
             <h2>Today's Overview</h2>
-            <p class="overview">Wednesday is packed wall-to-wall with back-to-back meetings from 8 AM through 5 PM, including a notable triple-booking conflict at 1:00 PM (Dan/Mark Sync, CTXO Office Hours, and GenAI Demo Forum). With no outstanding tasks on the books, your energy today is almost entirely relationship- and decision-oriented — spanning architecture reviews, 1:1s, and strategic syncs across the organization.</p>
+            <p class="overview">Thursday is packed with back-to-back meetings from the morning through mid-afternoon, including leadership syncs, an all-hands, and a couple of intro/follow-up calls. You have a scheduling conflict at 10:00 AM between the PI All Hands and the TD Sync at Mark's office, which will need quick resolution. The afternoon splits between a school fiesta and a work exception item, so energy management will be key.</p>
         </div>
 
         <div class="card suggestions">
             <h2>Optimization Suggestions</h2>
-            <ul>
-                <li>🚨 Resolve the 1:00 PM triple-booking immediately: Dan/Mark Sync, CTXO Office Hours, and GenAI Program Demo all overlap — decide which is highest priority (likely Dan/Mark Sync if it's in-person at Dan's office) and communicate your attendance or absence to the other two organizers before the day starts.</li>
-                <li>⚠️ Flag the 9:00–9:30 AM overlap between the Arch Forum Panel Review and Horizontal Platform WG — determine which requires your active participation versus passive presence, and notify the appropriate organizer if you'll be joining late or sending a delegate.</li>
-                <li>📋 Use the 2:00–3:00 PM gap as protected focus time — it's your only true open window all day, so resist the urge to check Slack casually and instead use it to capture decisions, action items, and notes from your morning meetings while they're fresh.</li>
-                <li>🤝 Prep briefly before your 1:1s (Mark at 10:30 AM and Abe at 3:30 PM) by jotting 2–3 key topics or decisions you want to drive — recurring 1:1s are most valuable when you arrive with intention rather than open-ended conversation.</li>
-                <li>📝 End the day with a quick 5-minute capture session after the 4:30 PM SMS meeting — with this many touchpoints and no task list, there are almost certainly follow-ups and commitments made today that need to be logged before tomorrow.</li>
-            </ul>
+            <ul><li>Resolve the 10:00 AM conflict immediately — decide whether the PI All Hands or the TD Sync at Mark's office takes priority, and notify the other party now so no one is left waiting.</li><li>Use your 8:30–8:45 AM window (before your first sync) to review any Pre-RFP materials so you walk into the 8:45 AM meeting sharp and ready to contribute to next steps.</li><li>The 12:00–1:00 PM lunch block is your only true breathing room — protect at least 30 minutes of it for actual rest or a walk before the afternoon split between the school fiesta and the 1:30 PM exception review.</li><li>Before the 11:30 AM Ryan Loker follow-up, jot down 2–3 key tech points or questions you want to cover so the conversation stays focused and actionable within the 25-minute window.</li><li>Since you have no outstanding tasks today, use the tail end of lunch (around 12:45 PM) to do a quick tomorrow-prep scan — check Friday's calendar and capture any action items coming out of this morning's meetings while they're still fresh.</li></ul>
         </div>
 
         <div class="card">
             <h2>Schedule</h2>
+            
             <div class="event">
-                <span class="event-time">8:00 AM – 9:00 AM</span>
-                <span class="event-title">TF Standup (series ends 7/9/26)</span>
+                <span class="event-time">8:45 AM – 9:00 AM</span>
+                <span class="event-title">Sync up on P&C/Service Now next step (Pre-RFP prep)</span>
+                
             </div>
             <div class="event">
-                <span class="event-time">9:00 AM – 10:30 AM</span>
-                <span class="event-title">Arch Forum Panel Review Meeting (series end 12/30/26)</span>
+                <span class="event-time">9:00 AM – 10:00 AM</span>
+                <span class="event-title">Weekly Staff – P&C CTO Leadership (series ends 7/9/26)</span>
+                
             </div>
             <div class="event">
-                <span class="event-time">9:30 AM – 10:00 AM</span>
-                <span class="event-title">Weekly: Horizontal Platform WG</span>
+                <span class="event-time">10:00 AM – 10:50 AM</span>
+                <span class="event-title">PI Monthly All Hands Meeting</span>
+                
             </div>
             <div class="event">
-                <span class="event-time">10:30 AM – 10:55 AM</span>
-                <span class="event-title">Bi-weekly - 1:1 w/Mark Francis | Deepak</span>
+                <span class="event-time">10:00 AM – 10:30 AM</span>
+                <span class="event-title">TD Sync</span>
+                <span class="location">📍 Marks Office</span>
             </div>
             <div class="event">
-                <span class="event-time">11:00 AM – 11:30 AM</span>
-                <span class="event-title">Synergy Studio Tech Decision</span>
+                <span class="event-time">11:00 AM – 11:25 AM</span>
+                <span class="event-title">Mark <> Steve - Intro</span>
+                
             </div>
             <div class="event">
                 <span class="event-time">11:30 AM – 11:55 AM</span>
-                <span class="event-title">EA Follow-up with Michael Lessor</span>
+                <span class="event-title">Ryan Loker - EA Follow up - Tech Overview;</span>
+                
             </div>
             <div class="event">
-                <span class="event-time">12:00 PM – 12:50 PM</span>
-                <span class="event-title">Virtual lunch/skip level | Deepak with: Line of Business Architect...</span>
+                <span class="event-time">12:00 PM – 1:00 PM</span>
+                <span class="event-title">Lunch/ Desk Time</span>
+                
             </div>
             <div class="event">
-                <span class="event-time">1:00 PM – 1:30 PM</span>
-                <span class="event-title">Dan/Mark Sync</span>
-                <span class="location">📍 dan's office</span>
+                <span class="event-time">1:00 PM – 3:15 PM</span>
+                <span class="event-title">School fiesta</span>
+                
             </div>
             <div class="event">
-                <span class="event-time">1:00 PM – 1:50 PM</span>
-                <span class="event-title">CTXO Office Hours</span>
-            </div>
-            <div class="event">
-                <span class="event-time">1:00 PM – 2:00 PM</span>
-                <span class="event-title">GenAI Program &amp; Use Case Demos: Open Forum</span>
-            </div>
-            <div class="event">
-                <span class="event-time">3:00 PM – 3:25 PM</span>
-                <span class="event-title">Bi-Monthly sync - EA + Keith Wechsler | Mark Francis (series...)</span>
-            </div>
-            <div class="event">
-                <span class="event-time">3:30 PM – 3:55 PM</span>
-                <span class="event-title">Monthly 1:1w/ Abe Capetillo | Mark Francis (series ends 1/22/27)</span>
-            </div>
-            <div class="event">
-                <span class="event-time">4:00 PM – 4:30 PM</span>
-                <span class="event-title">CTO Direct Staff | EA SLT Only</span>
-            </div>
-            <div class="event">
-                <span class="event-time">4:30 PM – 4:55 PM</span>
-                <span class="event-title">One Way SMS for Marketing / business partners</span>
+                <span class="event-time">1:30 PM – 2:00 PM</span>
+                <span class="event-title">Exception PER0002685: AEF Process to adhere to the PoP r...</span>
+                
             </div>
         </div>
 
@@ -256,7 +282,61 @@
             <p class="empty">No outstanding tasks.</p>
         </div>
 
-        <footer>Powered by Google Calendar &middot; Google Tasks &middot; Claude AI</footer>
+        
+        <div class="card">
+            <h2>Yesterday in Review</h2>
+            
+            <div class="meeting">
+                <h3 class="meeting-title">Exec 1 way SMS decision 4/22</h3>
+                <p class="meeting-summary">The meeting brought together business and IT leaders to decide between Salesforce Mobile Connect and the existing Iris/MD Comms platform for one-way marketing SMS capabilities. After evaluating technical complexity, TCPA compliance risks, and a surprisingly high TCO of $2M–$3M for both options, the team reached consensus to move forward with Salesforce Mobile Connect as the near-term solution. A broader strategic review (PLN) scheduled for June 2026 will determine whether marketing and operational communication platforms should eventually be unified.</p>
+                <p class="meeting-label">Takeaways &amp; Action Items</p>
+                <ul class="meeting-takeaways"><li>DECISION FINALIZED: Proceed with Salesforce Mobile Connect as the approved solution for one-way marketing SMS — communicate this decision to all relevant stakeholders immediately (Owner: Leadership; Priority: High).</li><li>SHORTCODE PROCUREMENT: Initiate the 3-month carrier approval process for marketing-specific shortcodes without delay, as this is a known bottleneck that will gate go-live timelines (Owner: IT/Marketing).</li><li>CONTRACT EXECUTION: Work with Procurement and Business Leaders to execute a usage-based contract addendum with Salesforce — avoid any upfront or pre-purchased commitment to minimize financial risk (Owner: Procurement/Business Leaders).</li><li>INTEGRATION DEVELOPMENT: Tech Team to begin building the integration layer that pulls SMS status data from Kafka topics back into Salesforce to enable journey-based follow-up communications (Owner: Tech Team).</li><li>USAGE BILLING PROCESS: Establish a consumption-based billing process to accurately charge SMS usage back to specific Lines of Business (e.g., P&C), ensuring cost accountability across the organization.</li><li>MARK — HI MARLEY PILOT MONITORING: Actively track the performance and outcomes of the 'Hi Marley' two-way SMS pilot in P&C, and document learnings that could inform future integration with the one-way marketing strategy.</li><li>MARK — NAYSAYER ENGAGEMENT: Follow up with previously skeptical stakeholders, leveraging the two-way SMS demo results as a concrete benchmark to build broader organizational buy-in.</li><li>PLN STRATEGIC REVIEW: Schedule and prepare for the June 2026 PLN review to reassess long-term platform strategy, specifically evaluating whether marketing and operational SMS environments should be merged (Timeline: June 2026).</li><li>TCO MODELING STANDARDIZATION: Investigate the high labor costs (~$1M/year) associated with reusing existing platforms like MD Comms, and develop standardized TCO modeling practices to prevent future projects from being cost-prohibitive before they begin.</li></ul>
+            </div>
+            <div class="meeting">
+                <h3 class="meeting-title">EA SLT 4/22</h3>
+                <p class="meeting-summary">The EA SLT meeting on 4/22 covered three major areas: organizational updates including the rebranding of the APMO to APO and new leadership additions, operational shifts emphasizing automation of routine tasks and updated incident management expectations requiring architect presence on M3+ calls, and vendor/contract strategy focused on consolidating 200+ vendor contracts under a flat or low budget increase policy. Security and compliance discussions centered on InfoSec's agreement to relax SSO requirements for low-risk suppliers, pending a clear written definition of 'business data.' Leadership also identified a gap in top-down communication flow that needs to be addressed before the upcoming All People Leader Staff meeting.</p>
+                <p class="meeting-label">Takeaways &amp; Action Items</p>
+                <ul class="meeting-takeaways"><li>All Leaders: Communicate to teams that architects are required to join incident calls for M3 and above incidents, or any incident within their specific domain, effective immediately.</li><li>TK/Jen: Prioritize and create a plan to deliver the hamstack work to reduce the manual assessment burden currently overwhelming architects.</li><li>Mark: Follow up with InfoSec to obtain written documentation of the SSO concession decision, including the name(s) of who signed off on the policy change.</li><li>Unassigned Owner Needed: Draft a formal written definition of 'business data' and specify what constitutes acceptable 'evidence of non-sharing' to support the new InfoSec SSO policy for low-risk suppliers.</li><li>Sandy: Share details about the ACCMI Switchboard and ACC Alerts Slack channels with the broader team as soon as possible.</li><li>Leadership Team: Develop a structured agenda for next week's All People Leader Staff meeting to improve transparency and ensure key information flows down to the director level.</li><li>All Managers: Proactively identify which of their top 20 vendor contracts are approaching renewal to prepare for flat or low-cost increase negotiations.</li><li>Mark: Finalize setup of PL Forces for Technical Architecture by next Wednesday and ask anyone who should be included but isn't on the invite to Slack him directly.</li><li>Leadership Team: Attend the EA Comms Workshop hosted by Mark, as attendance is highly encouraged to improve internal communication practices.</li><li>Adam: Collect names of individuals interested in the remaining Fiesta medals and coordinate delivery logistics.</li><li>Leadership Team: Draft a brief status bullet summary from Jeff and Dan's office hours to be shared at the next staff meeting, addressing the director-level transparency gap identified in this session.</li></ul>
+            </div>
+            <div class="meeting">
+                <h3 class="meeting-title">Claims update 4/22</h3>
+                <p class="meeting-summary">The meeting centered on growing frustration over shifting project requirements and the absence of a clearly defined target state, largely attributed to unclear stakeholder ownership from Gloria. The team debated architectural concerns around over-complication versus leveraging existing systems like Guidewire, and raised issues around talent loss and insufficient documentation. There is strong alignment that a formal vision lock-in is needed before additional engineering resources are committed.</p>
+                <p class="meeting-label">Takeaways &amp; Action Items</p>
+                <ul class="meeting-takeaways"><li>Schedule a formal 'Target State Lock-In' session with Gloria before any further engineering work begins to prevent continued scope creep and mid-stream pivots.</li><li>Mark should proactively initiate conversations with stakeholders to introduce the 'Utro UI layer over existing systems' concept as an alternative to a full rebuild.</li><li>Attend the follow-up catch-up meeting tomorrow prepared to provide input on the 2026 work scope and the activity experience improvements.</li><li>Audit existing wireframes and inception documents to identify salvageable components and use them to highlight gaps between original and current requirements.</li><li>Assign ownership for creating process drawings and diagrams that document how the current system works, addressing the institutional knowledge gap left by staff turnover.</li><li>Align the architecture team internally on the 'UI-over-existing-system' approach so a consistent and unified position can be presented to leadership.</li><li>Enforce strict scope management protocols to protect the integrity of the 2026 deliverables from further unplanned changes.</li></ul>
+            </div>
+            <div class="meeting">
+                <h3 class="meeting-title">High level internal pitch deck </h3>
+                <p class="meeting-summary">The pitch deck makes an internal case against adopting ServiceNow at full enterprise scale, arguing that the company already possesses the core data assets (Snowflake, Beam, event streams) needed for a robust observability platform. It highlights the risk of high vendor costs—estimated at $100M—through token-based pricing and data dependency, while pointing to an existing proof-of-concept (the Claims Experience Monitor) as evidence that an internal solution is viable today. The recommended path is to redirect a fraction of potential vendor spend (~10%, or $2M) into a dedicated Tiger Team to industrialize and scale the internal platform.</p>
+                <p class="meeting-label">Takeaways &amp; Action Items</p>
+                <ul class="meeting-takeaways"><li>Cap any ServiceNow engagement to a $5M–$10M niche license for specialized functions only, avoiding full enterprise adoption.</li><li>Formally propose and fund a Tiger Team using approximately 10% of the projected $20M+ vendor license cost to build out the internal observability platform.</li><li>Industrialize and standardize JJ's Claims Experience Monitor as the foundational template for SLO/SLI tracking across P&C lines.</li><li>Automate ticketing workflows directly from Beam into existing core systems to eliminate manual handoffs.</li><li>Build executive-facing dashboards using Snowpark and Streamlit, leveraging already-trusted internal data sources.</li><li>For Mark: End the presentation with a live demo of the Claims Experience Monitor as the 'Apple-style reveal' to concretely demonstrate that the data and visualization capabilities are production-ready today.</li><li>Develop a clear comparison artifact ('Internal Accelerator vs. Vendor Bloat') to quantify cost, ownership, and architectural trade-offs for executive stakeholders.</li></ul>
+            </div>
+            <div class="meeting">
+                <h3 class="meeting-title">Dan Weaver 4/22</h3>
+                <p class="meeting-summary">The meeting centered on serious concerns about the re-engagement with ServiceNow, which leadership views as a costly, redundant platform that duplicates existing internal capabilities in Snowflake, with costs potentially reaching $100M enterprise-wide. Additional discussions addressed architectural fragility stemming from over-customizing Guidewire, a cultural drift away from documentation under Agile practices, and staffing challenges with underperforming Solution Engineer candidates. The conversation also highlighted interpersonal and coordination issues, including the uncoordinated rotation of a key architect and an employee (Thomas) managing a damaged internal reputation.</p>
+                <p class="meeting-label">Takeaways &amp; Action Items</p>
+                <ul class="meeting-takeaways"><li>Form a ServiceNow task force to evaluate specific use cases where the platform provides genuine acceleration versus what can be built internally, with the goal of capping contract costs at $5M–$10M or walking away entirely.</li><li>Mark to 'bulldog' the ServiceNow contract negotiation to ensure it is structured as a capped enterprise license and does not exceed the $5M–$10M threshold.</li><li>Zahid to pause the current RFP process until the internal alternative proposal (Salonas/Eris combination) is fully prepared and ready to present as a competing option.</li><li>Mark to schedule a deep-dive sync with Chase to understand why the business is building a custom UI layer ('Claims HQ') on top of Guidewire instead of leveraging its native capabilities, and assess the architectural risk.</li><li>Coordinate with Teddy to evaluate the AWS cost optimization AI tool developed by Vince Sanchez for identifying and decommissioning dormant cloud environments.</li><li>Prioritize documentation of critical transaction flows in Aris, specifically for P&C processes, to address the documentation gap created by Agile adoption.</li><li>SEMA to provide specific, actionable feedback to Solution Engineer interview candidates (particularly for the Shared Services role) clarifying the 'passion' and preparation expectations they are failing to meet.</li><li>Mark and Dan to establish a coordination protocol for any future architect rotations or team transfers (referencing the Unsworth situation) before they are finalized, to protect team chemistry.</li><li>Mark to continue providing Thomas with developmental runway to rebuild his reputation, while evaluating a potential rotation to Shared Services if his standing in the Policy team is too compromised to recover.</li><li>Mark to continue developing and demonstrating Python/AI-based technical tools internally to build credibility and advocate for modern, lightweight alternatives to expensive legacy platforms like Tableau.</li></ul>
+            </div>
+            <div class="meeting">
+                <h3 class="meeting-title">Deepak 4/22</h3>
+                <p class="meeting-summary">The meeting focused on transforming the Enterprise Architecture team from a consultative model to one with concrete, measurable deliverables, including Solution Architecture Definitions (SADDs) and technology decisions mapped to capacity in Jira. Significant discussion addressed navigating organizational change by adopting an adaptable 'Camp 1' mindset and clearly articulating the team's value amid leadership scrutiny over potential role bloat, particularly around the 45 solution engineers in the PNC line of business. The team outlined a phased plan to define workable service chunks by end of Q2 and achieve a fully loaded Jira capacity model by Q3.</p>
+                <p class="meeting-label">Takeaways &amp; Action Items</p>
+                <ul class="meeting-takeaways"><li>Conduct service rationalization working sessions starting this Friday, going service-by-service to define clear value statements, inputs, and outputs for each.</li><li>Map all defined service 'chunks of work' into Jira to enable architect capacity allocation tracking, using a target model of approximately 20% allocation per 5-week increments.</li><li>Complete the full definition of manageable service chunks by end of June (Q2 milestone).</li><li>By Q3, ensure all architects are assigned in Jira to specific deliverables with measurable outputs, achieving a fully loaded capacity model.</li><li>Require architects to report 'concrete work' (e.g., decisions made, strategies produced, SADDs completed) in status updates instead of describing general consulting activities.</li><li>Mark to refine and align messaging around the 45 PNC solution engineers and their distinct roles to prevent bias in upcoming organizational reviews.</li><li>Mark to share any intelligence or feedback from Suhas regarding his conversations in Charlotte and his position on engineering lead roles as soon as it becomes available.</li><li>Begin pre-configuring Jira by tagging current projects with 'Service Types' ahead of the Q3 deadline to validate whether the proposed allocation model reflects current workload reality.</li><li>Develop a standardized SADD template to ensure every architect produces a uniform, tangible output that clearly demonstrates team value to leadership.</li></ul>
+            </div>
+            <div class="meeting">
+                <h3 class="meeting-title">TF standup cont 4/22</h3>
+                <p class="meeting-summary">The meeting was a high-stakes internal strategy session among technical leadership focused on preparing a presentation for executive 'Dan,' who is scrutinizing the organization's architect headcount and questioning the cloud strategy direction. Key tensions include defending the value of Technical and Information Architects, clarifying that the team's approach has always been 'Fit for Purpose' rather than strictly 'Cloud First,' and addressing morale concerns stemming from unclear executive directives around cloud technology decisions. The group also used the 'Deposits' domain as a concrete case study to justify architectural roles in both build and buy scenarios.</p>
+                <p class="meeting-label">Takeaways &amp; Action Items</p>
+                <ul class="meeting-takeaways"><li>Draft a slide for the 'Deposits' domain illustrating the 60/40 split between custom-built (USA) vs. vendor-provided solutions to justify the need for technical architects — HIGH PRIORITY, due Friday.</li><li>Complete the blank 'First Slide' of the executive presentation before the Friday deadline — HIGH PRIORITY.</li><li>Mark to review the 'USA_EA_artifacts_overview' folder and its parent directory to identify and select relevant artifacts for inclusion in the presentation.</li><li>Retrieve the list of '12 Workstreams' (Dan's directives for next year) from Andy Jameson to ensure the presentation aligns with executive priorities.</li><li>Update the 'Spaceship' / Artifacts diagram to include blueprints and clearly distinguish between 'run budget' and 'initiative funding' work.</li><li>Consolidate the RACI slide into a simplified, high-level 'Name-by-Name' view for a specific domain as requested by Dan, emphasizing daily architect activities to demonstrate full utilization.</li><li>Schedule a brief 'Direction Sync' for direct reports to translate current executive strategy shifts into clear, actionable technical guardrails and address team morale concerns.</li><li>Decide whether Mark should pursue a direct 30-minute one-on-one with Dan to clarify the cloud strategy, or follow advice to 'let the dust settle' — align with team before acting.</li><li>Determine whether Information Architects should be included or excluded from the technical strategy slides to avoid confusion during the Dan/PK presentation.</li><li>Configure Outlook to show declined events to improve visibility into the team's availability and scheduling.</li><li>Ensure that technical SMEs (subject matter experts) are included in upcoming meetings with Dan to prevent decisions being made without full technical context.</li></ul>
+            </div>
+            <div class="meeting">
+                <h3 class="meeting-title">TF standup 4/22</h3>
+                <p class="meeting-summary">The meeting focused on adapting to a strategic shift from 'Cloud First' to a 'Fit for Purpose' architecture approach, requiring stronger justification for vendor and cloud decisions. The team addressed leadership confusion around the value and necessity of architects versus solution engineers, and worked to reframe perceived 'administrative' work as meaningful applied architecture activities. Data center utilization (currently at 33-34%) and its interpretation as either underperformance or intentional DR buffer was also a key point of debate.</p>
+                <p class="meeting-label">Takeaways &amp; Action Items</p>
+                <ul class="meeting-takeaways"><li>Conduct a 'double-click' analysis on the banking side to demonstrate the complexity of vendor platform integration and educate leadership on architectural value beyond package procurement.</li><li>Refine and document the interaction model between Architects and Solution Engineers, clearly defining handoffs and eliminating role overlap.</li><li>Identify the top 10 major initiatives and perform deep-dive Solution Design Reviews (SDRs) focused specifically on Non-Functional Requirements (NFR) enforcement.</li><li>Follow up with infrastructure teams to clarify whether the 40% capacity utilization target applies to individual data centers or combined capacity, ensuring DR and failover requirements are preserved.</li><li>Follow up on the status of the Volante replacement RFP, which has been delayed and is pending approval.</li><li>Leverage Mark's 'Products and Services' mapping work to explicitly connect architect activities to tangible, value-add deliverables for leadership visibility.</li><li>Have Mark provide historical capacity planning context (e.g., 120% workload targets for high-volume days) to reframe the current utilization numbers for leadership.</li><li>Formalize and standardize expected deliverables for Solution Engineers to clearly distinguish their outputs from those of Staff Architects.</li><li>Schedule dedicated face time with Dan to present updated Architectural Guiding Principles and align him with 'Fit for Purpose' definitions before further misalignment occurs.</li><li>Develop clear documentation positioning architects in the 'CTO of the Domain' role as the independent voice of reason between business and engineering.</li></ul>
+            </div>
+        </div>
+
+        <footer>Powered by Google Calendar &middot; Google Tasks &middot; Google Drive &middot; Claude AI</footer>
     </div>
 
     <script>
