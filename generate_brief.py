@@ -312,80 +312,217 @@ def render_html(events, tasks, ai, meeting_reviews):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Brief – {today_str}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
-        * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-        body {{
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: #f5f5f7;
-            color: #1d1d1f;
-            min-height: 100vh;
-            padding: 2rem 1rem;
+        :root {{
+            --navy:        #0A1628;
+            --navy-mid:    #0D1F38;
+            --teal:        #00D4AA;
+            --amber:       #F5A623;
+            --off-white:   #F7F7F2;
+            --text-muted:  rgba(247, 247, 242, 0.62);
+            --card-bg:     rgba(0, 212, 170, 0.05);
+            --card-border: rgba(0, 212, 170, 0.14);
+            --divider:     rgba(0, 212, 170, 0.09);
         }}
-        .container {{ max-width: 720px; margin: 0 auto; }}
-        header {{ margin-bottom: 2rem; }}
-        header h1 {{ font-size: 2rem; font-weight: 700; }}
-        header p {{ color: #6e6e73; margin-top: 0.25rem; }}
+        * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+        html {{ scroll-behavior: smooth; }}
+        body {{
+            font-family: 'Inter', sans-serif;
+            background: var(--navy);
+            color: var(--off-white);
+            min-height: 100vh;
+            padding: 2.5rem 1rem 4rem;
+        }}
+        .container {{ max-width: 740px; margin: 0 auto; }}
+
+        /* Header */
+        header {{ margin-bottom: 2.5rem; }}
+        .header-eyebrow {{
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--teal);
+            margin-bottom: 10px;
+        }}
+        header h1 {{
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--off-white);
+            line-height: 1.1;
+        }}
+        .header-meta {{
+            margin-top: 6px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }}
+        .header-rule {{
+            margin-top: 1.5rem;
+            border: none;
+            border-top: 1px solid var(--card-border);
+        }}
+
+        /* Cards */
         .card {{
-            background: #fff;
-            border-radius: 16px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 1.75rem 2rem;
+            margin-bottom: 1.25rem;
+            opacity: 0;
         }}
         .card h2 {{
-            font-size: 1rem;
+            font-size: 10.5px;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #6e6e73;
-            margin-bottom: 1rem;
+            letter-spacing: 0.12em;
+            color: var(--teal);
+            margin-bottom: 1.1rem;
         }}
-        .overview {{ font-size: 1.05rem; line-height: 1.6; color: #1d1d1f; }}
-        .suggestions ul {{ padding-left: 1.25rem; }}
-        .suggestions li {{ margin-bottom: 0.6rem; line-height: 1.5; }}
+
+        /* Overview */
+        .overview {{
+            font-size: 1rem;
+            line-height: 1.75;
+            color: rgba(247, 247, 242, 0.88);
+        }}
+
+        /* Suggestions */
+        .suggestions ul {{ list-style: none; padding: 0; }}
+        .suggestions li {{
+            font-size: 0.93rem;
+            line-height: 1.6;
+            color: rgba(247, 247, 242, 0.85);
+            padding: 0.65rem 0;
+            border-bottom: 1px solid var(--divider);
+        }}
+        .suggestions li:last-child {{ border-bottom: none; padding-bottom: 0; }}
+        .suggestions li:first-child {{ padding-top: 0; }}
+
+        /* Events */
         .event {{
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
-            gap: 0.5rem;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #f0f0f0;
+            gap: 0.4rem 0.75rem;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid var(--divider);
         }}
-        .event:last-child {{ border-bottom: none; }}
-        .event-time {{ font-size: 0.85rem; color: #6e6e73; min-width: 140px; }}
-        .event-title {{ font-weight: 500; flex: 1; }}
-        .location {{ font-size: 0.8rem; color: #6e6e73; width: 100%; padding-left: 140px; }}
+        .event:last-child {{ border-bottom: none; padding-bottom: 0; }}
+        .event:first-child {{ padding-top: 0; }}
+        .event-time {{
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--teal);
+            opacity: 0.8;
+            min-width: 145px;
+            flex-shrink: 0;
+        }}
+        .event-title {{ font-size: 0.93rem; font-weight: 500; flex: 1; color: var(--off-white); }}
+        .location {{
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            width: 100%;
+            padding-left: 145px;
+            margin-top: -2px;
+        }}
+
+        /* Tasks */
         .task {{
             display: flex;
             flex-wrap: wrap;
-            align-items: baseline;
-            gap: 0.5rem;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #f0f0f0;
+            align-items: center;
+            gap: 0.4rem 0.75rem;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid var(--divider);
         }}
-        .task:last-child {{ border-bottom: none; }}
-        .task-list {{ font-size: 0.8rem; background: #f0f0f5; border-radius: 4px; padding: 2px 6px; color: #6e6e73; }}
-        .task-title {{ font-weight: 500; flex: 1; }}
-        .due {{ font-size: 0.8rem; color: #ff6b35; }}
+        .task:last-child {{ border-bottom: none; padding-bottom: 0; }}
+        .task:first-child {{ padding-top: 0; }}
+        .task-list {{
+            font-size: 0.72rem;
+            font-weight: 600;
+            background: rgba(0, 212, 170, 0.12);
+            color: var(--teal);
+            border-radius: 4px;
+            padding: 2px 7px;
+            flex-shrink: 0;
+        }}
+        .task-title {{ font-size: 0.93rem; font-weight: 500; flex: 1; color: var(--off-white); }}
+        .due {{
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--amber);
+        }}
+
+        /* Meeting reviews */
         .meeting {{
             padding: 1rem 0;
-            border-bottom: 1px solid #f0f0f0;
+            border-bottom: 1px solid var(--divider);
         }}
-        .meeting:last-child {{ border-bottom: none; }}
-        .meeting-title {{ font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }}
-        .meeting-summary {{ font-size: 0.95rem; line-height: 1.6; color: #3a3a3c; margin-bottom: 0.75rem; }}
-        .meeting-label {{ font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #6e6e73; margin-bottom: 0.4rem; }}
-        .meeting-takeaways {{ padding-left: 1.25rem; }}
-        .meeting-takeaways li {{ margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5; }}
-        .empty {{ color: #6e6e73; font-style: italic; }}
-        footer {{ text-align: center; color: #aeaeb2; font-size: 0.8rem; margin-top: 2rem; }}
+        .meeting:last-child {{ border-bottom: none; padding-bottom: 0; }}
+        .meeting:first-child {{ padding-top: 0; }}
+        .meeting-title {{
+            font-size: 0.97rem;
+            font-weight: 600;
+            color: var(--off-white);
+            margin-bottom: 0.5rem;
+        }}
+        .meeting-summary {{
+            font-size: 0.9rem;
+            line-height: 1.65;
+            color: rgba(247, 247, 242, 0.78);
+            margin-bottom: 0.75rem;
+        }}
+        .meeting-label {{
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--teal);
+            margin-bottom: 0.5rem;
+        }}
+        .meeting-takeaways {{ list-style: none; padding: 0; }}
+        .meeting-takeaways li {{
+            font-size: 0.87rem;
+            line-height: 1.55;
+            color: rgba(247, 247, 242, 0.82);
+            padding: 0.3rem 0 0.3rem 1rem;
+            position: relative;
+        }}
+        .meeting-takeaways li::before {{
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: var(--teal);
+            font-weight: 700;
+        }}
+
+        /* Empty state */
+        .empty {{
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }}
+
+        /* Footer */
+        footer {{
+            text-align: center;
+            color: rgba(247, 247, 242, 0.28);
+            font-size: 0.75rem;
+            margin-top: 2.5rem;
+            letter-spacing: 0.03em;
+        }}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Daily Brief</h1>
-            <p>{today_str} &middot; Generated at {generated_at}</p>
+            <div class="header-eyebrow">Daily Brief</div>
+            <h1>{today_str}</h1>
+            <p class="header-meta">Generated at {generated_at}</p>
+            <hr class="header-rule">
         </header>
 
         <div class="card">
@@ -410,8 +547,20 @@ def render_html(events, tasks, ai, meeting_reviews):
 
         {yesterday_section}
 
-        <footer>Powered by Google Calendar, Google Tasks, Google Drive &amp; Claude AI</footer>
+        <footer>Powered by Google Calendar &middot; Google Tasks &middot; Google Drive &middot; Claude AI</footer>
     </div>
+
+    <script>
+        gsap.to(".card", {{
+            opacity: 1,
+            y: 0,
+            duration: 0.55,
+            ease: "power2.out",
+            stagger: 0.1,
+            delay: 0.1,
+            from: {{ opacity: 0, y: 22 }}
+        }});
+    </script>
 </body>
 </html>"""
 

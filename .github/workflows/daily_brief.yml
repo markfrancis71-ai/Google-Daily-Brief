@@ -2,7 +2,7 @@ name: Generate Daily Brief
 
 on:
   schedule:
-    - cron: "0 11 * * *"  # 7:00 AM ET (UTC-4 in summer)
+    - cron: "0 10 * * *"  # 6:00 AM ET (UTC-4 in summer)
   workflow_dispatch:        # allows manual trigger from GitHub Actions UI
 
 permissions:

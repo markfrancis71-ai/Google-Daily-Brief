@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Daily Brief — AI-Powered Morning Intelligence</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    :root {
+      --navy:        #0A1628;
+      --navy-mid:    #0D1F38;
+      --teal:        #00D4AA;
+      --teal-glow:   rgba(0, 212, 170, 0.12);
+      --amber:       #F5A623;
+      --off-white:   #F7F7F2;
+      --text-muted:  rgba(247, 247, 242, 0.68);
+      --card-bg:     rgba(0, 212, 170, 0.06);
+      --card-border: rgba(0, 212, 170, 0.15);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--navy);
+      color: var(--off-white);
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--navy);
+      overflow: hidden;
+    }
+
+    .hero-shapes-back,
+    .hero-shapes-mid {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    /* Back layer shapes */
+    .shape-rect {
+      position: absolute;
+      width: 340px; height: 200px;
+      border: 2px solid rgba(0,212,170,0.12);
+      border-radius: 12px;
+      top: 12%; right: 7%;
+    }
+    .shape-circle {
+      position: absolute;
+      width: 70px; height: 70px;
+      border-radius: 50%;
+      background: rgba(0,212,170,0.07);
+      bottom: 22%; left: 8%;
+    }
+
+    /* Mid layer shapes */
+    .shape-diamond {
+      position: absolute;
+      width: 55px; height: 55px;
+      background: rgba(245,166,35,0.18);
+      transform: rotate(45deg);
+      top: 58%; right: 16%;
+    }
+    .shape-dot {
+      position: absolute;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: #00D4AA;
+      top: 28%; left: 7%;
+    }
+
+    /* Floating animations */
+    @keyframes floatA {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50%       { transform: translateY(-16px) rotate(4deg); }
+    }
+    @keyframes floatB {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50%       { transform: translateY(-11px) rotate(-3deg); }
+    }
+    @keyframes floatC {
+      0%, 100% { transform: translateY(0px) rotate(45deg); }
+      50%       { transform: translateY(-9px) rotate(50deg); }
+    }
+    .float-a { animation: floatA 7s ease-in-out infinite; }
+    .float-b { animation: floatB 9s ease-in-out infinite 1.5s; }
+    .float-c { animation: floatC 6s ease-in-out infinite 0.5s; }
+
+    /* Hero content */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 780px;
+      padding: 0 24px;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: clamp(48px, 7vw, 78px);
+      font-weight: 800;
+      color: var(--off-white);
+      line-height: 1.08;
+      margin-bottom: 24px;
+    }
+
+    .hero-title span {
+      color: var(--teal);
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.65;
+      max-width: 560px;
+      margin: 0 auto 40px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--navy);
+      padding: 16px 42px;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+    .btn-primary:hover {
+      background: #00bfa0;
+      transform: translateY(-2px);
+    }
+
+    /* Scroll indicator */
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.5; }
+      50%       { transform: translateX(-50%) translateY(7px); opacity: 1; }
+    }
+    .scroll-indicator {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s ease-in-out infinite;
+      cursor: pointer;
+    }
+
+    /* ── FEATURES ── */
+    .features-section {
+      padding: 100px 24px;
+      background: var(--navy-mid);
+    }
+
+    .features-headline {
+      text-align: center;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 700;
+      color: var(--off-white);
+      margin-bottom: 16px;
+    }
+
+    .features-subtext {
+      text-align: center;
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 64px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 900px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .features-grid { grid-template-columns: 1fr; } }
+
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 36px 28px;
+      transition: background 0.25s, border-color 0.25s, transform 0.25s;
+    }
+    .feature-card:hover {
+      background: rgba(0, 212, 170, 0.10);
+      border-color: rgba(0, 212, 170, 0.30);
+      transform: translateY(-5px);
+    }
+
+    .card-icon {
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--off-white);
+      margin-bottom: 12px;
+    }
+
+    .card-desc {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ── CLOSING ── */
+    .closing-section {
+      padding: 120px 24px;
+      text-align: center;
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .closing-glow {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px; height: 300px;
+      background: radial-gradient(ellipse 400px 200px at 50% 50%, rgba(0,212,170,0.12), transparent);
+      pointer-events: none;
+    }
+
+    .closing-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .closing-headline {
+      font-size: clamp(38px, 5vw, 58px);
+      font-weight: 800;
+      color: var(--off-white);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .closing-subtext {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 44px;
+    }
+
+    /* ── HOW IT WORKS MINI STRIP ── */
+    .how-section {
+      padding: 72px 24px;
+      background: var(--navy);
+      border-top: 1px solid rgba(0,212,170,0.08);
+    }
+
+    .how-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .how-step {
+      flex: 1;
+      text-align: center;
+      padding: 0 24px;
+      position: relative;
+    }
+
+    .how-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 22px;
+      right: -1px;
+      width: 2px;
+      height: 40px;
+      background: rgba(0,212,170,0.15);
+    }
+
+    .step-num {
+      display: inline-block;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--teal);
+      color: var(--teal);
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .step-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--off-white);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    @media (max-width: 640px) {
+      .how-inner { flex-direction: column; gap: 40px; }
+      .how-step::after { display: none; }
+    }
+
+    /* ── SAMPLE CARD PREVIEW ── */
+    .preview-section {
+      padding: 80px 24px;
+      background: var(--navy-mid);
+      text-align: center;
+    }
+
+    .preview-label {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 16px;
+    }
+
+    .preview-headline {
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 700;
+      color: var(--off-white);
+      margin-bottom: 48px;
+    }
+
+    .preview-card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(0,212,170,0.12);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: left;
+    }
+
+    .preview-card-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .preview-card-text {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(247,247,242,0.85);
+    }
+
+    .preview-events {
+      margin-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 20px;
+    }
+
+    .preview-event {
+      display: flex;
+      gap: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      align-items: baseline;
+    }
+    .preview-event:last-child { border-bottom: none; }
+
+    .preview-event-time {
+      font-size: 12px;
+      color: var(--text-muted);
+      min-width: 110px;
+    }
+
+    .preview-event-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--off-white);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero">
+
+  <!-- Background depth layer — moves most on mouse -->
+  <div class="hero-shapes-back">
+    <div class="shape-rect float-a"></div>
+    <div class="shape-circle float-b"></div>
+  </div>
+
+  <!-- Background depth layer — moves less on mouse -->
+  <div class="hero-shapes-mid">
+    <div class="shape-diamond float-c"></div>
+    <div class="shape-dot float-a"></div>
+  </div>
+
+  <div class="hero-content">
+    <span class="hero-eyebrow">AI-Powered Morning Intelligence</span>
+    <h1 class="hero-title">Your Day,<br><span>Intelligently</span> Briefed</h1>
+    <p class="hero-subtitle">
+      Google Daily Brief connects your calendar, tasks, and Claude AI to deliver a
+      smart morning dashboard — automatically, every single day.
+    </p>
+    <a href="index.html" class="btn-primary">View Today's Brief</a>
+  </div>
+
+  <div class="scroll-indicator" onclick="document.querySelector('.features-section').scrollIntoView({behavior:'smooth'})">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00D4AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════════ -->
+<section class="how-section">
+  <div class="how-inner">
+    <div class="how-step">
+      <div class="step-num">1</div>
+      <div class="step-title">Connect Once</div>
+      <div class="step-desc">Authorise Google Calendar &amp; Tasks with a one-time OAuth flow. Your credentials stay in your own GitHub secrets.</div>
+    </div>
+    <div class="how-step">
+      <div class="step-num">2</div>
+      <div class="step-title">Runs Automatically</div>
+      <div class="step-desc">GitHub Actions fires at 7 AM every morning, pulls your live data, and calls Claude AI to analyse your day.</div>
+    </div>
+    <div class="how-step">
+      <div class="step-num">3</div>
+      <div class="step-title">Open &amp; Go</div>
+      <div class="step-desc">A fresh <code style="color:var(--teal);font-size:12px">index.html</code> is published to GitHub Pages — your brief is waiting when you wake up.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FEATURES
+══════════════════════════════════════════ -->
+<section class="features-section">
+  <h2 class="features-headline">Everything your morning needs</h2>
+  <p class="features-subtext">Built on Google APIs and Claude AI — no dashboards to log into, no apps to open.</p>
+
+  <div class="features-grid">
+
+    <div class="feature-card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#00D4AA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="22" height="21" rx="3"/>
+          <line x1="3" y1="10" x2="25" y2="10"/>
+          <line x1="9" y1="2" x2="9" y2="6"/>
+          <line x1="19" y1="2" x2="19" y2="6"/>
+          <circle cx="9" cy="17" r="1.5" fill="#00D4AA" stroke="none"/>
+          <circle cx="14" cy="17" r="1.5" fill="#00D4AA" stroke="none"/>
+          <circle cx="19" cy="17" r="1.5" fill="#00D4AA" stroke="none"/>
+        </svg>
+      </div>
+      <div class="card-title">Calendar Intelligence</div>
+      <div class="card-desc">Pulls your full schedule from Google Calendar — meetings, durations, locations — and lays it out in a clean, scannable timeline.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#00D4AA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="14" cy="14" r="10"/>
+          <polyline points="14 8 14 14 18 17"/>
+          <line x1="14" y1="4" x2="14" y2="2"/>
+          <line x1="20" y1="6.5" x2="21.5" y2="5"/>
+        </svg>
+      </div>
+      <div class="card-title">Conflict Detection</div>
+      <div class="card-desc">Claude flags overlapping meetings, back-to-back blocks with no buffer, and triple-bookings before they derail your day.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#00D4AA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 6h18M5 12h12M5 18h8"/>
+          <circle cx="22" cy="19" r="4"/>
+          <polyline points="20 19 21.5 20.5 24 17.5"/>
+        </svg>
+      </div>
+      <div class="card-title">Task Integration</div>
+      <div class="card-desc">Outstanding items from Google Tasks surface alongside your schedule so nothing slips through the cracks.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#00D4AA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 3 L25 8 L25 14 C25 20 20 24 14 26 C8 24 3 20 3 14 L3 8 Z"/>
+          <polyline points="10 14 12.5 17 18 11"/>
+        </svg>
+      </div>
+      <div class="card-title">Smart Optimization</div>
+      <div class="card-desc">Actionable daily suggestions — which conflict to resolve first, when to protect focus time, and what to prep before each meeting.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#00D4AA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="14" cy="9" rx="9" ry="4"/>
+          <path d="M5 9 C5 9 5 19 14 19 C23 19 23 9 23 9"/>
+          <path d="M5 14 C5 14 5 23 14 23 C23 23 23 14 23 14"/>
+        </svg>
+      </div>
+      <div class="card-title">Zero Server Required</div>
+      <div class="card-desc">Runs entirely on GitHub Actions and GitHub Pages — no backend, no monthly fees, no infrastructure to maintain.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#00D4AA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="4" width="20" height="20" rx="3"/>
+          <line x1="4" y1="11" x2="24" y2="11"/>
+          <line x1="12" y1="4" x2="12" y2="24"/>
+        </svg>
+      </div>
+      <div class="card-title">Daily Auto-Publish</div>
+      <div class="card-desc">Scheduled at 7 AM every morning via cron — a fresh brief is committed and published before you open your laptop.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SAMPLE PREVIEW
+══════════════════════════════════════════ -->
+<section class="preview-section">
+  <div class="preview-label">Live Example</div>
+  <h2 class="preview-headline">What you'll see every morning</h2>
+
+  <div class="preview-card">
+    <div class="preview-card-label">Today's Overview — Wednesday, April 22</div>
+    <p class="preview-card-text">
+      Wednesday is packed wall-to-wall with back-to-back meetings from 8 AM through 5 PM,
+      including a triple-booking conflict at 1:00 PM. With no outstanding tasks, your energy
+      today is almost entirely relationship- and decision-oriented — spanning architecture reviews,
+      1:1s, and strategic syncs across the organisation.
+    </p>
+
+    <div class="preview-events">
+      <div class="preview-event">
+        <span class="preview-event-time">8:00 – 9:00 AM</span>
+        <span class="preview-event-title">TF Standup</span>
+      </div>
+      <div class="preview-event">
+        <span class="preview-event-time">9:00 – 10:30 AM</span>
+        <span class="preview-event-title">Arch Forum Panel Review</span>
+      </div>
+      <div class="preview-event">
+        <span class="preview-event-time">1:00 – 1:30 PM</span>
+        <span class="preview-event-title">Dan / Mark Sync &nbsp;📍 Dan's office</span>
+      </div>
+      <div class="preview-event">
+        <span class="preview-event-time">3:30 – 3:55 PM</span>
+        <span class="preview-event-title">Monthly 1:1 w/ Abe Capetillo</span>
+      </div>
+      <div class="preview-event">
+        <span class="preview-event-time">4:30 – 4:55 PM</span>
+        <span class="preview-event-title">One Way SMS for Marketing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CLOSING CTA
+══════════════════════════════════════════ -->
+<section class="closing-section">
+  <div class="closing-glow"></div>
+  <div class="closing-content">
+    <h2 class="closing-headline">Start Every Morning<br>with Clarity</h2>
+    <p class="closing-subtext">Set up once. Wake up smarter every day.</p>
+    <a href="index.html" class="btn-primary">View Today's Brief</a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════ -->
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // ── Hide hero elements initially
+  gsap.set([".hero-eyebrow", ".hero-title", ".hero-subtitle", ".hero-cta", ".scroll-indicator"], {
+    opacity: 0, y: 30
+  });
+  // btn-primary inside hero is the CTA
+  gsap.set(".hero .btn-primary", { opacity: 0, y: 30 });
+
+  // ── Staggered hero entrance
+  const heroTl = gsap.timeline({ delay: 0.2 });
+  heroTl
+    .to(".hero-eyebrow",       { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" })
+    .to(".hero-title",         { opacity: 1, y: 0, duration: 1.0, ease: "power3.out" }, "-=0.3")
+    .to(".hero-subtitle",      { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, "-=0.5")
+    .to(".hero .btn-primary",  { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, "-=0.4")
+    .to(".scroll-indicator",   { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, "-=0.2");
+
+  // ── Mouse parallax
+  const hero = document.querySelector('.hero');
+  hero.addEventListener('mousemove', (e) => {
+    const rect = hero.getBoundingClientRect();
+    const xPct = (e.clientX - rect.left) / rect.width  - 0.5;
+    const yPct = (e.clientY - rect.top)  / rect.height - 0.5;
+
+    gsap.to(".hero-shapes-back", { duration: 2.0, x: xPct * -45, y: yPct * -22, ease: "power1.out" });
+    gsap.to(".hero-shapes-mid",  { duration: 1.5, x: xPct * -22, y: yPct * -11, ease: "power1.out" });
+    gsap.to(".hero-content",     { duration: 1.2, x: xPct *   8, y: yPct *   5, ease: "power1.out" });
+  });
+
+  // ── Feature cards 3D reveal
+  gsap.set(".feature-card", {
+    opacity: 0, y: 55, rotateX: 18,
+    transformPerspective: 900, transformOrigin: "top center"
+  });
+
+  gsap.to(".feature-card", {
+    scrollTrigger: {
+      trigger: ".features-section",
+      start: "top 68%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 1, y: 0, rotateX: 0,
+    duration: 0.75,
+    stagger: 0.11,
+    ease: "power2.out"
+  });
+
+  // ── Features headline
+  gsap.from(".features-headline, .features-subtext", {
+    scrollTrigger: { trigger: ".features-section", start: "top 72%" },
+    opacity: 0, y: 35, duration: 0.8, ease: "power3.out", stagger: 0.15
+  });
+
+  // ── How it works steps
+  gsap.from(".how-step", {
+    scrollTrigger: { trigger: ".how-section", start: "top 75%" },
+    opacity: 0, y: 30, duration: 0.7, ease: "power2.out", stagger: 0.15
+  });
+
+  // ── Preview section
+  gsap.from(".preview-card", {
+    scrollTrigger: { trigger: ".preview-section", start: "top 72%" },
+    opacity: 0, y: 40, duration: 0.9, ease: "power2.out"
+  });
+
+  gsap.from(".preview-label, .preview-headline", {
+    scrollTrigger: { trigger: ".preview-section", start: "top 75%" },
+    opacity: 0, y: 25, duration: 0.7, ease: "power3.out", stagger: 0.12
+  });
+
+  // ── Closing CTA
+  gsap.from(".closing-content", {
+    scrollTrigger: { trigger: ".closing-section", start: "top 72%" },
+    opacity: 0, y: 45, duration: 1.0, ease: "power3.out"
+  });
+</script>
+
+</body>
+</html>
