@@ -130,11 +130,15 @@ def get_meeting_notes(creds):
 
 def get_ai_summary(context):
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    prompt = f"""You are a personal productivity assistant. Based on the following schedule and tasks, provide:
-1. A brief 2-3 sentence overview of the day
-2. 3-5 specific, actionable suggestions for optimizing the day (time blocking, preparation, prioritization, etc.)
+    prompt = f"""You are a personal productivity assistant for Francis Inc.
 
-Be concise, warm, and practical. Format your response as JSON with keys "overview" and "suggestions" (array of strings).
+Voice: Declarative. Plain. Em-dashes liberally. Lead with the verb. No emoji, no marketing fluff, no hedging. Address the reader as "you". Make decisions — don't ask the reader to.
+
+Based on the schedule and tasks below, produce JSON with:
+- "overview": 2-3 sentences naming the shape of the day, where the friction is, and what matters most.
+- "suggestions": 3-5 specific plays — each one a single declarative sentence, lead with the verb (e.g., "Block 9-11 for the architecture doc — your only deep-work window before the 2pm review.").
+
+Return JSON only. Keys: "overview" (string), "suggestions" (array of strings).
 
 {context}"""
 
@@ -158,15 +162,17 @@ def get_ai_meeting_reviews(meeting_notes):
     reviews = []
 
     for note in meeting_notes:
-        prompt = f"""You are reviewing a meeting summary document. Based on the content below, provide:
-1. A 2-3 sentence summary of the key discussion points
-2. A list of takeaways or action items (be specific and actionable)
+        prompt = f"""You are reviewing a meeting summary document for Francis Inc.
 
-Format your response as JSON with keys:
-- "summary": string
-- "takeaways": array of strings
+Voice: Declarative. Plain. Em-dashes liberally. Lead with the verb. No emoji, no hedging, no marketing fluff.
 
-Meeting document title: {note["title"]}
+Based on the content below, produce JSON with:
+- "summary": 2-3 sentences naming what was discussed and what shape the conversation took.
+- "takeaways": specific action items or decisions — each one a single declarative sentence, lead with the verb.
+
+Return JSON only.
+
+Meeting: {note["title"]}
 
 Content:
 {note["content"][:4000]}"""
@@ -205,6 +211,30 @@ def format_event_end_time(event):
     return ""
 
 
+def get_focus_event(events):
+    """Return the currently-running event, or the next upcoming one."""
+    if not events:
+        return None
+    tz = ZoneInfo(TIMEZONE)
+    now = datetime.now(tz)
+    upcoming = []
+    for e in events:
+        start = e.get("start", {})
+        end = e.get("end", {})
+        if "dateTime" not in start:
+            continue
+        start_dt = datetime.fromisoformat(start["dateTime"])
+        end_dt = datetime.fromisoformat(end["dateTime"]) if "dateTime" in end else None
+        if end_dt and start_dt <= now <= end_dt:
+            return e
+        if start_dt > now:
+            upcoming.append((start_dt, e))
+    if upcoming:
+        upcoming.sort(key=lambda x: x[0])
+        return upcoming[0][1]
+    return None
+
+
 def build_context(events, tasks):
     tz = ZoneInfo(TIMEZONE)
     today = datetime.now(tz).strftime("%A, %B %d, %Y")
@@ -240,326 +270,717 @@ def build_context(events, tasks):
 def render_html(events, tasks, ai, meeting_reviews):
     tz = ZoneInfo(TIMEZONE)
     now = datetime.now(tz)
-    today_str = now.strftime("%A, %B %d, %Y")
+    today_full = now.strftime("%A, %B %-d, %Y")
+    today_short = now.strftime("%b %-d, %Y").upper()
     generated_at = now.strftime("%-I:%M %p")
+    iso_date = now.strftime("%m.%d.%y")
+    weekday = now.strftime("%A")
+    tz_label = TIMEZONE.replace("_", " ").split("/")[-1]
 
-    events_html = ""
+    focus = get_focus_event(events)
+
+    # ── FOCUS CARD ─────────────────────────────────────────
+    focus_card = ""
+    if focus:
+        f_start = format_event_time(focus)
+        f_end = format_event_end_time(focus)
+        f_title = focus.get("summary", "Untitled")
+        f_loc = focus.get("location", "")
+        f_time_str = f"{f_start} &mdash; {f_end}" if f_end else f_start
+        f_loc_html = f'<div class="focus-loc">{f_loc}</div>' if f_loc else ""
+        start_iso = focus.get("start", {}).get("dateTime", "")
+        if start_iso:
+            start_dt = datetime.fromisoformat(start_iso)
+            is_now = start_dt <= now
+            label = "Focus &middot; In session" if is_now else "Focus &middot; Next up"
+        else:
+            label = "Focus &middot; Next up"
+        focus_card = f"""
+        <section class="focus-card">
+            <div class="eyebrow">{label}</div>
+            <div class="focus-time">{f_time_str}</div>
+            <h2 class="focus-title">{f_title}</h2>
+            {f_loc_html}
+        </section>"""
+
+    # ── SCHEDULE ───────────────────────────────────────────
     if events:
+        rows = ""
         for e in events:
             start = format_event_time(e)
             end = format_event_end_time(e)
             title = e.get("summary", "Untitled")
             location = e.get("location", "")
-            loc_html = f'<span class="location">📍 {location}</span>' if location else ""
-            time_str = f"{start} – {end}" if end else start
-            events_html += f"""
-            <div class="event">
-                <span class="event-time">{time_str}</span>
-                <span class="event-title">{title}</span>
-                {loc_html}
+            loc_html = f'<div class="t-loc">{location}</div>' if location else ""
+            end_html = f'<div class="t-end">&mdash; {end}</div>' if end else ""
+            rows += f"""
+            <div class="t-row">
+                <div class="t-time">
+                    <div class="t-start">{start}</div>
+                    {end_html}
+                </div>
+                <div class="t-rail"><span></span></div>
+                <div class="t-body">
+                    <div class="t-title">{title}</div>
+                    {loc_html}
+                </div>
             </div>"""
+        schedule_html = rows
     else:
-        events_html = '<p class="empty">No events scheduled for today.</p>'
+        schedule_html = '<p class="empty">Nothing on the calendar.</p>'
 
-    tasks_html = ""
+    # ── TASKS ──────────────────────────────────────────────
     if tasks:
+        rows = ""
         for t in tasks:
             title = t.get("title", "Untitled")
             due = t.get("due", "")
-            due_str = f'<span class="due">Due {datetime.fromisoformat(due[:10]).strftime("%b %d")}</span>' if due else ""
             list_title = t.get("_listTitle", "")
-            tasks_html += f"""
-            <div class="task">
-                <span class="task-list">{list_title}</span>
+            due_html = ""
+            if due:
+                due_dt = datetime.fromisoformat(due[:10]).date()
+                delta = (due_dt - now.date()).days
+                if delta < 0:
+                    cls, label = "capsule--decision", f"Overdue &middot; {due_dt.strftime('%b %-d')}"
+                elif delta == 0:
+                    cls, label = "capsule--decision", "Due today"
+                elif delta <= 3:
+                    cls, label = "capsule--caution", f"Due {due_dt.strftime('%b %-d')}"
+                else:
+                    cls, label = "capsule--neutral", f"Due {due_dt.strftime('%b %-d')}"
+                due_html = f'<span class="capsule {cls}">{label}</span>'
+            rows += f"""
+            <div class="task-row">
+                <span class="capsule capsule--tinted">{list_title}</span>
                 <span class="task-title">{title}</span>
-                {due_str}
+                {due_html}
             </div>"""
+        tasks_html = rows
     else:
-        tasks_html = '<p class="empty">No outstanding tasks.</p>'
+        tasks_html = '<p class="empty">Nothing outstanding.</p>'
 
-    suggestions_html = "".join(
-        f"<li>{s}</li>" for s in ai.get("suggestions", [])
-    )
+    # ── PLAYS ──────────────────────────────────────────────
+    plays_html = "".join(
+        f'<li class="play"><span class="play-num">{i:02d}</span><span class="play-text">{s}</span></li>'
+        for i, s in enumerate(ai.get("suggestions", []), 1)
+    ) or '<li class="empty">No plays generated.</li>'
 
+    # ── YESTERDAY ──────────────────────────────────────────
     if meeting_reviews:
-        yesterday_html = ""
+        yesterday_inner = ""
         for review in meeting_reviews:
             takeaways_html = "".join(
                 f"<li>{t}</li>" for t in review["takeaways"]
             )
-            yesterday_html += f"""
+            yesterday_inner += f"""
             <div class="meeting">
                 <h3 class="meeting-title">{review["title"]}</h3>
                 <p class="meeting-summary">{review["summary"]}</p>
-                <p class="meeting-label">Takeaways &amp; Action Items</p>
+                <div class="meeting-label">Takeaways</div>
                 <ul class="meeting-takeaways">{takeaways_html}</ul>
             </div>"""
-        yesterday_section = f"""
-        <div class="card">
-            <h2>Yesterday in Review</h2>
-            {yesterday_html}
-        </div>"""
     else:
-        yesterday_section = f"""
-        <div class="card">
-            <h2>Yesterday in Review</h2>
-            <p class="empty">No meeting notes found from the last 24 hours.</p>
-        </div>"""
+        yesterday_inner = '<p class="empty">No meeting notes from the last 24 hours.</p>'
 
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Brief – {today_str}</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <title>Daily Brief &middot; {today_full}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <style>
         :root {{
-            --navy:        #0A1628;
-            --navy-mid:    #0D1F38;
-            --teal:        #00D4AA;
-            --amber:       #F5A623;
-            --off-white:   #F7F7F2;
-            --text-muted:  rgba(247, 247, 242, 0.62);
-            --card-bg:     rgba(0, 212, 170, 0.05);
-            --card-border: rgba(0, 212, 170, 0.14);
-            --divider:     rgba(0, 212, 170, 0.09);
-        }}
-        * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-        html {{ scroll-behavior: smooth; }}
-        body {{
-            font-family: 'Inter', sans-serif;
-            background: var(--navy);
-            color: var(--off-white);
-            min-height: 100vh;
-            padding: 2.5rem 1rem 4rem;
-        }}
-        .container {{ max-width: 740px; margin: 0 auto; }}
+            /* Navy ramp */
+            --navy-950: #000F1E;
+            --navy-900: #041628;
+            --navy-800: #001F38;
+            --navy-700: #112847;
+            --navy-600: #1A3358;
 
-        /* Header */
-        header {{ margin-bottom: 2.5rem; }}
-        .header-eyebrow {{
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--teal);
-            margin-bottom: 10px;
+            /* Amber accent */
+            --amber-400: #FFB845;
+            --amber-500: #F5A623;
+            --amber-600: #D98E0E;
+
+            /* Semantic */
+            --red:    #FF686B;
+            --yellow: #FFC93C;
+
+            /* Foreground */
+            --off-white: #F7F7F2;
+            --bone:      #E8E8E0;
+            --muted:     rgba(247, 247, 242, 0.62);
+            --quiet:     rgba(247, 247, 242, 0.38);
+
+            /* Surfaces */
+            --card-bg:     rgba(245, 166, 35, 0.045);
+            --card-border: rgba(245, 166, 35, 0.14);
+            --hairline:    rgba(247, 247, 242, 0.06);
+
+            /* Type scale */
+            --fs-display: 78px;
+            --fs-h1:      50px;
+            --fs-h2:      28px;
+            --fs-h3:      21px;
+            --fs-body:    16px;
+            --fs-eyebrow: 13px;
+            --fs-micro:   11px;
+
+            /* Radii */
+            --r-xs:  4px; --r-sm:  6px; --r-md: 10px;
+            --r-lg: 14px; --r-xl: 22px;
+
+            /* 8pt spacing */
+            --s-1:  4px; --s-2:  8px; --s-3: 12px; --s-4: 16px;
+            --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px;
+
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
         }}
-        header h1 {{
-            font-size: 2.2rem;
+
+        *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
+        html {{ scroll-behavior: smooth; }}
+
+        body {{
+            font-family: var(--font-sans);
+            font-size: var(--fs-body);
+            line-height: 1.55;
+            color: var(--off-white);
+            background: var(--navy-900);
+            background-image:
+                radial-gradient(ellipse 65% 55% at 88% -8%, rgba(245, 166, 35, 0.10), transparent 60%),
+                radial-gradient(ellipse 80% 40% at -10% 100%, rgba(26, 51, 88, 0.55), transparent 60%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            padding: var(--s-7) var(--s-4) var(--s-8);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }}
+
+        .container {{ max-width: 1180px; margin: 0 auto; position: relative; }}
+
+        /* ── Grids ────────────────────────────────────── */
+        .grid-hero, .grid-2 {{
+            display: grid;
+            gap: var(--s-4);
+            grid-template-columns: 1fr;
+            margin-bottom: var(--s-4);
+        }}
+        .grid-hero:has(.focus-card) {{ grid-template-columns: 5fr 7fr; }}
+        .grid-2 {{ grid-template-columns: 5fr 7fr; }}
+        .grid-hero > .card, .grid-hero > .focus-card,
+        .grid-2 > .card {{ margin-bottom: 0; height: 100%; }}
+        @media (max-width: 960px) {{
+            .grid-hero:has(.focus-card), .grid-2 {{ grid-template-columns: 1fr; }}
+        }}
+
+        /* Faint grid backdrop */
+        .container::before {{
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(245, 166, 35, 0.025) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(245, 166, 35, 0.025) 1px, transparent 1px);
+            background-size: 64px 64px;
+            pointer-events: none;
+            z-index: -1;
+            mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 30%, transparent 75%);
+        }}
+
+        /* ── Header ────────────────────────────────────── */
+        header {{ margin-bottom: var(--s-7); }}
+        .header-top {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--s-7);
+        }}
+        .logo {{
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            opacity: 0;
+        }}
+        .logo-chip {{
+            filter: drop-shadow(0 8px 22px rgba(245, 166, 35, 0.28));
+        }}
+        /* Bars are visible by default — GSAP animates them in from scaleY(0). */
+        /* If JS fails to load, the F mark still renders correctly. */
+        .logo-wordmark {{
+            font-family: var(--font-sans);
+            font-size: 18px;
             font-weight: 800;
             color: var(--off-white);
-            line-height: 1.1;
+            letter-spacing: -0.015em;
         }}
-        .header-meta {{
-            margin-top: 6px;
-            font-size: 0.88rem;
-            color: var(--text-muted);
+        .logo-wordmark .dot {{ color: var(--amber-500); }}
+
+        .clock {{
+            font-family: var(--font-mono);
+            font-size: var(--fs-eyebrow);
+            font-weight: 500;
+            color: var(--muted);
+            letter-spacing: 0.04em;
+            opacity: 0;
         }}
-        .header-rule {{
-            margin-top: 1.5rem;
-            border: none;
-            border-top: 1px solid var(--card-border);
+        .clock .tz {{
+            color: var(--quiet);
+            margin-left: 6px;
+            font-size: var(--fs-micro);
         }}
 
-        /* Cards */
+        .hero-eyebrow {{
+            font-family: var(--font-mono);
+            font-size: var(--fs-eyebrow);
+            font-weight: 600;
+            color: var(--amber-500);
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            margin-bottom: var(--s-4);
+            opacity: 0;
+            transform: translateY(14px);
+        }}
+        .display-wrap {{
+            overflow: hidden;
+            padding: 0 0 10px;
+        }}
+        .display {{
+            font-family: var(--font-sans);
+            font-size: var(--fs-display);
+            font-weight: 800;
+            line-height: 0.95;
+            letter-spacing: -0.02em;
+            color: var(--off-white);
+            transform: translateY(112%);
+        }}
+        .display .dot {{ color: var(--amber-500); }}
+        .display .day {{
+            display: block;
+            font-size: var(--fs-h3);
+            font-weight: 500;
+            letter-spacing: 0;
+            color: var(--muted);
+            margin-top: var(--s-3);
+        }}
+        .hero-sub {{
+            font-family: var(--font-mono);
+            font-size: var(--fs-micro);
+            font-weight: 500;
+            color: var(--quiet);
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            margin-top: var(--s-5);
+            opacity: 0;
+            transform: translateY(8px);
+        }}
+        .header-rule {{
+            margin-top: var(--s-6);
+            border: none;
+            border-top: 1px solid var(--hairline);
+        }}
+
+        /* ── Eyebrows ──────────────────────────────────── */
+        .eyebrow {{
+            font-family: var(--font-mono);
+            font-size: var(--fs-eyebrow);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--amber-500);
+        }}
+
+        /* ── Cards ─────────────────────────────────────── */
         .card {{
             background: var(--card-bg);
             border: 1px solid var(--card-border);
-            border-radius: 14px;
-            padding: 1.75rem 2rem;
-            margin-bottom: 1.25rem;
+            border-radius: var(--r-lg);
+            padding: var(--s-6) var(--s-6);
+            margin-bottom: var(--s-4);
             opacity: 0;
+            transform: translateY(24px);
         }}
-        .card h2 {{
-            font-size: 10.5px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            color: var(--teal);
-            margin-bottom: 1.1rem;
-        }}
-
-        /* Overview */
-        .overview {{
-            font-size: 1rem;
-            line-height: 1.75;
-            color: rgba(247, 247, 242, 0.88);
-        }}
-
-        /* Suggestions */
-        .suggestions ul {{ list-style: none; padding: 0; }}
-        .suggestions li {{
-            font-size: 0.93rem;
-            line-height: 1.6;
-            color: rgba(247, 247, 242, 0.85);
-            padding: 0.65rem 0;
-            border-bottom: 1px solid var(--divider);
-        }}
-        .suggestions li:last-child {{ border-bottom: none; padding-bottom: 0; }}
-        .suggestions li:first-child {{ padding-top: 0; }}
-
-        /* Events */
-        .event {{
+        .card-head {{
             display: flex;
-            flex-wrap: wrap;
             align-items: baseline;
-            gap: 0.4rem 0.75rem;
-            padding: 0.7rem 0;
-            border-bottom: 1px solid var(--divider);
+            gap: var(--s-3);
+            margin-bottom: var(--s-5);
         }}
-        .event:last-child {{ border-bottom: none; padding-bottom: 0; }}
-        .event:first-child {{ padding-top: 0; }}
-        .event-time {{
-            font-size: 0.8rem;
+        .card-num {{
+            font-family: var(--font-mono);
+            font-size: var(--fs-eyebrow);
+            font-weight: 600;
+            color: var(--amber-500);
+        }}
+
+        /* ── Focus card ────────────────────────────────── */
+        .focus-card {{
+            position: relative;
+            background:
+                linear-gradient(135deg, rgba(245, 166, 35, 0.10), rgba(245, 166, 35, 0.02) 70%),
+                var(--navy-800);
+            border: 1px solid rgba(245, 166, 35, 0.40);
+            border-radius: var(--r-lg);
+            padding: var(--s-6);
+            margin-bottom: var(--s-5);
+            opacity: 0;
+            transform: translateY(24px);
+            animation: pulse-amber 3.8s ease-in-out 1.6s infinite;
+        }}
+        .focus-card::before {{
+            content: '';
+            position: absolute;
+            left: 0; top: var(--s-5); bottom: var(--s-5);
+            width: 3px;
+            background: var(--amber-500);
+            border-radius: 0 2px 2px 0;
+            box-shadow: 0 0 14px rgba(245, 166, 35, 0.6);
+        }}
+        .focus-card .eyebrow {{
+            display: block;
+            margin-bottom: var(--s-4);
+        }}
+        .focus-time {{
+            font-family: var(--font-mono);
+            font-size: var(--fs-h3);
             font-weight: 500;
-            color: var(--teal);
-            opacity: 0.8;
-            min-width: 145px;
+            color: var(--amber-400);
+            letter-spacing: -0.005em;
+            margin-bottom: var(--s-2);
+        }}
+        .focus-title {{
+            font-size: var(--fs-h2);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.015em;
+            color: var(--off-white);
+            margin-bottom: var(--s-3);
+        }}
+        .focus-loc {{
+            font-size: var(--fs-body);
+            color: var(--muted);
+        }}
+        @keyframes pulse-amber {{
+            0%, 100% {{ box-shadow: 0 0 24px rgba(245, 166, 35, 0.10); }}
+            50%      {{ box-shadow: 0 0 44px rgba(245, 166, 35, 0.26); }}
+        }}
+
+        /* ── Overview ──────────────────────────────────── */
+        .overview {{
+            font-size: var(--fs-h3);
+            line-height: 1.5;
+            font-weight: 400;
+            color: var(--bone);
+            letter-spacing: -0.005em;
+        }}
+
+        /* ── Plays ─────────────────────────────────────── */
+        .plays {{ list-style: none; }}
+        .play {{
+            display: flex;
+            align-items: baseline;
+            gap: var(--s-4);
+            padding: var(--s-3) 0;
+            border-bottom: 1px solid var(--hairline);
+        }}
+        .play:first-child {{ padding-top: 0; }}
+        .play:last-child {{ border-bottom: none; padding-bottom: 0; }}
+        .play-num {{
+            font-family: var(--font-mono);
+            font-size: var(--fs-eyebrow);
+            font-weight: 600;
+            color: var(--amber-500);
+            min-width: 28px;
             flex-shrink: 0;
         }}
-        .event-title {{ font-size: 0.93rem; font-weight: 500; flex: 1; color: var(--off-white); }}
-        .location {{
-            font-size: 0.78rem;
-            color: var(--text-muted);
-            width: 100%;
-            padding-left: 145px;
-            margin-top: -2px;
+        .play-text {{
+            font-size: var(--fs-body);
+            line-height: 1.55;
+            color: var(--off-white);
         }}
 
-        /* Tasks */
-        .task {{
+        /* ── Timeline ──────────────────────────────────── */
+        .t-row {{
+            display: grid;
+            grid-template-columns: 100px 18px 1fr;
+            gap: var(--s-4);
+            padding: var(--s-4) 0;
+            border-bottom: 1px solid var(--hairline);
+        }}
+        .t-row:first-child {{ padding-top: 0; }}
+        .t-row:last-child {{ border-bottom: none; padding-bottom: 0; }}
+        .t-time {{ font-family: var(--font-mono); text-align: right; }}
+        .t-start {{
+            font-size: var(--fs-body);
+            font-weight: 600;
+            color: var(--amber-400);
+            letter-spacing: -0.005em;
+        }}
+        .t-end {{
+            font-size: var(--fs-eyebrow);
+            color: var(--muted);
+            margin-top: 2px;
+        }}
+        .t-rail {{ position: relative; width: 18px; }}
+        .t-rail::before {{
+            content: '';
+            position: absolute;
+            left: 50%; top: 0; bottom: -16px;
+            width: 1px;
+            background: rgba(245, 166, 35, 0.22);
+            transform: translateX(-50%);
+        }}
+        .t-row:last-child .t-rail::before {{ bottom: 50%; }}
+        .t-rail span {{
+            position: absolute;
+            left: 50%; top: 8px;
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: var(--amber-500);
+            transform: translateX(-50%);
+            box-shadow: 0 0 0 4px var(--navy-900), 0 0 14px rgba(245, 166, 35, 0.55);
+        }}
+        .t-title {{
+            font-size: var(--fs-body);
+            font-weight: 500;
+            color: var(--off-white);
+        }}
+        .t-loc {{
+            font-size: var(--fs-eyebrow);
+            color: var(--muted);
+            margin-top: 4px;
+        }}
+
+        /* ── Tasks ─────────────────────────────────────── */
+        .task-row {{
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 0.4rem 0.75rem;
-            padding: 0.7rem 0;
-            border-bottom: 1px solid var(--divider);
+            gap: var(--s-3);
+            padding: var(--s-4) 0;
+            border-bottom: 1px solid var(--hairline);
         }}
-        .task:last-child {{ border-bottom: none; padding-bottom: 0; }}
-        .task:first-child {{ padding-top: 0; }}
-        .task-list {{
-            font-size: 0.72rem;
-            font-weight: 600;
-            background: rgba(0, 212, 170, 0.12);
-            color: var(--teal);
-            border-radius: 4px;
-            padding: 2px 7px;
-            flex-shrink: 0;
-        }}
-        .task-title {{ font-size: 0.93rem; font-weight: 500; flex: 1; color: var(--off-white); }}
-        .due {{
-            font-size: 0.78rem;
-            font-weight: 600;
-            color: var(--amber);
+        .task-row:first-child {{ padding-top: 0; }}
+        .task-row:last-child {{ border-bottom: none; padding-bottom: 0; }}
+        .task-title {{
+            font-size: var(--fs-body);
+            font-weight: 500;
+            color: var(--off-white);
+            flex: 1;
+            min-width: 0;
         }}
 
-        /* Meeting reviews */
-        .meeting {{
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--divider);
+        /* ── Capsules ──────────────────────────────────── */
+        .capsule {{
+            display: inline-flex;
+            align-items: center;
+            font-family: var(--font-sans);
+            font-size: var(--fs-micro);
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 999px;
+            flex-shrink: 0;
+            white-space: nowrap;
         }}
-        .meeting:last-child {{ border-bottom: none; padding-bottom: 0; }}
+        .capsule--tinted   {{ background: rgba(245, 166, 35, 0.14); color: var(--amber-400); }}
+        .capsule--neutral  {{ background: rgba(247, 247, 242, 0.08); color: var(--muted); }}
+        .capsule--caution  {{ background: rgba(255, 201, 60, 0.15); color: var(--yellow); }}
+        .capsule--decision {{ background: rgba(255, 104, 107, 0.15); color: var(--red); }}
+
+        /* ── Meetings ──────────────────────────────────── */
+        .meeting {{
+            padding: var(--s-5) 0;
+            border-bottom: 1px solid var(--hairline);
+        }}
         .meeting:first-child {{ padding-top: 0; }}
+        .meeting:last-child {{ border-bottom: none; padding-bottom: 0; }}
         .meeting-title {{
-            font-size: 0.97rem;
+            font-size: var(--fs-h3);
             font-weight: 600;
             color: var(--off-white);
-            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+            margin-bottom: var(--s-2);
         }}
         .meeting-summary {{
-            font-size: 0.9rem;
-            line-height: 1.65;
-            color: rgba(247, 247, 242, 0.78);
-            margin-bottom: 0.75rem;
+            font-size: var(--fs-body);
+            line-height: 1.6;
+            color: var(--bone);
+            margin-bottom: var(--s-4);
         }}
         .meeting-label {{
-            font-size: 10px;
+            font-family: var(--font-mono);
+            font-size: var(--fs-micro);
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--teal);
-            margin-bottom: 0.5rem;
+            letter-spacing: 0.18em;
+            color: var(--amber-500);
+            margin-bottom: var(--s-3);
         }}
-        .meeting-takeaways {{ list-style: none; padding: 0; }}
+        .meeting-takeaways {{ list-style: none; }}
         .meeting-takeaways li {{
-            font-size: 0.87rem;
+            font-size: var(--fs-body);
             line-height: 1.55;
-            color: rgba(247, 247, 242, 0.82);
-            padding: 0.3rem 0 0.3rem 1rem;
+            color: var(--bone);
+            padding: var(--s-2) 0 var(--s-2) 22px;
             position: relative;
         }}
         .meeting-takeaways li::before {{
             content: '›';
             position: absolute;
-            left: 0;
-            color: var(--teal);
+            left: 4px;
+            top: var(--s-2);
+            color: var(--amber-500);
+            font-family: var(--font-mono);
             font-weight: 700;
         }}
 
-        /* Empty state */
+        /* ── Empty state ───────────────────────────────── */
         .empty {{
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            font-style: italic;
+            font-family: var(--font-mono);
+            font-size: var(--fs-eyebrow);
+            color: var(--quiet);
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
         }}
 
-        /* Footer */
+        /* ── Footer ────────────────────────────────────── */
         footer {{
+            font-family: var(--font-mono);
             text-align: center;
-            color: rgba(247, 247, 242, 0.28);
-            font-size: 0.75rem;
-            margin-top: 2.5rem;
-            letter-spacing: 0.03em;
+            color: var(--quiet);
+            font-size: var(--fs-micro);
+            margin-top: var(--s-7);
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+        }}
+
+        @media (max-width: 540px) {{
+            :root {{ --fs-display: 52px; --fs-h2: 23px; --fs-h3: 18px; }}
+            .card, .focus-card {{ padding: var(--s-5); }}
+            .t-row {{ grid-template-columns: 76px 14px 1fr; gap: var(--s-3); }}
+            .display .day {{ font-size: 15px; }}
+        }}
+
+        @media (prefers-reduced-motion: reduce) {{
+            .focus-card {{ animation: none; }}
+            .logo, .clock, .hero-eyebrow, .hero-sub, .card, .focus-card {{
+                opacity: 1; transform: none;
+            }}
+            .display {{ transform: none; }}
+            .logo-chip .bar {{ transform: none; }}
         }}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="header-eyebrow">Daily Brief</div>
-            <h1>{today_str}</h1>
-            <p class="header-meta">Generated at {generated_at}</p>
+            <div class="header-top">
+                <div class="logo">
+                    <svg class="logo-chip" width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+                        <rect width="44" height="44" rx="10" fill="#F5A623"/>
+                        <g fill="#041628">
+                            <rect class="bar" x="11" y="12" width="22" height="5" rx="1.2"/>
+                            <rect class="bar" x="11" y="20" width="15" height="5" rx="1.2"/>
+                            <rect class="bar" x="11" y="28" width="8"  height="5" rx="1.2"/>
+                        </g>
+                    </svg>
+                    <span class="logo-wordmark">Francis<span class="dot">.</span></span>
+                </div>
+                <div class="clock" id="clock">--:--:-- --<span class="tz">{tz_label}</span></div>
+            </div>
+
+            <div class="hero-eyebrow">Daily Brief &middot; {today_short}</div>
+            <div class="display-wrap">
+                <h1 class="display">Today<span class="dot">.</span><span class="day">{weekday} &middot; Generated {generated_at}</span></h1>
+            </div>
             <hr class="header-rule">
         </header>
 
-        <div class="card">
-            <h2>Today's Overview</h2>
-            <p class="overview">{ai.get("overview", "")}</p>
+        <div class="grid-hero">
+            {focus_card}
+            <section class="card">
+                <div class="card-head">
+                    <span class="card-num">01</span>
+                    <span class="eyebrow">Overview</span>
+                </div>
+                <p class="overview">{ai.get("overview", "")}</p>
+            </section>
         </div>
 
-        <div class="card suggestions">
-            <h2>Optimization Suggestions</h2>
-            <ul>{suggestions_html}</ul>
+        <div class="grid-2">
+            <section class="card">
+                <div class="card-head">
+                    <span class="card-num">02</span>
+                    <span class="eyebrow">Plays</span>
+                </div>
+                <ol class="plays">{plays_html}</ol>
+            </section>
+
+            <section class="card">
+                <div class="card-head">
+                    <span class="card-num">03</span>
+                    <span class="eyebrow">Schedule</span>
+                </div>
+                <div class="timeline">{schedule_html}</div>
+            </section>
         </div>
 
-        <div class="card">
-            <h2>Schedule</h2>
-            {events_html}
+        <div class="grid-2">
+            <section class="card">
+                <div class="card-head">
+                    <span class="card-num">04</span>
+                    <span class="eyebrow">Open work</span>
+                </div>
+                <div class="tasks">{tasks_html}</div>
+            </section>
+
+            <section class="card">
+                <div class="card-head">
+                    <span class="card-num">05</span>
+                    <span class="eyebrow">Yesterday</span>
+                </div>
+                {yesterday_inner}
+            </section>
         </div>
 
-        <div class="card">
-            <h2>Outstanding Tasks</h2>
-            {tasks_html}
-        </div>
-
-        {yesterday_section}
-
-        <footer>Powered by Google Calendar &middot; Google Tasks &middot; Google Drive &middot; Claude AI</footer>
+        <footer>Francis Inc &middot; Daily Brief v1.0 &middot; {iso_date}</footer>
     </div>
 
     <script>
-        gsap.to(".card", {{
-            opacity: 1,
-            y: 0,
-            duration: 0.55,
-            ease: "power2.out",
-            stagger: 0.1,
-            delay: 0.1,
-            from: {{ opacity: 0, y: 22 }}
-        }});
+        // Live clock — JetBrains Mono, matches brand voice
+        const clockEl = document.getElementById('clock');
+        const tzLabel = clockEl ? clockEl.querySelector('.tz') : null;
+        const tzText = tzLabel ? tzLabel.outerHTML : '';
+        function pad(n) {{ return String(n).padStart(2, '0'); }}
+        function tick() {{
+            if (!clockEl) return;
+            const d = new Date();
+            let h = d.getHours();
+            const m = pad(d.getMinutes());
+            const s = pad(d.getSeconds());
+            const ampm = h >= 12 ? 'PM' : 'AM';
+            h = h % 12 || 12;
+            clockEl.innerHTML = h + ':' + m + ':' + s + ' ' + ampm + tzText;
+        }}
+        tick();
+        setInterval(tick, 1000);
+
+        // Entrance choreography
+        const tl = gsap.timeline({{ defaults: {{ ease: 'power3.out' }} }});
+        tl.to('.logo',           {{ opacity: 1, duration: 0.45 }})
+          .from('.logo-chip',    {{ scale: 0.4, opacity: 0, transformOrigin: '50% 50%', duration: 0.6, ease: 'back.out(2)' }}, '-=0.35')
+          .to('.clock',          {{ opacity: 1, duration: 0.35 }}, '-=0.4')
+          .to('.hero-eyebrow',   {{ opacity: 1, y: 0, duration: 0.5 }}, '-=0.2')
+          .to('.display',        {{ y: 0, duration: 0.95, ease: 'expo.out' }}, '-=0.35')
+          .to('.hero-sub',       {{ opacity: 1, y: 0, duration: 0.4 }}, '-=0.55')
+          .to('.focus-card',     {{ opacity: 1, y: 0, duration: 0.65 }}, '-=0.3')
+          .to('.card',           {{ opacity: 1, y: 0, duration: 0.55, stagger: 0.09 }}, '-=0.45');
     </script>
 </body>
 </html>"""
