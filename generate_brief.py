@@ -1012,7 +1012,7 @@ def render_html(events, tasks, ai, meeting_reviews):
 
             <div class="hero-eyebrow">Daily Brief &middot; {today_short}</div>
             <div class="display-wrap">
-                <h1 class="display">Today<span class="dot">.</span><span class="day">{weekday} &middot; Generated {generated_at}</span></h1>
+                <h1 class="display">Today<span class="dot">.</span><span class="day">{weekday} &middot; <span id="js-refreshed" title="Calendar &amp; tasks auto-refresh every ~10 min">updated {generated_at}</span></span></h1>
             </div>
             <hr class="header-rule">
         </header>
@@ -1210,6 +1210,8 @@ def render_html(events, tasks, ai, meeting_reviews):
                     document.querySelectorAll('.live-stamp').forEach(function (el) {{
                         el.textContent = '\\u21BB ' + d.refreshed_label;
                     }});
+                    var r = document.getElementById('js-refreshed');
+                    if (r) r.textContent = 'updated ' + d.refreshed_label;
                 }}
                 liveEvents = Array.isArray(d.events) ? d.events : [];
                 liveLoaded = true;
@@ -1221,7 +1223,7 @@ def render_html(events, tasks, ai, meeting_reviews):
         }}
 
         setTimeout(hydrateLive, 2800);          // after the entrance animations
-        setInterval(hydrateLive, 600000);       // re-fetch live.json every 10 min
+        setInterval(hydrateLive, 120000);       // re-fetch live.json every 2 min
         setInterval(liveTick, 30000);           // recompute now/next every 30 s
     </script>
 </body>
