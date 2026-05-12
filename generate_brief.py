@@ -132,7 +132,7 @@ def get_meeting_notes(creds):
 
 def get_ai_summary(context):
     import anthropic
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=8)
     prompt = f"""You are a personal productivity assistant for Francis Inc.
 
 Voice: Declarative. Plain. Em-dashes liberally. Lead with the verb. No emoji, no marketing fluff, no hedging. Address the reader as "you". Make decisions — don't ask the reader to.
@@ -145,15 +145,24 @@ Return JSON only. Keys: "overview" (string), "suggestions" (array of strings).
 
 {context}"""
 
-    message = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=1024,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-    return json.loads(raw)
+    try:
+        message = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=1024,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = message.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+        return json.loads(raw)
+    except Exception as e:
+        # Don't let a transient Anthropic outage (e.g. 529 Overloaded) sink the
+        # whole publish — ship the schedule + open work with a degraded overview.
+        print(f"AI summary unavailable ({type(e).__name__}: {e}); using fallback.")
+        return {
+            "overview": "AI insights are unavailable right now — the schedule and open work below are current.",
+            "suggestions": [],
+        }
 
 
 def get_ai_meeting_reviews(meeting_notes):
@@ -162,7 +171,7 @@ def get_ai_meeting_reviews(meeting_notes):
         return []
 
     import anthropic
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=8)
     reviews = []
 
     for note in meeting_notes:
@@ -181,20 +190,28 @@ Meeting: {note["title"]}
 Content:
 {note["content"][:4000]}"""
 
-        message = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=1024,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        raw = message.content[0].text.strip()
-        if raw.startswith("```"):
-            raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-        parsed = json.loads(raw)
-        reviews.append({
-            "title": note["title"],
-            "summary": parsed.get("summary", ""),
-            "takeaways": parsed.get("takeaways", []),
-        })
+        try:
+            message = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=1024,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            raw = message.content[0].text.strip()
+            if raw.startswith("```"):
+                raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+            parsed = json.loads(raw)
+            reviews.append({
+                "title": note["title"],
+                "summary": parsed.get("summary", ""),
+                "takeaways": parsed.get("takeaways", []),
+            })
+        except Exception as e:
+            print(f"Meeting review unavailable for {note['title']!r} ({type(e).__name__}: {e}); skipping.")
+            reviews.append({
+                "title": note["title"],
+                "summary": "Review unavailable — Claude was unreachable when this brief was built.",
+                "takeaways": [],
+            })
 
     return reviews
 
