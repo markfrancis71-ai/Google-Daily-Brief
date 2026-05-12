@@ -5,7 +5,8 @@ from zoneinfo import ZoneInfo
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
-import anthropic
+# anthropic is imported lazily inside the AI functions so fetch_live.py can
+# reuse the Google helpers without installing the Anthropic SDK.
 
 SCOPES = [
     "https://www.googleapis.com/auth/calendar.readonly",
@@ -129,6 +130,7 @@ def get_meeting_notes(creds):
 
 
 def get_ai_summary(context):
+    import anthropic
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     prompt = f"""You are a personal productivity assistant for Francis Inc.
 
@@ -158,6 +160,7 @@ def get_ai_meeting_reviews(meeting_notes):
     if not meeting_notes:
         return []
 
+    import anthropic
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     reviews = []
 
@@ -211,12 +214,12 @@ def format_event_end_time(event):
     return ""
 
 
-def get_focus_event(events):
+def get_focus_event(events, now=None):
     """Return the currently-running event, or the next upcoming one."""
     if not events:
         return None
-    tz = ZoneInfo(TIMEZONE)
-    now = datetime.now(tz)
+    if now is None:
+        now = datetime.now(ZoneInfo(TIMEZONE))
     upcoming = []
     for e in events:
         start = e.get("start", {})
@@ -267,35 +270,25 @@ def build_context(events, tasks):
     return "\n".join(lines)
 
 
-def render_html(events, tasks, ai, meeting_reviews):
-    tz = ZoneInfo(TIMEZONE)
-    now = datetime.now(tz)
-    today_full = now.strftime("%A, %B %-d, %Y")
-    today_short = now.strftime("%b %-d, %Y").upper()
-    generated_at = now.strftime("%-I:%M %p")
-    iso_date = now.strftime("%m.%d.%y")
-    weekday = now.strftime("%A")
-    tz_label = TIMEZONE.replace("_", " ").split("/")[-1]
+# ── Reusable section renderers (shared by the daily build and live.json) ──
 
-    focus = get_focus_event(events)
-
-    # ── FOCUS CARD ─────────────────────────────────────────
-    focus_card = ""
-    if focus:
-        f_start = format_event_time(focus)
-        f_end = format_event_end_time(focus)
-        f_title = focus.get("summary", "Untitled")
-        f_loc = focus.get("location", "")
-        f_time_str = f"{f_start} &mdash; {f_end}" if f_end else f_start
-        f_loc_html = f'<div class="focus-loc">{f_loc}</div>' if f_loc else ""
-        start_iso = focus.get("start", {}).get("dateTime", "")
-        if start_iso:
-            start_dt = datetime.fromisoformat(start_iso)
-            is_now = start_dt <= now
-            label = "Focus &middot; In session" if is_now else "Focus &middot; Next up"
-        else:
-            label = "Focus &middot; Next up"
-        focus_card = f"""
+def render_focus_card(events, now):
+    """HTML for the focus card (currently-running or next-up event); '' if none."""
+    focus = get_focus_event(events, now)
+    if not focus:
+        return ""
+    f_start = format_event_time(focus)
+    f_end = format_event_end_time(focus)
+    f_title = focus.get("summary", "Untitled")
+    f_loc = focus.get("location", "")
+    f_time_str = f"{f_start} &mdash; {f_end}" if f_end else f_start
+    f_loc_html = f'<div class="focus-loc">{f_loc}</div>' if f_loc else ""
+    start_iso = focus.get("start", {}).get("dateTime", "")
+    if start_iso and datetime.fromisoformat(start_iso) <= now:
+        label = "Focus &middot; In session"
+    else:
+        label = "Focus &middot; Next up"
+    return f"""
         <section class="focus-card">
             <div class="eyebrow">{label}</div>
             <div class="focus-time">{f_time_str}</div>
@@ -303,17 +296,20 @@ def render_html(events, tasks, ai, meeting_reviews):
             {f_loc_html}
         </section>"""
 
-    # ── SCHEDULE ───────────────────────────────────────────
-    if events:
-        rows = ""
-        for e in events:
-            start = format_event_time(e)
-            end = format_event_end_time(e)
-            title = e.get("summary", "Untitled")
-            location = e.get("location", "")
-            loc_html = f'<div class="t-loc">{location}</div>' if location else ""
-            end_html = f'<div class="t-end">&mdash; {end}</div>' if end else ""
-            rows += f"""
+
+def render_schedule(events, now):
+    """HTML for the timeline rows, or the empty-state paragraph."""
+    if not events:
+        return '<p class="empty">Nothing on the calendar.</p>'
+    rows = ""
+    for e in events:
+        start = format_event_time(e)
+        end = format_event_end_time(e)
+        title = e.get("summary", "Untitled")
+        location = e.get("location", "")
+        loc_html = f'<div class="t-loc">{location}</div>' if location else ""
+        end_html = f'<div class="t-end">&mdash; {end}</div>' if end else ""
+        rows += f"""
             <div class="t-row">
                 <div class="t-time">
                     <div class="t-start">{start}</div>
@@ -325,39 +321,70 @@ def render_html(events, tasks, ai, meeting_reviews):
                     {loc_html}
                 </div>
             </div>"""
-        schedule_html = rows
-    else:
-        schedule_html = '<p class="empty">Nothing on the calendar.</p>'
+    return rows
 
-    # ── TASKS ──────────────────────────────────────────────
-    if tasks:
-        rows = ""
-        for t in tasks:
-            title = t.get("title", "Untitled")
-            due = t.get("due", "")
-            list_title = t.get("_listTitle", "")
-            due_html = ""
-            if due:
-                due_dt = datetime.fromisoformat(due[:10]).date()
-                delta = (due_dt - now.date()).days
-                if delta < 0:
-                    cls, label = "capsule--decision", f"Overdue &middot; {due_dt.strftime('%b %-d')}"
-                elif delta == 0:
-                    cls, label = "capsule--decision", "Due today"
-                elif delta <= 3:
-                    cls, label = "capsule--caution", f"Due {due_dt.strftime('%b %-d')}"
-                else:
-                    cls, label = "capsule--neutral", f"Due {due_dt.strftime('%b %-d')}"
-                due_html = f'<span class="capsule {cls}">{label}</span>'
-            rows += f"""
+
+def render_tasks(tasks, now):
+    """HTML for the task rows, or the empty-state paragraph."""
+    if not tasks:
+        return '<p class="empty">Nothing outstanding.</p>'
+    rows = ""
+    for t in tasks:
+        title = t.get("title", "Untitled")
+        due = t.get("due", "")
+        list_title = t.get("_listTitle", "")
+        due_html = ""
+        if due:
+            due_dt = datetime.fromisoformat(due[:10]).date()
+            delta = (due_dt - now.date()).days
+            if delta < 0:
+                cls, label = "capsule--decision", f"Overdue &middot; {due_dt.strftime('%b %-d')}"
+            elif delta == 0:
+                cls, label = "capsule--decision", "Due today"
+            elif delta <= 3:
+                cls, label = "capsule--caution", f"Due {due_dt.strftime('%b %-d')}"
+            else:
+                cls, label = "capsule--neutral", f"Due {due_dt.strftime('%b %-d')}"
+            due_html = f'<span class="capsule {cls}">{label}</span>'
+        rows += f"""
             <div class="task-row">
                 <span class="capsule capsule--tinted">{list_title}</span>
                 <span class="task-title">{title}</span>
                 {due_html}
             </div>"""
-        tasks_html = rows
-    else:
-        tasks_html = '<p class="empty">Nothing outstanding.</p>'
+    return rows
+
+
+def build_live_data(events, tasks):
+    """Structured payload for client-side hydration of calendar + open work."""
+    now = datetime.now(ZoneInfo(TIMEZONE))
+    return {
+        "refreshed_at": now.isoformat(),
+        "refreshed_label": now.strftime("%-I:%M %p"),
+        "focus_html": render_focus_card(events, now),
+        "schedule_html": render_schedule(events, now),
+        "openwork_html": render_tasks(tasks, now),
+    }
+
+
+def write_live_json(events, tasks, path="live.json"):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(build_live_data(events, tasks), f, indent=2)
+
+
+def render_html(events, tasks, ai, meeting_reviews):
+    tz = ZoneInfo(TIMEZONE)
+    now = datetime.now(tz)
+    today_full = now.strftime("%A, %B %-d, %Y")
+    today_short = now.strftime("%b %-d, %Y").upper()
+    generated_at = now.strftime("%-I:%M %p")
+    iso_date = now.strftime("%m.%d.%y")
+    weekday = now.strftime("%A")
+    tz_label = TIMEZONE.replace("_", " ").split("/")[-1]
+
+    focus_card = render_focus_card(events, now)
+    schedule_html = render_schedule(events, now)
+    tasks_html = render_tasks(tasks, now)
 
     # ── PLAYS ──────────────────────────────────────────────
     plays_html = "".join(
@@ -615,6 +642,15 @@ def render_html(events, tasks, ai, meeting_reviews):
             font-size: var(--fs-eyebrow);
             font-weight: 600;
             color: var(--amber-500);
+        }}
+        .live-stamp {{
+            margin-left: auto;
+            font-family: var(--font-mono);
+            font-size: var(--fs-micro);
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            color: var(--quiet);
+            white-space: nowrap;
         }}
 
         /* ── Focus card ────────────────────────────────── */
@@ -926,8 +962,9 @@ def render_html(events, tasks, ai, meeting_reviews):
                 <div class="card-head">
                     <span class="card-num">03</span>
                     <span class="eyebrow">Schedule</span>
+                    <span class="live-stamp" title="Calendar auto-refreshes every 10 minutes">&#8635; {generated_at}</span>
                 </div>
-                <div class="timeline">{schedule_html}</div>
+                <div class="timeline" id="js-schedule">{schedule_html}</div>
             </section>
         </div>
 
@@ -936,8 +973,9 @@ def render_html(events, tasks, ai, meeting_reviews):
                 <div class="card-head">
                     <span class="card-num">04</span>
                     <span class="eyebrow">Open work</span>
+                    <span class="live-stamp" title="Open work auto-refreshes every 10 minutes">&#8635; {generated_at}</span>
                 </div>
-                <div class="tasks">{tasks_html}</div>
+                <div class="tasks" id="js-openwork">{tasks_html}</div>
             </section>
 
             <section class="card">
@@ -981,6 +1019,40 @@ def render_html(events, tasks, ai, meeting_reviews):
           .to('.hero-sub',       {{ opacity: 1, y: 0, duration: 0.4 }}, '-=0.55')
           .to('.focus-card',     {{ opacity: 1, y: 0, duration: 0.65 }}, '-=0.3')
           .to('.card',           {{ opacity: 1, y: 0, duration: 0.55, stagger: 0.09 }}, '-=0.45');
+
+        // ── Live refresh: re-hydrate calendar + open work from live.json ──
+        // The daily build embeds today's data; a separate workflow rewrites
+        // live.json every ~10 min with just calendar + tasks (no AI calls),
+        // so the page below stays current without a full rebuild.
+        async function hydrateLive() {{
+            try {{
+                const res = await fetch('live.json?t=' + Date.now(), {{ cache: 'no-store' }});
+                if (!res.ok) return;
+                const d = await res.json();
+                const sched = document.getElementById('js-schedule');
+                if (sched && typeof d.schedule_html === 'string') sched.innerHTML = d.schedule_html;
+                const work = document.getElementById('js-openwork');
+                if (work && typeof d.openwork_html === 'string') work.innerHTML = d.openwork_html;
+                const grid = document.querySelector('.grid-hero');
+                if (grid && typeof d.focus_html === 'string') {{
+                    let fc = grid.querySelector('.focus-card');
+                    if (d.focus_html.trim()) {{
+                        if (fc) fc.outerHTML = d.focus_html; else grid.insertAdjacentHTML('afterbegin', d.focus_html);
+                        fc = grid.querySelector('.focus-card');
+                        if (fc) {{ fc.style.opacity = '1'; fc.style.transform = 'none'; }}
+                    }} else if (fc) {{
+                        fc.remove();
+                    }}
+                }}
+                if (d.refreshed_label) {{
+                    document.querySelectorAll('.live-stamp').forEach(function (el) {{
+                        el.textContent = '\\u21BB ' + d.refreshed_label;
+                    }});
+                }}
+            }} catch (e) {{ /* keep the server-rendered content on any failure */ }}
+        }}
+        setTimeout(hydrateLive, 2800);          // after the entrance animations
+        setInterval(hydrateLive, 600000);       // every 10 minutes thereafter
     </script>
 </body>
 </html>"""
@@ -999,6 +1071,9 @@ def main():
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
     print("Generated index.html")
+
+    write_live_json(events, tasks)
+    print("Wrote live.json")
 
 
 if __name__ == "__main__":

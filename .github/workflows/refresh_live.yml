@@ -1,22 +1,22 @@
-name: Generate Daily Brief
+name: Refresh Live Data
 
 on:
   schedule:
-    - cron: "0 10 * * *"  # 10:00 UTC — adjust if you want a different Chicago time
-  workflow_dispatch:        # allows manual trigger from GitHub Actions UI
+    - cron: "*/10 * * * *"   # every 10 minutes (GitHub may delay short intervals)
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-# Serialize against the every-10-min refresh job so the two never push concurrently.
+# Serialize against the daily build so the two jobs never push concurrently.
 concurrency:
   group: brief-push
   cancel-in-progress: false
 
 jobs:
-  generate:
+  refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -27,24 +27,23 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements-live.txt
 
-      - name: Generate brief
+      - name: Fetch live data
         env:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           USER_TIMEZONE: "America/Chicago"
-        run: python generate_brief.py
+        run: python fetch_live.py
 
-      - name: Commit and push
+      - name: Commit and push live.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html live.json
+          git add live.json
           git diff --cached --quiet || {
-            git commit -m "Daily brief $(date +'%Y-%m-%d')"
+            git commit -m "Refresh live data $(date -u +'%Y-%m-%dT%H:%MZ')"
             git pull --rebase origin main
             git push
           }
