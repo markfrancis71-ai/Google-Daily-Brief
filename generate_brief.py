@@ -1,5 +1,6 @@
 import os
 import json
+import html
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 from google.oauth2.credentials import Credentials
@@ -279,8 +280,8 @@ def render_focus_card(events, now):
         return ""
     f_start = format_event_time(focus)
     f_end = format_event_end_time(focus)
-    f_title = focus.get("summary", "Untitled")
-    f_loc = focus.get("location", "")
+    f_title = html.escape(focus.get("summary") or "Untitled")
+    f_loc = html.escape(focus.get("location") or "")
     f_time_str = f"{f_start} &mdash; {f_end}" if f_end else f_start
     f_loc_html = f'<div class="focus-loc">{f_loc}</div>' if f_loc else ""
     start_iso = focus.get("start", {}).get("dateTime", "")
@@ -305,8 +306,8 @@ def render_schedule(events, now):
     for e in events:
         start = format_event_time(e)
         end = format_event_end_time(e)
-        title = e.get("summary", "Untitled")
-        location = e.get("location", "")
+        title = html.escape(e.get("summary") or "Untitled")
+        location = html.escape(e.get("location") or "")
         loc_html = f'<div class="t-loc">{location}</div>' if location else ""
         end_html = f'<div class="t-end">&mdash; {end}</div>' if end else ""
         rows += f"""
@@ -330,9 +331,9 @@ def render_tasks(tasks, now):
         return '<p class="empty">Nothing outstanding.</p>'
     rows = ""
     for t in tasks:
-        title = t.get("title", "Untitled")
+        title = html.escape(t.get("title") or "Untitled")
         due = t.get("due", "")
-        list_title = t.get("_listTitle", "")
+        list_title = html.escape(t.get("_listTitle") or "")
         due_html = ""
         if due:
             due_dt = datetime.fromisoformat(due[:10]).date()
@@ -355,12 +356,48 @@ def render_tasks(tasks, now):
     return rows
 
 
+def _live_event(e):
+    """Trimmed, pre-formatted event record for the client-side tick layer.
+
+    start_iso/end_iso are null for all-day events (skipped by the now/next
+    logic in the browser). Labels are formatted server-side so the page never
+    re-formats times — keeping client and server output identical.
+    """
+    start, end = e.get("start", {}), e.get("end", {})
+    if "dateTime" in start:
+        start_iso = start["dateTime"]
+        start_label = datetime.fromisoformat(start_iso).strftime("%-I:%M %p")
+    else:
+        start_iso, start_label = None, "All day"
+    if "dateTime" in end:
+        end_iso = end["dateTime"]
+        end_label = datetime.fromisoformat(end_iso).strftime("%-I:%M %p")
+    else:
+        end_iso, end_label = None, ""
+    return {
+        "start_iso": start_iso,
+        "end_iso": end_iso,
+        "start_label": start_label,
+        "end_label": end_label,
+        "summary": e.get("summary") or "Untitled",
+        "location": e.get("location") or "",
+    }
+
+
 def build_live_data(events, tasks):
-    """Structured payload for client-side hydration of calendar + open work."""
+    """Structured payload for client-side hydration of calendar + open work.
+
+    Carries both pre-rendered HTML (for an instant hydration swap) and a
+    structured event list (so the page can recompute the in-session / next-up
+    state every ~30s without a server round-trip). Row order in schedule_html
+    matches the events list, so the page can highlight the current row by index.
+    """
     now = datetime.now(ZoneInfo(TIMEZONE))
     return {
         "refreshed_at": now.isoformat(),
         "refreshed_label": now.strftime("%-I:%M %p"),
+        "tz_label": TIMEZONE.replace("_", " ").split("/")[-1],
+        "events": [_live_event(e) for e in events],
         "focus_html": render_focus_card(events, now),
         "schedule_html": render_schedule(events, now),
         "openwork_html": render_tasks(tasks, now),
@@ -790,6 +827,31 @@ def render_html(events, tasks, ai, meeting_reviews):
             color: var(--muted);
             margin-top: 4px;
         }}
+        /* Current meeting — set by the client tick layer every ~30s. */
+        .t-row.is-now {{
+            background: linear-gradient(90deg, rgba(245, 166, 35, 0.11), rgba(245, 166, 35, 0.02));
+            border-radius: var(--r-md);
+            border-bottom-color: transparent;
+        }}
+        .t-row.is-now .t-start {{ color: var(--amber-400); }}
+        .t-row.is-now .t-title {{ font-weight: 600; }}
+        .t-row.is-now .t-title::after {{
+            content: ' · NOW';
+            font-family: var(--font-mono);
+            font-size: var(--fs-micro);
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            color: var(--amber-400);
+        }}
+        .t-row.is-now .t-rail span {{
+            width: 11px; height: 11px;
+            background: var(--amber-400);
+            animation: now-pulse 2.2s ease-in-out infinite;
+        }}
+        @keyframes now-pulse {{
+            0%, 100% {{ box-shadow: 0 0 0 4px var(--navy-900), 0 0 0 6px rgba(245, 166, 35, 0.28), 0 0 16px rgba(245, 166, 35, 0.55); }}
+            50%      {{ box-shadow: 0 0 0 4px var(--navy-900), 0 0 0 9px rgba(245, 166, 35, 0.10), 0 0 26px rgba(245, 166, 35, 0.85); }}
+        }}
 
         /* ── Tasks ─────────────────────────────────────── */
         .task-row {{
@@ -1020,22 +1082,105 @@ def render_html(events, tasks, ai, meeting_reviews):
           .to('.focus-card',     {{ opacity: 1, y: 0, duration: 0.65 }}, '-=0.3')
           .to('.card',           {{ opacity: 1, y: 0, duration: 0.55, stagger: 0.09 }}, '-=0.45');
 
-        // ── Live refresh: re-hydrate calendar + open work from live.json ──
+        // ── Live layer ──────────────────────────────────────────────────
         // The daily build embeds today's data; a separate workflow rewrites
-        // live.json every ~10 min with just calendar + tasks (no AI calls),
-        // so the page below stays current without a full rebuild.
+        // live.json every ~10 min with just calendar + tasks (no AI calls).
+        // Between those refreshes a 30s tick recomputes — from the local clock —
+        // which meeting is in session (the "NOW" row) and what's next up (the
+        // focus card), so both stay current without a server round-trip.
+        var liveEvents = [];
+        var liveLoaded = false;
+        var shownFocusKey = null;
+
+        function liveEsc(s) {{
+            return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {{
+                return {{ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }}[c];
+            }});
+        }}
+        function liveParse(iso) {{ return iso ? new Date(iso) : null; }}
+        function liveFocusKey(f) {{
+            return f ? (f.ev.start_iso || '') + '|' + (f.ev.summary || '') + '|' + (f.inSession ? '1' : '0') : '';
+        }}
+        function liveFindFocus(events, now) {{
+            var upcoming = [];
+            for (var i = 0; i < events.length; i++) {{
+                var e = events[i];
+                if (!e.start_iso) continue;
+                var s = liveParse(e.start_iso), en = liveParse(e.end_iso);
+                if (en && s <= now && now <= en) return {{ ev: e, inSession: true }};
+                if (s > now) upcoming.push(e);
+            }}
+            if (upcoming.length) {{
+                upcoming.sort(function (a, b) {{ return liveParse(a.start_iso) - liveParse(b.start_iso); }});
+                return {{ ev: upcoming[0], inSession: false }};
+            }}
+            return null;
+        }}
+        function liveFocusHTML(f) {{
+            var e = f.ev;
+            var timeStr = e.end_label ? (e.start_label + ' \\u2014 ' + e.end_label) : e.start_label;
+            var label = f.inSession ? 'Focus \\u00B7 In session' : 'Focus \\u00B7 Next up';
+            var loc = e.location ? '<div class="focus-loc">' + liveEsc(e.location) + '</div>' : '';
+            return '<section class="focus-card">'
+                 + '<div class="eyebrow">' + label + '</div>'
+                 + '<div class="focus-time">' + liveEsc(timeStr) + '</div>'
+                 + '<h2 class="focus-title">' + liveEsc(e.summary || 'Untitled') + '</h2>'
+                 + loc + '</section>';
+        }}
+        function liveApplyFocus(now) {{
+            if (!liveLoaded) return;
+            var grid = document.querySelector('.grid-hero');
+            if (!grid) return;
+            var f = liveFindFocus(liveEvents, now);
+            var key = liveFocusKey(f);
+            if (key === shownFocusKey) return;          // unchanged — leave the DOM alone
+            shownFocusKey = key;
+            var fc = grid.querySelector('.focus-card');
+            if (f) {{
+                var markup = liveFocusHTML(f);
+                if (fc) fc.outerHTML = markup; else grid.insertAdjacentHTML('afterbegin', markup);
+                fc = grid.querySelector('.focus-card');
+                if (fc) {{ fc.style.opacity = '1'; fc.style.transform = 'none'; }}
+            }} else if (fc) {{
+                fc.remove();
+            }}
+        }}
+        function liveMarkNow(now) {{
+            if (!liveLoaded) return;
+            var rows = document.querySelectorAll('#js-schedule .t-row');
+            if (!rows.length) return;
+            var nowIdx = -1;
+            for (var i = 0; i < liveEvents.length; i++) {{
+                var e = liveEvents[i];
+                if (!e.start_iso) continue;
+                var s = liveParse(e.start_iso), en = liveParse(e.end_iso);
+                if (en && s <= now && now <= en) {{ nowIdx = i; break; }}
+            }}
+            for (var j = 0; j < rows.length; j++) rows[j].classList.toggle('is-now', j === nowIdx);
+        }}
+        function liveTick() {{
+            var now = new Date();
+            liveMarkNow(now);
+            liveApplyFocus(now);
+        }}
+
         async function hydrateLive() {{
             try {{
-                const res = await fetch('live.json?t=' + Date.now(), {{ cache: 'no-store' }});
-                if (!res.ok) return;
-                const d = await res.json();
-                const sched = document.getElementById('js-schedule');
+                var d;
+                if (window.__BRIEF_LIVE__) {{
+                    d = window.__BRIEF_LIVE__;
+                }} else {{
+                    var res = await fetch('live.json?t=' + Date.now(), {{ cache: 'no-store' }});
+                    if (!res.ok) return;
+                    d = await res.json();
+                }}
+                var sched = document.getElementById('js-schedule');
                 if (sched && typeof d.schedule_html === 'string') sched.innerHTML = d.schedule_html;
-                const work = document.getElementById('js-openwork');
+                var work = document.getElementById('js-openwork');
                 if (work && typeof d.openwork_html === 'string') work.innerHTML = d.openwork_html;
-                const grid = document.querySelector('.grid-hero');
+                var grid = document.querySelector('.grid-hero');
                 if (grid && typeof d.focus_html === 'string') {{
-                    let fc = grid.querySelector('.focus-card');
+                    var fc = grid.querySelector('.focus-card');
                     if (d.focus_html.trim()) {{
                         if (fc) fc.outerHTML = d.focus_html; else grid.insertAdjacentHTML('afterbegin', d.focus_html);
                         fc = grid.querySelector('.focus-card');
@@ -1049,10 +1194,18 @@ def render_html(events, tasks, ai, meeting_reviews):
                         el.textContent = '\\u21BB ' + d.refreshed_label;
                     }});
                 }}
+                liveEvents = Array.isArray(d.events) ? d.events : [];
+                liveLoaded = true;
+                // Match what the server just rendered, so the immediate tick only
+                // re-renders the focus card if it has actually drifted since then.
+                shownFocusKey = liveFocusKey(liveFindFocus(liveEvents, d.refreshed_at ? new Date(d.refreshed_at) : new Date()));
+                liveTick();
             }} catch (e) {{ /* keep the server-rendered content on any failure */ }}
         }}
+
         setTimeout(hydrateLive, 2800);          // after the entrance animations
-        setInterval(hydrateLive, 600000);       // every 10 minutes thereafter
+        setInterval(hydrateLive, 600000);       // re-fetch live.json every 10 min
+        setInterval(liveTick, 30000);           // recompute now/next every 30 s
     </script>
 </body>
 </html>"""
