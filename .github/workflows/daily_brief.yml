@@ -8,11 +8,6 @@ on:
 permissions:
   contents: write
 
-# Serialize against the every-10-min refresh job so the two never push concurrently.
-concurrency:
-  group: brief-push
-  cancel-in-progress: false
-
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -38,13 +33,26 @@ jobs:
           USER_TIMEZONE: "America/Chicago"
         run: python generate_brief.py
 
-      - name: Commit and push
+      - name: Commit and push index.html
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html live.json
-          git diff --cached --quiet || {
-            git commit -m "Daily brief $(date +'%Y-%m-%d')"
-            git pull --rebase origin main
-            git push
-          }
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "index.html unchanged — nothing to commit."
+            exit 0
+          fi
+          git commit -m "Daily brief $(date +'%Y-%m-%d')"
+          # Push with retry — live.json is owned by the refresh workflow, which
+          # touches a different file, so a rebase here never conflicts.
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              echo "Pushed on attempt $i."
+              exit 0
+            fi
+            echo "Push attempt $i failed; retrying..."
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 4))
+          done
+          echo "::error::Failed to push index.html after 5 attempts"
+          exit 1

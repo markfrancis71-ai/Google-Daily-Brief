@@ -1225,9 +1225,6 @@ def main():
         f.write(html)
     print("Generated index.html")
 
-    write_live_json(events, tasks)
-    print("Wrote live.json")
-
 
 if __name__ == "__main__":
     main()
