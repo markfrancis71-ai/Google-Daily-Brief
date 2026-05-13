@@ -1,82 +1,74 @@
 {
-  "refreshed_at": "2026-05-12T20:27:23.295967-05:00",
-  "refreshed_label": "8:27 PM",
+  "refreshed_at": "2026-05-13T00:31:02.533289-05:00",
+  "refreshed_label": "12:31 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "start_iso": "2026-05-12T09:00:00-05:00",
-      "end_iso": "2026-05-12T10:00:00-05:00",
-      "start_label": "9:00 AM",
-      "end_label": "10:00 AM",
-      "summary": "D&S Transformation Tech Partner Connect",
+      "start_iso": "2026-05-13T08:00:00-05:00",
+      "end_iso": "2026-05-13T09:00:00-05:00",
+      "start_label": "8:00 AM",
+      "end_label": "9:00 AM",
+      "summary": "TF Standup (series ends 7/9/26)",
+      "location": "CONF SAT HO Grace Hoppe"
+    },
+    {
+      "start_iso": "2026-05-13T08:30:00-05:00",
+      "end_iso": "2026-05-13T09:00:00-05:00",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM",
+      "summary": "AI Huddle - Claims EMG",
       "location": ""
     },
     {
-      "start_iso": "2026-05-12T09:00:00-05:00",
-      "end_iso": "2026-05-12T10:00:00-05:00",
+      "start_iso": "2026-05-13T09:00:00-05:00",
+      "end_iso": "2026-05-13T10:00:00-05:00",
       "start_label": "9:00 AM",
       "end_label": "10:00 AM",
-      "summary": "Architecture Huddle (series ends 12/29/26)",
-      "location": "EXEC SAT HO (BO3W.B322)"
-    },
-    {
-      "start_iso": "2026-05-12T10:00:00-05:00",
-      "end_iso": "2026-05-12T12:00:00-05:00",
-      "start_label": "10:00 AM",
-      "end_label": "12:00 PM",
-      "summary": "EA Monthly MBR",
+      "summary": "CTO Application Waivers: Auto Gen and Managed",
       "location": ""
     },
     {
-      "start_iso": "2026-05-12T11:30:00-05:00",
-      "end_iso": "2026-05-12T13:00:00-05:00",
-      "start_label": "11:30 AM",
+      "start_iso": "2026-05-13T10:30:00-05:00",
+      "end_iso": "2026-05-13T11:00:00-05:00",
+      "start_label": "10:30 AM",
+      "end_label": "11:00 AM",
+      "summary": "Weekly: Horizontal Platform WG",
+      "location": ""
+    },
+    {
+      "start_iso": "2026-05-13T12:00:00-05:00",
+      "end_iso": "2026-05-13T13:00:00-05:00",
+      "start_label": "12:00 PM",
       "end_label": "1:00 PM",
-      "summary": "Lunch / Desk Time",
+      "summary": "Team Lunch/Ask me Anything (series ends 4/15/27)",
       "location": ""
     },
     {
-      "start_iso": "2026-05-12T13:00:00-05:00",
-      "end_iso": "2026-05-12T13:50:00-05:00",
-      "start_label": "1:00 PM",
-      "end_label": "1:50 PM",
-      "summary": "FW: P&C Change Review Group (CRG)",
+      "start_iso": "2026-05-13T14:00:00-05:00",
+      "end_iso": "2026-05-13T14:25:00-05:00",
+      "start_label": "2:00 PM",
+      "end_label": "2:25 PM",
+      "summary": "Bi-weekly 1:1 w/Jon | Mark (series end 12/16/26)",
       "location": ""
     },
     {
-      "start_iso": "2026-05-12T14:30:00-05:00",
-      "end_iso": "2026-05-12T15:15:00-05:00",
+      "start_iso": "2026-05-13T14:30:00-05:00",
+      "end_iso": "2026-05-13T15:00:00-05:00",
       "start_label": "2:30 PM",
-      "end_label": "3:15 PM",
-      "summary": "Monthly | Gen AI Review & Prioritization",
+      "end_label": "3:00 PM",
+      "summary": "P&C Research Support",
       "location": ""
     },
     {
-      "start_iso": "2026-05-12T15:05:00-05:00",
-      "end_iso": "2026-05-12T16:00:00-05:00",
-      "start_label": "3:05 PM",
-      "end_label": "4:00 PM",
-      "summary": "Bi-weekly: Tech BoD (series ending 7/9/26)",
-      "location": ""
-    },
-    {
-      "start_iso": "2026-05-12T16:00:00-05:00",
-      "end_iso": "2026-05-12T16:55:00-05:00",
-      "start_label": "4:00 PM",
-      "end_label": "4:55 PM",
-      "summary": "P&C Insurance Architecture Overview (With Joe Monk)",
-      "location": ""
-    },
-    {
-      "start_iso": "2026-05-12T17:45:00-05:00",
-      "end_iso": "2026-05-12T18:45:00-05:00",
-      "start_label": "5:45 PM",
-      "end_label": "6:45 PM",
-      "summary": "Work on all outstanding tasks",
+      "start_iso": "2026-05-13T15:30:00-05:00",
+      "end_iso": "2026-05-13T15:55:00-05:00",
+      "start_label": "3:30 PM",
+      "end_label": "3:55 PM",
+      "summary": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis (series ends 1/5/27)",
       "location": ""
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">D&amp;S Transformation Tech Partner Connect</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Huddle (series ends 12/29/26)</div>\n                    <div class=\"t-loc\">EXEC SAT HO (BO3W.B322)</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Monthly MBR</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch / Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">FW: P&amp;C Change Review Group (CRG)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:15 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly | Gen AI Review &amp; Prioritization</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:05 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly: Tech BoD (series ending 7/9/26)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Insurance Architecture Overview (With Joe Monk)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">5:45 PM</div>\n                    <div class=\"t-end\">&mdash; 6:45 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Work on all outstanding tasks</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Forward P&amp;C research articles, white papers, and videos to Keith</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Forward tech investment summary shared with Michael Lesser to Keith</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to Cory Newsom about 2 way SMS</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 11</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Invite and Research material to Drew Hauffe</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 11</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Download Brand Elements</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 11</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Jeff and Suhas the updated TD stuff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 11</span>\n            </div>"
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">TF Standup (series ends 7/9/26)</h2>\n            <div class=\"focus-loc\">CONF SAT HO Grace Hoppe</div>\n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TF Standup (series ends 7/9/26)</div>\n                    <div class=\"t-loc\">CONF SAT HO Grace Hoppe</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AI Huddle - Claims EMG</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">CTO Application Waivers: Auto Gen and Managed</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly: Horizontal Platform WG</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Team Lunch/Ask me Anything (series ends 4/15/27)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Jon | Mark (series end 12/16/26)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Research Support</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis (series ends 1/5/27)</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Forward P&amp;C research articles, white papers, and videos to Keith</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 12</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Forward tech investment summary shared with Michael Lesser to Keith</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 12</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to Cory Newsom about 2 way SMS</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 11</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Invite and Research material to Drew Hauffe</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 11</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Download Brand Elements</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 11</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Jeff and Suhas the updated TD stuff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 11</span>\n            </div>"
 }
