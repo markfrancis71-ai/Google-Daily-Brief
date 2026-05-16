@@ -490,6 +490,55 @@
             font-weight: 700;
         }
 
+        /* ── Focus prep (inline inside focus-card) ─────── */
+        .focus-prep {
+            margin-top: var(--s-5);
+            padding-top: var(--s-4);
+            border-top: 1px solid rgba(245, 166, 35, 0.18);
+        }
+        .focus-prep-label {
+            font-family: var(--font-mono);
+            font-size: var(--fs-micro);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--amber-500);
+            margin-bottom: var(--s-3);
+        }
+        .focus-prep-summary {
+            font-size: var(--fs-body);
+            line-height: 1.55;
+            color: var(--bone);
+            margin-bottom: var(--s-3);
+        }
+        .focus-prep-tasks { list-style: none; }
+        .focus-prep-tasks li {
+            font-size: var(--fs-eyebrow);
+            line-height: 1.5;
+            color: var(--bone);
+            padding: 4px 0 4px 20px;
+            position: relative;
+        }
+        .focus-prep-tasks li::before {
+            content: '›';
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            color: var(--amber-500);
+            font-family: var(--font-mono);
+            font-weight: 700;
+        }
+
+        /* ── Meeting prep card (06) ────────────────────── */
+        .prep-time {
+            font-family: var(--font-mono);
+            font-size: var(--fs-eyebrow);
+            font-weight: 500;
+            color: var(--amber-400);
+            margin-bottom: var(--s-1);
+            letter-spacing: -0.005em;
+        }
+
         /* ── Empty state ───────────────────────────────── */
         .empty {
             font-family: var(--font-mono);
@@ -547,7 +596,7 @@
 
             <div class="hero-eyebrow">Daily Brief &middot; MAY 16, 2026</div>
             <div class="display-wrap">
-                <h1 class="display">Today<span class="dot">.</span><span class="day">Saturday &middot; <span id="js-refreshed" title="Calendar &amp; tasks auto-refresh every ~10 min">updated 12:09 PM</span></span></h1>
+                <h1 class="display">Today<span class="dot">.</span><span class="day">Saturday &middot; <span id="js-refreshed" title="Calendar &amp; tasks auto-refresh every ~10 min">updated 2:38 PM</span></span></h1>
             </div>
             <hr class="header-rule">
         </header>
@@ -555,17 +604,23 @@
         <div class="grid-hero">
             
         <section class="focus-card">
-            <div class="eyebrow">Focus &middot; Next up</div>
+            <div class="eyebrow">Focus &middot; In session</div>
             <div class="focus-time">2:30 PM &mdash; 3:30 PM</div>
             <h2 class="focus-title">Meeting with Jonathan</h2>
             
+            
+            <div class="focus-prep">
+                <div class="focus-prep-label">Prep</div>
+                <p class="focus-prep-summary">No sent email history with Jonathan was found — context on your past interactions is unavailable. No attendee details were provided, leaving the nature of your relationship with Jonathan and his role at Francis Inc. unclear. Review your records before the meeting to reconstruct where things stand.</p>
+                <ul class="focus-prep-tasks"><li>Pull the last three meeting notes or calendar entries with Jonathan to identify recurring themes and open items.</li><li>Check your inbox — not just sent mail — for any threads with Jonathan that surface outstanding commitments.</li><li>Confirm Jonathan&#x27;s role and any relevant context about his priorities at Francis Inc.</li><li>List any decisions or deliverables you were responsible for since your last interaction with Jonathan.</li><li>Prepare a clear agenda so the meeting has direction even without historical context loaded.</li></ul>
+            </div>
         </section>
             <section class="card">
                 <div class="card-head">
                     <span class="card-num">01</span>
                     <span class="eyebrow">Overview</span>
                 </div>
-                <p class="overview">Saturday runs light — one afternoon meeting with Jonathan and a single due task anchor the day. The friction is letting the Paver outreach slip past the meeting and into the weekend's drift. The Paver call is the only hard deadline; everything else is clear runway.</p>
+                <p class="overview">Saturday runs light — one meeting at 2:30 and a single due task. The friction is the Paver outreach sitting unresolved on a weekend, where response time will be slow. Get the task off the list early so the afternoon is clean.</p>
             </section>
         </div>
 
@@ -575,14 +630,14 @@
                     <span class="card-num">02</span>
                     <span class="eyebrow">Plays</span>
                 </div>
-                <ol class="plays"><li class="play"><span class="play-num">01</span><span class="play-text">Make the Paver call before noon — handle it while the morning is uncluttered and well before the Jonathan meeting pulls your focus.</span></li><li class="play"><span class="play-num">02</span><span class="play-text">Draft two or three specific questions for the Paver guy before you dial — price range, availability, and scope of work — so the call has a defined end.</span></li><li class="play"><span class="play-num">03</span><span class="play-text">Use the window between the Paver call and 2:30 PM to prep anything Jonathan needs from you — walk into that meeting ready, not reactive.</span></li><li class="play"><span class="play-num">04</span><span class="play-text">Cap the Jonathan meeting at the scheduled hour — 3:30 PM is the hard stop, so set the expectation at the open.</span></li></ol>
+                <ol class="plays"><li class="play"><span class="play-num">01</span><span class="play-text">Send the Paver guy a message before noon — it's due today and won't resolve itself.</span></li><li class="play"><span class="play-num">02</span><span class="play-text">Use the 1:00–2:00 PM window to decompress before the Jonathan meeting rather than scrambling into it.</span></li><li class="play"><span class="play-num">03</span><span class="play-text">Walk into the Jonathan meeting with a clear agenda — decide what you need out of it before you sit down.</span></li></ol>
             </section>
 
             <section class="card">
                 <div class="card-head">
                     <span class="card-num">03</span>
                     <span class="eyebrow">Schedule</span>
-                    <span class="live-stamp" title="Calendar auto-refreshes every 10 minutes">&#8635; 12:09 PM</span>
+                    <span class="live-stamp" title="Calendar auto-refreshes every 10 minutes">&#8635; 2:38 PM</span>
                 </div>
                 <div class="timeline" id="js-schedule">
             <div class="t-row">
@@ -604,7 +659,7 @@
                 <div class="card-head">
                     <span class="card-num">04</span>
                     <span class="eyebrow">Open work</span>
-                    <span class="live-stamp" title="Open work auto-refreshes every 10 minutes">&#8635; 12:09 PM</span>
+                    <span class="live-stamp" title="Open work auto-refreshes every 10 minutes">&#8635; 2:38 PM</span>
                 </div>
                 <div class="tasks" id="js-openwork">
             <div class="task-row">
@@ -622,6 +677,20 @@
                 <p class="empty">No meeting notes from the last 24 hours.</p>
             </section>
         </div>
+
+        <section class="card">
+            <div class="card-head">
+                <span class="card-num">06</span>
+                <span class="eyebrow">Meeting Prep</span>
+            </div>
+            
+            <div class="meeting">
+                <div class="prep-time">2:30 PM &mdash; 3:30 PM</div>
+                <h3 class="meeting-title">Meeting with Jonathan</h3>
+                <p class="meeting-summary">No sent email history with Jonathan was found — context on your past interactions is unavailable. No attendee details were provided, leaving the nature of your relationship with Jonathan and his role at Francis Inc. unclear. Review your records before the meeting to reconstruct where things stand.</p>
+                <div class="meeting-label">To prepare</div><ul class="meeting-takeaways"><li>Pull the last three meeting notes or calendar entries with Jonathan to identify recurring themes and open items.</li><li>Check your inbox — not just sent mail — for any threads with Jonathan that surface outstanding commitments.</li><li>Confirm Jonathan&#x27;s role and any relevant context about his priorities at Francis Inc.</li><li>List any decisions or deliverables you were responsible for since your last interaction with Jonathan.</li><li>Prepare a clear agenda so the meeting has direction even without historical context loaded.</li></ul>
+            </div>
+        </section>
 
         <footer>Francis Inc &middot; Daily Brief v1.0 &middot; 05.16.26</footer>
     </div>
@@ -673,7 +742,9 @@
         }
         function liveParse(iso) { return iso ? new Date(iso) : null; }
         function liveFocusKey(f) {
-            return f ? (f.ev.start_iso || '') + '|' + (f.ev.summary || '') + '|' + (f.inSession ? '1' : '0') : '';
+            if (!f) return '';
+            var prepKey = f.ev.prep ? '1' : '0';
+            return (f.ev.start_iso || '') + '|' + (f.ev.summary || '') + '|' + (f.inSession ? '1' : '0') + '|' + prepKey;
         }
         function liveFindFocus(events, now) {
             var upcoming = [];
@@ -695,11 +766,27 @@
             var timeStr = e.end_label ? (e.start_label + ' \u2014 ' + e.end_label) : e.start_label;
             var label = f.inSession ? 'Focus \u00B7 In session' : 'Focus \u00B7 Next up';
             var loc = e.location ? '<div class="focus-loc">' + liveEsc(e.location) + '</div>' : '';
+            var prep = '';
+            if (e.prep) {
+                var p = e.prep;
+                var summary = p.summary ? '<p class="focus-prep-summary">' + liveEsc(p.summary) + '</p>' : '';
+                var tasksHtml = '';
+                if (p.tasks && p.tasks.length) {
+                    for (var i = 0; i < p.tasks.length; i++) {
+                        tasksHtml += '<li>' + liveEsc(p.tasks[i]) + '</li>';
+                    }
+                    tasksHtml = '<ul class="focus-prep-tasks">' + tasksHtml + '</ul>';
+                }
+                prep = '<div class="focus-prep">'
+                     + '<div class="focus-prep-label">Prep</div>'
+                     + summary + tasksHtml
+                     + '</div>';
+            }
             return '<section class="focus-card">'
                  + '<div class="eyebrow">' + label + '</div>'
                  + '<div class="focus-time">' + liveEsc(timeStr) + '</div>'
                  + '<h2 class="focus-title">' + liveEsc(e.summary || 'Untitled') + '</h2>'
-                 + loc + '</section>';
+                 + loc + prep + '</section>';
         }
         function liveApplyFocus(now) {
             if (!liveLoaded) return;

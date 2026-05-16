@@ -1,18 +1,47 @@
 {
-  "refreshed_at": "2026-05-16T13:41:09.486367-05:00",
-  "refreshed_label": "1:41 PM",
+  "refreshed_at": "2026-05-16T14:38:30.132766-05:00",
+  "refreshed_label": "2:38 PM",
   "tz_label": "Chicago",
   "events": [
     {
+      "id": "2ef0vj3jl9dmsiafj87utu4jbd",
       "start_iso": "2026-05-16T14:30:00-05:00",
       "end_iso": "2026-05-16T15:30:00-05:00",
       "start_label": "2:30 PM",
       "end_label": "3:30 PM",
       "summary": "Meeting with Jonathan",
-      "location": ""
+      "location": "",
+      "prep": {
+        "summary": "No sent email history with Jonathan was found \u2014 context on your past interactions is unavailable. No attendee details were provided, leaving the nature of your relationship with Jonathan and his role at Francis Inc. unclear. Review your records before the meeting to reconstruct where things stand.",
+        "tasks": [
+          "Pull the last three meeting notes or calendar entries with Jonathan to identify recurring themes and open items.",
+          "Check your inbox \u2014 not just sent mail \u2014 for any threads with Jonathan that surface outstanding commitments.",
+          "Confirm Jonathan's role and any relevant context about his priorities at Francis Inc.",
+          "List any decisions or deliverables you were responsible for since your last interaction with Jonathan.",
+          "Prepare a clear agenda so the meeting has direction even without historical context loaded."
+        ],
+        "title": "Meeting with Jonathan",
+        "start_label": "2:30 PM",
+        "end_label": "3:30 PM"
+      }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">2:30 PM &mdash; 3:30 PM</div>\n            <h2 class=\"focus-title\">Meeting with Jonathan</h2>\n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; In session</div>\n            <div class=\"focus-time\">2:30 PM &mdash; 3:30 PM</div>\n            <h2 class=\"focus-title\">Meeting with Jonathan</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">No sent email history with Jonathan was found \u2014 context on your past interactions is unavailable. No attendee details were provided, leaving the nature of your relationship with Jonathan and his role at Francis Inc. unclear. Review your records before the meeting to reconstruct where things stand.</p>\n                <ul class=\"focus-prep-tasks\"><li>Pull the last three meeting notes or calendar entries with Jonathan to identify recurring themes and open items.</li><li>Check your inbox \u2014 not just sent mail \u2014 for any threads with Jonathan that surface outstanding commitments.</li><li>Confirm Jonathan&#x27;s role and any relevant context about his priorities at Francis Inc.</li><li>List any decisions or deliverables you were responsible for since your last interaction with Jonathan.</li><li>Prepare a clear agenda so the meeting has direction even without historical context loaded.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Meeting with Jonathan</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to the first Paver guy for more information</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>"
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to the first Paver guy for more information</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
+  "preps": {
+    "2ef0vj3jl9dmsiafj87utu4jbd": {
+      "summary": "No sent email history with Jonathan was found \u2014 context on your past interactions is unavailable. No attendee details were provided, leaving the nature of your relationship with Jonathan and his role at Francis Inc. unclear. Review your records before the meeting to reconstruct where things stand.",
+      "tasks": [
+        "Pull the last three meeting notes or calendar entries with Jonathan to identify recurring themes and open items.",
+        "Check your inbox \u2014 not just sent mail \u2014 for any threads with Jonathan that surface outstanding commitments.",
+        "Confirm Jonathan's role and any relevant context about his priorities at Francis Inc.",
+        "List any decisions or deliverables you were responsible for since your last interaction with Jonathan.",
+        "Prepare a clear agenda so the meeting has direction even without historical context loaded."
+      ],
+      "title": "Meeting with Jonathan",
+      "start_label": "2:30 PM",
+      "end_label": "3:30 PM"
+    }
+  }
 }
