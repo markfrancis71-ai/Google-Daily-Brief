@@ -881,6 +881,19 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             .grid-hero:has(.focus-card), .grid-2 {{ grid-template-columns: 1fr; }}
         }}
 
+        /* Header main split — title block on the left, Overview card on the right */
+        .header-main {{
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: var(--s-6);
+            align-items: end;
+            margin-bottom: var(--s-6);
+        }}
+        .header-main > .card {{ margin-bottom: 0; }}
+        @media (max-width: 960px) {{
+            .header-main {{ grid-template-columns: 1fr; gap: var(--s-5); }}
+        }}
+
         /* Faint grid backdrop */
         .container::before {{
             content: '';
@@ -1381,9 +1394,19 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
                 <div class="clock" id="clock">--:--:-- --<span class="tz">{tz_label}</span></div>
             </div>
 
-            <div class="hero-eyebrow">Daily Brief &middot; {today_short}</div>
-            <div class="display-wrap">
-                <h1 class="display">Today<span class="dot">.</span><span class="day">{weekday} &middot; <span id="js-refreshed" title="Calendar &amp; tasks auto-refresh every ~10 min">updated {generated_at}</span></span></h1>
+            <div class="header-main">
+                <div class="header-titles">
+                    <div class="hero-eyebrow">Daily Brief &middot; {today_short}</div>
+                    <div class="display-wrap">
+                        <h1 class="display">Today<span class="dot">.</span><span class="day">{weekday} &middot; <span id="js-refreshed" title="Calendar &amp; tasks auto-refresh every ~10 min">updated {generated_at}</span></span></h1>
+                    </div>
+                </div>
+                <section class="card">
+                    <div class="card-head">
+                        <span class="eyebrow">Overview</span>
+                    </div>
+                    <p class="overview">{ai.get("overview", "")}</p>
+                </section>
             </div>
             <hr class="header-rule">
         </header>
@@ -1393,9 +1416,10 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             <section class="card">
                 <div class="card-head">
                     <span class="card-num">01</span>
-                    <span class="eyebrow">Overview</span>
+                    <span class="eyebrow">Schedule</span>
+                    <span class="live-stamp" title="Calendar auto-refreshes every 10 minutes">&#8635; {generated_at}</span>
                 </div>
-                <p class="overview">{ai.get("overview", "")}</p>
+                <div class="timeline" id="js-schedule">{schedule_html}</div>
             </section>
         </div>
 
@@ -1411,10 +1435,10 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             <section class="card">
                 <div class="card-head">
                     <span class="card-num">03</span>
-                    <span class="eyebrow">Schedule</span>
-                    <span class="live-stamp" title="Calendar auto-refreshes every 10 minutes">&#8635; {generated_at}</span>
+                    <span class="eyebrow">Open work</span>
+                    <span class="live-stamp" title="Open work auto-refreshes every 10 minutes">&#8635; {generated_at}</span>
                 </div>
-                <div class="timeline" id="js-schedule">{schedule_html}</div>
+                <div class="tasks" id="js-openwork">{tasks_html}</div>
             </section>
         </div>
 
@@ -1422,28 +1446,19 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             <section class="card">
                 <div class="card-head">
                     <span class="card-num">04</span>
-                    <span class="eyebrow">Open work</span>
-                    <span class="live-stamp" title="Open work auto-refreshes every 10 minutes">&#8635; {generated_at}</span>
+                    <span class="eyebrow">Yesterday</span>
                 </div>
-                <div class="tasks" id="js-openwork">{tasks_html}</div>
+                {yesterday_inner}
             </section>
 
             <section class="card">
                 <div class="card-head">
                     <span class="card-num">05</span>
-                    <span class="eyebrow">Yesterday</span>
+                    <span class="eyebrow">Meeting Prep</span>
                 </div>
-                {yesterday_inner}
+                {meeting_prep_html}
             </section>
         </div>
-
-        <section class="card">
-            <div class="card-head">
-                <span class="card-num">06</span>
-                <span class="eyebrow">Meeting Prep</span>
-            </div>
-            {meeting_prep_html}
-        </section>
 
         <footer>Francis Inc &middot; Daily Brief v1.0 &middot; {iso_date}</footer>
     </div>
