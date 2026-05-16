@@ -152,28 +152,45 @@ def extract_meeting_prep(event):
     return match.group(1).strip()
 
 
-def _extract_prep_search_keys(prep_block, attendees):
+_PREP_STOP_WORDS = {
+    "meeting", "prep", "the", "and", "for", "with", "this", "that", "our",
+    "sync", "review", "standup", "call", "discussion", "weekly", "monthly",
+    "quarterly", "daily", "1:1", "one", "on", "one-on-one", "agenda",
+    "follow", "followup", "follow-up", "kickoff", "kick", "off",
+}
+
+
+def _extract_prep_search_keys(prep_block, event_summary, attendees):
     """Build a list of search terms for the sent emails folder.
 
-    Prefer names/topics named in the prep block (heuristic: capitalized word
-    runs), then fall back to attendee display names / email local-parts. The
-    caller treats this as 'prep block first, attendees second' per user choice.
+    The folder is full of summary docs labeled by the person/group/meeting
+    name, so name-based filename matches are the strongest signal. Sources,
+    in priority order:
+      1. Names/topics named in the 'Meeting Prep:' block.
+      2. Names in the event title itself ('1:1 with Jonathan' → Jonathan).
+      3. Attendee display names / email local-parts.
     """
     keys = []
     seen = set()
 
     def add(term):
         t = (term or "").strip()
-        if not t or t.lower() in seen or len(t) < 3:
+        if not t or t.lower() in seen or len(t) < 3 or t.lower() in _PREP_STOP_WORDS:
             return
         seen.add(t.lower())
         keys.append(t)
 
-    stop = {"meeting", "prep", "the", "and", "for", "with", "this", "that", "our"}
-    for match in re.findall(r"[A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,2}", prep_block or ""):
-        if match.lower() in stop:
-            continue
-        add(match)
+    def harvest(text):
+        for match in re.findall(r"[A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,2}", text or ""):
+            # Strip trailing stop words from multi-token matches
+            # ("Andre With" → "Andre"). Skip the match entirely if every token
+            # is a stop word.
+            tokens = [t for t in match.split() if t.lower() not in _PREP_STOP_WORDS]
+            if tokens:
+                add(" ".join(tokens))
+
+    harvest(prep_block)
+    harvest(event_summary)
 
     for a in attendees or []:
         name = a.get("displayName") or ""
@@ -186,13 +203,15 @@ def _extract_prep_search_keys(prep_block, attendees):
     return keys
 
 
-def _search_sent_emails_for_keys(drive, docs_api, folder_id, keys, total_limit=5):
+def _search_sent_emails_for_keys(drive, docs_api, folder_id, keys, total_limit=6):
     """Return up to total_limit unique sent-email docs that match any key.
 
-    Each key is sent to Drive as a fullText query restricted to the configured
-    folder; results are merged in iteration order, deduped by file id, and the
-    first matching document text is truncated so we don't blow up the AI
-    prompt with multi-thousand-line email chains.
+    The user labels docs in this folder by the person/group/meeting name, so
+    'name contains' (filename match) is the strongest signal and is queried
+    first per key. 'fullText contains' (body match) is queried as a fallback
+    when the filename query returns nothing. Results are deduped by file id
+    across keys; each doc is truncated so we don't blow up the AI prompt
+    with year-long meeting histories.
     """
     seen = set()
     results = []
@@ -200,22 +219,25 @@ def _search_sent_emails_for_keys(drive, docs_api, folder_id, keys, total_limit=5
         if len(results) >= total_limit:
             break
         safe = key.replace("\\", "\\\\").replace("'", "\\'")
-        q = (
+        base = (
             f"'{folder_id}' in parents"
             f" and mimeType='application/vnd.google-apps.document'"
             f" and trashed=false"
-            f" and fullText contains '{safe}'"
         )
-        try:
-            files = drive.files().list(
-                q=q,
-                fields="files(id, name, modifiedTime)",
-                orderBy="modifiedTime desc",
-                pageSize=3,
-            ).execute().get("files", [])
-        except Exception as e:
-            print(f"Drive search failed for {key!r}: {type(e).__name__}: {e}")
-            continue
+        files = []
+        for clause in (f"name contains '{safe}'", f"fullText contains '{safe}'"):
+            try:
+                files = drive.files().list(
+                    q=f"{base} and {clause}",
+                    fields="files(id, name, modifiedTime)",
+                    orderBy="modifiedTime desc",
+                    pageSize=5,
+                ).execute().get("files", [])
+            except Exception as e:
+                print(f"Drive search failed for {key!r} ({clause}): {type(e).__name__}: {e}")
+                continue
+            if files:
+                break  # Don't run the body-text query if the filename query already hit.
         for f in files:
             if f["id"] in seen or len(results) >= total_limit:
                 continue
@@ -227,7 +249,7 @@ def _search_sent_emails_for_keys(drive, docs_api, folder_id, keys, total_limit=5
                 print(f"Doc fetch failed for {f.get('name')!r}: {type(e).__name__}: {e}")
                 continue
             if text:
-                results.append({"title": f["name"], "content": text[:1500]})
+                results.append({"title": f["name"], "content": text[:1800]})
     return results
 
 
@@ -292,7 +314,7 @@ def get_ai_meeting_prep(event, prep_block, attendees, related_docs):
             f"### {d['title']}\n{d['content']}" for d in related_docs
         )
     else:
-        doc_str = "(no recent sent emails matched the search terms)"
+        doc_str = "(no past meeting summaries matched — the folder may not have a doc for this person/group yet)"
 
     prep_block_str = (prep_block or "").strip() or "(empty — use default behavior)"
 
@@ -308,12 +330,13 @@ Attendees:
 Prep instructions (from the meeting description):
 {prep_block_str}
 
-Excerpts from the user's sent emails that may be relevant:
+Past meeting summaries with this person/group/topic (these are the user's own notes from prior meetings — typically labeled by the person's name, the group's name, or the meeting name; ordered most recent first):
 {doc_str}
 
 Behavior:
 - If the prep instructions contain explicit overriding directions (e.g., "review the spec doc", "draft three options", "compare A vs B"), follow those instructions exactly — tune the summary and tasks to match.
-- Otherwise, default to: a 2-3 sentence summary of where things stand with the meeting person/topic based on the sent-email excerpts, plus a task list of what you should research, decide, or be ready to discuss.
+- Otherwise, default to: a 2-3 sentence background summary of the working relationship/recurring themes based on the past meeting summaries (name the most recent concrete commitments, decisions, or open threads), plus a task list of what you should research, decide, follow up on, or be ready to discuss in today's meeting.
+- Lean heavily on the past summaries when they exist — call out unresolved items by name, and reference dates/specifics from the notes when useful. If no past summaries were found, say so plainly and produce a generic prep list based on the meeting title.
 
 Return JSON only:
 - "summary": string (2-3 sentences)
@@ -377,7 +400,7 @@ def build_meeting_preps(creds, events):
         attendees = event.get("attendees") or []
         related = []
         if folder_id:
-            keys = _extract_prep_search_keys(block, attendees)
+            keys = _extract_prep_search_keys(block, event.get("summary") or "", attendees)
             if keys:
                 related = _search_sent_emails_for_keys(drive, docs_api, folder_id, keys)
         result = get_ai_meeting_prep(event, block, attendees, related)
