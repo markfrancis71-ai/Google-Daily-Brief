@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import html
 from datetime import datetime, timedelta, timezone
@@ -130,6 +131,106 @@ def get_meeting_notes(creds):
     return meeting_notes
 
 
+def extract_meeting_prep(event):
+    """Return the prep block text from an event's description, or None.
+
+    Convention: a line starting with 'Meeting Prep:' (case-insensitive) marks
+    the block; everything after the colon through the end of the description is
+    treated as prep content. Google Calendar descriptions are HTML, so <br>/<p>
+    are normalized to newlines and remaining tags stripped before matching.
+    """
+    desc = event.get("description") or ""
+    if not desc.strip():
+        return None
+    desc = re.sub(r"<br\s*/?>", "\n", desc, flags=re.IGNORECASE)
+    desc = re.sub(r"</p\s*>", "\n", desc, flags=re.IGNORECASE)
+    desc = re.sub(r"<[^>]+>", "", desc)
+    desc = html.unescape(desc)
+    match = re.search(r"meeting\s*prep\s*:\s*(.*)", desc, flags=re.IGNORECASE | re.DOTALL)
+    if not match:
+        return None
+    return match.group(1).strip()
+
+
+def _extract_prep_search_keys(prep_block, attendees):
+    """Build a list of search terms for the sent emails folder.
+
+    Prefer names/topics named in the prep block (heuristic: capitalized word
+    runs), then fall back to attendee display names / email local-parts. The
+    caller treats this as 'prep block first, attendees second' per user choice.
+    """
+    keys = []
+    seen = set()
+
+    def add(term):
+        t = (term or "").strip()
+        if not t or t.lower() in seen or len(t) < 3:
+            return
+        seen.add(t.lower())
+        keys.append(t)
+
+    stop = {"meeting", "prep", "the", "and", "for", "with", "this", "that", "our"}
+    for match in re.findall(r"[A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,2}", prep_block or ""):
+        if match.lower() in stop:
+            continue
+        add(match)
+
+    for a in attendees or []:
+        name = a.get("displayName") or ""
+        if name:
+            add(name)
+        email = a.get("email") or ""
+        if email and "@" in email:
+            add(email.split("@")[0].replace(".", " ").replace("_", " "))
+
+    return keys
+
+
+def _search_sent_emails_for_keys(drive, docs_api, folder_id, keys, total_limit=5):
+    """Return up to total_limit unique sent-email docs that match any key.
+
+    Each key is sent to Drive as a fullText query restricted to the configured
+    folder; results are merged in iteration order, deduped by file id, and the
+    first matching document text is truncated so we don't blow up the AI
+    prompt with multi-thousand-line email chains.
+    """
+    seen = set()
+    results = []
+    for key in keys:
+        if len(results) >= total_limit:
+            break
+        safe = key.replace("\\", "\\\\").replace("'", "\\'")
+        q = (
+            f"'{folder_id}' in parents"
+            f" and mimeType='application/vnd.google-apps.document'"
+            f" and trashed=false"
+            f" and fullText contains '{safe}'"
+        )
+        try:
+            files = drive.files().list(
+                q=q,
+                fields="files(id, name, modifiedTime)",
+                orderBy="modifiedTime desc",
+                pageSize=3,
+            ).execute().get("files", [])
+        except Exception as e:
+            print(f"Drive search failed for {key!r}: {type(e).__name__}: {e}")
+            continue
+        for f in files:
+            if f["id"] in seen or len(results) >= total_limit:
+                continue
+            seen.add(f["id"])
+            try:
+                doc = docs_api.documents().get(documentId=f["id"]).execute()
+                text = extract_doc_text(doc)
+            except Exception as e:
+                print(f"Doc fetch failed for {f.get('name')!r}: {type(e).__name__}: {e}")
+                continue
+            if text:
+                results.append({"title": f["name"], "content": text[:1500]})
+    return results
+
+
 def get_ai_summary(context):
     import anthropic
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=8)
@@ -163,6 +264,128 @@ Return JSON only. Keys: "overview" (string), "suggestions" (array of strings).
             "overview": "AI insights are unavailable right now — the schedule and open work below are current.",
             "suggestions": [],
         }
+
+
+def get_ai_meeting_prep(event, prep_block, attendees, related_docs):
+    """Ask Claude for a summary + task list to prep for one meeting.
+
+    If the prep block contains explicit overriding instructions Claude follows
+    them; otherwise it falls back to summarizing the meeting person/topic from
+    the sent-email excerpts and producing a generic 'to prepare' task list.
+    """
+    import anthropic
+    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=8)
+
+    title = event.get("summary") or "Untitled"
+    attendee_lines = []
+    for a in attendees or []:
+        nm = (a.get("displayName") or "").strip()
+        em = (a.get("email") or "").strip()
+        if nm and em:
+            attendee_lines.append(f"- {nm} <{em}>")
+        elif nm or em:
+            attendee_lines.append(f"- {nm or em}")
+    attendee_str = "\n".join(attendee_lines) or "- (no attendees listed)"
+
+    if related_docs:
+        doc_str = "\n\n---\n\n".join(
+            f"### {d['title']}\n{d['content']}" for d in related_docs
+        )
+    else:
+        doc_str = "(no recent sent emails matched the search terms)"
+
+    prep_block_str = (prep_block or "").strip() or "(empty — use default behavior)"
+
+    prompt = f"""You are preparing the user for a meeting at Francis Inc.
+
+Voice: Declarative. Plain. Em-dashes liberally. Lead with the verb. No emoji, no hedging, no marketing fluff. Address the reader as "you".
+
+Meeting: {title}
+
+Attendees:
+{attendee_str}
+
+Prep instructions (from the meeting description):
+{prep_block_str}
+
+Excerpts from the user's sent emails that may be relevant:
+{doc_str}
+
+Behavior:
+- If the prep instructions contain explicit overriding directions (e.g., "review the spec doc", "draft three options", "compare A vs B"), follow those instructions exactly — tune the summary and tasks to match.
+- Otherwise, default to: a 2-3 sentence summary of where things stand with the meeting person/topic based on the sent-email excerpts, plus a task list of what you should research, decide, or be ready to discuss.
+
+Return JSON only:
+- "summary": string (2-3 sentences)
+- "tasks": array of 3-5 strings, each a single declarative sentence leading with a verb
+
+JSON only."""
+
+    try:
+        message = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=1024,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = message.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+        parsed = json.loads(raw)
+        return {
+            "summary": parsed.get("summary", ""),
+            "tasks": parsed.get("tasks", []) or [],
+        }
+    except Exception as e:
+        print(f"Meeting prep unavailable for {title!r} ({type(e).__name__}: {e}); skipping.")
+        return {
+            "summary": "Prep unavailable — Claude was unreachable when this brief was built.",
+            "tasks": [],
+        }
+
+
+def build_meeting_preps(creds, events):
+    """For each event with a 'Meeting Prep:' marker, gather references from
+    the sent emails folder and produce a summary + task list. Keyed by event
+    id so the live layer can map prep back onto whichever event is in focus.
+    """
+    needs = []
+    for e in events:
+        block = extract_meeting_prep(e)
+        if block is not None:
+            needs.append((e, block))
+    if not needs:
+        return {}
+
+    drive = build("drive", "v3", credentials=creds)
+    docs_api = build("docs", "v1", credentials=creds)
+
+    folder_id = None
+    try:
+        folders = drive.files().list(
+            q=f"name='{MEETING_NOTES_FOLDER}' and mimeType='application/vnd.google-apps.folder' and trashed=false",
+            fields="files(id, name)",
+        ).execute().get("files", [])
+        if folders:
+            folder_id = folders[0]["id"]
+        else:
+            print(f"Folder {MEETING_NOTES_FOLDER!r} not found — prep will run without email context.")
+    except Exception as e:
+        print(f"Folder lookup failed ({type(e).__name__}: {e}); prep will run without email context.")
+
+    preps = {}
+    for event, block in needs:
+        attendees = event.get("attendees") or []
+        related = []
+        if folder_id:
+            keys = _extract_prep_search_keys(block, attendees)
+            if keys:
+                related = _search_sent_emails_for_keys(drive, docs_api, folder_id, keys)
+        result = get_ai_meeting_prep(event, block, attendees, related)
+        result["title"] = event.get("summary") or "Untitled"
+        result["start_label"] = format_event_time(event)
+        result["end_label"] = format_event_end_time(event)
+        preps[event["id"]] = result
+    return preps
 
 
 def get_ai_meeting_reviews(meeting_notes):
@@ -290,8 +513,31 @@ def build_context(events, tasks):
 
 # ── Reusable section renderers (shared by the daily build and live.json) ──
 
-def render_focus_card(events, now):
-    """HTML for the focus card (currently-running or next-up event); '' if none."""
+def _render_focus_prep_html(prep):
+    """Inline prep block rendered inside the focus card (and matched by the
+    client-side liveFocusHTML below — keep the two in sync)."""
+    if not prep:
+        return ""
+    summary = html.escape(prep.get("summary") or "")
+    tasks = prep.get("tasks") or []
+    tasks_html = "".join(f"<li>{html.escape(t)}</li>" for t in tasks)
+    tasks_block = f'<ul class="focus-prep-tasks">{tasks_html}</ul>' if tasks_html else ""
+    summary_block = f'<p class="focus-prep-summary">{summary}</p>' if summary else ""
+    return f"""
+            <div class="focus-prep">
+                <div class="focus-prep-label">Prep</div>
+                {summary_block}
+                {tasks_block}
+            </div>"""
+
+
+def render_focus_card(events, now, preps=None):
+    """HTML for the focus card (currently-running or next-up event); '' if none.
+
+    When ``preps`` is supplied and contains an entry for the focus event's id,
+    a prep block is rendered below the title — same data the 06 Meeting Prep
+    card uses, just inline so an in-session meeting shows everything at once.
+    """
     focus = get_focus_event(events, now)
     if not focus:
         return ""
@@ -306,13 +552,48 @@ def render_focus_card(events, now):
         label = "Focus &middot; In session"
     else:
         label = "Focus &middot; Next up"
+    prep_html = _render_focus_prep_html((preps or {}).get(focus.get("id")))
     return f"""
         <section class="focus-card">
             <div class="eyebrow">{label}</div>
             <div class="focus-time">{f_time_str}</div>
             <h2 class="focus-title">{f_title}</h2>
             {f_loc_html}
+            {prep_html}
         </section>"""
+
+
+def render_meeting_prep(events, preps):
+    """HTML rows for the 06 Meeting Prep card — one entry per event whose
+    description contained a 'Meeting Prep:' marker, in calendar order."""
+    if not preps:
+        return '<p class="empty">No meetings with prep notes today.</p>'
+    rows = ""
+    for e in events:
+        prep = preps.get(e.get("id"))
+        if not prep:
+            continue
+        title = html.escape(e.get("summary") or "Untitled")
+        start = format_event_time(e)
+        end = format_event_end_time(e)
+        time_str = f"{start} &mdash; {end}" if end else start
+        summary = html.escape(prep.get("summary") or "")
+        tasks = prep.get("tasks") or []
+        tasks_html = "".join(f"<li>{html.escape(t)}</li>" for t in tasks)
+        tasks_block = (
+            f'<div class="meeting-label">To prepare</div>'
+            f'<ul class="meeting-takeaways">{tasks_html}</ul>'
+            if tasks_html else ""
+        )
+        summary_block = f'<p class="meeting-summary">{summary}</p>' if summary else ""
+        rows += f"""
+            <div class="meeting">
+                <div class="prep-time">{time_str}</div>
+                <h3 class="meeting-title">{title}</h3>
+                {summary_block}
+                {tasks_block}
+            </div>"""
+    return rows or '<p class="empty">No meetings with prep notes today.</p>'
 
 
 def render_schedule(events, now):
@@ -373,12 +654,14 @@ def render_tasks(tasks, now):
     return rows
 
 
-def _live_event(e):
+def _live_event(e, preps=None):
     """Trimmed, pre-formatted event record for the client-side tick layer.
 
     start_iso/end_iso are null for all-day events (skipped by the now/next
     logic in the browser). Labels are formatted server-side so the page never
-    re-formats times — keeping client and server output identical.
+    re-formats times — keeping client and server output identical. ``prep``
+    carries the meeting-prep summary + tasks so liveFocusHTML can re-render
+    the focus card with prep when the in-session meeting changes.
     """
     start, end = e.get("start", {}), e.get("end", {})
     if "dateTime" in start:
@@ -392,41 +675,56 @@ def _live_event(e):
     else:
         end_iso, end_label = None, ""
     return {
+        "id": e.get("id") or "",
         "start_iso": start_iso,
         "end_iso": end_iso,
         "start_label": start_label,
         "end_label": end_label,
         "summary": e.get("summary") or "Untitled",
         "location": e.get("location") or "",
+        "prep": (preps or {}).get(e.get("id")),
     }
 
 
-def build_live_data(events, tasks):
+def build_live_data(events, tasks, preps=None):
     """Structured payload for client-side hydration of calendar + open work.
 
     Carries both pre-rendered HTML (for an instant hydration swap) and a
     structured event list (so the page can recompute the in-session / next-up
     state every ~30s without a server round-trip). Row order in schedule_html
     matches the events list, so the page can highlight the current row by index.
+    ``preps`` is keyed by event id and round-trips through live.json so the
+    10-min refresh worker (fetch_live.py) doesn't need to re-call Claude.
     """
     now = datetime.now(ZoneInfo(TIMEZONE))
+    preps = preps or {}
     return {
         "refreshed_at": now.isoformat(),
         "refreshed_label": now.strftime("%-I:%M %p"),
         "tz_label": TIMEZONE.replace("_", " ").split("/")[-1],
-        "events": [_live_event(e) for e in events],
-        "focus_html": render_focus_card(events, now),
+        "events": [_live_event(e, preps) for e in events],
+        "focus_html": render_focus_card(events, now, preps),
         "schedule_html": render_schedule(events, now),
         "openwork_html": render_tasks(tasks, now),
+        "preps": preps,
     }
 
 
-def write_live_json(events, tasks, path="live.json"):
+def write_live_json(events, tasks, preps=None, path="live.json"):
+    """Write live.json. When ``preps`` is omitted, preserve whatever preps the
+    previous live.json carried so the cheap 10-min refresh keeps the prep
+    block intact without re-running the Claude calls."""
+    if preps is None:
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                preps = json.load(f).get("preps", {}) or {}
+        except (FileNotFoundError, json.JSONDecodeError):
+            preps = {}
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(build_live_data(events, tasks), f, indent=2)
+        json.dump(build_live_data(events, tasks, preps), f, indent=2)
 
 
-def render_html(events, tasks, ai, meeting_reviews):
+def render_html(events, tasks, ai, meeting_reviews, preps=None):
     tz = ZoneInfo(TIMEZONE)
     now = datetime.now(tz)
     today_full = now.strftime("%A, %B %-d, %Y")
@@ -436,9 +734,10 @@ def render_html(events, tasks, ai, meeting_reviews):
     weekday = now.strftime("%A")
     tz_label = TIMEZONE.replace("_", " ").split("/")[-1]
 
-    focus_card = render_focus_card(events, now)
+    focus_card = render_focus_card(events, now, preps)
     schedule_html = render_schedule(events, now)
     tasks_html = render_tasks(tasks, now)
+    meeting_prep_html = render_meeting_prep(events, preps or {})
 
     # ── PLAYS ──────────────────────────────────────────────
     plays_html = "".join(
@@ -955,6 +1254,55 @@ def render_html(events, tasks, ai, meeting_reviews):
             font-weight: 700;
         }}
 
+        /* ── Focus prep (inline inside focus-card) ─────── */
+        .focus-prep {{
+            margin-top: var(--s-5);
+            padding-top: var(--s-4);
+            border-top: 1px solid rgba(245, 166, 35, 0.18);
+        }}
+        .focus-prep-label {{
+            font-family: var(--font-mono);
+            font-size: var(--fs-micro);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--amber-500);
+            margin-bottom: var(--s-3);
+        }}
+        .focus-prep-summary {{
+            font-size: var(--fs-body);
+            line-height: 1.55;
+            color: var(--bone);
+            margin-bottom: var(--s-3);
+        }}
+        .focus-prep-tasks {{ list-style: none; }}
+        .focus-prep-tasks li {{
+            font-size: var(--fs-eyebrow);
+            line-height: 1.5;
+            color: var(--bone);
+            padding: 4px 0 4px 20px;
+            position: relative;
+        }}
+        .focus-prep-tasks li::before {{
+            content: '›';
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            color: var(--amber-500);
+            font-family: var(--font-mono);
+            font-weight: 700;
+        }}
+
+        /* ── Meeting prep card (06) ────────────────────── */
+        .prep-time {{
+            font-family: var(--font-mono);
+            font-size: var(--fs-eyebrow);
+            font-weight: 500;
+            color: var(--amber-400);
+            margin-bottom: var(--s-1);
+            letter-spacing: -0.005em;
+        }}
+
         /* ── Empty state ───────────────────────────────── */
         .empty {{
             font-family: var(--font-mono);
@@ -1066,6 +1414,14 @@ def render_html(events, tasks, ai, meeting_reviews):
             </section>
         </div>
 
+        <section class="card">
+            <div class="card-head">
+                <span class="card-num">06</span>
+                <span class="eyebrow">Meeting Prep</span>
+            </div>
+            {meeting_prep_html}
+        </section>
+
         <footer>Francis Inc &middot; Daily Brief v1.0 &middot; {iso_date}</footer>
     </div>
 
@@ -1116,7 +1472,9 @@ def render_html(events, tasks, ai, meeting_reviews):
         }}
         function liveParse(iso) {{ return iso ? new Date(iso) : null; }}
         function liveFocusKey(f) {{
-            return f ? (f.ev.start_iso || '') + '|' + (f.ev.summary || '') + '|' + (f.inSession ? '1' : '0') : '';
+            if (!f) return '';
+            var prepKey = f.ev.prep ? '1' : '0';
+            return (f.ev.start_iso || '') + '|' + (f.ev.summary || '') + '|' + (f.inSession ? '1' : '0') + '|' + prepKey;
         }}
         function liveFindFocus(events, now) {{
             var upcoming = [];
@@ -1138,11 +1496,27 @@ def render_html(events, tasks, ai, meeting_reviews):
             var timeStr = e.end_label ? (e.start_label + ' \\u2014 ' + e.end_label) : e.start_label;
             var label = f.inSession ? 'Focus \\u00B7 In session' : 'Focus \\u00B7 Next up';
             var loc = e.location ? '<div class="focus-loc">' + liveEsc(e.location) + '</div>' : '';
+            var prep = '';
+            if (e.prep) {{
+                var p = e.prep;
+                var summary = p.summary ? '<p class="focus-prep-summary">' + liveEsc(p.summary) + '</p>' : '';
+                var tasksHtml = '';
+                if (p.tasks && p.tasks.length) {{
+                    for (var i = 0; i < p.tasks.length; i++) {{
+                        tasksHtml += '<li>' + liveEsc(p.tasks[i]) + '</li>';
+                    }}
+                    tasksHtml = '<ul class="focus-prep-tasks">' + tasksHtml + '</ul>';
+                }}
+                prep = '<div class="focus-prep">'
+                     + '<div class="focus-prep-label">Prep</div>'
+                     + summary + tasksHtml
+                     + '</div>';
+            }}
             return '<section class="focus-card">'
                  + '<div class="eyebrow">' + label + '</div>'
                  + '<div class="focus-time">' + liveEsc(timeStr) + '</div>'
                  + '<h2 class="focus-title">' + liveEsc(e.summary || 'Untitled') + '</h2>'
-                 + loc + '</section>';
+                 + loc + prep + '</section>';
         }}
         function liveApplyFocus(now) {{
             if (!liveLoaded) return;
@@ -1235,14 +1609,18 @@ def main():
     events = get_todays_events(creds)
     tasks = get_outstanding_tasks(creds)
     meeting_notes = get_meeting_notes(creds)
+    preps = build_meeting_preps(creds, events)
     context = build_context(events, tasks)
     ai = get_ai_summary(context)
     meeting_reviews = get_ai_meeting_reviews(meeting_notes)
-    html = render_html(events, tasks, ai, meeting_reviews)
+    html = render_html(events, tasks, ai, meeting_reviews, preps)
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
-    print("Generated index.html")
+    # Seed live.json with fresh preps so the 10-min refresh worker preserves
+    # them without re-running Claude.
+    write_live_json(events, tasks, preps=preps)
+    print(f"Generated index.html ({len(preps)} meeting prep entries)")
 
 
 if __name__ == "__main__":
