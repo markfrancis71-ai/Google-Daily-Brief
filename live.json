@@ -1,9 +1,18 @@
 {
-  "refreshed_at": "2026-05-16T11:35:28.304573-05:00",
-  "refreshed_label": "11:35 AM",
+  "refreshed_at": "2026-05-16T12:11:50.954815-05:00",
+  "refreshed_label": "12:11 PM",
   "tz_label": "Chicago",
-  "events": [],
-  "focus_html": "",
-  "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Jeff and Suhas the updated TD stuff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 11</span>\n            </div>"
+  "events": [
+    {
+      "start_iso": "2026-05-16T14:30:00-05:00",
+      "end_iso": "2026-05-16T15:30:00-05:00",
+      "start_label": "2:30 PM",
+      "end_label": "3:30 PM",
+      "summary": "Meeting with Jonathan",
+      "location": ""
+    }
+  ],
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">2:30 PM &mdash; 3:30 PM</div>\n            <h2 class=\"focus-title\">Meeting with Jonathan</h2>\n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Meeting with Jonathan</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to the first Paver guy for more information</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>"
 }
