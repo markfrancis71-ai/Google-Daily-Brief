@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-16T15:57:55.576284-05:00",
-  "refreshed_label": "3:57 PM",
+  "refreshed_at": "2026-05-16T16:58:18.380968-05:00",
+  "refreshed_label": "4:58 PM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -36,7 +36,7 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">4:00 PM &mdash; 5:00 PM</div>\n            <h2 class=\"focus-title\">Sync with Deepak</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; In session</div>\n            <div class=\"focus-time\">4:00 PM &mdash; 5:00 PM</div>\n            <h2 class=\"focus-title\">Sync with Deepak</h2>\n            \n            \n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Meeting with Jonathan</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Deepak</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to the first Paver guy for more information</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
   "preps": {
