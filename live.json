@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-16T14:52:49.124120-05:00",
-  "refreshed_label": "2:52 PM",
+  "refreshed_at": "2026-05-16T14:55:42.201686-05:00",
+  "refreshed_label": "2:55 PM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -12,13 +12,13 @@
       "summary": "Meeting with Jonathan",
       "location": "",
       "prep": {
-        "summary": "No sent email history with Jonathan was found \u2014 context on your past interactions is unavailable. No attendee details were provided, leaving the nature of your relationship with Jonathan and his role at Francis Inc. unclear. Review your records before the meeting to reconstruct where things stand.",
+        "summary": "You and Jonathan are deep into two parallel tracks \u2014 Project Genie (the AI-driven Jira/acceptance criteria automation tool) and Architecture as Code (a three-tier business/architecture/specification data model). As of 5/14, the Genie architecture is solid but needs GenAI Council queue entry for governance cover, and the team is mid-transition from Markdown to YAML-based data management; the AaC framework hit a schema-stability milestone in late April but is still waiting on stakeholder alignment with Osterkamp and McCarty to move from blueprint to MVP. Outstanding threads include the Technical Impact Analysis expansion for Genie, the TDSR lightweight app pilot with Cody, and the 'Architecture Recommendations' gap Jonathan flagged on 5/11.",
         "tasks": [
-          "Pull the last three meeting notes or calendar entries with Jonathan to identify recurring themes and open items.",
-          "Check your inbox \u2014 not just sent mail \u2014 for any threads with Jonathan that surface outstanding commitments.",
-          "Confirm Jonathan's role and any relevant context about his priorities at Francis Inc.",
-          "List any decisions or deliverables you were responsible for since your last interaction with Jonathan.",
-          "Prepare a clear agenda so the meeting has direction even without historical context loaded."
+          "Confirm whether Jonathan has submitted Project Genie to the GenAI Council queue and what the current queue status is.",
+          "Get a status update on the YAML/taxonomy.yaml migration \u2014 specifically whether HTML generation from YAML is now live or still pending.",
+          "Ask Jonathan where the Osterkamp and McCarty alignment meetings stand \u2014 these were flagged as blockers for moving AaC to MVP phase.",
+          "Follow up on the 'Architecture Recommendations' initiative Jonathan raised on 5/11 \u2014 determine if there is a concrete proposal or owner assigned.",
+          "Clarify the next step on the TDSR lightweight app pilot with Cody \u2014 whether specs are finalized and if Jonathan Stewart's review is complete."
         ],
         "title": "Meeting with Jonathan",
         "start_label": "2:30 PM",
@@ -26,18 +26,18 @@
       }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; In session</div>\n            <div class=\"focus-time\">2:30 PM &mdash; 3:30 PM</div>\n            <h2 class=\"focus-title\">Meeting with Jonathan</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">No sent email history with Jonathan was found \u2014 context on your past interactions is unavailable. No attendee details were provided, leaving the nature of your relationship with Jonathan and his role at Francis Inc. unclear. Review your records before the meeting to reconstruct where things stand.</p>\n                <ul class=\"focus-prep-tasks\"><li>Pull the last three meeting notes or calendar entries with Jonathan to identify recurring themes and open items.</li><li>Check your inbox \u2014 not just sent mail \u2014 for any threads with Jonathan that surface outstanding commitments.</li><li>Confirm Jonathan&#x27;s role and any relevant context about his priorities at Francis Inc.</li><li>List any decisions or deliverables you were responsible for since your last interaction with Jonathan.</li><li>Prepare a clear agenda so the meeting has direction even without historical context loaded.</li></ul>\n            </div>\n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; In session</div>\n            <div class=\"focus-time\">2:30 PM &mdash; 3:30 PM</div>\n            <h2 class=\"focus-title\">Meeting with Jonathan</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">You and Jonathan are deep into two parallel tracks \u2014 Project Genie (the AI-driven Jira/acceptance criteria automation tool) and Architecture as Code (a three-tier business/architecture/specification data model). As of 5/14, the Genie architecture is solid but needs GenAI Council queue entry for governance cover, and the team is mid-transition from Markdown to YAML-based data management; the AaC framework hit a schema-stability milestone in late April but is still waiting on stakeholder alignment with Osterkamp and McCarty to move from blueprint to MVP. Outstanding threads include the Technical Impact Analysis expansion for Genie, the TDSR lightweight app pilot with Cody, and the &#x27;Architecture Recommendations&#x27; gap Jonathan flagged on 5/11.</p>\n                <ul class=\"focus-prep-tasks\"><li>Confirm whether Jonathan has submitted Project Genie to the GenAI Council queue and what the current queue status is.</li><li>Get a status update on the YAML/taxonomy.yaml migration \u2014 specifically whether HTML generation from YAML is now live or still pending.</li><li>Ask Jonathan where the Osterkamp and McCarty alignment meetings stand \u2014 these were flagged as blockers for moving AaC to MVP phase.</li><li>Follow up on the &#x27;Architecture Recommendations&#x27; initiative Jonathan raised on 5/11 \u2014 determine if there is a concrete proposal or owner assigned.</li><li>Clarify the next step on the TDSR lightweight app pilot with Cody \u2014 whether specs are finalized and if Jonathan Stewart&#x27;s review is complete.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Meeting with Jonathan</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to the first Paver guy for more information</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
   "preps": {
     "2ef0vj3jl9dmsiafj87utu4jbd": {
-      "summary": "No sent email history with Jonathan was found \u2014 context on your past interactions is unavailable. No attendee details were provided, leaving the nature of your relationship with Jonathan and his role at Francis Inc. unclear. Review your records before the meeting to reconstruct where things stand.",
+      "summary": "You and Jonathan are deep into two parallel tracks \u2014 Project Genie (the AI-driven Jira/acceptance criteria automation tool) and Architecture as Code (a three-tier business/architecture/specification data model). As of 5/14, the Genie architecture is solid but needs GenAI Council queue entry for governance cover, and the team is mid-transition from Markdown to YAML-based data management; the AaC framework hit a schema-stability milestone in late April but is still waiting on stakeholder alignment with Osterkamp and McCarty to move from blueprint to MVP. Outstanding threads include the Technical Impact Analysis expansion for Genie, the TDSR lightweight app pilot with Cody, and the 'Architecture Recommendations' gap Jonathan flagged on 5/11.",
       "tasks": [
-        "Pull the last three meeting notes or calendar entries with Jonathan to identify recurring themes and open items.",
-        "Check your inbox \u2014 not just sent mail \u2014 for any threads with Jonathan that surface outstanding commitments.",
-        "Confirm Jonathan's role and any relevant context about his priorities at Francis Inc.",
-        "List any decisions or deliverables you were responsible for since your last interaction with Jonathan.",
-        "Prepare a clear agenda so the meeting has direction even without historical context loaded."
+        "Confirm whether Jonathan has submitted Project Genie to the GenAI Council queue and what the current queue status is.",
+        "Get a status update on the YAML/taxonomy.yaml migration \u2014 specifically whether HTML generation from YAML is now live or still pending.",
+        "Ask Jonathan where the Osterkamp and McCarty alignment meetings stand \u2014 these were flagged as blockers for moving AaC to MVP phase.",
+        "Follow up on the 'Architecture Recommendations' initiative Jonathan raised on 5/11 \u2014 determine if there is a concrete proposal or owner assigned.",
+        "Clarify the next step on the TDSR lightweight app pilot with Cody \u2014 whether specs are finalized and if Jonathan Stewart's review is complete."
       ],
       "title": "Meeting with Jonathan",
       "start_label": "2:30 PM",
