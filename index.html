@@ -94,6 +94,19 @@
             .grid-hero:has(.focus-card), .grid-2 { grid-template-columns: 1fr; }
         }
 
+        /* Header main split — title block on the left, Overview card on the right */
+        .header-main {
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: var(--s-6);
+            align-items: end;
+            margin-bottom: var(--s-6);
+        }
+        .header-main > .card { margin-bottom: 0; }
+        @media (max-width: 960px) {
+            .header-main { grid-template-columns: 1fr; gap: var(--s-5); }
+        }
+
         /* Faint grid backdrop */
         .container::before {
             content: '';
@@ -594,50 +607,30 @@
                 <div class="clock" id="clock">--:--:-- --<span class="tz">Chicago</span></div>
             </div>
 
-            <div class="hero-eyebrow">Daily Brief &middot; MAY 16, 2026</div>
-            <div class="display-wrap">
-                <h1 class="display">Today<span class="dot">.</span><span class="day">Saturday &middot; <span id="js-refreshed" title="Calendar &amp; tasks auto-refresh every ~10 min">updated 2:55 PM</span></span></h1>
+            <div class="header-main">
+                <div class="header-titles">
+                    <div class="hero-eyebrow">Daily Brief &middot; MAY 16, 2026</div>
+                    <div class="display-wrap">
+                        <h1 class="display">Today<span class="dot">.</span><span class="day">Saturday &middot; <span id="js-refreshed" title="Calendar &amp; tasks auto-refresh every ~10 min">updated 3:37 PM</span></span></h1>
+                    </div>
+                </div>
+                <section class="card">
+                    <div class="card-head">
+                        <span class="eyebrow">Overview</span>
+                    </div>
+                    <p class="overview">Saturday runs light — one meeting at 2:30 and a single due task anchoring the day. The friction is letting the open morning slip without moving the Paver outreach before Jonathan takes your afternoon. That task is what matters most today.</p>
+                </section>
             </div>
             <hr class="header-rule">
         </header>
 
         <div class="grid-hero">
             
-        <section class="focus-card">
-            <div class="eyebrow">Focus &middot; In session</div>
-            <div class="focus-time">2:30 PM &mdash; 3:30 PM</div>
-            <h2 class="focus-title">Meeting with Jonathan</h2>
-            
-            
-            <div class="focus-prep">
-                <div class="focus-prep-label">Prep</div>
-                <p class="focus-prep-summary">You and Jonathan are deep into two parallel tracks — Project Genie (the AI-driven Jira/acceptance criteria automation tool) and Architecture as Code (a three-tier business/architecture/specification data model). As of 5/14, the Genie architecture is solid but needs GenAI Council queue entry for governance cover, and the team is mid-transition from Markdown to YAML-based data management; the AaC framework hit a schema-stability milestone in late April but is still waiting on stakeholder alignment with Osterkamp and McCarty to move from blueprint to MVP. Outstanding threads include the Technical Impact Analysis expansion for Genie, the TDSR lightweight app pilot with Cody, and the &#x27;Architecture Recommendations&#x27; gap Jonathan flagged on 5/11.</p>
-                <ul class="focus-prep-tasks"><li>Confirm whether Jonathan has submitted Project Genie to the GenAI Council queue and what the current queue status is.</li><li>Get a status update on the YAML/taxonomy.yaml migration — specifically whether HTML generation from YAML is now live or still pending.</li><li>Ask Jonathan where the Osterkamp and McCarty alignment meetings stand — these were flagged as blockers for moving AaC to MVP phase.</li><li>Follow up on the &#x27;Architecture Recommendations&#x27; initiative Jonathan raised on 5/11 — determine if there is a concrete proposal or owner assigned.</li><li>Clarify the next step on the TDSR lightweight app pilot with Cody — whether specs are finalized and if Jonathan Stewart&#x27;s review is complete.</li></ul>
-            </div>
-        </section>
             <section class="card">
                 <div class="card-head">
                     <span class="card-num">01</span>
-                    <span class="eyebrow">Overview</span>
-                </div>
-                <p class="overview">Saturday runs light — one afternoon meeting with Jonathan at 2:30 and a single due task anchoring the morning. The friction is letting the open morning slip by unstructured before the meeting lands. The task due today is the priority — get it done before 2:30 so nothing carries over into Sunday.</p>
-            </section>
-        </div>
-
-        <div class="grid-2">
-            <section class="card">
-                <div class="card-head">
-                    <span class="card-num">02</span>
-                    <span class="eyebrow">Plays</span>
-                </div>
-                <ol class="plays"><li class="play"><span class="play-num">01</span><span class="play-text">Call or message the Paver guy before noon — it's due today and the morning is your only clear window.</span></li><li class="play"><span class="play-num">02</span><span class="play-text">Use the 1:00–2:00 PM slot to prep anything you need to bring into the Jonathan meeting.</span></li><li class="play"><span class="play-num">03</span><span class="play-text">Cap the Jonathan meeting at the scheduled hour — it ends at 3:30, leaving your evening clean.</span></li></ol>
-            </section>
-
-            <section class="card">
-                <div class="card-head">
-                    <span class="card-num">03</span>
                     <span class="eyebrow">Schedule</span>
-                    <span class="live-stamp" title="Calendar auto-refreshes every 10 minutes">&#8635; 2:55 PM</span>
+                    <span class="live-stamp" title="Calendar auto-refreshes every 10 minutes">&#8635; 3:37 PM</span>
                 </div>
                 <div class="timeline" id="js-schedule">
             <div class="t-row">
@@ -657,9 +650,17 @@
         <div class="grid-2">
             <section class="card">
                 <div class="card-head">
-                    <span class="card-num">04</span>
+                    <span class="card-num">02</span>
+                    <span class="eyebrow">Plays</span>
+                </div>
+                <ol class="plays"><li class="play"><span class="play-num">01</span><span class="play-text">Send the message or make the call to the first Paver guy before noon — the morning is clear and this is due today.</span></li><li class="play"><span class="play-num">02</span><span class="play-text">Use the window from 1:00–2:00 PM to collect any notes or questions from the Paver conversation before the Jonathan meeting absorbs your focus.</span></li><li class="play"><span class="play-num">03</span><span class="play-text">Cap the Jonathan meeting at the scheduled hour — nothing on the board warrants running long today.</span></li></ol>
+            </section>
+
+            <section class="card">
+                <div class="card-head">
+                    <span class="card-num">03</span>
                     <span class="eyebrow">Open work</span>
-                    <span class="live-stamp" title="Open work auto-refreshes every 10 minutes">&#8635; 2:55 PM</span>
+                    <span class="live-stamp" title="Open work auto-refreshes every 10 minutes">&#8635; 3:37 PM</span>
                 </div>
                 <div class="tasks" id="js-openwork">
             <div class="task-row">
@@ -668,29 +669,31 @@
                 <span class="capsule capsule--decision">Due today</span>
             </div></div>
             </section>
+        </div>
 
+        <div class="grid-2">
             <section class="card">
                 <div class="card-head">
-                    <span class="card-num">05</span>
+                    <span class="card-num">04</span>
                     <span class="eyebrow">Yesterday</span>
                 </div>
                 <p class="empty">No meeting notes from the last 24 hours.</p>
             </section>
-        </div>
 
-        <section class="card">
-            <div class="card-head">
-                <span class="card-num">06</span>
-                <span class="eyebrow">Meeting Prep</span>
-            </div>
-            
+            <section class="card">
+                <div class="card-head">
+                    <span class="card-num">05</span>
+                    <span class="eyebrow">Meeting Prep</span>
+                </div>
+                
             <div class="meeting">
                 <div class="prep-time">2:30 PM &mdash; 3:30 PM</div>
                 <h3 class="meeting-title">Meeting with Jonathan</h3>
-                <p class="meeting-summary">You and Jonathan are deep into two parallel tracks — Project Genie (the AI-driven Jira/acceptance criteria automation tool) and Architecture as Code (a three-tier business/architecture/specification data model). As of 5/14, the Genie architecture is solid but needs GenAI Council queue entry for governance cover, and the team is mid-transition from Markdown to YAML-based data management; the AaC framework hit a schema-stability milestone in late April but is still waiting on stakeholder alignment with Osterkamp and McCarty to move from blueprint to MVP. Outstanding threads include the Technical Impact Analysis expansion for Genie, the TDSR lightweight app pilot with Cody, and the &#x27;Architecture Recommendations&#x27; gap Jonathan flagged on 5/11.</p>
-                <div class="meeting-label">To prepare</div><ul class="meeting-takeaways"><li>Confirm whether Jonathan has submitted Project Genie to the GenAI Council queue and what the current queue status is.</li><li>Get a status update on the YAML/taxonomy.yaml migration — specifically whether HTML generation from YAML is now live or still pending.</li><li>Ask Jonathan where the Osterkamp and McCarty alignment meetings stand — these were flagged as blockers for moving AaC to MVP phase.</li><li>Follow up on the &#x27;Architecture Recommendations&#x27; initiative Jonathan raised on 5/11 — determine if there is a concrete proposal or owner assigned.</li><li>Clarify the next step on the TDSR lightweight app pilot with Cody — whether specs are finalized and if Jonathan Stewart&#x27;s review is complete.</li></ul>
+                <p class="meeting-summary">You and Jonathan are deep into two parallel tracks — Project Genie (AI-driven Jira/acceptance criteria automation) and Architecture as Code (three-tier data model with Business, Architecture, and Specification layers). The 5/14 meeting landed on YAML-based data management, GenAI Council governance entry, and a push toward a full &#x27;Business Analyst Coworker&#x27; AI; the 5/11 meeting flagged the TDSR lightweight app pilot with Cody, alignment needed with Osterkamp&#x27;s OurDoc roadmap, and a desire to resurrect Architecture Recommendations as a formal capability. Outstanding threads include handing Genie&#x27;s governance into the GenAI Council queue, engineering hand-off of IPD questionnaire onboarding, and the stakeholder meeting with Osterkamp and McCarty to move Architecture as Code from vacuum to MVP.</p>
+                <div class="meeting-label">To prepare</div><ul class="meeting-takeaways"><li>Confirm whether the GenAI Council submission for Project Genie has been queued — and if not, identify who owns that action and by when.</li><li>Review the status of the IPD engineering hand-off — determine which engineers are assigned and whether questionnaire onboarding has begun.</li><li>Get a status update on the Osterkamp/McCarty alignment meeting — establish whether it has been scheduled and what the MVP scope looks like.</li><li>Clarify where the TDSR lightweight app pilot stands — check if Jonathan Stewart&#x27;s business and architecture specs are finalized and whether Osterkamp&#x27;s OurDoc roadmap conflict has been resolved.</li><li>Verify that the YAML/taxonomy pipeline work from 5/14 is on track — confirm whether HTML generation is now being built directly from YAML or still running off the temporary workaround.</li></ul>
             </div>
-        </section>
+            </section>
+        </div>
 
         <footer>Francis Inc &middot; Daily Brief v1.0 &middot; 05.16.26</footer>
     </div>
