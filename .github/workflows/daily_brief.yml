@@ -37,16 +37,20 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html
+          # Daily build now seeds live.json with the day's meeting preps so the
+          # 10-min refresh worker doesn't need to re-call Claude. Stage both.
+          git add index.html live.json
           if git diff --cached --quiet; then
-            echo "index.html unchanged — nothing to commit."
+            echo "Brief unchanged — nothing to commit."
             exit 0
           fi
           git commit -m "Daily brief $(date +'%Y-%m-%d')"
-          # Push with retry — live.json is owned by the refresh workflow, which
-          # touches a different file, so a rebase here never conflicts.
+          # Push with retry. live.json can race the refresh workflow; on
+          # conflict prefer our version (-X ours) — daily's data is fresher
+          # (just-pulled calendar + tasks + AI-built preps) than a 10-min
+          # refresh, and the next refresh will catch any drift anyway.
           for i in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push; then
+            if git pull --rebase -X ours origin main && git push; then
               echo "Pushed on attempt $i."
               exit 0
             fi
@@ -54,5 +58,5 @@ jobs:
             git rebase --abort 2>/dev/null || true
             sleep $((i * 4))
           done
-          echo "::error::Failed to push index.html after 5 attempts"
+          echo "::error::Failed to push brief after 5 attempts"
           exit 1
