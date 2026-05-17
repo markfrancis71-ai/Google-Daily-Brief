@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-17T08:55:58.209187-05:00",
-  "refreshed_label": "8:55 AM",
+  "refreshed_at": "2026-05-17T10:05:38.878740-05:00",
+  "refreshed_label": "10:05 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -14,7 +14,7 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">10:00 AM &mdash; 12:00 PM</div>\n            <h2 class=\"focus-title\">Go through all the open meeting reviews and create tasks for the week</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; In session</div>\n            <div class=\"focus-time\">10:00 AM &mdash; 12:00 PM</div>\n            <h2 class=\"focus-title\">Go through all the open meeting reviews and create tasks for the week</h2>\n            \n            \n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Go through all the open meeting reviews and create tasks for the week</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to the first Paver guy for more information</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 16</span>\n            </div>",
   "preps": {}
