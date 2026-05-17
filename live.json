@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-17T11:09:38.630043-05:00",
-  "refreshed_label": "11:09 AM",
+  "refreshed_at": "2026-05-17T12:16:27.362063-05:00",
+  "refreshed_label": "12:16 PM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -14,8 +14,8 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; In session</div>\n            <div class=\"focus-time\">10:00 AM &mdash; 12:00 PM</div>\n            <h2 class=\"focus-title\">Go through all the open meeting reviews and create tasks for the week</h2>\n            \n            \n        </section>",
+  "focus_html": "",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Go through all the open meeting reviews and create tasks for the week</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to the first Paver guy for more information</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 16</span>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to Mike from Texas Pool and Patio</span>\n                <span class=\"capsule capsule--caution\">Due May 18</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to the first Paver guy for more information</span>\n                <span class=\"capsule capsule--caution\">Due May 18</span>\n            </div>",
   "preps": {}
 }
