@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-18T05:47:16.694611-05:00",
-  "refreshed_label": "5:47 AM",
+  "refreshed_at": "2026-05-18T07:40:08.142384-05:00",
+  "refreshed_label": "7:40 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,19 @@
       "end_label": "3:00 PM",
       "summary": "(Q2) 2026 EA Leadership Off-Site",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "The EA Leadership Off-Site draws on a set of recurring pressure points across recent meetings \u2014 Matt's active consideration of a Staff Engineer move away from Architecture (decision deadline flagged as imminent), Rebecca Neussel's confirmed transition to P&C leaving an unbackfilled gap across CRM/Salesforce, Data & Analytics, and the Health product line, and an unresolved internal push to articulate EA's value proposition following Dan Griffiths' pointed ARB question. Structural themes cutting across sent emails and meeting notes include the Architecture as Code initiative (task team pending), the ARB/governance documentation exercise triggered by Dan, and capacity strain on the remaining architect pool \u2014 particularly Dixon absorbing Rebecca's portfolio. Morale, role clarity, and the federated vs. centralized EA model debate are unresolved undercurrents heading into this off-site.",
+        "tasks": [
+          "Review sent emails for cross-cutting topics leadership needs to be aware of \u2014 flag anything touching ARB governance, EA value messaging, or cross-LOB coordination gaps.",
+          "Prepare a clear status update on the Architecture as Code initiative \u2014 confirm whether the task team (including Matt and Jonathan and Vi) has been formally stood up.",
+          "Draft a staffing risk summary covering Matt's potential Staff Engineer move and Rebecca's transition \u2014 include the downstream impact on Dixon's workload and the unbackfilled Life Co. architecture coverage.",
+          "Identify products and services work in flight \u2014 pull together progress on active initiatives (CRM/Salesforce, Data & Analytics, CARS/Quality tooling) so leadership has a concrete picture of delivery exposure if staffing shifts materialize.",
+          "Be ready to address the ARB structure question directly \u2014 bring a concise account of official vs. informal review forums to satisfy Dan Griffiths' ask without over-engineering the answer into an 80-page deck."
+        ],
+        "title": "(Q2) 2026 EA Leadership Off-Site",
+        "start_label": "8:00 AM",
+        "end_label": "3:00 PM"
+      }
     },
     {
       "id": "c7dmi771lhrg3f4hqnh84kcf08",
@@ -31,7 +43,19 @@
       "end_label": "2:30 PM",
       "summary": "Align on TWT Security Issue - IT Recommendations",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You've been tracking the two-way SMS (Hi Marley / TWT) security issue across several meetings \u2014 the core tension is between the business's push to retire CCOM in favor of SMS convenience and the new CISO Dan's hard-line stance requiring MFA for any inbound data, with NYDFS 2025 rulings adding regulatory pressure. The 5/6 sync established that Infosec's requirements (no sensitive data over SMS, mandatory MFA for all parties) are significantly more restrictive than what the business and vendor currently enforce \u2014 and as of that meeting, Sarah and Laura were reviewing those requirements while Raj was expected to schedule a stakeholder alignment. The 5/8 sessions with Rick surfaced a process gap \u2014 DLP and perimeter security teams were excluded from early due diligence, and the business mandate to use Hi Marley short-circuited deeper review before the contract was signed.",
+        "tasks": [
+          "Review Infosec's formal write-up on TWT security requirements \u2014 specifically the MFA mandate and the prohibition on sensitive data over SMS \u2014 so you can speak to the gap between those requirements and current business/vendor practice.",
+          "Confirm whether Raj scheduled the stakeholder alignment meeting referenced in the 5/6 notes, and surface any decisions Sarah and Laura reached after reviewing Infosec's requirements.",
+          "Be ready to discuss the NYDFS 2025 ruling and how it may force the industry standard \u2014 this has come up repeatedly and is likely to anchor the IT recommendations being aligned on today.",
+          "Identify which 'anti-patterns' from the Hi Marley procurement process (DLP exclusion, post-contract discovery of security gaps) IT is formally recommending be corrected \u2014 these were flagged in both 5/8 sessions but no resolution was documented.",
+          "Clarify the current status of CCOM retirement \u2014 if the business still intends to decommission it, determine whether a compliant SMS alternative has been scoped or whether that decision is now blocked pending security resolution."
+        ],
+        "title": "Align on TWT Security Issue - IT Recommendations",
+        "start_label": "2:05 PM",
+        "end_label": "2:30 PM"
+      }
     },
     {
       "id": "n95l41himv6lketoe1ntmvil0k",
@@ -41,11 +65,63 @@
       "end_label": "4:30 PM",
       "summary": "Gen AI EMG chat & alignment",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your work with this group centers on leveraging Gen AI to automate technical artifact generation \u2014 specifically executable requirements, functional specs, and pipeline reporting \u2014 as a core strategy for recapturing competitive ground in the AI space. The 5/15 TD sync locked in a direction of lowering Plan Approval entry criteria to scope and high-level capabilities, then flushing them out with AI tools \u2014 that thread is directly relevant here. The EMG standup on 5/11 flagged 'capturing more executable requirements' as one of three organizational AI priorities, which aligns this meeting squarely with active leadership pressure.",
+        "tasks": [
+          "Review sent emails from the past 2-3 weeks and pull every concrete reference to automated functional requirement generation and AI-assisted design or requirements gathering \u2014 bring specifics, not summaries.",
+          "Confirm the current status of the AI-assisted requirements workflow discussed in the 5/15 TD sync \u2014 specifically whether lowered entry criteria and AI flush-out has moved from concept to any piloted or documented process.",
+          "Prepare to articulate what 'Gen AI for requirements' looks like end-to-end \u2014 input sources, tooling, output artifacts \u2014 so alignment in this meeting has something concrete to react to.",
+          "Identify any open decisions or blockers from prior work on this topic that need EMG-level input or sponsorship to move forward.",
+          "Be ready to connect this work to the three AI 'big rocks' (Underwriting/Product Development, Claims, Member Value) established in the 5/11 standup \u2014 frame the requirements automation effort as directly serving those priorities."
+        ],
+        "title": "Gen AI EMG chat & alignment",
+        "start_label": "4:00 PM",
+        "end_label": "4:30 PM"
+      }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 3:00 PM</div>\n            <h2 class=\"focus-title\">(Q2) 2026 EA Leadership Off-Site</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 3:00 PM</div>\n            <h2 class=\"focus-title\">(Q2) 2026 EA Leadership Off-Site</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">The EA Leadership Off-Site draws on a set of recurring pressure points across recent meetings \u2014 Matt&#x27;s active consideration of a Staff Engineer move away from Architecture (decision deadline flagged as imminent), Rebecca Neussel&#x27;s confirmed transition to P&amp;C leaving an unbackfilled gap across CRM/Salesforce, Data &amp; Analytics, and the Health product line, and an unresolved internal push to articulate EA&#x27;s value proposition following Dan Griffiths&#x27; pointed ARB question. Structural themes cutting across sent emails and meeting notes include the Architecture as Code initiative (task team pending), the ARB/governance documentation exercise triggered by Dan, and capacity strain on the remaining architect pool \u2014 particularly Dixon absorbing Rebecca&#x27;s portfolio. Morale, role clarity, and the federated vs. centralized EA model debate are unresolved undercurrents heading into this off-site.</p>\n                <ul class=\"focus-prep-tasks\"><li>Review sent emails for cross-cutting topics leadership needs to be aware of \u2014 flag anything touching ARB governance, EA value messaging, or cross-LOB coordination gaps.</li><li>Prepare a clear status update on the Architecture as Code initiative \u2014 confirm whether the task team (including Matt and Jonathan and Vi) has been formally stood up.</li><li>Draft a staffing risk summary covering Matt&#x27;s potential Staff Engineer move and Rebecca&#x27;s transition \u2014 include the downstream impact on Dixon&#x27;s workload and the unbackfilled Life Co. architecture coverage.</li><li>Identify products and services work in flight \u2014 pull together progress on active initiatives (CRM/Salesforce, Data &amp; Analytics, CARS/Quality tooling) so leadership has a concrete picture of delivery exposure if staffing shifts materialize.</li><li>Be ready to address the ARB structure question directly \u2014 bring a concise account of official vs. informal review forums to satisfy Dan Griffiths&#x27; ask without over-engineering the answer into an 80-page deck.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">(Q2) 2026 EA Leadership Off-Site</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch / Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:05 PM</div>\n                    <div class=\"t-end\">&mdash; 2:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Align on TWT Security Issue - IT Recommendations</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Gen AI EMG chat &amp; alignment</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to Mike from Texas Pool and Patio</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to the first Paver guy for more information</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
-  "preps": {}
+  "preps": {
+    "1pmm4b9vcute8h65rp3el7m90k": {
+      "summary": "The EA Leadership Off-Site draws on a set of recurring pressure points across recent meetings \u2014 Matt's active consideration of a Staff Engineer move away from Architecture (decision deadline flagged as imminent), Rebecca Neussel's confirmed transition to P&C leaving an unbackfilled gap across CRM/Salesforce, Data & Analytics, and the Health product line, and an unresolved internal push to articulate EA's value proposition following Dan Griffiths' pointed ARB question. Structural themes cutting across sent emails and meeting notes include the Architecture as Code initiative (task team pending), the ARB/governance documentation exercise triggered by Dan, and capacity strain on the remaining architect pool \u2014 particularly Dixon absorbing Rebecca's portfolio. Morale, role clarity, and the federated vs. centralized EA model debate are unresolved undercurrents heading into this off-site.",
+      "tasks": [
+        "Review sent emails for cross-cutting topics leadership needs to be aware of \u2014 flag anything touching ARB governance, EA value messaging, or cross-LOB coordination gaps.",
+        "Prepare a clear status update on the Architecture as Code initiative \u2014 confirm whether the task team (including Matt and Jonathan and Vi) has been formally stood up.",
+        "Draft a staffing risk summary covering Matt's potential Staff Engineer move and Rebecca's transition \u2014 include the downstream impact on Dixon's workload and the unbackfilled Life Co. architecture coverage.",
+        "Identify products and services work in flight \u2014 pull together progress on active initiatives (CRM/Salesforce, Data & Analytics, CARS/Quality tooling) so leadership has a concrete picture of delivery exposure if staffing shifts materialize.",
+        "Be ready to address the ARB structure question directly \u2014 bring a concise account of official vs. informal review forums to satisfy Dan Griffiths' ask without over-engineering the answer into an 80-page deck."
+      ],
+      "title": "(Q2) 2026 EA Leadership Off-Site",
+      "start_label": "8:00 AM",
+      "end_label": "3:00 PM"
+    },
+    "trflubg6bte68dkv36s3i2g6mo": {
+      "summary": "You've been tracking the two-way SMS (Hi Marley / TWT) security issue across several meetings \u2014 the core tension is between the business's push to retire CCOM in favor of SMS convenience and the new CISO Dan's hard-line stance requiring MFA for any inbound data, with NYDFS 2025 rulings adding regulatory pressure. The 5/6 sync established that Infosec's requirements (no sensitive data over SMS, mandatory MFA for all parties) are significantly more restrictive than what the business and vendor currently enforce \u2014 and as of that meeting, Sarah and Laura were reviewing those requirements while Raj was expected to schedule a stakeholder alignment. The 5/8 sessions with Rick surfaced a process gap \u2014 DLP and perimeter security teams were excluded from early due diligence, and the business mandate to use Hi Marley short-circuited deeper review before the contract was signed.",
+      "tasks": [
+        "Review Infosec's formal write-up on TWT security requirements \u2014 specifically the MFA mandate and the prohibition on sensitive data over SMS \u2014 so you can speak to the gap between those requirements and current business/vendor practice.",
+        "Confirm whether Raj scheduled the stakeholder alignment meeting referenced in the 5/6 notes, and surface any decisions Sarah and Laura reached after reviewing Infosec's requirements.",
+        "Be ready to discuss the NYDFS 2025 ruling and how it may force the industry standard \u2014 this has come up repeatedly and is likely to anchor the IT recommendations being aligned on today.",
+        "Identify which 'anti-patterns' from the Hi Marley procurement process (DLP exclusion, post-contract discovery of security gaps) IT is formally recommending be corrected \u2014 these were flagged in both 5/8 sessions but no resolution was documented.",
+        "Clarify the current status of CCOM retirement \u2014 if the business still intends to decommission it, determine whether a compliant SMS alternative has been scoped or whether that decision is now blocked pending security resolution."
+      ],
+      "title": "Align on TWT Security Issue - IT Recommendations",
+      "start_label": "2:05 PM",
+      "end_label": "2:30 PM"
+    },
+    "n95l41himv6lketoe1ntmvil0k": {
+      "summary": "Your work with this group centers on leveraging Gen AI to automate technical artifact generation \u2014 specifically executable requirements, functional specs, and pipeline reporting \u2014 as a core strategy for recapturing competitive ground in the AI space. The 5/15 TD sync locked in a direction of lowering Plan Approval entry criteria to scope and high-level capabilities, then flushing them out with AI tools \u2014 that thread is directly relevant here. The EMG standup on 5/11 flagged 'capturing more executable requirements' as one of three organizational AI priorities, which aligns this meeting squarely with active leadership pressure.",
+      "tasks": [
+        "Review sent emails from the past 2-3 weeks and pull every concrete reference to automated functional requirement generation and AI-assisted design or requirements gathering \u2014 bring specifics, not summaries.",
+        "Confirm the current status of the AI-assisted requirements workflow discussed in the 5/15 TD sync \u2014 specifically whether lowered entry criteria and AI flush-out has moved from concept to any piloted or documented process.",
+        "Prepare to articulate what 'Gen AI for requirements' looks like end-to-end \u2014 input sources, tooling, output artifacts \u2014 so alignment in this meeting has something concrete to react to.",
+        "Identify any open decisions or blockers from prior work on this topic that need EMG-level input or sponsorship to move forward.",
+        "Be ready to connect this work to the three AI 'big rocks' (Underwriting/Product Development, Claims, Member Value) established in the 5/11 standup \u2014 frame the requirements automation effort as directly serving those priorities."
+      ],
+      "title": "Gen AI EMG chat & alignment",
+      "start_label": "4:00 PM",
+      "end_label": "4:30 PM"
+    }
+  }
 }
