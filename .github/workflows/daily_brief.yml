@@ -2,7 +2,7 @@ name: Generate Daily Brief
 
 on:
   schedule:
-    - cron: "0 10 * * *"  # 10:00 UTC — adjust if you want a different Chicago time
+    - cron: "0 8 * * *"  # 8:00 UTC = 3:00 AM CDT / 2:00 AM CST — early target to absorb GitHub Actions scheduler delay (often 1–4h)
   workflow_dispatch:        # allows manual trigger from GitHub Actions UI
 
 permissions:
