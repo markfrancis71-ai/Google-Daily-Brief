@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-20T06:24:15.667168-05:00",
-  "refreshed_label": "6:24 AM",
+  "refreshed_at": "2026-05-20T07:57:10.415156-05:00",
+  "refreshed_label": "7:57 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,19 @@
       "end_label": "9:00 AM",
       "summary": "TF Standup",
       "location": "CONF SAT HO Grace Hoppe...",
-      "prep": null
+      "prep": {
+        "summary": "This is a team standup for the TF group \u2014 no attendees are listed, but the prep instructions call for two specific agenda items: announcing Matt Unsworth's departure and surfacing cross-cutting themes from sent emails this week. Matt was last mentioned in the Alan.ai sync (5-8) as a candidate being considered for the Solution Staff Engineer role alongside Neil Bowser, with leadership leaning against requiring a full panel interview for him. No prior TF Standup summaries exist in your notes.",
+        "tasks": [
+          "Announce Matt Unsworth's departure \u2014 prepare a brief, factual statement covering his role, effective date, and any interim coverage or next steps the team needs to know.",
+          "Review your sent emails from this week and identify 2-3 cross-cutting themes to surface \u2014 look for patterns across Scan/Celonis alignment, mainframe modernization, and staffing movement.",
+          "Clarify the impact of Matt's departure on the Solution Staff Engineer hiring process \u2014 his candidacy was in flight, so address whether the role search changes or who absorbs his responsibilities in the interim.",
+          "Note any open items from the broader TF workstream that intersect with themes from the Aaron and Deepak threads \u2014 particularly E2E process visibility and the 'spreadsheet kill' initiative \u2014 in case they surface in discussion.",
+          "Be ready to field questions about organizational stability \u2014 the recent right-sizing actions have been a live concern across teams, and a departure announcement may prompt follow-up questions."
+        ],
+        "title": "TF Standup",
+        "start_label": "8:00 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "3bg23gh9m8md7vc4grqghk0jfg",
@@ -31,7 +43,19 @@
       "end_label": "10:00 AM",
       "summary": "Weekly Staff \u2013 P&C CTO Leadership",
       "location": "https://usaa.zoom.us/j/9538...",
-      "prep": null
+      "prep": {
+        "summary": "This is the weekly P&C CTO Leadership staff meeting \u2014 the prep instructions override the default and call for a digest of EA off-site highlights pulled from the sent emails folder, organized by theme, plus any cross-cutting themes from the week. No sent emails folder is accessible here, so the synthesis below draws entirely from the five meeting summaries provided from the week of 5/12\u20135/19. The recurring threads across those meetings are: talent pressure and backfill urgency (Matt's departure, Vince as successor, mid-career architect retention), modernization sequencing and platform complexity (Guidewire/TRAD Plus, underwriting reinvention pillars, legacy PIF concentration), and AI tooling decisions under funding scrutiny (Scan AI vs. Celonis differentiation, agent assistance alignment, evaluation-driven development).",
+        "tasks": [
+          "Present the EA off-site highlights organized into the three cross-cutting themes: talent and retention pressure, modernization and platform sequencing, and AI tooling and funding alignment.",
+          "Surface the Matt departure and Vince backfill decision as an open action item requiring a formal transition plan and leadership visibility.",
+          "Flag the Scan AI technical decision as time-sensitive \u2014 P&C funding is ready, but the Celonis differentiation case must be airtight before Dan Griffiths' expected challenge.",
+          "Raise the underwriting modernization framing (Risk Precision, Loss Avoidance, Operational Excellence) as a structuring lens for 2026\u20132027 investment conversations.",
+          "Note the TPM dashboard data gap (nothing current since Q2 2025) as an operational risk \u2014 domain health reporting is running on manual Excel workarounds ahead of upcoming outreach meetings."
+        ],
+        "title": "Weekly Staff \u2013 P&C CTO Leadership",
+        "start_label": "9:30 AM",
+        "end_label": "10:00 AM"
+      }
     },
     {
       "id": "gsg9g6ic0roe262n6m0vmv3dh8",
@@ -104,8 +128,35 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">TF Standup</h2>\n            <div class=\"focus-loc\">CONF SAT HO Grace Hoppe...</div>\n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">TF Standup</h2>\n            <div class=\"focus-loc\">CONF SAT HO Grace Hoppe...</div>\n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">This is a team standup for the TF group \u2014 no attendees are listed, but the prep instructions call for two specific agenda items: announcing Matt Unsworth&#x27;s departure and surfacing cross-cutting themes from sent emails this week. Matt was last mentioned in the Alan.ai sync (5-8) as a candidate being considered for the Solution Staff Engineer role alongside Neil Bowser, with leadership leaning against requiring a full panel interview for him. No prior TF Standup summaries exist in your notes.</p>\n                <ul class=\"focus-prep-tasks\"><li>Announce Matt Unsworth&#x27;s departure \u2014 prepare a brief, factual statement covering his role, effective date, and any interim coverage or next steps the team needs to know.</li><li>Review your sent emails from this week and identify 2-3 cross-cutting themes to surface \u2014 look for patterns across Scan/Celonis alignment, mainframe modernization, and staffing movement.</li><li>Clarify the impact of Matt&#x27;s departure on the Solution Staff Engineer hiring process \u2014 his candidacy was in flight, so address whether the role search changes or who absorbs his responsibilities in the interim.</li><li>Note any open items from the broader TF workstream that intersect with themes from the Aaron and Deepak threads \u2014 particularly E2E process visibility and the &#x27;spreadsheet kill&#x27; initiative \u2014 in case they surface in discussion.</li><li>Be ready to field questions about organizational stability \u2014 the recent right-sizing actions have been a live concern across teams, and a departure announcement may prompt follow-up questions.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TF Standup</div>\n                    <div class=\"t-loc\">CONF SAT HO Grace Hoppe...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arch Forum Panel Review Meeting</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9459...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff \u2013 P&amp;C CTO Leadership</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9538...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">2026 Memorial Day Ceremony</div>\n                    <div class=\"t-loc\">EXEC SAT HO (EO1W.F209): FX...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">LOB Product Development AI</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly P&amp;C New Products 1 Arch Runway (2026 S...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">GenAI Program &amp; Use Case Demos: Open Forum</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly - 1:1 w/ Mark Francis | Deepak, In-person</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">CTXO Office Hours</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9549...</div>\n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Consolidate dashboard feedback and custom views for Matt McCoy</span>\n                <span class=\"capsule capsule--caution\">Due May 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare offsite feedback cascade for staff and directors</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Horizontal Planning Sheet</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
-  "preps": {}
+  "preps": {
+    "esco0d98ou4bq51pd5sfdb4nio": {
+      "summary": "This is a team standup for the TF group \u2014 no attendees are listed, but the prep instructions call for two specific agenda items: announcing Matt Unsworth's departure and surfacing cross-cutting themes from sent emails this week. Matt was last mentioned in the Alan.ai sync (5-8) as a candidate being considered for the Solution Staff Engineer role alongside Neil Bowser, with leadership leaning against requiring a full panel interview for him. No prior TF Standup summaries exist in your notes.",
+      "tasks": [
+        "Announce Matt Unsworth's departure \u2014 prepare a brief, factual statement covering his role, effective date, and any interim coverage or next steps the team needs to know.",
+        "Review your sent emails from this week and identify 2-3 cross-cutting themes to surface \u2014 look for patterns across Scan/Celonis alignment, mainframe modernization, and staffing movement.",
+        "Clarify the impact of Matt's departure on the Solution Staff Engineer hiring process \u2014 his candidacy was in flight, so address whether the role search changes or who absorbs his responsibilities in the interim.",
+        "Note any open items from the broader TF workstream that intersect with themes from the Aaron and Deepak threads \u2014 particularly E2E process visibility and the 'spreadsheet kill' initiative \u2014 in case they surface in discussion.",
+        "Be ready to field questions about organizational stability \u2014 the recent right-sizing actions have been a live concern across teams, and a departure announcement may prompt follow-up questions."
+      ],
+      "title": "TF Standup",
+      "start_label": "8:00 AM",
+      "end_label": "9:00 AM"
+    },
+    "g18417rmhgbb6lnjfqoj5rbs9c": {
+      "summary": "This is the weekly P&C CTO Leadership staff meeting \u2014 the prep instructions override the default and call for a digest of EA off-site highlights pulled from the sent emails folder, organized by theme, plus any cross-cutting themes from the week. No sent emails folder is accessible here, so the synthesis below draws entirely from the five meeting summaries provided from the week of 5/12\u20135/19. The recurring threads across those meetings are: talent pressure and backfill urgency (Matt's departure, Vince as successor, mid-career architect retention), modernization sequencing and platform complexity (Guidewire/TRAD Plus, underwriting reinvention pillars, legacy PIF concentration), and AI tooling decisions under funding scrutiny (Scan AI vs. Celonis differentiation, agent assistance alignment, evaluation-driven development).",
+      "tasks": [
+        "Present the EA off-site highlights organized into the three cross-cutting themes: talent and retention pressure, modernization and platform sequencing, and AI tooling and funding alignment.",
+        "Surface the Matt departure and Vince backfill decision as an open action item requiring a formal transition plan and leadership visibility.",
+        "Flag the Scan AI technical decision as time-sensitive \u2014 P&C funding is ready, but the Celonis differentiation case must be airtight before Dan Griffiths' expected challenge.",
+        "Raise the underwriting modernization framing (Risk Precision, Loss Avoidance, Operational Excellence) as a structuring lens for 2026\u20132027 investment conversations.",
+        "Note the TPM dashboard data gap (nothing current since Q2 2025) as an operational risk \u2014 domain health reporting is running on manual Excel workarounds ahead of upcoming outreach meetings."
+      ],
+      "title": "Weekly Staff \u2013 P&C CTO Leadership",
+      "start_label": "9:30 AM",
+      "end_label": "10:00 AM"
+    }
+  }
 }
