@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-21T04:55:28.109979-05:00",
-  "refreshed_label": "4:55 AM",
+  "refreshed_at": "2026-05-21T06:26:35.763381-05:00",
+  "refreshed_label": "6:26 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,19 @@
       "end_label": "7:45 AM",
       "summary": "Sync with Praveena",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You and Praveena work closely on architecture strategy, team operations, and planning \u2014 recurring threads include the Products & Services catalog, horizontal planning prep, and team retention concerns. As of 5-19, the most active open items are Matt's departure and Vince's backfill, the Horizontal Planning meeting format shift, and key projects like TRAD Plus and DAMIT. Earlier meetings surfaced the AI requirements tool (built with Adam, received by Sarah Hudson but not yet industrialized) and Deepak's push for more tangible architecture deliverables.",
+        "tasks": [
+          "Summarize the 5-13 meeting \u2014 cover Mark's health update, leadership transition anxiety, Rebecca's potential director move, and the AI requirements prototype status.",
+          "Summarize the 5-19 meeting \u2014 cover Matt's departure and the Vince backfill plan, the restructured Horizontal Planning format, and the key projects tracked (TRAD Plus, DAMIT, Telematics).",
+          "Note any unresolved threads across both meetings \u2014 specifically the AI tool industrialization question, Jeff's reassurance about architecture's value, and whether the Horizontal Planning meeting produced any outcomes worth flagging.",
+          "Be ready to discuss whether the Vince backfill has moved forward and if a formal transition plan for Matt was established.",
+          "Flag the Products & Services catalog from 5-6 as a potential standing item \u2014 confirm with Praveena whether SME feedback came in and if Deepak's concerns were mapped to the catalog."
+        ],
+        "title": "Sync with Praveena",
+        "start_label": "7:30 AM",
+        "end_label": "7:45 AM"
+      }
     },
     {
       "id": "d8rc2qnbcm862snjkji3goirg4",
@@ -21,7 +33,19 @@
       "end_label": "12:00 PM",
       "summary": "(Q2) 2026 Horizontal Planning",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "The Q2 2026 Horizontal Planning meeting follows a format shift noted in the 5-19 Praveena sync \u2014 horizontal teams (Security, Infrastructure, Ops, Data, Contact Center, CFO) present their horizons and dependencies first, with architecture observing and engaging toward the end. Open threads feeding into this meeting include the Hi Marley/Claims 2-way SMS security escalation (unresolved risk acceptance dispute as of 5-18), Scan AI desktop deployment scope and governance (unresolved as of 5-19), and the TRAD Plus/Guidewire rebalance targeting 2031. The prep instructions call out four specific topic areas \u2014 data support and claims activity, D&S, future of underwriting, and Experience Intelligence E2E \u2014 plus new channel security support, all of which intersect active threads from recent meetings.",
+        "tasks": [
+          "Review sent emails for any notes or summaries touching data support, current claims activity, D&S, future of underwriting, and Experience Intelligence E2E before the meeting starts.",
+          "Prepare a clear position on the Hi Marley security escalation \u2014 the business's risk-acceptance proposal was rejected by IT and Architecture as of 5-18, so know the current status and whether a decision has been forced ahead of this planning cycle.",
+          "Confirm Scan AI's deployment scope and funding status \u2014 the channel support security angle maps directly to the prep instruction asking for 'security for new channel support', and the 5-19 sync left desktop footprint and governance unresolved.",
+          "Identify which horizontal teams are presenting dependencies that touch underwriting modernization \u2014 specifically the TRAD Plus/Guidewire 2031 timeline and DAMIT pricing work flagged in the Praveena 5-19 notes \u2014 so you can engage precisely when architecture's window opens.",
+          "Note Vince's backfill of Matt's responsibilities as context for any resource or capacity questions that surface during the data or underwriting segments of the planning review."
+        ],
+        "title": "(Q2) 2026 Horizontal Planning",
+        "start_label": "8:00 AM",
+        "end_label": "12:00 PM"
+      }
     },
     {
       "id": "64m7d7076bvgf0ei2h8qctu83c",
@@ -91,7 +115,19 @@
       "end_label": "4:25 PM",
       "summary": "P&C Sandbox/Lab Environment",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "The P&C Sandbox/Lab Environment meetings have centered on standing up a dedicated test environment to support the 2026 rollout of Claims HQ, Text-to-Audio, and Visual Voicemail \u2014 with the Claims UX team (Rolando, Mary Lee, Slax) pushing for full admin rights, synthetic production data, and the ability to test at scale with real adjusters. From the 5/14 meeting, two threads remain open: Rolando was to send a formal requirements document to Mark for review, and the group needed to identify specific stakeholders from Dan Weaver's team and the architecture team to pull into planning. The concept of the 'P&C Lab' was still being socialized upward with leadership as of that last session.",
+        "tasks": [
+          "Confirm whether Rolando sent the formal test environment requirements document \u2014 locate it or flag that it's still outstanding.",
+          "Come prepared with names from Dan Weaver's team and the architecture team to propose as stakeholders for the next planning phase.",
+          "Review the EMG Offsite notes for relevant infrastructure context \u2014 specifically the on-prem capacity discussion, which likely bears directly on where this sandbox environment gets hosted.",
+          "Clarify the current status of the 'P&C Lab' concept with leadership \u2014 determine whether socialization has moved forward or stalled since 5/14.",
+          "Be ready to discuss how the AI-assisted business analysis approach (used by Mark and Adam) could accelerate requirements definition for the sandbox if gaps in Business Architecture capability persist."
+        ],
+        "title": "P&C Sandbox/Lab Environment",
+        "start_label": "4:00 PM",
+        "end_label": "4:25 PM"
+      }
     },
     {
       "id": "rgkrm8khemnslk2uk25dkn8u18",
@@ -111,38 +147,76 @@
       "end_label": "4:55 PM",
       "summary": "EMG connect on TWT Security issue",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Rick is a recurring collaborator on the Two-Way Texting / Hi Marley implementation \u2014 the open thread running through every prior meeting is the security standoff between the new CISO Dan's hard-line MFA/PII stance and the business push to retire CCOM in favor of Hi Marley SMS. The most concrete unresolved items are: the NYDFS 2025 ruling pressure, the DLP and perimeter-security gaps that surfaced post-contract, and the timeline crunch (Claims HQ + 2-way texting targeting Oct/Nov 2026 but under pressure to compress to Q2). The prep instruction says to sync with Rick before the EMG connect \u2014 treat this meeting as your alignment checkpoint before that larger audience.",
+        "tasks": [
+          "Confirm with Rick what specific security issue is being surfaced to EMG \u2014 clarify whether the focus is the NYDFS/MFA authentication gap, the DLP exposure, or both.",
+          "Align with Rick on the current status of the Hi Marley/CCOM transition \u2014 determine whether any decisions have been made since the 5/8 meeting about retiring CCOM or adjusting the security model.",
+          "Decide with Rick what position IT is presenting to EMG \u2014 establish whether the ask is a decision, an escalation, or an informational brief.",
+          "Review the Q2 vs. Oct/Nov timeline conflict \u2014 confirm whether the compressed delivery pressure from Gloria's miscommunication has changed the scope or resourcing picture before EMG hears it.",
+          "Prepare to address Dan's authentication requirements directly \u2014 know the current MFA gap status for inbound SMS data so you are not caught flat-footed in the EMG meeting."
+        ],
+        "title": "EMG connect on TWT Security issue",
+        "start_label": "4:30 PM",
+        "end_label": "4:55 PM"
+      }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">7:30 AM &mdash; 7:45 AM</div>\n            <h2 class=\"focus-title\">Sync with Praveena</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">7:30 AM &mdash; 7:45 AM</div>\n            <h2 class=\"focus-title\">Sync with Praveena</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">You and Praveena work closely on architecture strategy, team operations, and planning \u2014 recurring threads include the Products &amp; Services catalog, horizontal planning prep, and team retention concerns. As of 5-19, the most active open items are Matt&#x27;s departure and Vince&#x27;s backfill, the Horizontal Planning meeting format shift, and key projects like TRAD Plus and DAMIT. Earlier meetings surfaced the AI requirements tool (built with Adam, received by Sarah Hudson but not yet industrialized) and Deepak&#x27;s push for more tangible architecture deliverables.</p>\n                <ul class=\"focus-prep-tasks\"><li>Summarize the 5-13 meeting \u2014 cover Mark&#x27;s health update, leadership transition anxiety, Rebecca&#x27;s potential director move, and the AI requirements prototype status.</li><li>Summarize the 5-19 meeting \u2014 cover Matt&#x27;s departure and the Vince backfill plan, the restructured Horizontal Planning format, and the key projects tracked (TRAD Plus, DAMIT, Telematics).</li><li>Note any unresolved threads across both meetings \u2014 specifically the AI tool industrialization question, Jeff&#x27;s reassurance about architecture&#x27;s value, and whether the Horizontal Planning meeting produced any outcomes worth flagging.</li><li>Be ready to discuss whether the Vince backfill has moved forward and if a formal transition plan for Matt was established.</li><li>Flag the Products &amp; Services catalog from 5-6 as a potential standing item \u2014 confirm with Praveena whether SME feedback came in and if Deepak&#x27;s concerns were mapped to the catalog.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">7:30 AM</div>\n                    <div class=\"t-end\">&mdash; 7:45 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Praveena</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">(Q2) 2026 Horizontal Planning</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TVO Program Debrief (Monthly)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly: LOB Arch Cross-Portfolio Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Claims Arch Runway Enablers Refinement</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9255...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">WEBINAR***Monthly Engineering Excellence Forum</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9827...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Technology EMG Meeting</div>\n                    <div class=\"t-loc\">Eagle Hall A; | Zoom; EXEC CEN...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Sandbox/Lab Environment</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">School Schedule - Zoom meetings after 4</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG connect on TWT Security issue</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finish reading Friday insuretch news.. forward articles </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Matt about new Investment visibility</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Ramesh/Suresh on Skan scope and BCA</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">send Skan.ai demo to UW</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Consolidate dashboard feedback and custom views for Matt McCoy</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare offsite feedback cascade for staff and directors</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Horizontal Planning Sheet</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 20</span>\n            </div>",
   "preps": {
-    "esco0d98ou4bq51pd5sfdb4nio": {
-      "summary": "This is a team standup for the TF group \u2014 no attendees are listed, but the prep instructions call for two specific agenda items: announcing Matt Unsworth's departure and surfacing cross-cutting themes from sent emails this week. Matt was last mentioned in the Alan.ai sync (5-8) as a candidate being considered for the Solution Staff Engineer role alongside Neil Bowser, with leadership leaning against requiring a full panel interview for him. No prior TF Standup summaries exist in your notes.",
+    "9phrejksm5a1ctqaphslcrdoro": {
+      "summary": "You and Praveena work closely on architecture strategy, team operations, and planning \u2014 recurring threads include the Products & Services catalog, horizontal planning prep, and team retention concerns. As of 5-19, the most active open items are Matt's departure and Vince's backfill, the Horizontal Planning meeting format shift, and key projects like TRAD Plus and DAMIT. Earlier meetings surfaced the AI requirements tool (built with Adam, received by Sarah Hudson but not yet industrialized) and Deepak's push for more tangible architecture deliverables.",
       "tasks": [
-        "Announce Matt Unsworth's departure \u2014 prepare a brief, factual statement covering his role, effective date, and any interim coverage or next steps the team needs to know.",
-        "Review your sent emails from this week and identify 2-3 cross-cutting themes to surface \u2014 look for patterns across Scan/Celonis alignment, mainframe modernization, and staffing movement.",
-        "Clarify the impact of Matt's departure on the Solution Staff Engineer hiring process \u2014 his candidacy was in flight, so address whether the role search changes or who absorbs his responsibilities in the interim.",
-        "Note any open items from the broader TF workstream that intersect with themes from the Aaron and Deepak threads \u2014 particularly E2E process visibility and the 'spreadsheet kill' initiative \u2014 in case they surface in discussion.",
-        "Be ready to field questions about organizational stability \u2014 the recent right-sizing actions have been a live concern across teams, and a departure announcement may prompt follow-up questions."
+        "Summarize the 5-13 meeting \u2014 cover Mark's health update, leadership transition anxiety, Rebecca's potential director move, and the AI requirements prototype status.",
+        "Summarize the 5-19 meeting \u2014 cover Matt's departure and the Vince backfill plan, the restructured Horizontal Planning format, and the key projects tracked (TRAD Plus, DAMIT, Telematics).",
+        "Note any unresolved threads across both meetings \u2014 specifically the AI tool industrialization question, Jeff's reassurance about architecture's value, and whether the Horizontal Planning meeting produced any outcomes worth flagging.",
+        "Be ready to discuss whether the Vince backfill has moved forward and if a formal transition plan for Matt was established.",
+        "Flag the Products & Services catalog from 5-6 as a potential standing item \u2014 confirm with Praveena whether SME feedback came in and if Deepak's concerns were mapped to the catalog."
       ],
-      "title": "TF Standup",
-      "start_label": "8:00 AM",
-      "end_label": "9:00 AM"
+      "title": "Sync with Praveena",
+      "start_label": "7:30 AM",
+      "end_label": "7:45 AM"
     },
-    "g18417rmhgbb6lnjfqoj5rbs9c": {
-      "summary": "This is the weekly P&C CTO Leadership staff meeting \u2014 the prep instructions override the default and call for a digest of EA off-site highlights pulled from the sent emails folder, organized by theme, plus any cross-cutting themes from the week. No sent emails folder is accessible here, so the synthesis below draws entirely from the five meeting summaries provided from the week of 5/12\u20135/19. The recurring threads across those meetings are: talent pressure and backfill urgency (Matt's departure, Vince as successor, mid-career architect retention), modernization sequencing and platform complexity (Guidewire/TRAD Plus, underwriting reinvention pillars, legacy PIF concentration), and AI tooling decisions under funding scrutiny (Scan AI vs. Celonis differentiation, agent assistance alignment, evaluation-driven development).",
+    "d8rc2qnbcm862snjkji3goirg4": {
+      "summary": "The Q2 2026 Horizontal Planning meeting follows a format shift noted in the 5-19 Praveena sync \u2014 horizontal teams (Security, Infrastructure, Ops, Data, Contact Center, CFO) present their horizons and dependencies first, with architecture observing and engaging toward the end. Open threads feeding into this meeting include the Hi Marley/Claims 2-way SMS security escalation (unresolved risk acceptance dispute as of 5-18), Scan AI desktop deployment scope and governance (unresolved as of 5-19), and the TRAD Plus/Guidewire rebalance targeting 2031. The prep instructions call out four specific topic areas \u2014 data support and claims activity, D&S, future of underwriting, and Experience Intelligence E2E \u2014 plus new channel security support, all of which intersect active threads from recent meetings.",
       "tasks": [
-        "Present the EA off-site highlights organized into the three cross-cutting themes: talent and retention pressure, modernization and platform sequencing, and AI tooling and funding alignment.",
-        "Surface the Matt departure and Vince backfill decision as an open action item requiring a formal transition plan and leadership visibility.",
-        "Flag the Scan AI technical decision as time-sensitive \u2014 P&C funding is ready, but the Celonis differentiation case must be airtight before Dan Griffiths' expected challenge.",
-        "Raise the underwriting modernization framing (Risk Precision, Loss Avoidance, Operational Excellence) as a structuring lens for 2026\u20132027 investment conversations.",
-        "Note the TPM dashboard data gap (nothing current since Q2 2025) as an operational risk \u2014 domain health reporting is running on manual Excel workarounds ahead of upcoming outreach meetings."
+        "Review sent emails for any notes or summaries touching data support, current claims activity, D&S, future of underwriting, and Experience Intelligence E2E before the meeting starts.",
+        "Prepare a clear position on the Hi Marley security escalation \u2014 the business's risk-acceptance proposal was rejected by IT and Architecture as of 5-18, so know the current status and whether a decision has been forced ahead of this planning cycle.",
+        "Confirm Scan AI's deployment scope and funding status \u2014 the channel support security angle maps directly to the prep instruction asking for 'security for new channel support', and the 5-19 sync left desktop footprint and governance unresolved.",
+        "Identify which horizontal teams are presenting dependencies that touch underwriting modernization \u2014 specifically the TRAD Plus/Guidewire 2031 timeline and DAMIT pricing work flagged in the Praveena 5-19 notes \u2014 so you can engage precisely when architecture's window opens.",
+        "Note Vince's backfill of Matt's responsibilities as context for any resource or capacity questions that surface during the data or underwriting segments of the planning review."
       ],
-      "title": "Weekly Staff \u2013 P&C CTO Leadership",
-      "start_label": "9:30 AM",
-      "end_label": "10:00 AM"
+      "title": "(Q2) 2026 Horizontal Planning",
+      "start_label": "8:00 AM",
+      "end_label": "12:00 PM"
+    },
+    "5kqg013jfhd6amt8uibj9d5bjo": {
+      "summary": "The P&C Sandbox/Lab Environment meetings have centered on standing up a dedicated test environment to support the 2026 rollout of Claims HQ, Text-to-Audio, and Visual Voicemail \u2014 with the Claims UX team (Rolando, Mary Lee, Slax) pushing for full admin rights, synthetic production data, and the ability to test at scale with real adjusters. From the 5/14 meeting, two threads remain open: Rolando was to send a formal requirements document to Mark for review, and the group needed to identify specific stakeholders from Dan Weaver's team and the architecture team to pull into planning. The concept of the 'P&C Lab' was still being socialized upward with leadership as of that last session.",
+      "tasks": [
+        "Confirm whether Rolando sent the formal test environment requirements document \u2014 locate it or flag that it's still outstanding.",
+        "Come prepared with names from Dan Weaver's team and the architecture team to propose as stakeholders for the next planning phase.",
+        "Review the EMG Offsite notes for relevant infrastructure context \u2014 specifically the on-prem capacity discussion, which likely bears directly on where this sandbox environment gets hosted.",
+        "Clarify the current status of the 'P&C Lab' concept with leadership \u2014 determine whether socialization has moved forward or stalled since 5/14.",
+        "Be ready to discuss how the AI-assisted business analysis approach (used by Mark and Adam) could accelerate requirements definition for the sandbox if gaps in Business Architecture capability persist."
+      ],
+      "title": "P&C Sandbox/Lab Environment",
+      "start_label": "4:00 PM",
+      "end_label": "4:25 PM"
+    },
+    "tadisct8ldbbtf2fliimgh0st0": {
+      "summary": "Rick is a recurring collaborator on the Two-Way Texting / Hi Marley implementation \u2014 the open thread running through every prior meeting is the security standoff between the new CISO Dan's hard-line MFA/PII stance and the business push to retire CCOM in favor of Hi Marley SMS. The most concrete unresolved items are: the NYDFS 2025 ruling pressure, the DLP and perimeter-security gaps that surfaced post-contract, and the timeline crunch (Claims HQ + 2-way texting targeting Oct/Nov 2026 but under pressure to compress to Q2). The prep instruction says to sync with Rick before the EMG connect \u2014 treat this meeting as your alignment checkpoint before that larger audience.",
+      "tasks": [
+        "Confirm with Rick what specific security issue is being surfaced to EMG \u2014 clarify whether the focus is the NYDFS/MFA authentication gap, the DLP exposure, or both.",
+        "Align with Rick on the current status of the Hi Marley/CCOM transition \u2014 determine whether any decisions have been made since the 5/8 meeting about retiring CCOM or adjusting the security model.",
+        "Decide with Rick what position IT is presenting to EMG \u2014 establish whether the ask is a decision, an escalation, or an informational brief.",
+        "Review the Q2 vs. Oct/Nov timeline conflict \u2014 confirm whether the compressed delivery pressure from Gloria's miscommunication has changed the scope or resourcing picture before EMG hears it.",
+        "Prepare to address Dan's authentication requirements directly \u2014 know the current MFA gap status for inbound SMS data so you are not caught flat-footed in the EMG meeting."
+      ],
+      "title": "EMG connect on TWT Security issue",
+      "start_label": "4:30 PM",
+      "end_label": "4:55 PM"
     }
   }
 }
