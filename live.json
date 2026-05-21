@@ -1,136 +1,122 @@
 {
-  "refreshed_at": "2026-05-20T20:35:00.460004-05:00",
-  "refreshed_label": "8:35 PM",
+  "refreshed_at": "2026-05-21T00:53:10.878340-05:00",
+  "refreshed_label": "12:53 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "esco0d98ou4bq51pd5sfdb4nio",
-      "start_iso": "2026-05-20T08:00:00-05:00",
-      "end_iso": "2026-05-20T09:00:00-05:00",
-      "start_label": "8:00 AM",
-      "end_label": "9:00 AM",
-      "summary": "TF Standup",
-      "location": "CONF SAT HO Grace Hoppe...",
-      "prep": {
-        "summary": "This is a team standup for the TF group \u2014 no attendees are listed, but the prep instructions call for two specific agenda items: announcing Matt Unsworth's departure and surfacing cross-cutting themes from sent emails this week. Matt was last mentioned in the Alan.ai sync (5-8) as a candidate being considered for the Solution Staff Engineer role alongside Neil Bowser, with leadership leaning against requiring a full panel interview for him. No prior TF Standup summaries exist in your notes.",
-        "tasks": [
-          "Announce Matt Unsworth's departure \u2014 prepare a brief, factual statement covering his role, effective date, and any interim coverage or next steps the team needs to know.",
-          "Review your sent emails from this week and identify 2-3 cross-cutting themes to surface \u2014 look for patterns across Scan/Celonis alignment, mainframe modernization, and staffing movement.",
-          "Clarify the impact of Matt's departure on the Solution Staff Engineer hiring process \u2014 his candidacy was in flight, so address whether the role search changes or who absorbs his responsibilities in the interim.",
-          "Note any open items from the broader TF workstream that intersect with themes from the Aaron and Deepak threads \u2014 particularly E2E process visibility and the 'spreadsheet kill' initiative \u2014 in case they surface in discussion.",
-          "Be ready to field questions about organizational stability \u2014 the recent right-sizing actions have been a live concern across teams, and a departure announcement may prompt follow-up questions."
-        ],
-        "title": "TF Standup",
-        "start_label": "8:00 AM",
-        "end_label": "9:00 AM"
-      }
-    },
-    {
-      "id": "3bg23gh9m8md7vc4grqghk0jfg",
-      "start_iso": "2026-05-20T09:00:00-05:00",
-      "end_iso": "2026-05-20T09:30:00-05:00",
-      "start_label": "9:00 AM",
-      "end_label": "9:30 AM",
-      "summary": "Arch Forum Panel Review Meeting",
-      "location": "https://usaa.zoom.us/j/9459...",
-      "prep": null
-    },
-    {
-      "id": "g18417rmhgbb6lnjfqoj5rbs9c",
-      "start_iso": "2026-05-20T09:30:00-05:00",
-      "end_iso": "2026-05-20T10:00:00-05:00",
-      "start_label": "9:30 AM",
-      "end_label": "10:00 AM",
-      "summary": "Weekly Staff \u2013 P&C CTO Leadership",
-      "location": "https://usaa.zoom.us/j/9538...",
-      "prep": {
-        "summary": "This is the weekly P&C CTO Leadership staff meeting \u2014 the prep instructions override the default and call for a digest of EA off-site highlights pulled from the sent emails folder, organized by theme, plus any cross-cutting themes from the week. No sent emails folder is accessible here, so the synthesis below draws entirely from the five meeting summaries provided from the week of 5/12\u20135/19. The recurring threads across those meetings are: talent pressure and backfill urgency (Matt's departure, Vince as successor, mid-career architect retention), modernization sequencing and platform complexity (Guidewire/TRAD Plus, underwriting reinvention pillars, legacy PIF concentration), and AI tooling decisions under funding scrutiny (Scan AI vs. Celonis differentiation, agent assistance alignment, evaluation-driven development).",
-        "tasks": [
-          "Present the EA off-site highlights organized into the three cross-cutting themes: talent and retention pressure, modernization and platform sequencing, and AI tooling and funding alignment.",
-          "Surface the Matt departure and Vince backfill decision as an open action item requiring a formal transition plan and leadership visibility.",
-          "Flag the Scan AI technical decision as time-sensitive \u2014 P&C funding is ready, but the Celonis differentiation case must be airtight before Dan Griffiths' expected challenge.",
-          "Raise the underwriting modernization framing (Risk Precision, Loss Avoidance, Operational Excellence) as a structuring lens for 2026\u20132027 investment conversations.",
-          "Note the TPM dashboard data gap (nothing current since Q2 2025) as an operational risk \u2014 domain health reporting is running on manual Excel workarounds ahead of upcoming outreach meetings."
-        ],
-        "title": "Weekly Staff \u2013 P&C CTO Leadership",
-        "start_label": "9:30 AM",
-        "end_label": "10:00 AM"
-      }
-    },
-    {
-      "id": "gsg9g6ic0roe262n6m0vmv3dh8",
-      "start_iso": "2026-05-20T10:00:00-05:00",
-      "end_iso": "2026-05-20T11:00:00-05:00",
-      "start_label": "10:00 AM",
-      "end_label": "11:00 AM",
-      "summary": "2026 Memorial Day Ceremony",
-      "location": "EXEC SAT HO (EO1W.F209): FX...",
-      "prep": null
-    },
-    {
-      "id": "lt1duurj9enfmsqqv4l0dd6ol4",
-      "start_iso": "2026-05-20T11:00:00-05:00",
-      "end_iso": "2026-05-20T11:30:00-05:00",
-      "start_label": "11:00 AM",
-      "end_label": "11:30 AM",
-      "summary": "LOB Product Development AI",
+      "id": "9phrejksm5a1ctqaphslcrdoro",
+      "start_iso": "2026-05-21T07:30:00-05:00",
+      "end_iso": "2026-05-21T07:45:00-05:00",
+      "start_label": "7:30 AM",
+      "end_label": "7:45 AM",
+      "summary": "Sync with Praveena",
       "location": "",
       "prep": null
     },
     {
-      "id": "ln1er97jgdj12iuqa7ps0kh2as",
-      "start_iso": "2026-05-20T11:30:00-05:00",
-      "end_iso": "2026-05-20T13:00:00-05:00",
-      "start_label": "11:30 AM",
+      "id": "d8rc2qnbcm862snjkji3goirg4",
+      "start_iso": "2026-05-21T08:00:00-05:00",
+      "end_iso": "2026-05-21T12:00:00-05:00",
+      "start_label": "8:00 AM",
+      "end_label": "12:00 PM",
+      "summary": "(Q2) 2026 Horizontal Planning",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "64m7d7076bvgf0ei2h8qctu83c",
+      "start_iso": "2026-05-21T12:00:00-05:00",
+      "end_iso": "2026-05-21T13:00:00-05:00",
+      "start_label": "12:00 PM",
       "end_label": "1:00 PM",
       "summary": "Lunch/ Desk Time",
       "location": "",
       "prep": null
     },
     {
-      "id": "6bk44vaf3j49is3tbsu647jeeo",
-      "start_iso": "2026-05-20T13:00:00-05:00",
-      "end_iso": "2026-05-20T13:25:00-05:00",
+      "id": "kbcu6dtlt1bni4ivoo80ep5e70",
+      "start_iso": "2026-05-21T13:00:00-05:00",
+      "end_iso": "2026-05-21T13:55:00-05:00",
       "start_label": "1:00 PM",
-      "end_label": "1:25 PM",
-      "summary": "Weekly P&C New Products 1 Arch Runway (2026 S...)",
+      "end_label": "1:55 PM",
+      "summary": "TVO Program Debrief (Monthly)",
       "location": "",
       "prep": null
     },
     {
-      "id": "6jkgsd552st4r18hsqosv772l0",
-      "start_iso": "2026-05-20T13:00:00-05:00",
-      "end_iso": "2026-05-20T14:00:00-05:00",
-      "start_label": "1:00 PM",
-      "end_label": "2:00 PM",
-      "summary": "GenAI Program & Use Case Demos: Open Forum",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "mj2a87tinka7thblvdmj0rnjus",
-      "start_iso": "2026-05-20T13:00:00-05:00",
-      "end_iso": "2026-05-20T13:25:00-05:00",
-      "start_label": "1:00 PM",
-      "end_label": "1:25 PM",
-      "summary": "Bi-weekly - 1:1 w/ Mark Francis | Deepak, In-person",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "f9li07iftuh3j3lvvfmc3k6fj0",
-      "start_iso": "2026-05-20T14:00:00-05:00",
-      "end_iso": "2026-05-20T14:25:00-05:00",
+      "id": "pvicd3uo6rerrlbncneta8nj8c",
+      "start_iso": "2026-05-21T14:00:00-05:00",
+      "end_iso": "2026-05-21T15:00:00-05:00",
       "start_label": "2:00 PM",
-      "end_label": "2:25 PM",
-      "summary": "CTXO Office Hours",
-      "location": "https://usaa.zoom.us/j/9549...",
+      "end_label": "3:00 PM",
+      "summary": "Monthly: LOB Arch Cross-Portfolio Sync",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "8ijf4l3uuisgtua0kc15r1gmoo",
+      "start_iso": "2026-05-21T15:00:00-05:00",
+      "end_iso": "2026-05-21T15:30:00-05:00",
+      "start_label": "3:00 PM",
+      "end_label": "3:30 PM",
+      "summary": "Claims Arch Runway Enablers Refinement",
+      "location": "https://usaa.zoom.us/j/9255...",
+      "prep": null
+    },
+    {
+      "id": "os64ht42vjfh64dn87epun1ea4",
+      "start_iso": "2026-05-21T15:00:00-05:00",
+      "end_iso": "2026-05-21T15:50:00-05:00",
+      "start_label": "3:00 PM",
+      "end_label": "3:50 PM",
+      "summary": "WEBINAR***Monthly Engineering Excellence Forum",
+      "location": "https://usaa.zoom.us/j/9827...",
+      "prep": null
+    },
+    {
+      "id": "v26dg1o16te0c2btak5pl02ngo",
+      "start_iso": "2026-05-21T15:00:00-05:00",
+      "end_iso": "2026-05-21T16:00:00-05:00",
+      "start_label": "3:00 PM",
+      "end_label": "4:00 PM",
+      "summary": "Technology EMG Meeting",
+      "location": "Eagle Hall A; | Zoom; EXEC CEN...",
+      "prep": null
+    },
+    {
+      "id": "5kqg013jfhd6amt8uibj9d5bjo",
+      "start_iso": "2026-05-21T16:00:00-05:00",
+      "end_iso": "2026-05-21T16:25:00-05:00",
+      "start_label": "4:00 PM",
+      "end_label": "4:25 PM",
+      "summary": "P&C Sandbox/Lab Environment",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "rgkrm8khemnslk2uk25dkn8u18",
+      "start_iso": "2026-05-21T16:00:00-05:00",
+      "end_iso": "2026-05-21T17:00:00-05:00",
+      "start_label": "4:00 PM",
+      "end_label": "5:00 PM",
+      "summary": "School Schedule - Zoom meetings after 4",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "tadisct8ldbbtf2fliimgh0st0",
+      "start_iso": "2026-05-21T16:30:00-05:00",
+      "end_iso": "2026-05-21T16:55:00-05:00",
+      "start_label": "4:30 PM",
+      "end_label": "4:55 PM",
+      "summary": "EMG connect on TWT Security issue",
+      "location": "",
       "prep": null
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TF Standup</div>\n                    <div class=\"t-loc\">CONF SAT HO Grace Hoppe...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arch Forum Panel Review Meeting</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9459...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff \u2013 P&amp;C CTO Leadership</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9538...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">2026 Memorial Day Ceremony</div>\n                    <div class=\"t-loc\">EXEC SAT HO (EO1W.F209): FX...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">LOB Product Development AI</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly P&amp;C New Products 1 Arch Runway (2026 S...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">GenAI Program &amp; Use Case Demos: Open Forum</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly - 1:1 w/ Mark Francis | Deepak, In-person</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">CTXO Office Hours</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9549...</div>\n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Matt about new Investment visibility</span>\n                <span class=\"capsule capsule--caution\">Due May 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Ramesh/Suresh on Skan scope and BCA</span>\n                <span class=\"capsule capsule--caution\">Due May 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">send Skan.ai demo to UW</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Consolidate dashboard feedback and custom views for Matt McCoy</span>\n                <span class=\"capsule capsule--caution\">Due May 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare offsite feedback cascade for staff and directors</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Horizontal Planning Sheet</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">7:30 AM &mdash; 7:45 AM</div>\n            <h2 class=\"focus-title\">Sync with Praveena</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">7:30 AM</div>\n                    <div class=\"t-end\">&mdash; 7:45 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Praveena</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">(Q2) 2026 Horizontal Planning</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TVO Program Debrief (Monthly)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly: LOB Arch Cross-Portfolio Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Claims Arch Runway Enablers Refinement</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9255...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">WEBINAR***Monthly Engineering Excellence Forum</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9827...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Technology EMG Meeting</div>\n                    <div class=\"t-loc\">Eagle Hall A; | Zoom; EXEC CEN...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Sandbox/Lab Environment</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">School Schedule - Zoom meetings after 4</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG connect on TWT Security issue</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finish reading Friday insuretch news.. forward articles </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Matt about new Investment visibility</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Ramesh/Suresh on Skan scope and BCA</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">send Skan.ai demo to UW</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Consolidate dashboard feedback and custom views for Matt McCoy</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare offsite feedback cascade for staff and directors</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Horizontal Planning Sheet</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 20</span>\n            </div>",
   "preps": {
     "esco0d98ou4bq51pd5sfdb4nio": {
       "summary": "This is a team standup for the TF group \u2014 no attendees are listed, but the prep instructions call for two specific agenda items: announcing Matt Unsworth's departure and surfacing cross-cutting themes from sent emails this week. Matt was last mentioned in the Alan.ai sync (5-8) as a candidate being considered for the Solution Staff Engineer role alongside Neil Bowser, with leadership leaning against requiring a full panel interview for him. No prior TF Standup summaries exist in your notes.",
