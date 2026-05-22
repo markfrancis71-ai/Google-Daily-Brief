@@ -2,6 +2,7 @@ import os
 import re
 import json
 import html
+import time
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 from google.oauth2.credentials import Credentials
@@ -254,9 +255,50 @@ def _search_sent_emails_for_keys(drive, docs_api, folder_id, keys, total_limit=6
     return results
 
 
-def get_ai_summary(context):
+def _retry_delay_seconds(exc):
+    """Pull the server-suggested retry delay (e.g. 'retryDelay': '45s') out of a
+    Gemini error. Returns None when absent so the caller uses its own backoff."""
+    m = re.search(r"retryDelay['\"]?\s*:\s*['\"]?(\d+(?:\.\d+)?)s", str(exc))
+    return float(m.group(1)) + 1 if m else None
+
+
+def _gemini_json(prompt, *, max_attempts=5):
+    """Call Gemini for a JSON response, retrying on rate-limit (429) and
+    transient server (5xx) errors with backoff. The free tier allows only 5
+    requests/minute, so a brief with several meetings will hit 429 — wait it
+    out rather than dropping content. Returns the parsed JSON.
+
+    The SDK is imported here (not at module scope) so fetch_live.py can reuse
+    this module's Google helpers without installing google-genai.
+    """
     from google import genai
+    from google.genai import errors as genai_errors
+
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    delay = 30
+    for attempt in range(1, max_attempts + 1):
+        try:
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=prompt,
+                config={"response_mime_type": "application/json"},
+            )
+            raw = (response.text or "").strip()
+            if raw.startswith("```"):
+                raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+            return json.loads(raw)
+        except genai_errors.APIError as e:
+            # 429 = rate limited; 5xx = transient. Other 4xx (400/403/404) are
+            # real bugs — re-raise so the caller falls back instead of looping.
+            if getattr(e, "code", None) not in (429, 500, 503, 504) or attempt == max_attempts:
+                raise
+            wait = _retry_delay_seconds(e) or delay
+            print(f"Gemini {e.code} (attempt {attempt}/{max_attempts}); retrying in {wait:.0f}s.")
+            time.sleep(wait)
+            delay = min(delay * 2, 60)
+
+
+def get_ai_summary(context):
     prompt = f"""You are a personal productivity assistant for Francis Inc.
 
 Voice: Declarative. Plain. Em-dashes liberally. Lead with the verb. No emoji, no marketing fluff, no hedging. Address the reader as "you". Make decisions — don't ask the reader to.
@@ -270,15 +312,7 @@ Return JSON only. Keys: "overview" (string), "suggestions" (array of strings).
 {context}"""
 
     try:
-        response = client.models.generate_content(
-            model=GEMINI_MODEL,
-            contents=prompt,
-            config={"response_mime_type": "application/json"},
-        )
-        raw = (response.text or "").strip()
-        if raw.startswith("```"):
-            raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-        return json.loads(raw)
+        return _gemini_json(prompt)
     except Exception as e:
         # Don't let a transient Gemini outage (e.g. 503 / quota error) sink the
         # whole publish — ship the schedule + open work with a degraded overview.
@@ -296,9 +330,6 @@ def get_ai_meeting_prep(event, prep_block, attendees, related_docs):
     them; otherwise it falls back to summarizing the meeting person/topic from
     the sent-email excerpts and producing a generic 'to prepare' task list.
     """
-    from google import genai
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-
     title = event.get("summary") or "Untitled"
     attendee_lines = []
     for a in attendees or []:
@@ -346,15 +377,7 @@ Return JSON only:
 JSON only."""
 
     try:
-        response = client.models.generate_content(
-            model=GEMINI_MODEL,
-            contents=prompt,
-            config={"response_mime_type": "application/json"},
-        )
-        raw = (response.text or "").strip()
-        if raw.startswith("```"):
-            raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-        parsed = json.loads(raw)
+        parsed = _gemini_json(prompt)
         return {
             "summary": parsed.get("summary", ""),
             "tasks": parsed.get("tasks", []) or [],
@@ -417,8 +440,6 @@ def get_ai_meeting_reviews(meeting_notes):
     if not meeting_notes:
         return []
 
-    from google import genai
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     reviews = []
 
     for note in meeting_notes:
@@ -438,15 +459,7 @@ Content:
 {note["content"][:4000]}"""
 
         try:
-            response = client.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=prompt,
-                config={"response_mime_type": "application/json"},
-            )
-            raw = (response.text or "").strip()
-            if raw.startswith("```"):
-                raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-            parsed = json.loads(raw)
+            parsed = _gemini_json(prompt)
             reviews.append({
                 "title": note["title"],
                 "summary": parsed.get("summary", ""),
