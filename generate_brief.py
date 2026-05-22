@@ -7,8 +7,8 @@ from zoneinfo import ZoneInfo
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
-# anthropic is imported lazily inside the AI functions so fetch_live.py can
-# reuse the Google helpers without installing the Anthropic SDK.
+# google-genai is imported lazily inside the AI functions so fetch_live.py can
+# reuse the Google helpers without installing the Gemini SDK.
 
 SCOPES = [
     "https://www.googleapis.com/auth/calendar.readonly",
@@ -19,6 +19,7 @@ SCOPES = [
 
 TIMEZONE = os.environ.get("USER_TIMEZONE", "America/New_York")
 MEETING_NOTES_FOLDER = os.environ.get("MEETING_NOTES_FOLDER", "sent emails")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash")
 
 
 def get_google_credentials():
@@ -254,8 +255,8 @@ def _search_sent_emails_for_keys(drive, docs_api, folder_id, keys, total_limit=6
 
 
 def get_ai_summary(context):
-    import anthropic
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=8)
+    from google import genai
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     prompt = f"""You are a personal productivity assistant for Francis Inc.
 
 Voice: Declarative. Plain. Em-dashes liberally. Lead with the verb. No emoji, no marketing fluff, no hedging. Address the reader as "you". Make decisions — don't ask the reader to.
@@ -269,17 +270,17 @@ Return JSON only. Keys: "overview" (string), "suggestions" (array of strings).
 {context}"""
 
     try:
-        message = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=1024,
-            messages=[{"role": "user", "content": prompt}],
+        response = client.models.generate_content(
+            model=GEMINI_MODEL,
+            contents=prompt,
+            config={"response_mime_type": "application/json"},
         )
-        raw = message.content[0].text.strip()
+        raw = (response.text or "").strip()
         if raw.startswith("```"):
             raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
         return json.loads(raw)
     except Exception as e:
-        # Don't let a transient Anthropic outage (e.g. 529 Overloaded) sink the
+        # Don't let a transient Gemini outage (e.g. 503 / quota error) sink the
         # whole publish — ship the schedule + open work with a degraded overview.
         print(f"AI summary unavailable ({type(e).__name__}: {e}); using fallback.")
         return {
@@ -289,14 +290,14 @@ Return JSON only. Keys: "overview" (string), "suggestions" (array of strings).
 
 
 def get_ai_meeting_prep(event, prep_block, attendees, related_docs):
-    """Ask Claude for a summary + task list to prep for one meeting.
+    """Ask Gemini for a summary + task list to prep for one meeting.
 
-    If the prep block contains explicit overriding instructions Claude follows
+    If the prep block contains explicit overriding instructions Gemini follows
     them; otherwise it falls back to summarizing the meeting person/topic from
     the sent-email excerpts and producing a generic 'to prepare' task list.
     """
-    import anthropic
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=8)
+    from google import genai
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
     title = event.get("summary") or "Untitled"
     attendee_lines = []
@@ -345,12 +346,12 @@ Return JSON only:
 JSON only."""
 
     try:
-        message = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=1024,
-            messages=[{"role": "user", "content": prompt}],
+        response = client.models.generate_content(
+            model=GEMINI_MODEL,
+            contents=prompt,
+            config={"response_mime_type": "application/json"},
         )
-        raw = message.content[0].text.strip()
+        raw = (response.text or "").strip()
         if raw.startswith("```"):
             raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
         parsed = json.loads(raw)
@@ -361,7 +362,7 @@ JSON only."""
     except Exception as e:
         print(f"Meeting prep unavailable for {title!r} ({type(e).__name__}: {e}); skipping.")
         return {
-            "summary": "Prep unavailable — Claude was unreachable when this brief was built.",
+            "summary": "Prep unavailable — Gemini was unreachable when this brief was built.",
             "tasks": [],
         }
 
@@ -412,12 +413,12 @@ def build_meeting_preps(creds, events):
 
 
 def get_ai_meeting_reviews(meeting_notes):
-    """Ask Claude to review each meeting doc and return structured summaries."""
+    """Ask Gemini to review each meeting doc and return structured summaries."""
     if not meeting_notes:
         return []
 
-    import anthropic
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=8)
+    from google import genai
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     reviews = []
 
     for note in meeting_notes:
@@ -437,12 +438,12 @@ Content:
 {note["content"][:4000]}"""
 
         try:
-            message = client.messages.create(
-                model="claude-sonnet-4-6",
-                max_tokens=1024,
-                messages=[{"role": "user", "content": prompt}],
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=prompt,
+                config={"response_mime_type": "application/json"},
             )
-            raw = message.content[0].text.strip()
+            raw = (response.text or "").strip()
             if raw.startswith("```"):
                 raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
             parsed = json.loads(raw)
@@ -455,7 +456,7 @@ Content:
             print(f"Meeting review unavailable for {note['title']!r} ({type(e).__name__}: {e}); skipping.")
             reviews.append({
                 "title": note["title"],
-                "summary": "Review unavailable — Claude was unreachable when this brief was built.",
+                "summary": "Review unavailable — Gemini was unreachable when this brief was built.",
                 "takeaways": [],
             })
 
@@ -717,7 +718,7 @@ def build_live_data(events, tasks, preps=None):
     state every ~30s without a server round-trip). Row order in schedule_html
     matches the events list, so the page can highlight the current row by index.
     ``preps`` is keyed by event id and round-trips through live.json so the
-    10-min refresh worker (fetch_live.py) doesn't need to re-call Claude.
+    10-min refresh worker (fetch_live.py) doesn't need to re-call Gemini.
     """
     now = datetime.now(ZoneInfo(TIMEZONE))
     preps = preps or {}
@@ -736,7 +737,7 @@ def build_live_data(events, tasks, preps=None):
 def write_live_json(events, tasks, preps=None, path="live.json"):
     """Write live.json. When ``preps`` is omitted, preserve whatever preps the
     previous live.json carried so the cheap 10-min refresh keeps the prep
-    block intact without re-running the Claude calls."""
+    block intact without re-running the Gemini calls."""
     if preps is None:
         try:
             with open(path, "r", encoding="utf-8") as f:
@@ -1656,7 +1657,7 @@ def main():
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
     # Seed live.json with fresh preps so the 10-min refresh worker preserves
-    # them without re-running Claude.
+    # them without re-running Gemini.
     write_live_json(events, tasks, preps=preps)
     print(f"Generated index.html ({len(preps)} meeting prep entries)")
 

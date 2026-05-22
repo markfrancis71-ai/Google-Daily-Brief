@@ -29,7 +29,7 @@ jobs:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           USER_TIMEZONE: "America/Chicago"
         run: python generate_brief.py
 
@@ -38,7 +38,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # Daily build now seeds live.json with the day's meeting preps so the
-          # 10-min refresh worker doesn't need to re-call Claude. Stage both.
+          # 10-min refresh worker doesn't need to re-call Gemini. Stage both.
           git add index.html live.json
           if git diff --cached --quiet; then
             echo "Brief unchanged — nothing to commit."
