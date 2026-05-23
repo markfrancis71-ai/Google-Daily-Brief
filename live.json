@@ -1,33 +1,10 @@
 {
-  "refreshed_at": "2026-05-22T22:53:35.952114-05:00",
-  "refreshed_label": "10:53 PM",
+  "refreshed_at": "2026-05-23T01:39:14.587632-05:00",
+  "refreshed_label": "1:39 AM",
   "tz_label": "Chicago",
-  "events": [
-    {
-      "id": "0lt3o4nei9e1u805oiuahguohg",
-      "start_iso": "2026-05-22T09:00:00-05:00",
-      "end_iso": "2026-05-22T10:00:00-05:00",
-      "start_label": "9:00 AM",
-      "end_label": "10:00 AM",
-      "summary": "Combined Full Staff & Monthly Leadership meeting",
-      "location": "https://usaa.zoom.us/j/9683...",
-      "prep": {
-        "summary": "You are preparing for a combined staff and leadership meeting dominated by high-impact transitions\u2014specifically the rollout of Project IVA to the board and ongoing engineering reorganization. Unresolved ownership debates around Scan AI and Celonis\u2014paired with the push for unified developer governance\u2014remain critical friction points. Reviewing your sent emails from this week's Monday and Thursday sessions will establish the necessary baseline to coordinate these cross-cutting corporate priorities.",
-        "tasks": [
-          "Review your sent emails to synthesize key takeaways from the Monday and Thursday HP meetings\u2014focusing on the engineering feedback cascaded to Tech Fellows.",
-          "Resolve the funding and contract scope discrepancy for Scan AI\u2014clarifying whether P&C and the Contact Center will merge into a single business case.",
-          "Confirm the rollout readiness of Project IVA\u2014ensuring employee feedback channels are functioning prior to the board presentation.",
-          "Align with Deepak on the Tuesday dialogue agenda\u2014verifying that the filtered list of ten engineering feedback items is ready for staff distribution.",
-          "Audit the progress of the YAML-based taxonomy pipeline\u2014ensuring Pravina's team has stabilized the VS Code automation scripts."
-        ],
-        "title": "Combined Full Staff & Monthly Leadership meeting",
-        "start_label": "9:00 AM",
-        "end_label": "10:00 AM"
-      }
-    }
-  ],
+  "events": [],
   "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Combined Full Staff &amp; Monthly Leadership meeting</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9683...</div>\n                </div>\n            </div>",
+  "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Go through Meetings and tasks</span>\n                <span class=\"capsule capsule--caution\">Due May 25</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up Time with Marissa and the IA&#x27;s</span>\n                <span class=\"capsule capsule--neutral\">Due May 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Jonathan&#x27;s design in gmail</span>\n                <span class=\"capsule capsule--caution\">Due May 25</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning slack with what we are taking away</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">catch up with Casey/Syamken around in app SMS </span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finish reading Friday insuretch news.. forward articles </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Matt about new Investment visibility</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Consolidate dashboard feedback and custom views for Matt McCoy</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 21</span>\n            </div>",
   "preps": {
     "0lt3o4nei9e1u805oiuahguohg": {
