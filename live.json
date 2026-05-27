@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-26T18:52:58.127432-05:00",
-  "refreshed_label": "6:52 PM",
+  "refreshed_at": "2026-05-26T22:41:26.203692-05:00",
+  "refreshed_label": "10:41 PM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -12,13 +12,12 @@
       "summary": "Bi-weekly 1:1 w/Justin White | Mark Francis",
       "location": "",
       "prep": {
-        "summary": "Your previous discussion with Justin on May 15 centered on requirements cleansing\u2014combining forces with Jonathan's Genie tool\u2014and addressing the halted Guidewire reserving enhancement. Today's agenda requires you to pull fresh updates from your sent emails\u2014focusing heavily on the requirements AI ask and the ServiceNow POC.",
+        "summary": "Prepare for your sync with Justin by addressing the unresolved ServiceNow POC pricing discrepancy\u2014the vendor is pushing an unfavorable per-user model to hit a suspected $12M target. Partner with Jonathan on the requirements AI ask\u2014you now have folder access and must use the existing prompts to flush out details. Note that no information was found in your work notes regarding the sent emails folder\u2014you must check this source directly.",
         "tasks": [
-          "Summarize your last discussion with Justin\u2014focusing on the requirements cleansing assistant and team capacity constraints.",
-          "Extract recent progress updates from your sent emails\u2014capturing any shift in project trajectories since May 15.",
-          "Deliver the requirements AI ask\u2014outlining the tactical collaboration with Adam and Jonathan to ingest raw business needs.",
-          "Establish next steps for the ServiceNow POC\u2014aligning it with the broader P&C tool evaluation strategy.",
-          "Address the halted Guidewire reserving enhancement\u2014resolving the architecture pattern conflict regarding system-generated comments."
+          "Resolve the ServiceNow POC pricing dispute\u2014push back on the vendor's per-user model in favor of your event-based usage requirements.",
+          "Partner with Jonathan to process the gathered business requirements\u2014utilize the existing AI prompts to flush out the necessary details.",
+          "Review your sent emails folder prior to the meeting\u2014the local work notes contain no details on this item.",
+          "Finalize the TransUnion pilot contract\u2014confirm Provina is handling the final execution steps."
         ],
         "title": "Bi-weekly 1:1 w/Justin White | Mark Francis",
         "start_label": "8:30 AM",
@@ -34,12 +33,12 @@
       "summary": "D&S Transformation Tech Partner Connect",
       "location": "",
       "prep": {
-        "summary": "You are navigating a critical funding and scoping debate for Scan.ai\u2014a desktop-level task mining tool designed to capture \"pane of glass\" MSR activity where backend tools like Celonis fail. While P&C leadership wants to fund the deployment immediately for operational use, Brian aims to delay and secure enterprise-wide Quality Management funding by July 1st. Accelerating this technical decision hinges on bypassing a lengthy, four-month RFP process\u2014a bypass you must justify by positioning Scan.ai as strictly complementary to existing enterprise platforms.",
+        "summary": "Search your sent emails folder to reconstruct the context around Scan.ai\u2014your local work notes contain no mentions of this platform despite the upcoming D&S Transformation Tech Partner Connect. Analyze these past communications to map out previous decision points\u2014particularly regarding how Scan.ai interfaces with your broader architecture. Present these historical email findings to the partners to establish a clear baseline for the integration roadmap.",
         "tasks": [
-          "Review the sent emails folder for previous messages regarding Scan.ai to align today's talking points with past executive communications.",
-          "Draft the technical differentiation argument\u2014desktop task mining versus backend log analysis\u2014to justify Scan.ai alongside Celonis to Dan Griffiths.",
-          "Confirm with Simpkin whether P&C will independently fund their portion of the Scan.ai deployment\u2014bypassing the July 1st enterprise funding timeline.",
-          "Secure agreement from Charles and Zahid on a unified positioning strategy\u2014framing the tool strictly around the MSR \"pane of glass\" perspective\u2014to bypass a formal RFP."
+          "Search your sent emails folder using the query 'Scan.ai' to locate previous discussion threads.",
+          "Extract key decisions and timeline commitments from those past emails to build a historical summary.",
+          "Reconcile the missing Scan.ai context in your 5/13 P&C Architecture work notes to bridge the documentation gap.",
+          "Draft a brief speaking agenda outlining Francis Inc.'s technical expectations for the Scan.ai partner integration."
         ],
         "title": "D&S Transformation Tech Partner Connect",
         "start_label": "9:00 AM",
@@ -162,25 +161,24 @@
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Check with Rebecca about my monthly 1on1s with Suhas&#x27; emg</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Matt about new Investment visibility</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up Time with Marissa and the IA&#x27;s</span>\n                <span class=\"capsule capsule--caution\">Due May 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">catch up with Casey/Syamken around in app SMS </span>\n                \n            </div>",
   "preps": {
     "eejoc1c1vdfbs3fekgdsfkrijo": {
-      "summary": "Your previous discussion with Justin on May 15 centered on requirements cleansing\u2014combining forces with Jonathan's Genie tool\u2014and addressing the halted Guidewire reserving enhancement. Today's agenda requires you to pull fresh updates from your sent emails\u2014focusing heavily on the requirements AI ask and the ServiceNow POC.",
+      "summary": "Prepare for your sync with Justin by addressing the unresolved ServiceNow POC pricing discrepancy\u2014the vendor is pushing an unfavorable per-user model to hit a suspected $12M target. Partner with Jonathan on the requirements AI ask\u2014you now have folder access and must use the existing prompts to flush out details. Note that no information was found in your work notes regarding the sent emails folder\u2014you must check this source directly.",
       "tasks": [
-        "Summarize your last discussion with Justin\u2014focusing on the requirements cleansing assistant and team capacity constraints.",
-        "Extract recent progress updates from your sent emails\u2014capturing any shift in project trajectories since May 15.",
-        "Deliver the requirements AI ask\u2014outlining the tactical collaboration with Adam and Jonathan to ingest raw business needs.",
-        "Establish next steps for the ServiceNow POC\u2014aligning it with the broader P&C tool evaluation strategy.",
-        "Address the halted Guidewire reserving enhancement\u2014resolving the architecture pattern conflict regarding system-generated comments."
+        "Resolve the ServiceNow POC pricing dispute\u2014push back on the vendor's per-user model in favor of your event-based usage requirements.",
+        "Partner with Jonathan to process the gathered business requirements\u2014utilize the existing AI prompts to flush out the necessary details.",
+        "Review your sent emails folder prior to the meeting\u2014the local work notes contain no details on this item.",
+        "Finalize the TransUnion pilot contract\u2014confirm Provina is handling the final execution steps."
       ],
       "title": "Bi-weekly 1:1 w/Justin White | Mark Francis",
       "start_label": "8:30 AM",
       "end_label": "9:00 AM"
     },
     "n8mhlc9lriststnaf8tnnppp38": {
-      "summary": "You are navigating a critical funding and scoping debate for Scan.ai\u2014a desktop-level task mining tool designed to capture \"pane of glass\" MSR activity where backend tools like Celonis fail. While P&C leadership wants to fund the deployment immediately for operational use, Brian aims to delay and secure enterprise-wide Quality Management funding by July 1st. Accelerating this technical decision hinges on bypassing a lengthy, four-month RFP process\u2014a bypass you must justify by positioning Scan.ai as strictly complementary to existing enterprise platforms.",
+      "summary": "Search your sent emails folder to reconstruct the context around Scan.ai\u2014your local work notes contain no mentions of this platform despite the upcoming D&S Transformation Tech Partner Connect. Analyze these past communications to map out previous decision points\u2014particularly regarding how Scan.ai interfaces with your broader architecture. Present these historical email findings to the partners to establish a clear baseline for the integration roadmap.",
       "tasks": [
-        "Review the sent emails folder for previous messages regarding Scan.ai to align today's talking points with past executive communications.",
-        "Draft the technical differentiation argument\u2014desktop task mining versus backend log analysis\u2014to justify Scan.ai alongside Celonis to Dan Griffiths.",
-        "Confirm with Simpkin whether P&C will independently fund their portion of the Scan.ai deployment\u2014bypassing the July 1st enterprise funding timeline.",
-        "Secure agreement from Charles and Zahid on a unified positioning strategy\u2014framing the tool strictly around the MSR \"pane of glass\" perspective\u2014to bypass a formal RFP."
+        "Search your sent emails folder using the query 'Scan.ai' to locate previous discussion threads.",
+        "Extract key decisions and timeline commitments from those past emails to build a historical summary.",
+        "Reconcile the missing Scan.ai context in your 5/13 P&C Architecture work notes to bridge the documentation gap.",
+        "Draft a brief speaking agenda outlining Francis Inc.'s technical expectations for the Scan.ai partner integration."
       ],
       "title": "D&S Transformation Tech Partner Connect",
       "start_label": "9:00 AM",
