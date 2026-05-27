@@ -19,7 +19,7 @@ SCOPES = [
 ]
 
 TIMEZONE = os.environ.get("USER_TIMEZONE", "America/New_York")
-MEETING_NOTES_FOLDER = os.environ.get("MEETING_NOTES_FOLDER", "sent emails")
+MEETING_NOTES_FOLDER = os.environ.get("MEETING_NOTES_FOLDER", "work notes")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash")
 
 
@@ -161,59 +161,71 @@ _PREP_STOP_WORDS = {
     "follow", "followup", "follow-up", "kickoff", "kick", "off",
 }
 
+# Instruction verbs the user tends to prefix prep phrases with — strip them so
+# the Drive search matches what the user wrote about, not how they asked.
+_PREP_INSTRUCTION_VERBS = re.compile(
+    r"^(please\s+)?(review|look\s*up|find|search|check|cover|discuss|prepare|"
+    r"prep|summarize|summarise|read|pull|gather|brief\s*me\s*on|brief|"
+    r"remind\s*me\s*about|about)\s+",
+    re.IGNORECASE,
+)
+
 
 def _extract_prep_search_keys(prep_block, event_summary, attendees):
-    """Build a list of search terms for the sent emails folder.
+    """Build a list of search terms for the work notes folder.
 
-    The folder is full of summary docs labeled by the person/group/meeting
-    name, so name-based filename matches are the strongest signal. Sources,
-    in priority order:
-      1. Names/topics named in the 'Meeting Prep:' block.
-      2. Names in the event title itself ('1:1 with Jonathan' → Jonathan).
-      3. Attendee display names / email local-parts.
+    The prep block is the source of truth — each phrase in it (split on
+    commas, semicolons, bullets, and newlines) becomes a Drive search key
+    after stripping leading instruction verbs and stop words. Falls back to
+    capitalized names in the event title + attendees only when the prep
+    block yields nothing usable.
     """
     keys = []
     seen = set()
 
     def add(term):
-        t = (term or "").strip()
+        t = (term or "").strip(" .,-:;\"'()[]")
         if not t or t.lower() in seen or len(t) < 3 or t.lower() in _PREP_STOP_WORDS:
             return
         seen.add(t.lower())
         keys.append(t)
 
-    def harvest(text):
-        for match in re.findall(r"[A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,2}", text or ""):
-            # Strip trailing stop words from multi-token matches
-            # ("Andre With" → "Andre"). Skip the match entirely if every token
-            # is a stop word.
+    for phrase in re.split(r"[,;\n\r•·]+|\s-\s|\s–\s|\s—\s", prep_block or ""):
+        phrase = phrase.strip().lstrip("-•·*").strip()
+        if not phrase:
+            continue
+        phrase = _PREP_INSTRUCTION_VERBS.sub("", phrase)
+        # Cap phrase length — Drive's `contains` matches short substrings well
+        # but a full sentence rarely matches a doc title verbatim.
+        if len(phrase) > 60:
+            phrase = phrase[:60].rsplit(" ", 1)[0]
+        add(phrase)
+
+    if not keys:
+        for match in re.findall(r"[A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,2}", event_summary or ""):
             tokens = [t for t in match.split() if t.lower() not in _PREP_STOP_WORDS]
             if tokens:
                 add(" ".join(tokens))
-
-    harvest(prep_block)
-    harvest(event_summary)
-
-    for a in attendees or []:
-        name = a.get("displayName") or ""
-        if name:
-            add(name)
-        email = a.get("email") or ""
-        if email and "@" in email:
-            add(email.split("@")[0].replace(".", " ").replace("_", " "))
+        for a in attendees or []:
+            name = a.get("displayName") or ""
+            if name:
+                add(name)
+            email = a.get("email") or ""
+            if email and "@" in email:
+                add(email.split("@")[0].replace(".", " ").replace("_", " "))
 
     return keys
 
 
-def _search_sent_emails_for_keys(drive, docs_api, folder_id, keys, total_limit=6):
-    """Return up to total_limit unique sent-email docs that match any key.
+def _search_work_notes_for_keys(drive, docs_api, folder_id, keys, total_limit=6):
+    """Return up to total_limit unique work-notes docs that match any key.
 
-    The user labels docs in this folder by the person/group/meeting name, so
-    'name contains' (filename match) is the strongest signal and is queried
-    first per key. 'fullText contains' (body match) is queried as a fallback
-    when the filename query returns nothing. Results are deduped by file id
-    across keys; each doc is truncated so we don't blow up the AI prompt
-    with year-long meeting histories.
+    The user labels docs in this folder by the person/group/meeting/topic
+    name, so 'name contains' (filename match) is the strongest signal and is
+    queried first per key. 'fullText contains' (body match) is queried as a
+    fallback when the filename query returns nothing. Results are deduped by
+    file id across keys; each doc is truncated so we don't blow up the AI
+    prompt with year-long meeting histories.
     """
     seen = set()
     results = []
@@ -326,9 +338,10 @@ Return JSON only. Keys: "overview" (string), "suggestions" (array of strings).
 def get_ai_meeting_prep(event, prep_block, attendees, related_docs):
     """Ask Gemini for a summary + task list to prep for one meeting.
 
-    If the prep block contains explicit overriding instructions Gemini follows
-    them; otherwise it falls back to summarizing the meeting person/topic from
-    the sent-email excerpts and producing a generic 'to prepare' task list.
+    The prep block is treated as the user's instructions — each phrase in it
+    is a topic Gemini should produce a summary output on, grounded in the
+    matched work-notes excerpts. If the block also contains explicit
+    overriding directions (e.g. 'draft three options'), Gemini follows them.
     """
     title = event.get("summary") or "Untitled"
     attendee_lines = []
@@ -346,7 +359,7 @@ def get_ai_meeting_prep(event, prep_block, attendees, related_docs):
             f"### {d['title']}\n{d['content']}" for d in related_docs
         )
     else:
-        doc_str = "(no past meeting summaries matched — the folder may not have a doc for this person/group yet)"
+        doc_str = "(no work notes matched — the folder may not have a doc on these topics yet)"
 
     prep_block_str = (prep_block or "").strip() or "(empty — use default behavior)"
 
@@ -359,19 +372,19 @@ Meeting: {title}
 Attendees:
 {attendee_str}
 
-Prep instructions (from the meeting description):
+Prep instructions (from the meeting description) — these are the key phrases / topics the user wants summary outputs on:
 {prep_block_str}
 
-Past meeting summaries with this person/group/topic (these are the user's own notes from prior meetings — typically labeled by the person's name, the group's name, or the meeting name; ordered most recent first):
+Relevant work notes (the user's own notes pulled from their 'work notes' Drive folder by matching the prep phrases; ordered most recent first):
 {doc_str}
 
 Behavior:
-- If the prep instructions contain explicit overriding directions (e.g., "review the spec doc", "draft three options", "compare A vs B"), follow those instructions exactly — tune the summary and tasks to match.
-- Otherwise, default to: a 2-3 sentence background summary of the working relationship/recurring themes based on the past meeting summaries (name the most recent concrete commitments, decisions, or open threads), plus a task list of what you should research, decide, follow up on, or be ready to discuss in today's meeting.
-- Lean heavily on the past summaries when they exist — call out unresolved items by name, and reference dates/specifics from the notes when useful. If no past summaries were found, say so plainly and produce a generic prep list based on the meeting title.
+- Default action: follow the prep instructions above literally. Treat each phrase, topic, or person named as something the user wants a summary output on — produce one for each, grounded in the work notes when they match.
+- If a phrase is an explicit directive (e.g. "draft three options", "compare A vs B", "review the spec doc"), do that exactly instead of summarizing.
+- Lean heavily on the work notes when they exist — call out unresolved items by name, and reference dates/specifics from the notes when useful. If no work notes matched a topic, say so plainly for that topic and produce a best-effort prep based on what the prep phrase implies.
 
 Return JSON only:
-- "summary": string (2-3 sentences)
+- "summary": string (2-4 sentences covering the prep phrases — one short paragraph, not bullets)
 - "tasks": array of 3-5 strings, each a single declarative sentence leading with a verb
 
 JSON only."""
@@ -392,7 +405,7 @@ JSON only."""
 
 def build_meeting_preps(creds, events):
     """For each event with a 'Meeting Prep:' marker, gather references from
-    the sent emails folder and produce a summary + task list. Keyed by event
+    the work notes folder and produce a summary + task list. Keyed by event
     id so the live layer can map prep back onto whichever event is in focus.
     """
     needs = []
@@ -415,9 +428,9 @@ def build_meeting_preps(creds, events):
         if folders:
             folder_id = folders[0]["id"]
         else:
-            print(f"Folder {MEETING_NOTES_FOLDER!r} not found — prep will run without email context.")
+            print(f"Folder {MEETING_NOTES_FOLDER!r} not found — prep will run without work-notes context.")
     except Exception as e:
-        print(f"Folder lookup failed ({type(e).__name__}: {e}); prep will run without email context.")
+        print(f"Folder lookup failed ({type(e).__name__}: {e}); prep will run without work-notes context.")
 
     preps = {}
     for event, block in needs:
@@ -426,7 +439,7 @@ def build_meeting_preps(creds, events):
         if folder_id:
             keys = _extract_prep_search_keys(block, event.get("summary") or "", attendees)
             if keys:
-                related = _search_sent_emails_for_keys(drive, docs_api, folder_id, keys)
+                related = _search_work_notes_for_keys(drive, docs_api, folder_id, keys)
         result = get_ai_meeting_prep(event, block, attendees, related)
         result["title"] = event.get("summary") or "Untitled"
         result["start_label"] = format_event_time(event)
