@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-28T03:14:06.656235-05:00",
-  "refreshed_label": "3:14 AM",
+  "refreshed_at": "2026-05-28T06:39:46.092637-05:00",
+  "refreshed_label": "6:39 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -21,7 +21,18 @@
       "end_label": "9:30 AM",
       "summary": "Bi-weekly 1:1 w/Randy Burris | Mark Francis",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review your last discussion with Randy from May 15\u2014focusing on family updates, the Alithia project kickoff, and outstanding audits. Address the Alithia headwinds\u2014specifically the loss of legacy business rules due to retirements\u2014and coordinate with Yousef to navigate the Oracle data schemas. Track the investigation into the $6 million clearing account drift\u2014a recurring variance between FinPal and Base caused by direct journal entries.",
+        "tasks": [
+          "Ask Randy for status updates on locating the root cause of the $6 million FinPal and Base clearing account drift.",
+          "Verify whether the business team has made progress in documenting the legacy reserve allocation rules for the Alithia project.",
+          "Determine if Yousef needs data engineering resources to assist with mapping the Oracle profitability management schemas.",
+          "Confirm Randy's coverage plan for his upcoming mid-June family vacation."
+        ],
+        "title": "Bi-weekly 1:1 w/Randy Burris | Mark Francis",
+        "start_label": "9:00 AM",
+        "end_label": "9:30 AM"
+      }
     },
     {
       "id": "huhi3km70j6hkgtm60dmv9c9n8",
@@ -51,7 +62,18 @@
       "end_label": "2:00 PM",
       "summary": "Follow-up Full Staff",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You must prepare for organizational shifts stemming from the Tech Fellows offsite\u2014where leadership positioned enterprise architects as high-level influencers rather than deep-dive engineers\u2014and the restructured Horizontal Planning meeting format where horizontal teams present first and you primarily observe. Additionally, you need to manage Matt Unsworth's departure to Dan Weaver's team in two weeks\u2014transitioning his responsibilities to Vince to maintain stability and keep him engaged. These changes highlight a broader push to align architecture value and address retention concerns.",
+        "tasks": [
+          "Finalize the transition plan for Matt Unsworth's responsibilities to Vince\u2014leveraging Vince's policy experience before Matt departs in two weeks.",
+          "Observe the new Horizontal Planning meeting structure on Thursday\u2014noting how the horizontal teams present their horizons and dependencies first.",
+          "Establish the target operating state for enterprise architects as high-level ringleaders and influencers\u2014realigning the team away from deep-dive engineering work per the Tech Fellows offsite directives.",
+          "Escalate the operational risk regarding Property and Casualty data management\u2014addressing the severe skill gaps identified among Integration Architects."
+        ],
+        "title": "Follow-up Full Staff",
+        "start_label": "1:00 PM",
+        "end_label": "2:00 PM"
+      }
     },
     {
       "id": "5bsrl963sb01g5i7mqeaagf79g",
@@ -71,7 +93,18 @@
       "end_label": "3:30 PM",
       "summary": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Retrieve your missing alignment points\u2014your local work notes contain no record of recent discussions with Mike or Kathleen Ores Walsh. Ask Mike directly to reconstruct the critical outcomes of your last session\u2014ensuring no continuity is lost. Establish a fresh communication baseline with Kathleen Ores Walsh\u2014targeting her current operational bottlenecks.",
+        "tasks": [
+          "Reconstruct the agenda from your last discussion with Mike\u2014using your sent email history.",
+          "Request a status update from Kathleen Ores Walsh\u2014focusing on immediate cross-functional dependencies.",
+          "Establish a permanent tracking document for Mike and Kathleen\u2014preventing future retrieval failures in your work notes.",
+          "Confirm the bi-weekly meeting cadence with Mike\u2014adjusting for upcoming schedule conflicts."
+        ],
+        "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
+        "start_label": "2:30 PM",
+        "end_label": "3:30 PM"
+      }
     },
     {
       "id": "6lvqnu8o3486js70q3urpr0rtc",
@@ -98,54 +131,41 @@
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Rick</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Randy Burris | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:35 AM</div>\n                    <div class=\"t-end\">&mdash; 10:35 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review ServiceNow PoC Deck</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Portfolio &amp; Principal Architect Forum</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Follow-up Full Staff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly: Horizontal Platform WG</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:45 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">PLACEHOLDER: EA Calibration</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/94791160...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Matt</div>\n                    <div class=\"t-loc\">Via zoom; EXEC SAT HO (BO2E....</div>\n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update Calibration SS (see link)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--caution\">Due May 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Ryan Beauchamp the materials plus schedule follow up</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">catch up with Casey/Syamken around in app SMS </span>\n                \n            </div>",
   "preps": {
-    "58mcrregv6hv34ovstk6q1lml8": {
-      "summary": "You must address the core operational friction points identified in the May 26 Tech BOD meeting\u2014specifically the ownership gaps in the end-to-end software development lifecycle and the proliferation of redundant monitoring tools. The architecture team needs to transition to a more hands-on discipline\u2014overcoming lab environment access issues and capacity constraints to deliver direct value. Immediate alignment is required on outstanding tasks\u2014including resolving the residency team issue with Michelle Carter and restarting the Pay Claim telemetry initiative.",
+    "rbvh41ja05sk3hr0lmv15v4h9k": {
+      "summary": "Review your last discussion with Randy from May 15\u2014focusing on family updates, the Alithia project kickoff, and outstanding audits. Address the Alithia headwinds\u2014specifically the loss of legacy business rules due to retirements\u2014and coordinate with Yousef to navigate the Oracle data schemas. Track the investigation into the $6 million clearing account drift\u2014a recurring variance between FinPal and Base caused by direct journal entries.",
       "tasks": [
-        "Review analysis feedback from Noisy and Casey to establish the current state of active initiatives.",
-        "Retrieve Bricanti's previous recommendation analysis\u2014integrating those findings back into the active proposal.",
-        "Partner with Michelle Carter to resolve the MII residency issue prior to the Thursday deadline.",
-        "Restart conversations with the Pay Claim team\u2014targeting the delivery of Grafana dashboards with fifteen real-time metrics within two weeks."
+        "Ask Randy for status updates on locating the root cause of the $6 million FinPal and Base clearing account drift.",
+        "Verify whether the business team has made progress in documenting the legacy reserve allocation rules for the Alithia project.",
+        "Determine if Yousef needs data engineering resources to assist with mapping the Oracle profitability management schemas.",
+        "Confirm Randy's coverage plan for his upcoming mid-June family vacation."
       ],
-      "title": "TF Standup",
-      "start_label": "8:00 AM",
-      "end_label": "9:00 AM"
+      "title": "Bi-weekly 1:1 w/Randy Burris | Mark Francis",
+      "start_label": "9:00 AM",
+      "end_label": "9:30 AM"
     },
-    "t1plr8h3q8jtq6s3dis4hgh1q4": {
-      "summary": "No matched work notes exist for two-way SMS topics\u2014you must establish a baseline with Corey during this brief sync. Address the primary pillars of two-way SMS integration\u2014compliance guardrails, carrier opt-in rules, and message routing latency. Outline these missing operational requirements immediately\u2014this approach forces Corey to provide the specific documentation you lack.",
+    "g0lh2httsasn1isocrjbsp9mhk": {
+      "summary": "You must prepare for organizational shifts stemming from the Tech Fellows offsite\u2014where leadership positioned enterprise architects as high-level influencers rather than deep-dive engineers\u2014and the restructured Horizontal Planning meeting format where horizontal teams present first and you primarily observe. Additionally, you need to manage Matt Unsworth's departure to Dan Weaver's team in two weeks\u2014transitioning his responsibilities to Vince to maintain stability and keep him engaged. These changes highlight a broader push to align architecture value and address retention concerns.",
       "tasks": [
-        "Ask Corey for the latest API documentation regarding the two-way SMS channel.",
-        "Define the compliance requirements for user opt-in and opt-out flows.",
-        "Establish a timeline for the integration phase with external carriers.",
-        "Schedule a follow-up session to review the technical architecture once documents are received."
+        "Finalize the transition plan for Matt Unsworth's responsibilities to Vince\u2014leveraging Vince's policy experience before Matt departs in two weeks.",
+        "Observe the new Horizontal Planning meeting structure on Thursday\u2014noting how the horizontal teams present their horizons and dependencies first.",
+        "Establish the target operating state for enterprise architects as high-level ringleaders and influencers\u2014realigning the team away from deep-dive engineering work per the Tech Fellows offsite directives.",
+        "Escalate the operational risk regarding Property and Casualty data management\u2014addressing the severe skill gaps identified among Integration Architects."
       ],
-      "title": "Quick Sync on 2-way SMS Channel with Corey",
-      "start_label": "1:30 PM",
+      "title": "Follow-up Full Staff",
+      "start_label": "1:00 PM",
       "end_label": "2:00 PM"
     },
-    "rtokmkgmd7hdmqirdhnr2keg88": {
-      "summary": "Prepare to tackle the Amber-status claims onboarding pipeline\u2014currently stalled by heavy vendor volumes and low architect priority\u2014and address team acclimation following the reporting structure shifts under Gunjin. Drive the automation of work assignment by leveraging the new Claims Status Communication AI workshop. Push your preferred technical direction\u2014specifically transitioning to homegrown Snowflake visualization tools and prioritizing internal AWS communication platforms over costly third-party vendors like Hi Marley.",
+    "r0e5jqo24aho4bhrfvfhmlia14": {
+      "summary": "Retrieve your missing alignment points\u2014your local work notes contain no record of recent discussions with Mike or Kathleen Ores Walsh. Ask Mike directly to reconstruct the critical outcomes of your last session\u2014ensuring no continuity is lost. Establish a fresh communication baseline with Kathleen Ores Walsh\u2014targeting her current operational bottlenecks.",
       "tasks": [
-        "Address the Amber status of auto insurance claims by accelerating the onboarding pipeline for the pending twenty-five plus vendors.",
-        "Monitor team acclimation and performance management under Gunjin following the transition of Gavadell's direct reports.",
-        "Track the progress of the Claims Status Communication AI workshop to streamline automated work assignments and status updates.",
-        "Advocate for the internal AWS conversational platform over third-party alternatives during upcoming business line pilot discussions.",
-        "Champion the transition to custom Snowflake and VS Code visualization dashboards to replace high-cost Tableau and ServiceNow instances."
+        "Reconstruct the agenda from your last discussion with Mike\u2014using your sent email history.",
+        "Request a status update from Kathleen Ores Walsh\u2014focusing on immediate cross-functional dependencies.",
+        "Establish a permanent tracking document for Mike and Kathleen\u2014preventing future retrieval failures in your work notes.",
+        "Confirm the bi-weekly meeting cadence with Mike\u2014adjusting for upcoming schedule conflicts."
       ],
-      "title": "Sync with Mark | Rebecca",
-      "start_label": "2:00 PM",
-      "end_label": "2:25 PM"
-    },
-    "6lgvch0tscjlsvh8bqhj5nb6c0": {
-      "summary": "Evaluate the architectural pushback on CRMA reporting\u2014you must address Suresh's request to bypass Snowflake's data latency\u2014which threatens metric alignment for incentive compensations. Track the transition plan for Matt's sudden departure\u2014ensuring you move responsibilities to Vince\u2014to stabilize mid-career architect morale. Prepare for Mark's potential absences\u2014due to his ongoing treatments\u2014by aligning on the upcoming Horizontal Planning meeting details.",
-      "tasks": [
-        "Oppose the direct Salesforce-to-CRMA reporting bypass\u2014citing the risk of metric mismatches in incentive compensation.",
-        "Confirm the transition of Matt's responsibilities to Vince\u2014addressing mid-career architect retention and capacity concerns.",
-        "Review the real-time Kafka streaming timeline with Snowflake's data team\u2014mitigating the four-day latency on legacy policy data.",
-        "Establish coverage protocols for Mark's upcoming medical absences\u2014ensuring leadership continuity during the DNS transformation."
-      ],
-      "title": "Sync with Mark | Amit",
-      "start_label": "3:30 PM",
-      "end_label": "3:55 PM"
+      "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
+      "start_label": "2:30 PM",
+      "end_label": "3:30 PM"
     }
   }
 }
