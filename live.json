@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-05-29T03:29:23.680677-05:00",
-  "refreshed_label": "3:29 AM",
+  "refreshed_at": "2026-05-29T06:31:35.940757-05:00",
+  "refreshed_label": "6:31 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -21,7 +21,18 @@
       "end_label": "8:30 AM",
       "summary": "Sync with Mark | Ray",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review of your work notes reveals no direct historical records for Ray\u2014however, your May 19 sync with Mark serves as the primary baseline for this discussion. This session established critical transition plans\u2014specifically moving Vince into Matt's vacated role to maintain engagement\u2014and outlined the structural format changes for the upcoming Horizontal Planning meeting. You also tracked key project updates\u2014specifically the 2031 timeline for TRAD Plus and reference value migrations for DAMIT\u2014alongside Mark's personal health update.",
+        "tasks": [
+          "Confirm the official transition timeline and workload distribution for Vince taking over Matt's architecture responsibilities.",
+          "Establish coverage protocols and communication channels for Mark's upcoming absence during his medical treatment.",
+          "Review the final agenda for Thursday's Horizontal Planning meeting to prepare the core architecture team for their observer role.",
+          "Verify the scope and tracking schedule for the TRAD Plus Guidewire migration and the DAMIT pricing revamp."
+        ],
+        "title": "Sync with Mark | Ray",
+        "start_label": "8:00 AM",
+        "end_label": "8:30 AM"
+      }
     },
     {
       "id": "1l9ocs7shdidcnio13empp9kvo",
@@ -31,7 +42,18 @@
       "end_label": "9:00 AM",
       "summary": "Monthly EA Touchpoint - Ian Benoist",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You lack existing work notes\u2014or past meeting records\u2014for your monthly touchpoint with Ian Benoist. You must use this session to reconstruct recent touchpoint outcomes\u2014and establish a clean slate for tracking ongoing action items. Focus the discussion on immediate calendar bottlenecks\u2014and define the exact support Ian requires from you this month.",
+        "tasks": [
+          "Request a debrief on the outcomes of your last discussion with Ian\u2014noting any verbal agreements or pending deliverables.",
+          "Create a dedicated tracking document in your Drive folder\u2014ensuring future meeting takeaways are systematically logged.",
+          "Review Ian's calendar for the next thirty days\u2014identifying high-priority conflicts that require immediate resolution.",
+          "Establish a regular cadence for agenda inputs\u2014minimizing prep time before each monthly touchpoint."
+        ],
+        "title": "Monthly EA Touchpoint - Ian Benoist",
+        "start_label": "8:30 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "6kqrug1otsge126b04dk4fhh6k",
@@ -41,7 +63,18 @@
       "end_label": "9:30 AM",
       "summary": "Bi-weekly 1:1 w/Jonathan N | Mark F",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You met with Jonathan and Mark on May 18th to address the tactical bottlenecks of managing influxes of AI requirements\u2014specifically relying on temporary prompts rather than a sustainable system. Jonathan committed to utilizing his Snowflake warehouse access to pull change records\u2014allowing him to leverage an architecture checklist to analyze data quality. Your ultimate goal remains automating this validation process\u2014using batch jobs to flag low-quality records before human intervention is required.",
+        "tasks": [
+          "Confirm Jonathan's progress on pulling Snowflake change records\u2014verifying if the architecture checklist is ready for data quality analysis.",
+          "Establish a timeline to replace the unsustainable prompt process\u2014transitioning to structured feedback spreadsheets to handle the requirements influx.",
+          "Explore integration opportunities with Andy Napalese's Foundry framework\u2014focusing on bridging the gap between high-level business cases and Jira implementation.",
+          "Draft the automated batch-job requirements\u2014aiming to flag incomplete domain-level Change Review Group records prior to manual review."
+        ],
+        "title": "Bi-weekly 1:1 w/Jonathan N | Mark F",
+        "start_label": "9:00 AM",
+        "end_label": "9:30 AM"
+      }
     },
     {
       "id": "skkqgokitsd30vm1ogolco2grc",
@@ -51,7 +84,18 @@
       "end_label": "10:00 AM",
       "summary": "Bi-weekly 1:1 w/James Karras | Mark Francis",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "No work notes were found matching your previous session with James Karras\u2014you must reconstruct the past takeaways directly through verbal alignment. Prepare to prompt James for his recollection of the outstanding action items\u2014this will establish the baseline for today's discussion. Focus the initial minutes on defining these slipped priorities\u2014this ensures both parties resume from the same point of reference.",
+        "tasks": [
+          "Request James's summary of the previous meeting\u2014align on outstanding deliverables immediately.",
+          "Create a dedicated tracking document during the call\u2014prevent future information gaps by logging deliverables in real time.",
+          "Outline your current high-priority initiatives at Francis Inc.\u2014solicit direct feedback on your trajectory.",
+          "Establish a recurring cadence for updating work notes\u2014ensure future bi-weekly preparation relies on documented progress."
+        ],
+        "title": "Bi-weekly 1:1 w/James Karras | Mark Francis",
+        "start_label": "9:30 AM",
+        "end_label": "10:00 AM"
+      }
     },
     {
       "id": "pcv639082r8iq1vl21jdv657rc",
@@ -61,7 +105,18 @@
       "end_label": "11:00 AM",
       "summary": "EA Architecture Sync",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "No work notes were found regarding your last meeting with Larry Abel\u2014preventing a direct summary of previous discussion points. Reconstruct the agenda by prompting Abel for his key takeaways\u2014focusing heavily on immediate architectural dependencies. Establish a baseline during this sync to capture missing action items and align on next steps.",
+        "tasks": [
+          "Request a recap of the previous session's decisions from Larry Abel\u2014focusing on architectural sign-offs\u2014at the start of the meeting.",
+          "Identify and document current integration blockers\u2014especially those affecting the enterprise architecture roadmap\u2014during the sync.",
+          "Create a centralized file in your shared drive for all future Abel meeting notes\u2014ensuring searchability for the team.",
+          "Define the immediate next steps and ownership for the unresolved architecture items\u2014targeting completion before the next sync."
+        ],
+        "title": "EA Architecture Sync",
+        "start_label": "10:30 AM",
+        "end_label": "11:00 AM"
+      }
     },
     {
       "id": "3vst7qvl4k7otllje7mdipugcg",
@@ -81,7 +136,18 @@
       "end_label": "12:05 PM",
       "summary": "Discuss the Service Now POC",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Identify the gaps in your documentation\u2014no work notes currently exist in your files regarding the last five ServiceNow meetings. Address this deficit directly at the start of the session\u2014you must extract these historical details from the Francis Inc. stakeholders. Establish the exact parameters of the ServiceNow POC during today's discussion\u2014this alignment is critical for your next steps.",
+        "tasks": [
+          "Request the meeting minutes from the last five ServiceNow sessions\u2014you need these to reconstruct the project history.",
+          "Define the success metrics for the ServiceNow POC\u2014this establishes clear boundaries for the trial phase.",
+          "Confirm the deployment timeline with the Francis Inc. technical lead\u2014you must prevent scheduling conflicts.",
+          "Document the unresolved technical dependencies\u2014these integrations require immediate engineering review."
+        ],
+        "title": "Discuss the Service Now POC",
+        "start_label": "11:05 AM",
+        "end_label": "12:05 PM"
+      }
     },
     {
       "id": "gfttvf9l4bi541of37qia63fts",
@@ -104,45 +170,81 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 8:30 AM</div>\n            <h2 class=\"focus-title\">Sync with Mark | Ray</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 8:30 AM</div>\n            <h2 class=\"focus-title\">Sync with Mark | Ray</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Review of your work notes reveals no direct historical records for Ray\u2014however, your May 19 sync with Mark serves as the primary baseline for this discussion. This session established critical transition plans\u2014specifically moving Vince into Matt&#x27;s vacated role to maintain engagement\u2014and outlined the structural format changes for the upcoming Horizontal Planning meeting. You also tracked key project updates\u2014specifically the 2031 timeline for TRAD Plus and reference value migrations for DAMIT\u2014alongside Mark&#x27;s personal health update.</p>\n                <ul class=\"focus-prep-tasks\"><li>Confirm the official transition timeline and workload distribution for Vince taking over Matt&#x27;s architecture responsibilities.</li><li>Establish coverage protocols and communication channels for Mark&#x27;s upcoming absence during his medical treatment.</li><li>Review the final agenda for Thursday&#x27;s Horizontal Planning meeting to prepare the core architecture team for their observer role.</li><li>Verify the scope and tracking schedule for the TRAD Plus Guidewire migration and the DAMIT pricing revamp.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">All day</div>\n                    \n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Jennifer PTO</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 8:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Ray</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly EA Touchpoint - Ian Benoist</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Jonathan N | Mark F</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/James Karras | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Architecture Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | A</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:05 AM</div>\n                    <div class=\"t-end\">&mdash; 12:05 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Discuss the Service Now POC</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AI tool for QA auditing - Demo</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Billing Future Outlook</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize team performance spreadsheet and stack ranking</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 28</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 28</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
   "preps": {
-    "rbvh41ja05sk3hr0lmv15v4h9k": {
-      "summary": "Review your last discussion with Randy from May 15\u2014focusing on family updates, the Alithia project kickoff, and outstanding audits. Address the Alithia headwinds\u2014specifically the loss of legacy business rules due to retirements\u2014and coordinate with Yousef to navigate the Oracle data schemas. Track the investigation into the $6 million clearing account drift\u2014a recurring variance between FinPal and Base caused by direct journal entries.",
+    "2cbsg9dq1ft9qh8mu15qvb3p20": {
+      "summary": "Review of your work notes reveals no direct historical records for Ray\u2014however, your May 19 sync with Mark serves as the primary baseline for this discussion. This session established critical transition plans\u2014specifically moving Vince into Matt's vacated role to maintain engagement\u2014and outlined the structural format changes for the upcoming Horizontal Planning meeting. You also tracked key project updates\u2014specifically the 2031 timeline for TRAD Plus and reference value migrations for DAMIT\u2014alongside Mark's personal health update.",
       "tasks": [
-        "Ask Randy for status updates on locating the root cause of the $6 million FinPal and Base clearing account drift.",
-        "Verify whether the business team has made progress in documenting the legacy reserve allocation rules for the Alithia project.",
-        "Determine if Yousef needs data engineering resources to assist with mapping the Oracle profitability management schemas.",
-        "Confirm Randy's coverage plan for his upcoming mid-June family vacation."
+        "Confirm the official transition timeline and workload distribution for Vince taking over Matt's architecture responsibilities.",
+        "Establish coverage protocols and communication channels for Mark's upcoming absence during his medical treatment.",
+        "Review the final agenda for Thursday's Horizontal Planning meeting to prepare the core architecture team for their observer role.",
+        "Verify the scope and tracking schedule for the TRAD Plus Guidewire migration and the DAMIT pricing revamp."
       ],
-      "title": "Bi-weekly 1:1 w/Randy Burris | Mark Francis",
+      "title": "Sync with Mark | Ray",
+      "start_label": "8:00 AM",
+      "end_label": "8:30 AM"
+    },
+    "1l9ocs7shdidcnio13empp9kvo": {
+      "summary": "You lack existing work notes\u2014or past meeting records\u2014for your monthly touchpoint with Ian Benoist. You must use this session to reconstruct recent touchpoint outcomes\u2014and establish a clean slate for tracking ongoing action items. Focus the discussion on immediate calendar bottlenecks\u2014and define the exact support Ian requires from you this month.",
+      "tasks": [
+        "Request a debrief on the outcomes of your last discussion with Ian\u2014noting any verbal agreements or pending deliverables.",
+        "Create a dedicated tracking document in your Drive folder\u2014ensuring future meeting takeaways are systematically logged.",
+        "Review Ian's calendar for the next thirty days\u2014identifying high-priority conflicts that require immediate resolution.",
+        "Establish a regular cadence for agenda inputs\u2014minimizing prep time before each monthly touchpoint."
+      ],
+      "title": "Monthly EA Touchpoint - Ian Benoist",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM"
+    },
+    "6kqrug1otsge126b04dk4fhh6k": {
+      "summary": "You met with Jonathan and Mark on May 18th to address the tactical bottlenecks of managing influxes of AI requirements\u2014specifically relying on temporary prompts rather than a sustainable system. Jonathan committed to utilizing his Snowflake warehouse access to pull change records\u2014allowing him to leverage an architecture checklist to analyze data quality. Your ultimate goal remains automating this validation process\u2014using batch jobs to flag low-quality records before human intervention is required.",
+      "tasks": [
+        "Confirm Jonathan's progress on pulling Snowflake change records\u2014verifying if the architecture checklist is ready for data quality analysis.",
+        "Establish a timeline to replace the unsustainable prompt process\u2014transitioning to structured feedback spreadsheets to handle the requirements influx.",
+        "Explore integration opportunities with Andy Napalese's Foundry framework\u2014focusing on bridging the gap between high-level business cases and Jira implementation.",
+        "Draft the automated batch-job requirements\u2014aiming to flag incomplete domain-level Change Review Group records prior to manual review."
+      ],
+      "title": "Bi-weekly 1:1 w/Jonathan N | Mark F",
       "start_label": "9:00 AM",
       "end_label": "9:30 AM"
     },
-    "g0lh2httsasn1isocrjbsp9mhk": {
-      "summary": "You must prepare for organizational shifts stemming from the Tech Fellows offsite\u2014where leadership positioned enterprise architects as high-level influencers rather than deep-dive engineers\u2014and the restructured Horizontal Planning meeting format where horizontal teams present first and you primarily observe. Additionally, you need to manage Matt Unsworth's departure to Dan Weaver's team in two weeks\u2014transitioning his responsibilities to Vince to maintain stability and keep him engaged. These changes highlight a broader push to align architecture value and address retention concerns.",
+    "skkqgokitsd30vm1ogolco2grc": {
+      "summary": "No work notes were found matching your previous session with James Karras\u2014you must reconstruct the past takeaways directly through verbal alignment. Prepare to prompt James for his recollection of the outstanding action items\u2014this will establish the baseline for today's discussion. Focus the initial minutes on defining these slipped priorities\u2014this ensures both parties resume from the same point of reference.",
       "tasks": [
-        "Finalize the transition plan for Matt Unsworth's responsibilities to Vince\u2014leveraging Vince's policy experience before Matt departs in two weeks.",
-        "Observe the new Horizontal Planning meeting structure on Thursday\u2014noting how the horizontal teams present their horizons and dependencies first.",
-        "Establish the target operating state for enterprise architects as high-level ringleaders and influencers\u2014realigning the team away from deep-dive engineering work per the Tech Fellows offsite directives.",
-        "Escalate the operational risk regarding Property and Casualty data management\u2014addressing the severe skill gaps identified among Integration Architects."
+        "Request James's summary of the previous meeting\u2014align on outstanding deliverables immediately.",
+        "Create a dedicated tracking document during the call\u2014prevent future information gaps by logging deliverables in real time.",
+        "Outline your current high-priority initiatives at Francis Inc.\u2014solicit direct feedback on your trajectory.",
+        "Establish a recurring cadence for updating work notes\u2014ensure future bi-weekly preparation relies on documented progress."
       ],
-      "title": "Follow-up Full Staff",
-      "start_label": "1:00 PM",
-      "end_label": "2:00 PM"
+      "title": "Bi-weekly 1:1 w/James Karras | Mark Francis",
+      "start_label": "9:30 AM",
+      "end_label": "10:00 AM"
     },
-    "r0e5jqo24aho4bhrfvfhmlia14": {
-      "summary": "Retrieve your missing alignment points\u2014your local work notes contain no record of recent discussions with Mike or Kathleen Ores Walsh. Ask Mike directly to reconstruct the critical outcomes of your last session\u2014ensuring no continuity is lost. Establish a fresh communication baseline with Kathleen Ores Walsh\u2014targeting her current operational bottlenecks.",
+    "pcv639082r8iq1vl21jdv657rc": {
+      "summary": "No work notes were found regarding your last meeting with Larry Abel\u2014preventing a direct summary of previous discussion points. Reconstruct the agenda by prompting Abel for his key takeaways\u2014focusing heavily on immediate architectural dependencies. Establish a baseline during this sync to capture missing action items and align on next steps.",
       "tasks": [
-        "Reconstruct the agenda from your last discussion with Mike\u2014using your sent email history.",
-        "Request a status update from Kathleen Ores Walsh\u2014focusing on immediate cross-functional dependencies.",
-        "Establish a permanent tracking document for Mike and Kathleen\u2014preventing future retrieval failures in your work notes.",
-        "Confirm the bi-weekly meeting cadence with Mike\u2014adjusting for upcoming schedule conflicts."
+        "Request a recap of the previous session's decisions from Larry Abel\u2014focusing on architectural sign-offs\u2014at the start of the meeting.",
+        "Identify and document current integration blockers\u2014especially those affecting the enterprise architecture roadmap\u2014during the sync.",
+        "Create a centralized file in your shared drive for all future Abel meeting notes\u2014ensuring searchability for the team.",
+        "Define the immediate next steps and ownership for the unresolved architecture items\u2014targeting completion before the next sync."
       ],
-      "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
-      "start_label": "2:30 PM",
-      "end_label": "3:30 PM"
+      "title": "EA Architecture Sync",
+      "start_label": "10:30 AM",
+      "end_label": "11:00 AM"
+    },
+    "85m1bacemb9idng1re20mv4gbs": {
+      "summary": "Identify the gaps in your documentation\u2014no work notes currently exist in your files regarding the last five ServiceNow meetings. Address this deficit directly at the start of the session\u2014you must extract these historical details from the Francis Inc. stakeholders. Establish the exact parameters of the ServiceNow POC during today's discussion\u2014this alignment is critical for your next steps.",
+      "tasks": [
+        "Request the meeting minutes from the last five ServiceNow sessions\u2014you need these to reconstruct the project history.",
+        "Define the success metrics for the ServiceNow POC\u2014this establishes clear boundaries for the trial phase.",
+        "Confirm the deployment timeline with the Francis Inc. technical lead\u2014you must prevent scheduling conflicts.",
+        "Document the unresolved technical dependencies\u2014these integrations require immediate engineering review."
+      ],
+      "title": "Discuss the Service Now POC",
+      "start_label": "11:05 AM",
+      "end_label": "12:05 PM"
     }
   }
 }
