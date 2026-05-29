@@ -1,135 +1,112 @@
 {
-  "refreshed_at": "2026-05-28T23:36:59.422664-05:00",
-  "refreshed_label": "11:36 PM",
+  "refreshed_at": "2026-05-29T03:29:23.680677-05:00",
+  "refreshed_label": "3:29 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "9cstga344s8u8hvf848jtkjf8o",
-      "start_iso": "2026-05-28T08:30:00-05:00",
-      "end_iso": "2026-05-28T09:00:00-05:00",
+      "id": "ojglfk14tcqo0gqhgatmhuog78",
+      "start_iso": null,
+      "end_iso": null,
+      "start_label": "All day",
+      "end_label": "",
+      "summary": "Jennifer PTO",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "2cbsg9dq1ft9qh8mu15qvb3p20",
+      "start_iso": "2026-05-29T08:00:00-05:00",
+      "end_iso": "2026-05-29T08:30:00-05:00",
+      "start_label": "8:00 AM",
+      "end_label": "8:30 AM",
+      "summary": "Sync with Mark | Ray",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "1l9ocs7shdidcnio13empp9kvo",
+      "start_iso": "2026-05-29T08:30:00-05:00",
+      "end_iso": "2026-05-29T09:00:00-05:00",
       "start_label": "8:30 AM",
       "end_label": "9:00 AM",
-      "summary": "Sync with Mark | Rick",
+      "summary": "Monthly EA Touchpoint - Ian Benoist",
       "location": "",
       "prep": null
     },
     {
-      "id": "rbvh41ja05sk3hr0lmv15v4h9k",
-      "start_iso": "2026-05-28T09:00:00-05:00",
-      "end_iso": "2026-05-28T09:30:00-05:00",
+      "id": "6kqrug1otsge126b04dk4fhh6k",
+      "start_iso": "2026-05-29T09:00:00-05:00",
+      "end_iso": "2026-05-29T09:30:00-05:00",
       "start_label": "9:00 AM",
       "end_label": "9:30 AM",
-      "summary": "Bi-weekly 1:1 w/Randy Burris | Mark Francis",
-      "location": "",
-      "prep": {
-        "summary": "Review your last discussion with Randy from May 15\u2014focusing on family updates, the Alithia project kickoff, and outstanding audits. Address the Alithia headwinds\u2014specifically the loss of legacy business rules due to retirements\u2014and coordinate with Yousef to navigate the Oracle data schemas. Track the investigation into the $6 million clearing account drift\u2014a recurring variance between FinPal and Base caused by direct journal entries.",
-        "tasks": [
-          "Ask Randy for status updates on locating the root cause of the $6 million FinPal and Base clearing account drift.",
-          "Verify whether the business team has made progress in documenting the legacy reserve allocation rules for the Alithia project.",
-          "Determine if Yousef needs data engineering resources to assist with mapping the Oracle profitability management schemas.",
-          "Confirm Randy's coverage plan for his upcoming mid-June family vacation."
-        ],
-        "title": "Bi-weekly 1:1 w/Randy Burris | Mark Francis",
-        "start_label": "9:00 AM",
-        "end_label": "9:30 AM"
-      }
-    },
-    {
-      "id": "huhi3km70j6hkgtm60dmv9c9n8",
-      "start_iso": "2026-05-28T09:35:00-05:00",
-      "end_iso": "2026-05-28T10:35:00-05:00",
-      "start_label": "9:35 AM",
-      "end_label": "10:35 AM",
-      "summary": "Review ServiceNow PoC Deck",
+      "summary": "Bi-weekly 1:1 w/Jonathan N | Mark F",
       "location": "",
       "prep": null
     },
     {
-      "id": "hut7rjllbte45406ia9lccg358",
-      "start_iso": "2026-05-28T10:00:00-05:00",
-      "end_iso": "2026-05-28T11:00:00-05:00",
-      "start_label": "10:00 AM",
+      "id": "skkqgokitsd30vm1ogolco2grc",
+      "start_iso": "2026-05-29T09:30:00-05:00",
+      "end_iso": "2026-05-29T10:00:00-05:00",
+      "start_label": "9:30 AM",
+      "end_label": "10:00 AM",
+      "summary": "Bi-weekly 1:1 w/James Karras | Mark Francis",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "pcv639082r8iq1vl21jdv657rc",
+      "start_iso": "2026-05-29T10:30:00-05:00",
+      "end_iso": "2026-05-29T11:00:00-05:00",
+      "start_label": "10:30 AM",
       "end_label": "11:00 AM",
-      "summary": "Portfolio & Principal Architect Forum",
+      "summary": "EA Architecture Sync",
       "location": "",
       "prep": null
     },
     {
-      "id": "g0lh2httsasn1isocrjbsp9mhk",
-      "start_iso": "2026-05-28T13:00:00-05:00",
-      "end_iso": "2026-05-28T14:00:00-05:00",
+      "id": "3vst7qvl4k7otllje7mdipugcg",
+      "start_iso": "2026-05-29T11:00:00-05:00",
+      "end_iso": "2026-05-29T11:30:00-05:00",
+      "start_label": "11:00 AM",
+      "end_label": "11:30 AM",
+      "summary": "EMG Engage - Intro to Architecture w/Mark Francis | A",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "85m1bacemb9idng1re20mv4gbs",
+      "start_iso": "2026-05-29T11:05:00-05:00",
+      "end_iso": "2026-05-29T12:05:00-05:00",
+      "start_label": "11:05 AM",
+      "end_label": "12:05 PM",
+      "summary": "Discuss the Service Now POC",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "gfttvf9l4bi541of37qia63fts",
+      "start_iso": "2026-05-29T12:00:00-05:00",
+      "end_iso": "2026-05-29T13:00:00-05:00",
+      "start_label": "12:00 PM",
+      "end_label": "1:00 PM",
+      "summary": "AI tool for QA auditing - Demo",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "io2r0vas7lpitpt7mn716j1894",
+      "start_iso": "2026-05-29T13:00:00-05:00",
+      "end_iso": "2026-05-29T14:00:00-05:00",
       "start_label": "1:00 PM",
       "end_label": "2:00 PM",
-      "summary": "Follow-up Full Staff",
+      "summary": "Billing Future Outlook",
       "location": "",
-      "prep": {
-        "summary": "You must prepare for organizational shifts stemming from the Tech Fellows offsite\u2014where leadership positioned enterprise architects as high-level influencers rather than deep-dive engineers\u2014and the restructured Horizontal Planning meeting format where horizontal teams present first and you primarily observe. Additionally, you need to manage Matt Unsworth's departure to Dan Weaver's team in two weeks\u2014transitioning his responsibilities to Vince to maintain stability and keep him engaged. These changes highlight a broader push to align architecture value and address retention concerns.",
-        "tasks": [
-          "Finalize the transition plan for Matt Unsworth's responsibilities to Vince\u2014leveraging Vince's policy experience before Matt departs in two weeks.",
-          "Observe the new Horizontal Planning meeting structure on Thursday\u2014noting how the horizontal teams present their horizons and dependencies first.",
-          "Establish the target operating state for enterprise architects as high-level ringleaders and influencers\u2014realigning the team away from deep-dive engineering work per the Tech Fellows offsite directives.",
-          "Escalate the operational risk regarding Property and Casualty data management\u2014addressing the severe skill gaps identified among Integration Architects."
-        ],
-        "title": "Follow-up Full Staff",
-        "start_label": "1:00 PM",
-        "end_label": "2:00 PM"
-      }
-    },
-    {
-      "id": "5bsrl963sb01g5i7mqeaagf79g",
-      "start_iso": "2026-05-28T13:30:00-05:00",
-      "end_iso": "2026-05-28T14:00:00-05:00",
-      "start_label": "1:30 PM",
-      "end_label": "2:00 PM",
-      "summary": "Weekly: Horizontal Platform WG",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "r0e5jqo24aho4bhrfvfhmlia14",
-      "start_iso": "2026-05-28T14:30:00-05:00",
-      "end_iso": "2026-05-28T15:00:00-05:00",
-      "start_label": "2:30 PM",
-      "end_label": "3:00 PM",
-      "summary": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
-      "location": "",
-      "prep": {
-        "summary": "Retrieve your missing alignment points\u2014your local work notes contain no record of recent discussions with Mike or Kathleen Ores Walsh. Ask Mike directly to reconstruct the critical outcomes of your last session\u2014ensuring no continuity is lost. Establish a fresh communication baseline with Kathleen Ores Walsh\u2014targeting her current operational bottlenecks.",
-        "tasks": [
-          "Reconstruct the agenda from your last discussion with Mike\u2014using your sent email history.",
-          "Request a status update from Kathleen Ores Walsh\u2014focusing on immediate cross-functional dependencies.",
-          "Establish a permanent tracking document for Mike and Kathleen\u2014preventing future retrieval failures in your work notes.",
-          "Confirm the bi-weekly meeting cadence with Mike\u2014adjusting for upcoming schedule conflicts."
-        ],
-        "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
-        "start_label": "2:30 PM",
-        "end_label": "3:30 PM"
-      }
-    },
-    {
-      "id": "6lvqnu8o3486js70q3urpr0rtc",
-      "start_iso": "2026-05-28T15:00:00-05:00",
-      "end_iso": "2026-05-28T15:45:00-05:00",
-      "start_label": "3:00 PM",
-      "end_label": "3:45 PM",
-      "summary": "PLACEHOLDER: EA Calibration",
-      "location": "https://usaa.zoom.us/j/94791160...",
-      "prep": null
-    },
-    {
-      "id": "45jhoo1aprdgisb61l0d67kp3o",
-      "start_iso": "2026-05-28T16:30:00-05:00",
-      "end_iso": "2026-05-28T16:55:00-05:00",
-      "start_label": "4:30 PM",
-      "end_label": "4:55 PM",
-      "summary": "Sync with Mark | Matt",
-      "location": "Via zoom; EXEC SAT HO (BO2E....",
       "prep": null
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Rick</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Randy Burris | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:35 AM</div>\n                    <div class=\"t-end\">&mdash; 10:35 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review ServiceNow PoC Deck</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Portfolio &amp; Principal Architect Forum</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Follow-up Full Staff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly: Horizontal Platform WG</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:45 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">PLACEHOLDER: EA Calibration</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/94791160...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Matt</div>\n                    <div class=\"t-loc\">Via zoom; EXEC SAT HO (BO2E....</div>\n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize team performance spreadsheet and stack ranking</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--caution\">Due May 29</span>\n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 8:30 AM</div>\n            <h2 class=\"focus-title\">Sync with Mark | Ray</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">All day</div>\n                    \n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Jennifer PTO</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 8:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Ray</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly EA Touchpoint - Ian Benoist</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Jonathan N | Mark F</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/James Karras | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Architecture Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | A</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:05 AM</div>\n                    <div class=\"t-end\">&mdash; 12:05 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Discuss the Service Now POC</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AI tool for QA auditing - Demo</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Billing Future Outlook</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize team performance spreadsheet and stack ranking</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 28</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 28</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
   "preps": {
     "rbvh41ja05sk3hr0lmv15v4h9k": {
       "summary": "Review your last discussion with Randy from May 15\u2014focusing on family updates, the Alithia project kickoff, and outstanding audits. Address the Alithia headwinds\u2014specifically the loss of legacy business rules due to retirements\u2014and coordinate with Yousef to navigate the Oracle data schemas. Track the investigation into the $6 million clearing account drift\u2014a recurring variance between FinPal and Base caused by direct journal entries.",
