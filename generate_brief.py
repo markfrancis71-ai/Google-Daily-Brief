@@ -19,7 +19,7 @@ SCOPES = [
 ]
 
 TIMEZONE = os.environ.get("USER_TIMEZONE", "America/New_York")
-MEETING_NOTES_FOLDER = os.environ.get("MEETING_NOTES_FOLDER", "work notes")
+MEETING_NOTES_FOLDER = os.environ.get("MEETING_NOTES_FOLDER", "Work Notes")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash")
 
 
@@ -84,23 +84,44 @@ def extract_doc_text(doc):
     return "".join(text_parts).strip()
 
 
+def _find_notes_folder_id(drive):
+    """Return the Drive folder id for MEETING_NOTES_FOLDER, matched
+    case-insensitively. Drive's `name =` filter is case-sensitive, so an exact
+    query can silently miss (e.g. 'work notes' vs the real 'Work Notes'); when
+    it does, fall back to listing folders and comparing names in Python."""
+    safe = MEETING_NOTES_FOLDER.replace("\\", "\\\\").replace("'", "\\'")
+    try:
+        folders = drive.files().list(
+            q=(f"name='{safe}' and mimeType='application/vnd.google-apps.folder'"
+               f" and trashed=false"),
+            fields="files(id, name)",
+        ).execute().get("files", [])
+        if folders:
+            return folders[0]["id"]
+        # Exact (case-sensitive) match missed — scan folders and compare lower.
+        target = MEETING_NOTES_FOLDER.strip().lower()
+        all_folders = drive.files().list(
+            q="mimeType='application/vnd.google-apps.folder' and trashed=false",
+            fields="files(id, name)",
+            pageSize=1000,
+        ).execute().get("files", [])
+        for f in all_folders:
+            if (f.get("name") or "").strip().lower() == target:
+                return f["id"]
+    except Exception as e:
+        print(f"Folder lookup failed ({type(e).__name__}: {e}).")
+    return None
+
+
 def get_meeting_notes(creds):
     """Find all Google Docs added to the meeting notes folder in the last 24 hours."""
     drive = build("drive", "v3", credentials=creds)
     docs = build("docs", "v1", credentials=creds)
 
-    # Find the folder
-    folder_results = drive.files().list(
-        q=f"name='{MEETING_NOTES_FOLDER}' and mimeType='application/vnd.google-apps.folder' and trashed=false",
-        fields="files(id, name)",
-    ).execute()
-
-    folders = folder_results.get("files", [])
-    if not folders:
+    folder_id = _find_notes_folder_id(drive)
+    if not folder_id:
         print(f"Folder '{MEETING_NOTES_FOLDER}' not found in Drive.")
         return []
-
-    folder_id = folders[0]["id"]
 
     # Find docs created in the last 24 hours
     since = (datetime.now(timezone.utc) - timedelta(hours=24)).isoformat()
@@ -174,11 +195,11 @@ _PREP_INSTRUCTION_VERBS = re.compile(
 def _extract_prep_search_keys(prep_block, event_summary, attendees):
     """Build a list of search terms for the work notes folder.
 
-    The prep block is the source of truth — each phrase in it (split on
-    commas, semicolons, bullets, and newlines) becomes a Drive search key
-    after stripping leading instruction verbs and stop words. Falls back to
-    capitalized names in the event title + attendees only when the prep
-    block yields nothing usable.
+    The prep block is the source of truth: it's split on commas, semicolons,
+    bullets and newlines, leading instruction verbs are stripped, and each
+    short phrase becomes a Drive search key directly while long prose phrases
+    are reduced to their proper-noun n-grams. Names from the event title and
+    attendees are always folded in as additional keys.
     """
     keys = []
     seen = set()
@@ -190,29 +211,40 @@ def _extract_prep_search_keys(prep_block, event_summary, attendees):
         seen.add(t.lower())
         keys.append(t)
 
+    def harvest_names(text):
+        """Pull proper-noun n-grams (e.g. 'Justin White', 'ServiceNow') out of
+        free text — these are the high-signal terms that actually match doc
+        titles and bodies."""
+        for match in re.findall(r"[A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,2}", text or ""):
+            tokens = [t for t in match.split() if t.lower() not in _PREP_STOP_WORDS]
+            if tokens:
+                add(" ".join(tokens))
+
     for phrase in re.split(r"[,;\n\r•·]+|\s-\s|\s–\s|\s—\s", prep_block or ""):
         phrase = phrase.strip().lstrip("-•·*").strip()
         if not phrase:
             continue
-        phrase = _PREP_INSTRUCTION_VERBS.sub("", phrase)
-        # Cap phrase length — Drive's `contains` matches short substrings well
-        # but a full sentence rarely matches a doc title verbatim.
-        if len(phrase) > 60:
-            phrase = phrase[:60].rsplit(" ", 1)[0]
-        add(phrase)
+        phrase = _PREP_INSTRUCTION_VERBS.sub("", phrase).strip()
+        # A short phrase is a usable Drive key as-is. A long, prose-style phrase
+        # almost never matches a doc title/body verbatim — so harvest the
+        # proper-noun n-grams out of it instead. (Using the whole phrase as the
+        # key was the post-rework regression that returned zero work notes.)
+        if len(phrase.split()) <= 4:
+            add(phrase)
+        else:
+            harvest_names(phrase)
 
-    if not keys:
-        for match in re.findall(r"[A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,2}", event_summary or ""):
-            tokens = [t for t in match.split() if t.lower() not in _PREP_STOP_WORDS]
-            if tokens:
-                add(" ".join(tokens))
-        for a in attendees or []:
-            name = a.get("displayName") or ""
-            if name:
-                add(name)
-            email = a.get("email") or ""
-            if email and "@" in email:
-                add(email.split("@")[0].replace(".", " ").replace("_", " "))
+    # Always fold in names from the title and attendees as additional keys —
+    # not only when the prep block yields nothing. Deduped by add(); prep-block
+    # keys are searched first since they were added first.
+    harvest_names(event_summary)
+    for a in attendees or []:
+        name = a.get("displayName") or ""
+        if name:
+            add(name)
+        email = a.get("email") or ""
+        if email and "@" in email:
+            add(email.split("@")[0].replace(".", " ").replace("_", " "))
 
     return keys
 
@@ -419,18 +451,9 @@ def build_meeting_preps(creds, events):
     drive = build("drive", "v3", credentials=creds)
     docs_api = build("docs", "v1", credentials=creds)
 
-    folder_id = None
-    try:
-        folders = drive.files().list(
-            q=f"name='{MEETING_NOTES_FOLDER}' and mimeType='application/vnd.google-apps.folder' and trashed=false",
-            fields="files(id, name)",
-        ).execute().get("files", [])
-        if folders:
-            folder_id = folders[0]["id"]
-        else:
-            print(f"Folder {MEETING_NOTES_FOLDER!r} not found — prep will run without work-notes context.")
-    except Exception as e:
-        print(f"Folder lookup failed ({type(e).__name__}: {e}); prep will run without work-notes context.")
+    folder_id = _find_notes_folder_id(drive)
+    if not folder_id:
+        print(f"Folder {MEETING_NOTES_FOLDER!r} not found — prep will run without work-notes context.")
 
     preps = {}
     for event, block in needs:
@@ -438,8 +461,10 @@ def build_meeting_preps(creds, events):
         related = []
         if folder_id:
             keys = _extract_prep_search_keys(block, event.get("summary") or "", attendees)
+            print(f"[prep] {event.get('summary')!r} keys: {keys}")
             if keys:
                 related = _search_work_notes_for_keys(drive, docs_api, folder_id, keys)
+                print(f"[prep] {event.get('summary')!r} matched {len(related)} docs: {[d['title'] for d in related]}")
         result = get_ai_meeting_prep(event, block, attendees, related)
         result["title"] = event.get("summary") or "Untitled"
         result["start_label"] = format_event_time(event)
