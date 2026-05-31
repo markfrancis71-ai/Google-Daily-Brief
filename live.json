@@ -1,10 +1,45 @@
 {
-  "refreshed_at": "2026-05-31T16:12:30.827966-05:00",
-  "refreshed_label": "4:12 PM",
+  "refreshed_at": "2026-05-31T17:26:50.589616-05:00",
+  "refreshed_label": "5:26 PM",
   "tz_label": "Chicago",
-  "events": [],
-  "focus_html": "",
-  "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Contract with Dan Weaver</span>\n                <span class=\"capsule capsule--caution\">Due Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get meeting with the Brians on the books</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize team performance spreadsheet and stack ranking</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 29</span>\n            </div>",
-  "preps": {}
+  "events": [
+    {
+      "id": "6nk7e7p8krue3cqff2fnceu4gm",
+      "start_iso": "2026-05-31T18:30:00-05:00",
+      "end_iso": "2026-05-31T19:30:00-05:00",
+      "start_label": "6:30 PM",
+      "end_label": "7:30 PM",
+      "summary": "Sync with Zahid on ServiceNow",
+      "location": "",
+      "prep": {
+        "summary": "You have no work notes in the directory from the past five or six days\u2014the system returned zero matching files. Align directly with Zahid on the current state of the ServiceNow integration\u2014you must establish a new progress baseline during this session. Focus the conversation on immediate operational bottlenecks\u2014this will bypass the lack of recent documentation.",
+        "tasks": [
+          "Verify the current ServiceNow instance status\u2014check for recent platform updates or system outages before the meeting.",
+          "Draft a list of active technical bottlenecks\u2014prioritize the issues requiring Zahid's immediate input.",
+          "Request a timeline for outstanding deliverables\u2014secure concrete commitment dates during the sync.",
+          "Create a new shared document for tracking progress\u2014ensure future work notes reside in the designated folder."
+        ],
+        "title": "Sync with Zahid on ServiceNow",
+        "start_label": "6:30 PM",
+        "end_label": "7:30 PM"
+      }
+    }
+  ],
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">6:30 PM &mdash; 7:30 PM</div>\n            <h2 class=\"focus-title\">Sync with Zahid on ServiceNow</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">You have no work notes in the directory from the past five or six days\u2014the system returned zero matching files. Align directly with Zahid on the current state of the ServiceNow integration\u2014you must establish a new progress baseline during this session. Focus the conversation on immediate operational bottlenecks\u2014this will bypass the lack of recent documentation.</p>\n                <ul class=\"focus-prep-tasks\"><li>Verify the current ServiceNow instance status\u2014check for recent platform updates or system outages before the meeting.</li><li>Draft a list of active technical bottlenecks\u2014prioritize the issues requiring Zahid&#x27;s immediate input.</li><li>Request a timeline for outstanding deliverables\u2014secure concrete commitment dates during the sync.</li><li>Create a new shared document for tracking progress\u2014ensure future work notes reside in the designated folder.</li></ul>\n            </div>\n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">6:30 PM</div>\n                    <div class=\"t-end\">&mdash; 7:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Zahid on ServiceNow</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up meeting with Jeff Kirchherr and Campbell regarding ServiceNow topic</span>\n                <span class=\"capsule capsule--caution\">Due Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Contract with Dan Weaver</span>\n                <span class=\"capsule capsule--caution\">Due Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get meeting with the Brians on the books</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize team performance spreadsheet and stack ranking</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; May 29</span>\n            </div>",
+  "preps": {
+    "6nk7e7p8krue3cqff2fnceu4gm": {
+      "summary": "You have no work notes in the directory from the past five or six days\u2014the system returned zero matching files. Align directly with Zahid on the current state of the ServiceNow integration\u2014you must establish a new progress baseline during this session. Focus the conversation on immediate operational bottlenecks\u2014this will bypass the lack of recent documentation.",
+      "tasks": [
+        "Verify the current ServiceNow instance status\u2014check for recent platform updates or system outages before the meeting.",
+        "Draft a list of active technical bottlenecks\u2014prioritize the issues requiring Zahid's immediate input.",
+        "Request a timeline for outstanding deliverables\u2014secure concrete commitment dates during the sync.",
+        "Create a new shared document for tracking progress\u2014ensure future work notes reside in the designated folder."
+      ],
+      "title": "Sync with Zahid on ServiceNow",
+      "start_label": "6:30 PM",
+      "end_label": "7:30 PM"
+    }
+  }
 }
