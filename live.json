@@ -1,33 +1,152 @@
 {
-  "refreshed_at": "2026-05-31T21:03:44.750377-05:00",
-  "refreshed_label": "9:03 PM",
+  "refreshed_at": "2026-06-01T02:21:45.776519-05:00",
+  "refreshed_label": "2:21 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "6nk7e7p8krue3cqff2fnceu4gm",
-      "start_iso": "2026-05-31T18:30:00-05:00",
-      "end_iso": "2026-05-31T19:30:00-05:00",
-      "start_label": "6:30 PM",
-      "end_label": "7:30 PM",
-      "summary": "Sync with Zahid on ServiceNow",
+      "id": "lspojgdkbeke6kjtmff01f41qo",
+      "start_iso": "2026-06-01T08:10:00-05:00",
+      "end_iso": "2026-06-01T09:00:00-05:00",
+      "start_label": "8:10 AM",
+      "end_label": "9:00 AM",
+      "summary": "Discuss the BPM recommendation deck prior to...",
       "location": "",
-      "prep": {
-        "summary": "You must align with Zahid on the P&C process health strategy\u2014specifically resolving the tool overlap and high costs associated with ServiceNow and Celonis. Your recent reviews with Suresh and Ray highlight a critical need to establish architectural guardrails\u2014preventing unsustainable consumption-based ServiceNow licensing\u2014while managing stalled CMT and NART pilots. You need to pitch a unified P&C process scorecard that monitors manual blind spots without relying on an expensive\u2014and redundant\u2014one-size-fits-all framework.",
-        "tasks": [
-          "Coordinate with Zahid to define operational guardrails\u2014specifically managing where ServiceNow, Celonis, and SCAN overlap.",
-          "Finalize the architectural framework for the P&C process health scorecard to eliminate highly manual operational blind spots.",
-          "Establish a consistent business engagement process\u2014using formal minutes\u2014to hold partners accountable for process requirements.",
-          "Schedule an alignment meeting with Deepak to resolve the stalled Resiliency and NART pilots."
-        ],
-        "title": "Sync with Zahid on ServiceNow",
-        "start_label": "6:30 PM",
-        "end_label": "7:30 PM"
-      }
+      "prep": null
+    },
+    {
+      "id": "lg3cc9d0glo786o31e673nqmgg",
+      "start_iso": "2026-06-01T08:30:00-05:00",
+      "end_iso": "2026-06-01T09:00:00-05:00",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM",
+      "summary": "Fast Track: P&C Workaround Discussion",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "1t83v35019bsc36r7gaeh0hf5s",
+      "start_iso": "2026-06-01T09:05:00-05:00",
+      "end_iso": "2026-06-01T09:30:00-05:00",
+      "start_label": "9:05 AM",
+      "end_label": "9:30 AM",
+      "summary": "Review ServiceNow PoC Deck",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "qastd87o4e50jjts6i08jhpsn0_20260601T143000Z",
+      "start_iso": "2026-06-01T09:30:00-05:00",
+      "end_iso": "2026-06-01T09:55:00-05:00",
+      "start_label": "9:30 AM",
+      "end_label": "9:55 AM",
+      "summary": "Weekly: Calendar Review",
+      "location": "https://usaa.zoom.us/j/9303...",
+      "prep": null
+    },
+    {
+      "id": "eh2heruo6jf7fi64308i3a3q8g",
+      "start_iso": "2026-06-01T10:00:00-05:00",
+      "end_iso": "2026-06-01T10:25:00-05:00",
+      "start_label": "10:00 AM",
+      "end_label": "10:25 AM",
+      "summary": "Bi-weekly 1:1 w/Praveena",
+      "location": "https://usaa.zoom.us/j/9180...",
+      "prep": null
+    },
+    {
+      "id": "2hfnhs0clotn620v8i9ransnhk",
+      "start_iso": "2026-06-01T10:30:00-05:00",
+      "end_iso": "2026-06-01T10:55:00-05:00",
+      "start_label": "10:30 AM",
+      "end_label": "10:55 AM",
+      "summary": "Abe/Zahid Intro",
+      "location": "https://usaa.zoom.us/j/9625066...",
+      "prep": null
+    },
+    {
+      "id": "gog20mgvj02pfefns7g42qcmpc",
+      "start_iso": "2026-06-01T10:30:00-05:00",
+      "end_iso": "2026-06-01T10:55:00-05:00",
+      "start_label": "10:30 AM",
+      "end_label": "10:55 AM",
+      "summary": "Business development workbench/AI tooling",
+      "location": "https://usaa.zoom.us/j/93161812...",
+      "prep": null
+    },
+    {
+      "id": "hgmb61igle5rsol014co4mfrnc",
+      "start_iso": "2026-06-01T11:00:00-05:00",
+      "end_iso": "2026-06-01T11:25:00-05:00",
+      "start_label": "11:00 AM",
+      "end_label": "11:25 AM",
+      "summary": "Sync with Mark | Steve",
+      "location": "Mark's office; EXEC SAT HQ (RG)",
+      "prep": null
+    },
+    {
+      "id": "j7k4lu0sti8p9j0edu4u0g44j8",
+      "start_iso": "2026-06-01T13:15:00-05:00",
+      "end_iso": "2026-06-01T14:15:00-05:00",
+      "start_label": "1:15 PM",
+      "end_label": "2:15 PM",
+      "summary": "TWT Security and MFA Requirements",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "19qhcr2301uig1hecjdpl3ecbc_20260601T190000Z",
+      "start_iso": "2026-06-01T14:00:00-05:00",
+      "end_iso": "2026-06-01T15:00:00-05:00",
+      "start_label": "2:00 PM",
+      "end_label": "3:00 PM",
+      "summary": "Bi-weekly: Tech Decision Review Group",
+      "location": "https://usaa.zoom.us/j/9924...",
+      "prep": null
+    },
+    {
+      "id": "7ld43ee5avl885dbopmr5qt3n8",
+      "start_iso": "2026-06-01T15:00:00-05:00",
+      "end_iso": "2026-06-01T15:25:00-05:00",
+      "start_label": "3:00 PM",
+      "end_label": "3:25 PM",
+      "summary": "EMG Engage - Intro to Architecture w/Mark Francis",
+      "location": "EXEC SAT HQ",
+      "prep": null
+    },
+    {
+      "id": "k6rsau810jsqmsro0q90e3j7p4",
+      "start_iso": "2026-06-01T15:30:00-05:00",
+      "end_iso": "2026-06-01T16:00:00-05:00",
+      "start_label": "3:30 PM",
+      "end_label": "4:00 PM",
+      "summary": "EMG Engage - Intro to Architecture w/Mark Francis",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "dcsb0c3fs9e6qrqn9qeh9nk4e8",
+      "start_iso": "2026-06-01T16:00:00-05:00",
+      "end_iso": "2026-06-01T16:30:00-05:00",
+      "start_label": "4:00 PM",
+      "end_label": "4:30 PM",
+      "summary": "Sync with Mark | Brian",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "llrljseb0hpj8tom61jhqet4v8",
+      "start_iso": "2026-06-01T16:30:00-05:00",
+      "end_iso": "2026-06-01T17:00:00-05:00",
+      "start_label": "4:30 PM",
+      "end_label": "5:00 PM",
+      "summary": "Monthly 1:1 Architecture Sync w/ Suhas | Mark Francis",
+      "location": "",
+      "prep": null
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">6:30 PM</div>\n                    <div class=\"t-end\">&mdash; 7:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Zahid on ServiceNow</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Resolve meeting clashes</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get meeting with the Brians on the books</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Contract with Dan Weaver</span>\n                <span class=\"capsule capsule--caution\">Due Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize team performance spreadsheet and stack ranking</span>\n                \n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:10 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Discuss the BPM recommendation deck prior to...</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:10 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Discuss the BPM recommendation deck prior to...</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Fast Track: P&amp;C Workaround Discussion</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:05 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review ServiceNow PoC Deck</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly: Calendar Review</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9303...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Praveena</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9180...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Abe/Zahid Intro</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9625066...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Business development workbench/AI tooling</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/93161812...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Steve</div>\n                    <div class=\"t-loc\">Mark&#x27;s office; EXEC SAT HQ (RG)</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:15 PM</div>\n                    <div class=\"t-end\">&mdash; 2:15 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TWT Security and MFA Requirements</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly: Tech Decision Review Group</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9924...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis</div>\n                    <div class=\"t-loc\">EXEC SAT HQ</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Brian</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly 1:1 Architecture Sync w/ Suhas | Mark Francis</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Resolve meeting clashes</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get meeting with the Brians on the books</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Contract with Dan Weaver</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize team performance spreadsheet and stack ranking</span>\n                \n            </div>",
   "preps": {
     "6nk7e7p8krue3cqff2fnceu4gm": {
       "summary": "You must align with Zahid on the P&C process health strategy\u2014specifically resolving the tool overlap and high costs associated with ServiceNow and Celonis. Your recent reviews with Suresh and Ray highlight a critical need to establish architectural guardrails\u2014preventing unsustainable consumption-based ServiceNow licensing\u2014while managing stalled CMT and NART pilots. You need to pitch a unified P&C process scorecard that monitors manual blind spots without relying on an expensive\u2014and redundant\u2014one-size-fits-all framework.",
