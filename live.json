@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-01T08:13:57.312870-05:00",
-  "refreshed_label": "8:13 AM",
+  "refreshed_at": "2026-06-01T08:41:23.337346-05:00",
+  "refreshed_label": "8:41 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -82,12 +82,12 @@
       "summary": "Sync with Mark | Steve",
       "location": "Mark's office; EXEC SAT HQ (RG)",
       "prep": {
-        "summary": "Your recent syncs with Steve focus on shifting developmental tools\u2014like the business analysis helper\u2014into official TPM apps while navigating governance with Chuck and the Gen AI Council. The Spider Tool draft requires immediate reconciliation with a CIO lead\u2014relying on historical testing context\u2014to finalize the tech decision. You must also address capacity constraints with Deepak and manage the integration friction surrounding the 2027 Socotra product timeline.",
+        "summary": "You need to debrief on your last two syncs with Steve\u2014focusing on navigating the Gen AI Council governance and transitioning long-term developer tools to official TPM apps. The Spider Tool tech decision draft is now complete\u2014requiring immediate alignment with a CIO lead to integrate historical context\u2014while the Socotra incubation project still faces unresolved integration friction. You must also address critical team capacity constraints\u2014especially Mark's ongoing advocacy with Deepak for permanent resource relief.",
         "tasks": [
-          "Align with a CIO lead to reconcile the Spider Tool draft with historical testing context.",
-          "Address the dotted-line governance hurdles with Chuck and the Gen AI Council\u2014focusing on long-term tool transitions.",
-          "Schedule an alignment meeting with Deepak's team to resolve the manual reporting risks on the Socotra integration.",
-          "Prepare shared resource materials for the upcoming EA Library Initiative discussion with Ostrakamp."
+          "Align with the CIO lead to reconcile the Spider Tool tech decision draft with historical context.",
+          "Meet with Deepak's team to resolve the manual reporting risks associated with the Socotra incubation integration debate.",
+          "Address the governance dotted line with Chuck and the Gen AI Council regarding the transition of personal tools to official TPM apps.",
+          "Follow up on the proposed Enterprise Architecture Library initiative discussed at the horizontal planning meeting."
         ],
         "title": "Sync with Mark | Steve",
         "start_label": "11:00 AM",
@@ -103,12 +103,12 @@
       "summary": "TWT Security and MFA Requirements",
       "location": "",
       "prep": {
-        "summary": "Your review of the work notes reveals a critical discussion on May 21st regarding the 2A Text rollout planned for 2026. The Optimization team requires an isolated, scalable sandbox environment to test these two-way texting capabilities\u2014alongside other major releases\u2014to prepare frontline adjusters. Technical leadership warns of massive hurdles\u2014specifically around funding, enterprise ownership, and the complexity of achieving downstream integration parity.",
+        "summary": "Your review of the work notes\u2014specifically the May 21 P&C Sandbox Discussion\u2014reveals that two-way texting, listed as 2A Text, is slated for the critical 2026 rollouts. The Optimization team demands an isolated sandbox environment\u2014simulating experiences for up to 9,000 frontline adjusters\u2014to prepare for these massive process changes. Technical leadership still faces unresolved blockers\u2014specifically funding, enterprise ownership, and a lack of environment parity across downstream applications.",
         "tasks": [
-          "Resolve the funding and enterprise ownership disputes\u2014specifically for the 2026 2A Text sandbox environment\u2014before technical planning proceeds.",
-          "Address the technical constraints of the current GuideWire Cloud pre-production environment\u2014notably the highly restricted, unintegrated setup and unmasked data issues.",
-          "Align with the Optimization team to scale down their massive 9,000-user baseline requirement\u2014or validate if this scale is absolutely necessary for initial two-way SMS testing.",
-          "Establish clear environment parity guidelines\u2014detailing how downstream enterprise applications will integrate\u2014to avoid critical defects during frontline adjuster onboarding."
+          "Resolve funding and enterprise ownership constraints\u2014specifically for the 2026 sandbox environment\u2014before proceeding with 2A Text testing.",
+          "Establish technical guidelines for testing 2A Text at scale without relying on unmasked, stale production data.",
+          "Coordinate with the Optimization team to map out the 2A Text integration dependencies across downstream enterprise applications.",
+          "Determine the minimum user footprint required to validate the 2A Text workflow\u2014aiming to lower the initial 9,000-user baseline."
         ],
         "title": "TWT Security and MFA Requirements",
         "start_label": "1:15 PM",
@@ -164,12 +164,13 @@
       "summary": "Monthly 1:1 Architecture Sync w/ Suhas | Mark Francis",
       "location": "",
       "prep": {
-        "summary": "You must align with Suhas on major upcoming architectural inflections\u2014specifically the transition of telematics data to AWS, Iceberg, and Domino Nexus\u2014while addressing the operational friction caused by unplanned pilot projects. The upcoming ServiceNow evaluation remains highly contentious\u2014with critical decisions looming over vendor lock-in versus internal monitoring solutions\u2014alongside the pressing need for structured sandbox environments for the 2026 P&C rollouts. You also need to finalize AI prompt governance and establish a consumption-based chargeback model to curb high-end model usage before these initiatives scale further.",
+        "summary": "Prepare to brief Suhas on critical operational bottlenecks\u2014specifically the friction around unplanned pilot projects, the stalling of Resiliency/NART mapping, and the massive environment-parity challenges of the 2026 P&C sandbox. Address key infrastructure decisions head-on\u2014including the ServiceNow event-monitoring POC versus homegrown solutions, the transition of telematics data to AWS/Iceberg, and the rollout of Project IVA. Manage emerging AI governance issues by pushing for consumption-based chargebacks on LLMs and formalizing generative AI requirements processing.",
         "tasks": [
-          "Schedule an alignment meeting with Deepak to address the stalled Resiliency/NART process mapping.",
+          "Establish a consistent engagement framework to bring architecture into pilot projects earlier.",
           "Revise the ServiceNow POC presentation deck for Dan Griffiths by hiding slides 6, 7, 15, and 515.",
-          "Establish a formalized business engagement process to involve architecture earlier in pilot projects.",
-          "Implement a consumption-based chargeback framework to govern high-end AI and LLM model usage."
+          "Schedule an alignment meeting with Deepak to resolve the stalled Resiliency/NART process mapping.",
+          "Define the 2025 telematics data ingestion framework to transition smoothly to the AWS, Iceberg, and Domino Nexus architecture.",
+          "Automate data validation for Change Review Groups by implementing a Snowflake-driven batch job to flag incomplete records."
         ],
         "title": "Monthly 1:1 Architecture Sync w/ Suhas | Mark Francis",
         "start_label": "4:30 PM",
@@ -182,36 +183,37 @@
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Resolve meeting clashes</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get meeting with the Brians on the books</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--caution\">Due Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Contract with Dan Weaver</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize team performance spreadsheet and stack ranking</span>\n                \n            </div>",
   "preps": {
     "hgmb61igle5rsol014co4mfrnc": {
-      "summary": "Your recent syncs with Steve focus on shifting developmental tools\u2014like the business analysis helper\u2014into official TPM apps while navigating governance with Chuck and the Gen AI Council. The Spider Tool draft requires immediate reconciliation with a CIO lead\u2014relying on historical testing context\u2014to finalize the tech decision. You must also address capacity constraints with Deepak and manage the integration friction surrounding the 2027 Socotra product timeline.",
+      "summary": "You need to debrief on your last two syncs with Steve\u2014focusing on navigating the Gen AI Council governance and transitioning long-term developer tools to official TPM apps. The Spider Tool tech decision draft is now complete\u2014requiring immediate alignment with a CIO lead to integrate historical context\u2014while the Socotra incubation project still faces unresolved integration friction. You must also address critical team capacity constraints\u2014especially Mark's ongoing advocacy with Deepak for permanent resource relief.",
       "tasks": [
-        "Align with a CIO lead to reconcile the Spider Tool draft with historical testing context.",
-        "Address the dotted-line governance hurdles with Chuck and the Gen AI Council\u2014focusing on long-term tool transitions.",
-        "Schedule an alignment meeting with Deepak's team to resolve the manual reporting risks on the Socotra integration.",
-        "Prepare shared resource materials for the upcoming EA Library Initiative discussion with Ostrakamp."
+        "Align with the CIO lead to reconcile the Spider Tool tech decision draft with historical context.",
+        "Meet with Deepak's team to resolve the manual reporting risks associated with the Socotra incubation integration debate.",
+        "Address the governance dotted line with Chuck and the Gen AI Council regarding the transition of personal tools to official TPM apps.",
+        "Follow up on the proposed Enterprise Architecture Library initiative discussed at the horizontal planning meeting."
       ],
       "title": "Sync with Mark | Steve",
       "start_label": "11:00 AM",
       "end_label": "11:25 AM"
     },
     "j7k4lu0sti8p9j0edu4u0g44j8": {
-      "summary": "Your review of the work notes reveals a critical discussion on May 21st regarding the 2A Text rollout planned for 2026. The Optimization team requires an isolated, scalable sandbox environment to test these two-way texting capabilities\u2014alongside other major releases\u2014to prepare frontline adjusters. Technical leadership warns of massive hurdles\u2014specifically around funding, enterprise ownership, and the complexity of achieving downstream integration parity.",
+      "summary": "Your review of the work notes\u2014specifically the May 21 P&C Sandbox Discussion\u2014reveals that two-way texting, listed as 2A Text, is slated for the critical 2026 rollouts. The Optimization team demands an isolated sandbox environment\u2014simulating experiences for up to 9,000 frontline adjusters\u2014to prepare for these massive process changes. Technical leadership still faces unresolved blockers\u2014specifically funding, enterprise ownership, and a lack of environment parity across downstream applications.",
       "tasks": [
-        "Resolve the funding and enterprise ownership disputes\u2014specifically for the 2026 2A Text sandbox environment\u2014before technical planning proceeds.",
-        "Address the technical constraints of the current GuideWire Cloud pre-production environment\u2014notably the highly restricted, unintegrated setup and unmasked data issues.",
-        "Align with the Optimization team to scale down their massive 9,000-user baseline requirement\u2014or validate if this scale is absolutely necessary for initial two-way SMS testing.",
-        "Establish clear environment parity guidelines\u2014detailing how downstream enterprise applications will integrate\u2014to avoid critical defects during frontline adjuster onboarding."
+        "Resolve funding and enterprise ownership constraints\u2014specifically for the 2026 sandbox environment\u2014before proceeding with 2A Text testing.",
+        "Establish technical guidelines for testing 2A Text at scale without relying on unmasked, stale production data.",
+        "Coordinate with the Optimization team to map out the 2A Text integration dependencies across downstream enterprise applications.",
+        "Determine the minimum user footprint required to validate the 2A Text workflow\u2014aiming to lower the initial 9,000-user baseline."
       ],
       "title": "TWT Security and MFA Requirements",
       "start_label": "1:15 PM",
       "end_label": "2:15 PM"
     },
     "llrljseb0hpj8tom61jhqet4v8": {
-      "summary": "You must align with Suhas on major upcoming architectural inflections\u2014specifically the transition of telematics data to AWS, Iceberg, and Domino Nexus\u2014while addressing the operational friction caused by unplanned pilot projects. The upcoming ServiceNow evaluation remains highly contentious\u2014with critical decisions looming over vendor lock-in versus internal monitoring solutions\u2014alongside the pressing need for structured sandbox environments for the 2026 P&C rollouts. You also need to finalize AI prompt governance and establish a consumption-based chargeback model to curb high-end model usage before these initiatives scale further.",
+      "summary": "Prepare to brief Suhas on critical operational bottlenecks\u2014specifically the friction around unplanned pilot projects, the stalling of Resiliency/NART mapping, and the massive environment-parity challenges of the 2026 P&C sandbox. Address key infrastructure decisions head-on\u2014including the ServiceNow event-monitoring POC versus homegrown solutions, the transition of telematics data to AWS/Iceberg, and the rollout of Project IVA. Manage emerging AI governance issues by pushing for consumption-based chargebacks on LLMs and formalizing generative AI requirements processing.",
       "tasks": [
-        "Schedule an alignment meeting with Deepak to address the stalled Resiliency/NART process mapping.",
+        "Establish a consistent engagement framework to bring architecture into pilot projects earlier.",
         "Revise the ServiceNow POC presentation deck for Dan Griffiths by hiding slides 6, 7, 15, and 515.",
-        "Establish a formalized business engagement process to involve architecture earlier in pilot projects.",
-        "Implement a consumption-based chargeback framework to govern high-end AI and LLM model usage."
+        "Schedule an alignment meeting with Deepak to resolve the stalled Resiliency/NART process mapping.",
+        "Define the 2025 telematics data ingestion framework to transition smoothly to the AWS, Iceberg, and Domino Nexus architecture.",
+        "Automate data validation for Change Review Groups by implementing a Snowflake-driven batch job to flag incomplete records."
       ],
       "title": "Monthly 1:1 Architecture Sync w/ Suhas | Mark Francis",
       "start_label": "4:30 PM",
