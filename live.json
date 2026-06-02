@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-02T06:24:02.833287-05:00",
-  "refreshed_label": "6:24 AM",
+  "refreshed_at": "2026-06-02T07:06:30.115674-05:00",
+  "refreshed_label": "7:06 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,18 @@
       "end_label": "9:00 AM",
       "summary": "Bi-weekly - 1:1 w/Mark Francis | Deepak",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review your recent work notes to identify persistent operational friction\u2014specifically stalling pilots, environment constraints for the 2026 P&C rollouts, and unstable AI prompt pipelines. Address critical technical decisions\u2014including the ServiceNow vendor lock-in risks and AWS/Iceberg infrastructure transitions. Secure updates from Mark and Deepak on these cross-cutting hurdles\u2014and prioritize the upcoming talent calibrations.",
+        "tasks": [
+          "Ask Mark for the timeline\u2014and specific criteria\u2014for upcoming team calibrations.",
+          "Resolve outstanding technical decisions\u2014specifically ServiceNow vendor lock-in versus internal event monitoring.",
+          "Align with Deepak to unblock the stalling Resiliency/NART pilots\u2014focusing on the missing PO3 process mapping.",
+          "Establish a sustainable framework for prompt governance\u2014replacing the bespoke templates currently managed by Mark and Adam."
+        ],
+        "title": "Bi-weekly - 1:1 w/Mark Francis | Deepak",
+        "start_label": "8:30 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "r1dov4msrrmu8lps2rba8v8glg",
@@ -41,7 +52,18 @@
       "end_label": "11:00 AM",
       "summary": "Sync with the P&C IAs",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review the recent Claims Reqs meetings from May 18\u2014where you and Adam developed a bespoke, non-sustainable prompt process to handle the influx of requirements from Sarah's team. You must align these overlapping AI initiatives with Andy Napalese's \"Foundry\" framework\u2014a P&C-specific product development flywheel\u2014to transition from requirements clarity to Jira. Address the data quality gaps immediately\u2014specifically by leveraging Jonathan's Snowflake warehouse access to automate validation before change records hit human review.",
+        "tasks": [
+          "Transition the non-sustainable prompt pipeline developed by Mark and Adam into a structured feedback mechanism\u2014like a spreadsheet\u2014to flag hallucinations and regulatory gaps.",
+          "Align parallel P&C AI initiatives\u2014specifically Genie and the projects run by Shane London and Chase Secula\u2014with the Foundry framework.",
+          "Automate data validation by implementing a batch job that flags incomplete or low-quality change records prior to Change Review Group sessions.",
+          "Utilize Jonathan's Snowflake warehouse access to ingest and analyze P&C change records against your architecture checklist."
+        ],
+        "title": "Sync with the P&C IAs",
+        "start_label": "10:30 AM",
+        "end_label": "11:00 AM"
+      }
     },
     {
       "id": "rbv6idf1367titedn8vma7pii0",
@@ -61,7 +83,18 @@
       "end_label": "11:55 AM",
       "summary": "Sync with Mark | Vincent Sanchez (Follow-up)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You must address the paused CMT/Telematics initiative\u2014the core focus of your last discussion with Vince. Focus your preparation on compiling the preliminary forensics and impact attestations\u2014both are critical blockers. Resolve the outstanding questions regarding member remediation credits\u2014and prepare for the upcoming integration of speeding into driver scoring.",
+        "tasks": [
+          "Compile the preliminary forensics and impact attestations for the paused CMT/Telematics project.",
+          "Formulate the strategy for potential member remediation credits.",
+          "Integrate speeding metrics into the upcoming driver scoring iteration.",
+          "Establish the steady-state framework for loading 2024 and 2025 telematics data."
+        ],
+        "title": "Sync with Mark | Vincent Sanchez (Follow-up)",
+        "start_label": "11:30 AM",
+        "end_label": "11:55 AM"
+      }
     },
     {
       "id": "h3rsh1nb4rkjv0q3d2m6ripj00",
@@ -91,7 +124,18 @@
       "end_label": "3:00 PM",
       "summary": "Review SN POC Closeout for Dan G - Session 1",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You must prepare for the ServiceNow Proof of Concept\u2014SN POC\u2014closeout review with Dan Griffiths using the decisions from the May 28 alignment session. The team plans to scale back the presentation deck\u2014specifically hiding slides 6, 7, 15, and 515\u2014to focus on a highly concise, story-driven narrative rather than a simplistic \"happy path\" ACH flow. You need to address critical concerns regarding platform value\u2014namely vendor lock-in and pricing\u2014while actively aligning with the Experience Intelligence team to prevent siloed communication.",
+        "tasks": [
+          "Revise the presentation deck to transition directly from slide 5 to slide 9\u2014removing unnecessary technical clutter.",
+          "Align with the Experience Intelligence team to deliver a unified message to leadership regarding process monitoring.",
+          "Evaluate the long-term cost of ServiceNow against homegrown solutions\u2014factoring in potential vendor lock-in and discounted pricing structures.",
+          "Define the broader technical complexities of the eventing architecture\u2014moving past the limited scope of the initial ACH flow."
+        ],
+        "title": "Review SN POC Closeout for Dan G - Session 1",
+        "start_label": "2:05 PM",
+        "end_label": "3:00 PM"
+      }
     },
     {
       "id": "n0gc7kjdsddn2cu87qtv1nklb8",
@@ -144,46 +188,57 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Bi-weekly - 1:1 w/Mark Francis | Deepak</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Bi-weekly - 1:1 w/Mark Francis | Deepak</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Review your recent work notes to identify persistent operational friction\u2014specifically stalling pilots, environment constraints for the 2026 P&amp;C rollouts, and unstable AI prompt pipelines. Address critical technical decisions\u2014including the ServiceNow vendor lock-in risks and AWS/Iceberg infrastructure transitions. Secure updates from Mark and Deepak on these cross-cutting hurdles\u2014and prioritize the upcoming talent calibrations.</p>\n                <ul class=\"focus-prep-tasks\"><li>Ask Mark for the timeline\u2014and specific criteria\u2014for upcoming team calibrations.</li><li>Resolve outstanding technical decisions\u2014specifically ServiceNow vendor lock-in versus internal event monitoring.</li><li>Align with Deepak to unblock the stalling Resiliency/NART pilots\u2014focusing on the missing PO3 process mapping.</li><li>Establish a sustainable framework for prompt governance\u2014replacing the bespoke templates currently managed by Mark and Adam.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly - 1:1 w/Mark Francis | Deepak</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Huddle</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | J</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with the P&amp;C IAs</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | S...</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Vincent Sanchez (Follow-up)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Change Review Group (CRG)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:05 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review SN POC Closeout for Dan G - Session 1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:05 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Enterprise Architecture Leadership Sync (series ends 1...</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Doctor&#x27;s appointment</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">School Schedule - Zoom meetings after 4</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">5:00 PM</div>\n                    <div class=\"t-end\">&mdash; 5:15 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">WOR Submissions, due by EOD Every Weds</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 PM</div>\n                    <div class=\"t-end\">&mdash; 11:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C System Stability Status Update</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Matt&#x27;s tech acquistioin doc (Slack)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Resolve meeting clashes</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get meeting with the Brians on the books</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">update the horizontal planning (Get dashboard access)- Talk to Praveena</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Contract with Dan Weaver</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize team performance spreadsheet and stack ranking</span>\n                \n            </div>",
   "preps": {
-    "hgmb61igle5rsol014co4mfrnc": {
-      "summary": "You need to debrief on your last two syncs with Steve\u2014focusing on navigating the Gen AI Council governance and transitioning long-term developer tools to official TPM apps. The Spider Tool tech decision draft is now complete\u2014requiring immediate alignment with a CIO lead to integrate historical context\u2014while the Socotra incubation project still faces unresolved integration friction. You must also address critical team capacity constraints\u2014especially Mark's ongoing advocacy with Deepak for permanent resource relief.",
+    "1sdlacpv7qqg1jcdmqs425f468": {
+      "summary": "Review your recent work notes to identify persistent operational friction\u2014specifically stalling pilots, environment constraints for the 2026 P&C rollouts, and unstable AI prompt pipelines. Address critical technical decisions\u2014including the ServiceNow vendor lock-in risks and AWS/Iceberg infrastructure transitions. Secure updates from Mark and Deepak on these cross-cutting hurdles\u2014and prioritize the upcoming talent calibrations.",
       "tasks": [
-        "Align with the CIO lead to reconcile the Spider Tool tech decision draft with historical context.",
-        "Meet with Deepak's team to resolve the manual reporting risks associated with the Socotra incubation integration debate.",
-        "Address the governance dotted line with Chuck and the Gen AI Council regarding the transition of personal tools to official TPM apps.",
-        "Follow up on the proposed Enterprise Architecture Library initiative discussed at the horizontal planning meeting."
+        "Ask Mark for the timeline\u2014and specific criteria\u2014for upcoming team calibrations.",
+        "Resolve outstanding technical decisions\u2014specifically ServiceNow vendor lock-in versus internal event monitoring.",
+        "Align with Deepak to unblock the stalling Resiliency/NART pilots\u2014focusing on the missing PO3 process mapping.",
+        "Establish a sustainable framework for prompt governance\u2014replacing the bespoke templates currently managed by Mark and Adam."
       ],
-      "title": "Sync with Mark | Steve",
-      "start_label": "11:00 AM",
-      "end_label": "11:25 AM"
+      "title": "Bi-weekly - 1:1 w/Mark Francis | Deepak",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM"
     },
-    "j7k4lu0sti8p9j0edu4u0g44j8": {
-      "summary": "Your review of the work notes\u2014specifically the May 21 P&C Sandbox Discussion\u2014reveals that two-way texting, listed as 2A Text, is slated for the critical 2026 rollouts. The Optimization team demands an isolated sandbox environment\u2014simulating experiences for up to 9,000 frontline adjusters\u2014to prepare for these massive process changes. Technical leadership still faces unresolved blockers\u2014specifically funding, enterprise ownership, and a lack of environment parity across downstream applications.",
+    "fh9ghhknrddpaj7ftqb91t4ag4": {
+      "summary": "Review the recent Claims Reqs meetings from May 18\u2014where you and Adam developed a bespoke, non-sustainable prompt process to handle the influx of requirements from Sarah's team. You must align these overlapping AI initiatives with Andy Napalese's \"Foundry\" framework\u2014a P&C-specific product development flywheel\u2014to transition from requirements clarity to Jira. Address the data quality gaps immediately\u2014specifically by leveraging Jonathan's Snowflake warehouse access to automate validation before change records hit human review.",
       "tasks": [
-        "Resolve funding and enterprise ownership constraints\u2014specifically for the 2026 sandbox environment\u2014before proceeding with 2A Text testing.",
-        "Establish technical guidelines for testing 2A Text at scale without relying on unmasked, stale production data.",
-        "Coordinate with the Optimization team to map out the 2A Text integration dependencies across downstream enterprise applications.",
-        "Determine the minimum user footprint required to validate the 2A Text workflow\u2014aiming to lower the initial 9,000-user baseline."
+        "Transition the non-sustainable prompt pipeline developed by Mark and Adam into a structured feedback mechanism\u2014like a spreadsheet\u2014to flag hallucinations and regulatory gaps.",
+        "Align parallel P&C AI initiatives\u2014specifically Genie and the projects run by Shane London and Chase Secula\u2014with the Foundry framework.",
+        "Automate data validation by implementing a batch job that flags incomplete or low-quality change records prior to Change Review Group sessions.",
+        "Utilize Jonathan's Snowflake warehouse access to ingest and analyze P&C change records against your architecture checklist."
       ],
-      "title": "TWT Security and MFA Requirements",
-      "start_label": "1:15 PM",
-      "end_label": "2:15 PM"
+      "title": "Sync with the P&C IAs",
+      "start_label": "10:30 AM",
+      "end_label": "11:00 AM"
     },
-    "llrljseb0hpj8tom61jhqet4v8": {
-      "summary": "Prepare to brief Suhas on critical operational bottlenecks\u2014specifically the friction around unplanned pilot projects, the stalling of Resiliency/NART mapping, and the massive environment-parity challenges of the 2026 P&C sandbox. Address key infrastructure decisions head-on\u2014including the ServiceNow event-monitoring POC versus homegrown solutions, the transition of telematics data to AWS/Iceberg, and the rollout of Project IVA. Manage emerging AI governance issues by pushing for consumption-based chargebacks on LLMs and formalizing generative AI requirements processing.",
+    "6e0hjqv2ume36914ls0u2l5038": {
+      "summary": "You must address the paused CMT/Telematics initiative\u2014the core focus of your last discussion with Vince. Focus your preparation on compiling the preliminary forensics and impact attestations\u2014both are critical blockers. Resolve the outstanding questions regarding member remediation credits\u2014and prepare for the upcoming integration of speeding into driver scoring.",
       "tasks": [
-        "Establish a consistent engagement framework to bring architecture into pilot projects earlier.",
-        "Revise the ServiceNow POC presentation deck for Dan Griffiths by hiding slides 6, 7, 15, and 515.",
-        "Schedule an alignment meeting with Deepak to resolve the stalled Resiliency/NART process mapping.",
-        "Define the 2025 telematics data ingestion framework to transition smoothly to the AWS, Iceberg, and Domino Nexus architecture.",
-        "Automate data validation for Change Review Groups by implementing a Snowflake-driven batch job to flag incomplete records."
+        "Compile the preliminary forensics and impact attestations for the paused CMT/Telematics project.",
+        "Formulate the strategy for potential member remediation credits.",
+        "Integrate speeding metrics into the upcoming driver scoring iteration.",
+        "Establish the steady-state framework for loading 2024 and 2025 telematics data."
       ],
-      "title": "Monthly 1:1 Architecture Sync w/ Suhas | Mark Francis",
-      "start_label": "4:30 PM",
-      "end_label": "5:00 PM"
+      "title": "Sync with Mark | Vincent Sanchez (Follow-up)",
+      "start_label": "11:30 AM",
+      "end_label": "11:55 AM"
+    },
+    "4bh41utc4k5l8emshpuf3f97ko": {
+      "summary": "You must prepare for the ServiceNow Proof of Concept\u2014SN POC\u2014closeout review with Dan Griffiths using the decisions from the May 28 alignment session. The team plans to scale back the presentation deck\u2014specifically hiding slides 6, 7, 15, and 515\u2014to focus on a highly concise, story-driven narrative rather than a simplistic \"happy path\" ACH flow. You need to address critical concerns regarding platform value\u2014namely vendor lock-in and pricing\u2014while actively aligning with the Experience Intelligence team to prevent siloed communication.",
+      "tasks": [
+        "Revise the presentation deck to transition directly from slide 5 to slide 9\u2014removing unnecessary technical clutter.",
+        "Align with the Experience Intelligence team to deliver a unified message to leadership regarding process monitoring.",
+        "Evaluate the long-term cost of ServiceNow against homegrown solutions\u2014factoring in potential vendor lock-in and discounted pricing structures.",
+        "Define the broader technical complexities of the eventing architecture\u2014moving past the limited scope of the initial ACH flow."
+      ],
+      "title": "Review SN POC Closeout for Dan G - Session 1",
+      "start_label": "2:05 PM",
+      "end_label": "3:00 PM"
     }
   }
 }
