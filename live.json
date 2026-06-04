@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-04T03:57:52.748312-05:00",
-  "refreshed_label": "3:57 AM",
+  "refreshed_at": "2026-06-04T06:17:30.230937-05:00",
+  "refreshed_label": "6:17 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,18 @@
       "end_label": "9:00 AM",
       "summary": "Sync with Mark | Amit Baviskar (Follow-up)",
       "location": "Mark's office:; EXEC SAT HO (B)",
-      "prep": null
+      "prep": {
+        "summary": "Review the June 3rd alignment meeting between Mark and Ramesh\u2014the critical precursor to the Rapid Architecture Governance readout. The Most Important Thing Today\u2014the MITT\u2014is securing Mark's attendance at the joint tech and business readout to navigate the intense organizational tension over the Agent Assist UI. Key takeaways focus on the unresolved dispute between the CTO's office and business stakeholders over Out-of-the-Box versus embedded UI options\u2014an architectural conflict requiring immediate alignment.",
+        "tasks": [
+          "Attend the joint technology and business readout session to address organizational storming around the Agent Assist architecture.",
+          "Resolve the UI option conflict\u2014specifically evaluating the Amazon Out-of-the-Box versus the embedded widget solutions\u2014before tech leadership prematurely eliminates viable paths.",
+          "Clarify the 'Path to Production' slide messaging from the James D&S session to prevent further misinterpretation by leadership regarding the decommissioning of Conversant.",
+          "Establish a consistent engagement process with business partners to enforce accountability for process requirements and ownership."
+        ],
+        "title": "Sync with Mark | Amit Baviskar (Follow-up)",
+        "start_label": "8:30 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "i8f44eb22h5vqmgn68jlil8gn0",
@@ -71,7 +82,19 @@
       "end_label": "12:00 PM",
       "summary": "Weekly Staff \u2013 P&C CTO Leadership",
       "location": "https://usaa.zoom.us/j/9538...",
-      "prep": null
+      "prep": {
+        "summary": "You must track several critical architectural shifts across your portfolio\u2014including the onboarding of Suresh's Transformation Office using Scan AI, the upcoming Project IVA member rollout, and the rising integration challenges from Salesforce's Informatica acquisition. Address the escalating data architecture skill gaps in P&C\u2014where integration architects require tight pairing with staff engineers to prevent project failure. Drive alignment on the ServiceNow event-monitoring proof of concept and establish clear governance rules for developer tool usage.",
+        "tasks": [
+          "Escalate the operational risks associated with the P&C data architecture skill gaps\u2014ensuring integration architects are systematically paired with staff engineers to mitigate design failures.",
+          "Revise the ServiceNow event-monitoring presentation deck for Dan Griffiths\u2014specifically hiding slides 6, 7, 15, and 515 to streamline the narrative.",
+          "Enforce strict accountability rules for developers utilizing personal AI productivity tools\u2014mandating complete manual validation of all generated code before production deployment.",
+          "Confirm the P&C funding commitments for the subsequent phases of the Apache Flink real-time pipeline deployment\u2014adhering to the established line-of-business onboarding schedules.",
+          "Monitor the progress of the express RFP for Scan AI licensing\u2014ensuring Sean Garner captures cross-functional requirements across both Bank and P&C."
+        ],
+        "title": "Weekly Staff \u2013 P&C CTO Leadership",
+        "start_label": "11:00 AM",
+        "end_label": "12:00 PM"
+      }
     },
     {
       "id": "npd036hm3lpp3bm0edhmh77ku0",
@@ -134,59 +157,34 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Sync with Mark | Amit Baviskar (Follow-up)</h2>\n            <div class=\"focus-loc\">Mark&#x27;s office:; EXEC SAT HO (B)</div>\n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Sync with Mark | Amit Baviskar (Follow-up)</h2>\n            <div class=\"focus-loc\">Mark&#x27;s office:; EXEC SAT HO (B)</div>\n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Review the June 3rd alignment meeting between Mark and Ramesh\u2014the critical precursor to the Rapid Architecture Governance readout. The Most Important Thing Today\u2014the MITT\u2014is securing Mark&#x27;s attendance at the joint tech and business readout to navigate the intense organizational tension over the Agent Assist UI. Key takeaways focus on the unresolved dispute between the CTO&#x27;s office and business stakeholders over Out-of-the-Box versus embedded UI options\u2014an architectural conflict requiring immediate alignment.</p>\n                <ul class=\"focus-prep-tasks\"><li>Attend the joint technology and business readout session to address organizational storming around the Agent Assist architecture.</li><li>Resolve the UI option conflict\u2014specifically evaluating the Amazon Out-of-the-Box versus the embedded widget solutions\u2014before tech leadership prematurely eliminates viable paths.</li><li>Clarify the &#x27;Path to Production&#x27; slide messaging from the James D&amp;S session to prevent further misinterpretation by leadership regarding the decommissioning of Conversant.</li><li>Establish a consistent engagement process with business partners to enforce accountability for process requirements and ownership.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Mark | Amit Baviskar (Follow-up)</div>\n                    <div class=\"t-loc\">Mark&#x27;s office:; EXEC SAT HO (B)</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Alignment on 2 Way SMS</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">IPD Process EA Engagement</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis |</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">REF: Debrief on ServiceNow: P&amp;C &amp; LifeCo Alignments</div>\n                    <div class=\"t-loc\">EXEC SAT HO (BO2E.E116)</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff \u2013 P&amp;C CTO Leadership</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9538...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark F...</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 1:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | S...</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:05 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review SN POC Closeout for Dan G - Session 2</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly P&amp;C New Products 1 Arch Runway (2026 Series)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | L...</div>\n                    <div class=\"t-loc\">EXEC SAT HO (BO2E.B326)</div>\n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Get on Sean Garner&#x27;s calendar</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sort out that Cap Gemini - PL3 request today</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 3</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Sree Rella on ServiceNow</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Clean up meeting invites (Arch Forum, Arch Huddle etc.)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Matt&#x27;s tech acquistioin doc (Slack)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get meeting with the Brians on the books</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Contract with Dan Weaver</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>",
   "preps": {
-    "rlp22jefjlloqsq302rmbpktvg": {
-      "summary": "You lack documents explicitly labeled 'EA offsite meetings' in your work notes\u2014forcing a reliance on recent Tech BOD, office hours, and leadership check-ins to build your standup strategy. You must address critical operational bottlenecks\u2014specifically the stalled Resiliency/NART pilots and the massive scaling demands of the P&C sandbox environment. Focus your efforts on enforcing developer accountability for AI tool usage, preparing for the June member rollout of Project IVA, and driving the transition toward a highly technical, hands-on architecture discipline.",
+    "pq26525ndldu2knmkfsu9tirds": {
+      "summary": "Review the June 3rd alignment meeting between Mark and Ramesh\u2014the critical precursor to the Rapid Architecture Governance readout. The Most Important Thing Today\u2014the MITT\u2014is securing Mark's attendance at the joint tech and business readout to navigate the intense organizational tension over the Agent Assist UI. Key takeaways focus on the unresolved dispute between the CTO's office and business stakeholders over Out-of-the-Box versus embedded UI options\u2014an architectural conflict requiring immediate alignment.",
       "tasks": [
-        "Schedule the alignment meeting with Deepak to resolve stalled Resiliency and NART pilot processes.",
-        "Establish consumption-based chargebacks for high-end LLM models to curb rising infrastructure costs.",
-        "Partner with Michelle Carter to resolve the outstanding MII and residency team issues before Thursday.",
-        "Initiate conversations with the Pay Claim team to deliver Grafana dashboards with 10\u201315 real-time metrics within two weeks.",
-        "Implement a formal business engagement process to hold partners accountable for upstream architectural requirements."
+        "Attend the joint technology and business readout session to address organizational storming around the Agent Assist architecture.",
+        "Resolve the UI option conflict\u2014specifically evaluating the Amazon Out-of-the-Box versus the embedded widget solutions\u2014before tech leadership prematurely eliminates viable paths.",
+        "Clarify the 'Path to Production' slide messaging from the James D&S session to prevent further misinterpretation by leadership regarding the decommissioning of Conversant.",
+        "Establish a consistent engagement process with business partners to enforce accountability for process requirements and ownership."
       ],
-      "title": "Tech fellow standup",
-      "start_label": "8:00 AM",
+      "title": "Sync with Mark | Amit Baviskar (Follow-up)",
+      "start_label": "8:30 AM",
       "end_label": "9:00 AM"
     },
-    "2fk88oufebop7au89hmqmgtets": {
-      "summary": "Your work notes contain no direct records of a past meeting with Deepak, calibration discussions, or the Unsworth departure\u2014leaving these topics without historical documentation in your files. The only reference to Deepak is an outstanding action item from late May to schedule an alignment meeting on the stalled Resilience pilot. You must prepare to address these unrecorded items directly with Claire\u2014focusing on the team impact of the Unsworth exit and the current status of performance calibrations.",
+    "p5n0hspd365gvcigpkq55adfvc": {
+      "summary": "You must track several critical architectural shifts across your portfolio\u2014including the onboarding of Suresh's Transformation Office using Scan AI, the upcoming Project IVA member rollout, and the rising integration challenges from Salesforce's Informatica acquisition. Address the escalating data architecture skill gaps in P&C\u2014where integration architects require tight pairing with staff engineers to prevent project failure. Drive alignment on the ServiceNow event-monitoring proof of concept and establish clear governance rules for developer tool usage.",
       "tasks": [
-        "Schedule the outstanding alignment meeting with Deepak and key stakeholders regarding the stalled Resilience pilot.",
-        "Compile performance metrics for your direct reports to prepare for the upcoming talent calibration discussions.",
-        "Draft an impact assessment of the Unsworth departure\u2014focusing on leadership coverage and transition timelines\u2014to share with Claire.",
-        "Establish a regular cadence for documenting major organizational shifts and alignment meetings in your Google Drive folder."
+        "Escalate the operational risks associated with the P&C data architecture skill gaps\u2014ensuring integration architects are systematically paired with staff engineers to mitigate design failures.",
+        "Revise the ServiceNow event-monitoring presentation deck for Dan Griffiths\u2014specifically hiding slides 6, 7, 15, and 515 to streamline the narrative.",
+        "Enforce strict accountability rules for developers utilizing personal AI productivity tools\u2014mandating complete manual validation of all generated code before production deployment.",
+        "Confirm the P&C funding commitments for the subsequent phases of the Apache Flink real-time pipeline deployment\u2014adhering to the established line-of-business onboarding schedules.",
+        "Monitor the progress of the express RFP for Scan AI licensing\u2014ensuring Sean Garner captures cross-functional requirements across both Bank and P&C."
       ],
-      "title": "Monthly 1:1 w/Claire Veitenheimer | Mark Francis",
+      "title": "Weekly Staff \u2013 P&C CTO Leadership",
       "start_label": "11:00 AM",
-      "end_label": "11:25 AM"
-    },
-    "kbeu6f5qk77i3qnk2bvf7id68c": {
-      "summary": "You must review the architecture updates from your May 29 meeting with Ray\u2014specifically targeting data framework transitions and stalled business engagement processes\u2014to prep for your sync with Sai. Although Sai is not explicitly named in the latest work notes, the critical path items\u2014including the telematics data migration and the governance of unplanned pilots\u2014require immediate alignment. Use these recent operational friction points to establish clear architecture ownership and process boundaries during your monthly session.",
-      "tasks": [
-        "Establish a steady-state framework\u2014trickle/streaming versus bulk\u2014for loading the 2025 Telematics Data (MFP) and transitioning to AWS/Iceberg/Domino Nexus.",
-        "Formulate a standardized engagement process\u2014including formal meetings and minutes\u2014to hold business partners accountable and involve architecture earlier in pilot projects.",
-        "Resolve the stalled Resiliency/NART pilots by defining a clear PO3 process mapping or scheduling a level-set meeting with Deepak.",
-        "Address AI/LLM governance by proposing consumption-based chargebacks to curb the unnecessary use of high-end models."
-      ],
-      "title": "Monthly Architecture Sync with Sai | Mark Francis (series ends...",
-      "start_label": "3:30 PM",
-      "end_label": "3:55 PM"
-    },
-    "d77heje02knkvg9t8hkt61ekps": {
-      "summary": "Review the 'Work Notes' folder\u2014specifically the Ray 5-29 transcript\u2014to address the stalling Resiliency/NART pilots. Schedule the alignment meeting with Deepak\u2014you must level-set with him and key stakeholders to map the PO3 process and determine ownership. Resolve the broader operational hurdles\u2014including paused telematics forensics, unplanned TiVo projects, and AI governance chargebacks\u2014to prevent further business friction.",
-      "tasks": [
-        "Schedule the alignment meeting with Deepak and stakeholders to map the PO3 process for the Resiliency/NART pilots.",
-        "Establish a consistent business engagement framework to hold partners accountable for process requirements and ownership.",
-        "Define the steady-state framework for 2025 telematics data ingestion and the migration to AWS, Iceberg, and Domino Nexus.",
-        "Implement consumption-based chargebacks to regulate the use of expensive AI and LLM models.",
-        "Revise the ServiceNow POC slide deck by hiding slides 6, 7, 15, and 515 before presenting to leadership."
-      ],
-      "title": "CTO Direct Staff | EA SLT On...",
-      "start_label": "4:00 PM",
-      "end_label": "4:50 PM"
+      "end_label": "12:00 PM"
     }
   }
 }
