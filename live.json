@@ -1,114 +1,52 @@
 {
-  "refreshed_at": "2026-06-04T20:52:53.379286-05:00",
-  "refreshed_label": "8:52 PM",
+  "refreshed_at": "2026-06-05T01:38:32.877671-05:00",
+  "refreshed_label": "1:38 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "i8f44eb22h5vqmgn68jlil8gn0",
-      "start_iso": "2026-06-04T09:00:00-05:00",
-      "end_iso": "2026-06-04T09:30:00-05:00",
+      "id": "q9edohj1d3i69nnaln6lce5kl8",
+      "start_iso": "2026-06-05T08:30:00-05:00",
+      "end_iso": "2026-06-05T09:00:00-05:00",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM",
+      "summary": "EMG Engage - Intro to Architecture w/Mark Francis",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "h4g7v49o7ie4hgsac0fe6v0vlo",
+      "start_iso": "2026-06-05T09:00:00-05:00",
+      "end_iso": "2026-06-05T12:00:00-05:00",
       "start_label": "9:00 AM",
-      "end_label": "9:30 AM",
-      "summary": "Alignment on 2 Way SMS",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "a9a1ndcuo52iund9118ohn40qk",
-      "start_iso": "2026-06-04T09:30:00-05:00",
-      "end_iso": "2026-06-04T09:55:00-05:00",
-      "start_label": "9:30 AM",
-      "end_label": "9:55 AM",
-      "summary": "EMG Engage - Intro to Architecture w/Mark Francis |",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "v241i924gat0m9l4m9tft1o6is",
-      "start_iso": "2026-06-04T10:00:00-05:00",
-      "end_iso": "2026-06-04T10:30:00-05:00",
-      "start_label": "10:00 AM",
-      "end_label": "10:30 AM",
-      "summary": "TD Sync",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "2010nse77r5q0bughu4v44851c",
-      "start_iso": "2026-06-04T10:30:00-05:00",
-      "end_iso": "2026-06-04T10:55:00-05:00",
-      "start_label": "10:30 AM",
-      "end_label": "10:55 AM",
-      "summary": "REF: Debrief on ServiceNow: P&C & LifeCo Alignments",
-      "location": "EXEC SAT HO (BO2E.E116)",
-      "prep": null
-    },
-    {
-      "id": "p5n0hspd365gvcigpkq55adfvc",
-      "start_iso": "2026-06-04T11:00:00-05:00",
-      "end_iso": "2026-06-04T12:00:00-05:00",
-      "start_label": "11:00 AM",
       "end_label": "12:00 PM",
-      "summary": "Weekly Staff \u2013 P&C CTO Leadership",
-      "location": "https://usaa.zoom.us/j/9538...",
-      "prep": {
-        "summary": "You must track several critical architectural shifts across your portfolio\u2014including the onboarding of Suresh's Transformation Office using Scan AI, the upcoming Project IVA member rollout, and the rising integration challenges from Salesforce's Informatica acquisition. Address the escalating data architecture skill gaps in P&C\u2014where integration architects require tight pairing with staff engineers to prevent project failure. Drive alignment on the ServiceNow event-monitoring proof of concept and establish clear governance rules for developer tool usage.",
-        "tasks": [
-          "Escalate the operational risks associated with the P&C data architecture skill gaps\u2014ensuring integration architects are systematically paired with staff engineers to mitigate design failures.",
-          "Revise the ServiceNow event-monitoring presentation deck for Dan Griffiths\u2014specifically hiding slides 6, 7, 15, and 515 to streamline the narrative.",
-          "Enforce strict accountability rules for developers utilizing personal AI productivity tools\u2014mandating complete manual validation of all generated code before production deployment.",
-          "Confirm the P&C funding commitments for the subsequent phases of the Apache Flink real-time pipeline deployment\u2014adhering to the established line-of-business onboarding schedules.",
-          "Monitor the progress of the express RFP for Scan AI licensing\u2014ensuring Sean Garner captures cross-functional requirements across both Bank and P&C."
-        ],
-        "title": "Weekly Staff \u2013 P&C CTO Leadership",
-        "start_label": "11:00 AM",
-        "end_label": "12:00 PM"
-      }
+      "summary": "Out",
+      "location": "",
+      "prep": null
     },
     {
-      "id": "npd036hm3lpp3bm0edhmh77ku0",
-      "start_iso": "2026-06-04T11:30:00-05:00",
-      "end_iso": "2026-06-04T13:00:00-05:00",
-      "start_label": "11:30 AM",
+      "id": "dqiksa0p9qn3uu1sc23khemmnk",
+      "start_iso": "2026-06-05T10:00:00-05:00",
+      "end_iso": "2026-06-05T11:00:00-05:00",
+      "start_label": "10:00 AM",
+      "end_label": "11:00 AM",
+      "summary": "Products & Services Final review by Core Team",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "uffhebku8ss1f9cv9lrj9d2ae4",
+      "start_iso": "2026-06-05T12:00:00-05:00",
+      "end_iso": "2026-06-05T13:00:00-05:00",
+      "start_label": "12:00 PM",
       "end_label": "1:00 PM",
-      "summary": "Lunch/ Desk Time",
+      "summary": "Lunch- Desk Time/ OSL Tra...",
       "location": "",
-      "prep": null
-    },
-    {
-      "id": "00dopi8oa5imglrjp5qt5ube7c",
-      "start_iso": "2026-06-04T13:00:00-05:00",
-      "end_iso": "2026-06-04T13:25:00-05:00",
-      "start_label": "1:00 PM",
-      "end_label": "1:25 PM",
-      "summary": "EMG Engage - Intro to Architecture w/Mark F...",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "qcerad4djmghdnl9en3qdeija8",
-      "start_iso": "2026-06-04T14:05:00-05:00",
-      "end_iso": "2026-06-04T15:00:00-05:00",
-      "start_label": "2:05 PM",
-      "end_label": "3:00 PM",
-      "summary": "Review SN POC Closeout for Dan G - Session 2",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "jj7j004ku8765etsnqb1io4im8",
-      "start_iso": "2026-06-04T15:30:00-05:00",
-      "end_iso": "2026-06-04T15:55:00-05:00",
-      "start_label": "3:30 PM",
-      "end_label": "3:55 PM",
-      "summary": "EMG Engage - Intro to Architecture w/Mark Francis | L...",
-      "location": "EXEC SAT HO (BO2E.B326)",
       "prep": null
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Alignment on 2 Way SMS</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis |</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">REF: Debrief on ServiceNow: P&amp;C &amp; LifeCo Alignments</div>\n                    <div class=\"t-loc\">EXEC SAT HO (BO2E.E116)</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff \u2013 P&amp;C CTO Leadership</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9538...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark F...</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:05 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review SN POC Closeout for Dan G - Session 2</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | L...</div>\n                    <div class=\"t-loc\">EXEC SAT HO (BO2E.B326)</div>\n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">review P&amp;C system stability deck (downloads)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Sree Rella on ServiceNow</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">EMG Engage - Intro to Architecture w/Mark Francis</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Out</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Products &amp; Services Final review by Core Team</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch- Desk Time/ OSL Tra...</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">review P&amp;C system stability deck (downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Sree Rella on ServiceNow</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>",
   "preps": {
     "pq26525ndldu2knmkfsu9tirds": {
       "summary": "Review the June 3rd alignment meeting between Mark and Ramesh\u2014the critical precursor to the Rapid Architecture Governance readout. The Most Important Thing Today\u2014the MITT\u2014is securing Mark's attendance at the joint tech and business readout to navigate the intense organizational tension over the Agent Assist UI. Key takeaways focus on the unresolved dispute between the CTO's office and business stakeholders over Out-of-the-Box versus embedded UI options\u2014an architectural conflict requiring immediate alignment.",
