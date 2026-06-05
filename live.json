@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-05T05:36:54.720591-05:00",
-  "refreshed_label": "5:36 AM",
+  "refreshed_at": "2026-06-05T06:29:30.416696-05:00",
+  "refreshed_label": "6:29 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -47,31 +47,5 @@
   "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">EMG Engage - Intro to Architecture w/Mark Francis</h2>\n            \n            \n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Out</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Products &amp; Services Final review by Core Team</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch- Desk Time/ OSL Tra...</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">review P&amp;C system stability deck (downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Sree Rella on ServiceNow</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>",
-  "preps": {
-    "pq26525ndldu2knmkfsu9tirds": {
-      "summary": "Review the June 3rd alignment meeting between Mark and Ramesh\u2014the critical precursor to the Rapid Architecture Governance readout. The Most Important Thing Today\u2014the MITT\u2014is securing Mark's attendance at the joint tech and business readout to navigate the intense organizational tension over the Agent Assist UI. Key takeaways focus on the unresolved dispute between the CTO's office and business stakeholders over Out-of-the-Box versus embedded UI options\u2014an architectural conflict requiring immediate alignment.",
-      "tasks": [
-        "Attend the joint technology and business readout session to address organizational storming around the Agent Assist architecture.",
-        "Resolve the UI option conflict\u2014specifically evaluating the Amazon Out-of-the-Box versus the embedded widget solutions\u2014before tech leadership prematurely eliminates viable paths.",
-        "Clarify the 'Path to Production' slide messaging from the James D&S session to prevent further misinterpretation by leadership regarding the decommissioning of Conversant.",
-        "Establish a consistent engagement process with business partners to enforce accountability for process requirements and ownership."
-      ],
-      "title": "Sync with Mark | Amit Baviskar (Follow-up)",
-      "start_label": "8:30 AM",
-      "end_label": "9:00 AM"
-    },
-    "p5n0hspd365gvcigpkq55adfvc": {
-      "summary": "You must track several critical architectural shifts across your portfolio\u2014including the onboarding of Suresh's Transformation Office using Scan AI, the upcoming Project IVA member rollout, and the rising integration challenges from Salesforce's Informatica acquisition. Address the escalating data architecture skill gaps in P&C\u2014where integration architects require tight pairing with staff engineers to prevent project failure. Drive alignment on the ServiceNow event-monitoring proof of concept and establish clear governance rules for developer tool usage.",
-      "tasks": [
-        "Escalate the operational risks associated with the P&C data architecture skill gaps\u2014ensuring integration architects are systematically paired with staff engineers to mitigate design failures.",
-        "Revise the ServiceNow event-monitoring presentation deck for Dan Griffiths\u2014specifically hiding slides 6, 7, 15, and 515 to streamline the narrative.",
-        "Enforce strict accountability rules for developers utilizing personal AI productivity tools\u2014mandating complete manual validation of all generated code before production deployment.",
-        "Confirm the P&C funding commitments for the subsequent phases of the Apache Flink real-time pipeline deployment\u2014adhering to the established line-of-business onboarding schedules.",
-        "Monitor the progress of the express RFP for Scan AI licensing\u2014ensuring Sean Garner captures cross-functional requirements across both Bank and P&C."
-      ],
-      "title": "Weekly Staff \u2013 P&C CTO Leadership",
-      "start_label": "11:00 AM",
-      "end_label": "12:00 PM"
-    }
-  }
+  "preps": {}
 }
