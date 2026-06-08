@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-08T07:05:12.027127-05:00",
-  "refreshed_label": "7:05 AM",
+  "refreshed_at": "2026-06-08T07:28:57.354140-05:00",
+  "refreshed_label": "7:28 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,18 @@
       "end_label": "8:55 AM",
       "summary": "Monthly 1:1 w/Claire Veitenheimer | Mark Francis",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You face rising friction and workload concerns across the team\u2014driven by data migration transitions and a lack of clear leadership guidance. Resourcing remains a critical pain point\u2014the backfills for Matt Unsworth and Deepak are currently unresolved and marked as TBD. You must address the reality of teammates leaving without backfills\u2014forcing tactical reassignments as the team operates under the assumption that these vacant roles will not be filled anytime soon.",
+        "tasks": [
+          "Address the unresolved TBD status of the Matt Unsworth and Deepak backfills with Claire to establish clear hiring timelines.",
+          "Detail the specific tactical reassignments forced by the current lack of backfills to highlight the operational strain on remaining team members.",
+          "Report the growing friction and workload concerns surrounding the new data pipelines and source system migrations.",
+          "Request explicit leadership guidance on the NART process and Pilot application transitions to alleviate team confusion."
+        ],
+        "title": "Monthly 1:1 w/Claire Veitenheimer | Mark Francis",
+        "start_label": "8:30 AM",
+        "end_label": "8:55 AM"
+      }
     },
     {
       "id": "9ptge0lbjptgt3eqrl54o3n834",
@@ -101,7 +112,18 @@
       "end_label": "2:50 PM",
       "summary": "Integrated BPM Solution - Claims Demo",
       "location": "https://usaa.zoom.us/j/9749260...",
-      "prep": null
+      "prep": {
+        "summary": "Analyze the friction surrounding ServiceNow\u2014specifically the paused RFP, the commercial hold by Dan Griffiths, and the pricing risk of the 13,000-assist limit. Compare the bundled ServiceNow capabilities against overlapping alternatives like Flowable, Solonis, Celonis, and homegrown event-monitoring tools to avoid vendor lock-in. Address the unresolved architectural debate\u2014particularly the choice between out-of-the-box vendor UIs and embedded desktop widgets\u2014before you commit to the demo.",
+        "tasks": [
+          "Reconcile the paused ServiceNow RFP with Dan Griffiths\u2014securing clarity on his direct feedback before the June 10th meeting.",
+          "Audit the overlapping capabilities of Flowable and Solonis\u2014evaluating these bundled vendor solutions against your homegrown event-monitoring tools.",
+          "Establish a strict governance process for 'Assist' token usage\u2014mitigating the risk of the 13,000-assist cap during note summarization.",
+          "Resolve the UI standoff between the CTO organization and business teams\u2014choosing between AWS out-of-the-box setups and embedded widgets."
+        ],
+        "title": "Integrated BPM Solution - Claims Demo",
+        "start_label": "2:00 PM",
+        "end_label": "2:50 PM"
+      }
     },
     {
       "id": "kjh5rrpblchoqto6okonf4agm0",
@@ -121,7 +143,18 @@
       "end_label": "3:55 PM",
       "summary": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
       "location": "https://usaa.zoom.us/j/9877...",
-      "prep": null
+      "prep": {
+        "summary": "Review the critical updates from your June 4 weekly staff meeting\u2014specifically the shifting of technical decision-making to Integration Architects, stalled backfills for Matt Unsworth and Deepak, and ongoing friction around data migration pipelines. Address the mounting organizational tensions\u2014specifically the AWS desktop integration paths and the contentious Agent Assist UI options\u2014before meeting with Mike. Align on the paused ServiceNow RFP strategy\u2014notably the token optimization issue\u2014to protect the budget prior to your upcoming leadership presentations.",
+        "tasks": [
+          "Brief Mike on the resource constraints resulting from the frozen Matt Unsworth and Deepak backfills.",
+          "Establish a clear RACI matrix for the Integration Architects to manage technical decision-making gaps.",
+          "Resolve the architectural conflict between the out-of-the-box AWS UI and custom homegrown solutions.",
+          "Align on the ServiceNow pricing model and token governance strategy prior to the June 10 meeting with Dan."
+        ],
+        "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
+        "start_label": "3:30 PM",
+        "end_label": "3:55 PM"
+      }
     },
     {
       "id": "t7c15vuv6lgubn3bs27d71rtm8",
@@ -141,11 +174,71 @@
       "end_label": "4:55 PM",
       "summary": "Monthly Architecture Sync with Sai | Mark Francis",
       "location": "https://usaa.zoom.us/j/9185...",
-      "prep": null
+      "prep": {
+        "summary": "Your analyzed work notes contain no explicit mentions of Sai or action items from Ray\u2014requiring a pivot to other high-priority architectural items during this sync. You must address critical organizational pain points\u2014specifically the Integration Architect capacity constraints and the architectural friction surrounding the AWS Agent Assist UI integration. Prepare to brief Sai on these unresolved platform issues\u2014including the ServiceNow pricing risks\u2014to ensure alignment before key leadership readouts.",
+        "tasks": [
+          "Establish the Integration Architect RACI matrix\u2014addressing capacity and skill gaps\u2014to stabilize technical decision-making.",
+          "Resolve the AWS Agent Assist UI path dispute\u2014advocating for the embedded widget\u2014to clarify the timeline and prevent rumors about decommissioning Conversant.",
+          "Review the ServiceNow token pricing risks\u2014specifically the 13,000 assist ceiling\u2014before resuming stalled commercial discussions.",
+          "Confirm the backfill status for Deepak and Matt Unsworth\u2014currently flagged as TBD\u2014to finalize resource reassignments."
+        ],
+        "title": "Monthly Architecture Sync with Sai | Mark Francis",
+        "start_label": "4:30 PM",
+        "end_label": "4:55 PM"
+      }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 8:55 AM</div>\n            <h2 class=\"focus-title\">Monthly 1:1 w/Claire Veitenheimer | Mark Francis</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 8:55 AM</div>\n            <h2 class=\"focus-title\">Monthly 1:1 w/Claire Veitenheimer | Mark Francis</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">You face rising friction and workload concerns across the team\u2014driven by data migration transitions and a lack of clear leadership guidance. Resourcing remains a critical pain point\u2014the backfills for Matt Unsworth and Deepak are currently unresolved and marked as TBD. You must address the reality of teammates leaving without backfills\u2014forcing tactical reassignments as the team operates under the assumption that these vacant roles will not be filled anytime soon.</p>\n                <ul class=\"focus-prep-tasks\"><li>Address the unresolved TBD status of the Matt Unsworth and Deepak backfills with Claire to establish clear hiring timelines.</li><li>Detail the specific tactical reassignments forced by the current lack of backfills to highlight the operational strain on remaining team members.</li><li>Report the growing friction and workload concerns surrounding the new data pipelines and source system migrations.</li><li>Request explicit leadership guidance on the NART process and Pilot application transitions to alleviate team confusion.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 8:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly 1:1 w/Claire Veitenheimer | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Jonathan N | Mark F</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    <div class=\"t-loc\">Mark&#x27;s Office</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly: Calendar Review</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Catch up on Foundry</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9157899...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9838225...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Financial Review (Monthly)</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9558...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">CTXO EMG Meeting (Q2)</div>\n                    <div class=\"t-loc\">CONE SAT HO Eagle Hall B (C01...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Integrated BPM Solution - Claims Demo</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9749260...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | T...</div>\n                    <div class=\"t-loc\">EXEC SAT HO (BO2E.B326)</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9877...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Discussion of HR and P&amp;C architecture</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/91493121...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Architecture Sync with Sai | Mark Francis</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9185...</div>\n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">review P&amp;C system stability deck (downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Sree Rella on ServiceNow</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>",
-  "preps": {}
+  "preps": {
+    "8tdc6utj5us6av9qj4pgdnri48": {
+      "summary": "You face rising friction and workload concerns across the team\u2014driven by data migration transitions and a lack of clear leadership guidance. Resourcing remains a critical pain point\u2014the backfills for Matt Unsworth and Deepak are currently unresolved and marked as TBD. You must address the reality of teammates leaving without backfills\u2014forcing tactical reassignments as the team operates under the assumption that these vacant roles will not be filled anytime soon.",
+      "tasks": [
+        "Address the unresolved TBD status of the Matt Unsworth and Deepak backfills with Claire to establish clear hiring timelines.",
+        "Detail the specific tactical reassignments forced by the current lack of backfills to highlight the operational strain on remaining team members.",
+        "Report the growing friction and workload concerns surrounding the new data pipelines and source system migrations.",
+        "Request explicit leadership guidance on the NART process and Pilot application transitions to alleviate team confusion."
+      ],
+      "title": "Monthly 1:1 w/Claire Veitenheimer | Mark Francis",
+      "start_label": "8:30 AM",
+      "end_label": "8:55 AM"
+    },
+    "mfpj6c3e65dtvjdkk7vp7a3aq0": {
+      "summary": "Analyze the friction surrounding ServiceNow\u2014specifically the paused RFP, the commercial hold by Dan Griffiths, and the pricing risk of the 13,000-assist limit. Compare the bundled ServiceNow capabilities against overlapping alternatives like Flowable, Solonis, Celonis, and homegrown event-monitoring tools to avoid vendor lock-in. Address the unresolved architectural debate\u2014particularly the choice between out-of-the-box vendor UIs and embedded desktop widgets\u2014before you commit to the demo.",
+      "tasks": [
+        "Reconcile the paused ServiceNow RFP with Dan Griffiths\u2014securing clarity on his direct feedback before the June 10th meeting.",
+        "Audit the overlapping capabilities of Flowable and Solonis\u2014evaluating these bundled vendor solutions against your homegrown event-monitoring tools.",
+        "Establish a strict governance process for 'Assist' token usage\u2014mitigating the risk of the 13,000-assist cap during note summarization.",
+        "Resolve the UI standoff between the CTO organization and business teams\u2014choosing between AWS out-of-the-box setups and embedded widgets."
+      ],
+      "title": "Integrated BPM Solution - Claims Demo",
+      "start_label": "2:00 PM",
+      "end_label": "2:50 PM"
+    },
+    "9h35j8a7gen770a5em0oatlhao": {
+      "summary": "Review the critical updates from your June 4 weekly staff meeting\u2014specifically the shifting of technical decision-making to Integration Architects, stalled backfills for Matt Unsworth and Deepak, and ongoing friction around data migration pipelines. Address the mounting organizational tensions\u2014specifically the AWS desktop integration paths and the contentious Agent Assist UI options\u2014before meeting with Mike. Align on the paused ServiceNow RFP strategy\u2014notably the token optimization issue\u2014to protect the budget prior to your upcoming leadership presentations.",
+      "tasks": [
+        "Brief Mike on the resource constraints resulting from the frozen Matt Unsworth and Deepak backfills.",
+        "Establish a clear RACI matrix for the Integration Architects to manage technical decision-making gaps.",
+        "Resolve the architectural conflict between the out-of-the-box AWS UI and custom homegrown solutions.",
+        "Align on the ServiceNow pricing model and token governance strategy prior to the June 10 meeting with Dan."
+      ],
+      "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
+      "start_label": "3:30 PM",
+      "end_label": "3:55 PM"
+    },
+    "ba92rfm44iihb38gb63cb51hl0": {
+      "summary": "Your analyzed work notes contain no explicit mentions of Sai or action items from Ray\u2014requiring a pivot to other high-priority architectural items during this sync. You must address critical organizational pain points\u2014specifically the Integration Architect capacity constraints and the architectural friction surrounding the AWS Agent Assist UI integration. Prepare to brief Sai on these unresolved platform issues\u2014including the ServiceNow pricing risks\u2014to ensure alignment before key leadership readouts.",
+      "tasks": [
+        "Establish the Integration Architect RACI matrix\u2014addressing capacity and skill gaps\u2014to stabilize technical decision-making.",
+        "Resolve the AWS Agent Assist UI path dispute\u2014advocating for the embedded widget\u2014to clarify the timeline and prevent rumors about decommissioning Conversant.",
+        "Review the ServiceNow token pricing risks\u2014specifically the 13,000 assist ceiling\u2014before resuming stalled commercial discussions.",
+        "Confirm the backfill status for Deepak and Matt Unsworth\u2014currently flagged as TBD\u2014to finalize resource reassignments."
+      ],
+      "title": "Monthly Architecture Sync with Sai | Mark Francis",
+      "start_label": "4:30 PM",
+      "end_label": "4:55 PM"
+    }
+  }
 }
