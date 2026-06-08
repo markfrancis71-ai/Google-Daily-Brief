@@ -1,10 +1,151 @@
 {
-  "refreshed_at": "2026-06-07T20:59:12.280563-05:00",
-  "refreshed_label": "8:59 PM",
+  "refreshed_at": "2026-06-08T01:57:01.195656-05:00",
+  "refreshed_label": "1:57 AM",
   "tz_label": "Chicago",
-  "events": [],
-  "focus_html": "",
-  "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
+  "events": [
+    {
+      "id": "8tdc6utj5us6av9qj4pgdnri48",
+      "start_iso": "2026-06-08T08:30:00-05:00",
+      "end_iso": "2026-06-08T08:55:00-05:00",
+      "start_label": "8:30 AM",
+      "end_label": "8:55 AM",
+      "summary": "Monthly 1:1 w/Claire Veitenheimer | Mark Francis",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "9ptge0lbjptgt3eqrl54o3n834",
+      "start_iso": "2026-06-08T09:00:00-05:00",
+      "end_iso": "2026-06-08T09:25:00-05:00",
+      "start_label": "9:00 AM",
+      "end_label": "9:25 AM",
+      "summary": "Bi-weekly 1:1 w/Jonathan N | Mark F",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "ifvlf47kngm5imd3ukl1heor54",
+      "start_iso": "2026-06-08T09:30:00-05:00",
+      "end_iso": "2026-06-08T09:55:00-05:00",
+      "start_label": "9:30 AM",
+      "end_label": "9:55 AM",
+      "summary": "TD Sync",
+      "location": "Mark's Office",
+      "prep": null
+    },
+    {
+      "id": "7296dm2ni3hunms4dcnha53euk",
+      "start_iso": "2026-06-08T10:00:00-05:00",
+      "end_iso": "2026-06-08T10:25:00-05:00",
+      "start_label": "10:00 AM",
+      "end_label": "10:25 AM",
+      "summary": "Weekly: Calendar Review",
+      "location": "https://usaa.zoom.us/...",
+      "prep": null
+    },
+    {
+      "id": "9dmh6ba6mp597qq2ecr5bo8o4g",
+      "start_iso": "2026-06-08T10:30:00-05:00",
+      "end_iso": "2026-06-08T10:55:00-05:00",
+      "start_label": "10:30 AM",
+      "end_label": "10:55 AM",
+      "summary": "Catch up on Foundry",
+      "location": "https://usaa.zoom.us/j/9157899...",
+      "prep": null
+    },
+    {
+      "id": "a3oupeq748icoioopel7e4epb0",
+      "start_iso": "2026-06-08T10:30:00-05:00",
+      "end_iso": "2026-06-08T10:55:00-05:00",
+      "start_label": "10:30 AM",
+      "end_label": "10:55 AM",
+      "summary": "EMG Engage - Intro to Architecture w/Mark Francis",
+      "location": "https://usaa.zoom.us/j/9838225...",
+      "prep": null
+    },
+    {
+      "id": "f6k0egdeg8a7u8one2qk0leg7k",
+      "start_iso": "2026-06-08T11:00:00-05:00",
+      "end_iso": "2026-06-08T11:25:00-05:00",
+      "start_label": "11:00 AM",
+      "end_label": "11:25 AM",
+      "summary": "EA Financial Review (Monthly)",
+      "location": "https://usaa.zoom.us/j/9558...",
+      "prep": null
+    },
+    {
+      "id": "k2upvl5hn5iooonrc40oe68u0o",
+      "start_iso": "2026-06-08T11:30:00-05:00",
+      "end_iso": "2026-06-08T13:00:00-05:00",
+      "start_label": "11:30 AM",
+      "end_label": "1:00 PM",
+      "summary": "Lunch/ Desk Time",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "d57g41f2vd35846piabg5hl5m4",
+      "start_iso": "2026-06-08T13:00:00-05:00",
+      "end_iso": "2026-06-08T13:50:00-05:00",
+      "start_label": "1:00 PM",
+      "end_label": "1:50 PM",
+      "summary": "CTXO EMG Meeting (Q2)",
+      "location": "CONE SAT HO Eagle Hall B (C01...",
+      "prep": null
+    },
+    {
+      "id": "mfpj6c3e65dtvjdkk7vp7a3aq0",
+      "start_iso": "2026-06-08T14:00:00-05:00",
+      "end_iso": "2026-06-08T14:50:00-05:00",
+      "start_label": "2:00 PM",
+      "end_label": "2:50 PM",
+      "summary": "Integrated BPM Solution - Claims Demo",
+      "location": "https://usaa.zoom.us/j/9749260...",
+      "prep": null
+    },
+    {
+      "id": "kjh5rrpblchoqto6okonf4agm0",
+      "start_iso": "2026-06-08T15:00:00-05:00",
+      "end_iso": "2026-06-08T15:25:00-05:00",
+      "start_label": "3:00 PM",
+      "end_label": "3:25 PM",
+      "summary": "EMG Engage - Intro to Architecture w/Mark Francis | T...",
+      "location": "EXEC SAT HO (BO2E.B326)",
+      "prep": null
+    },
+    {
+      "id": "9h35j8a7gen770a5em0oatlhao",
+      "start_iso": "2026-06-08T15:30:00-05:00",
+      "end_iso": "2026-06-08T15:55:00-05:00",
+      "start_label": "3:30 PM",
+      "end_label": "3:55 PM",
+      "summary": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
+      "location": "https://usaa.zoom.us/j/9877...",
+      "prep": null
+    },
+    {
+      "id": "t7c15vuv6lgubn3bs27d71rtm8",
+      "start_iso": "2026-06-08T16:00:00-05:00",
+      "end_iso": "2026-06-08T16:25:00-05:00",
+      "start_label": "4:00 PM",
+      "end_label": "4:25 PM",
+      "summary": "Discussion of HR and P&C architecture",
+      "location": "https://usaa.zoom.us/j/91493121...",
+      "prep": null
+    },
+    {
+      "id": "ba92rfm44iihb38gb63cb51hl0",
+      "start_iso": "2026-06-08T16:30:00-05:00",
+      "end_iso": "2026-06-08T16:55:00-05:00",
+      "start_label": "4:30 PM",
+      "end_label": "4:55 PM",
+      "summary": "Monthly Architecture Sync with Sai | Mark Francis",
+      "location": "https://usaa.zoom.us/j/9185...",
+      "prep": null
+    }
+  ],
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 8:55 AM</div>\n            <h2 class=\"focus-title\">Monthly 1:1 w/Claire Veitenheimer | Mark Francis</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 8:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly 1:1 w/Claire Veitenheimer | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Jonathan N | Mark F</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    <div class=\"t-loc\">Mark&#x27;s Office</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly: Calendar Review</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Catch up on Foundry</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9157899...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9838225...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Financial Review (Monthly)</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9558...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">CTXO EMG Meeting (Q2)</div>\n                    <div class=\"t-loc\">CONE SAT HO Eagle Hall B (C01...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Integrated BPM Solution - Claims Demo</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9749260...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | T...</div>\n                    <div class=\"t-loc\">EXEC SAT HO (BO2E.B326)</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9877...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Discussion of HR and P&amp;C architecture</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/91493121...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Architecture Sync with Sai | Mark Francis</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9185...</div>\n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">review P&amp;C system stability deck (downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Sree Rella on ServiceNow</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>",
   "preps": {}
 }
