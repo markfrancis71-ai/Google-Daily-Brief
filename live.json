@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-09T03:24:05.175150-05:00",
-  "refreshed_label": "3:24 AM",
+  "refreshed_at": "2026-06-09T06:16:18.182076-05:00",
+  "refreshed_label": "6:16 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,18 @@
       "end_label": "9:00 AM",
       "summary": "TD Sync",
       "location": "Mark's Office",
-      "prep": null
+      "prep": {
+        "summary": "The last TD Sync\u2014focused heavily on AWS integration paths for the MSR desktop\u2014identified the embedded UI widget as the preferred Proof of Concept path despite organizational friction regarding the eventual decommissioning of Conversant. You must validate the SFO procurement intake process\u2014specifically aligning on early PMO and SFO touchpoints before contracts are finalized\u2014to ensure proper governance. Finally, you need to catch up with Michael Somers\u2014who has no recent mention in the work notes\u2014to finalize the integration strategy and validate these financial pathways.",
+        "tasks": [
+          "Validate the SFO intake process\u2014specifically the early touchpoints for technology procurement and prioritization\u2014before any contracts are signed.",
+          "Schedule a catch-up with Michael Somers to align on the SFO validation path and overall integration architecture.",
+          "Clarify the AWS integration slide messaging\u2014specifically the 'Path to Production' note\u2014to resolve leadership misinterpretations regarding Conversant decommissioning.",
+          "Review the ServiceNow pricing structure\u2014specifically the token-consumption model and the five-month baseline proposal\u2014prior to the upcoming meeting with Dan."
+        ],
+        "title": "TD Sync",
+        "start_label": "8:30 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "0b9ed0d8ihdknd249c0kncnbgd",
@@ -21,7 +32,18 @@
       "end_label": "10:00 AM",
       "summary": "D&S Tech Partners Connect",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You reviewed the May 26 D&S Partners meeting\u2014focusing on the launch of the pre-arrival summary pilot, Bedrock knowledge base risks, and Scan AI RFP planning. Regarding the Agent Assist tech approach, a major architectural debate exists between three UI options\u2014an out-of-the-box AWS workspace, a custom homegrown solution, and the preferred embedded UI widget. Two-way SMS security and Agent Assist setups are driving intense organizational storming\u2014specifically during recent Rapid Architecture Governance sessions meant to align business requirements with strict tech leadership boundaries.",
+        "tasks": [
+          "Resolve the architectural friction between the CTO organization and business teams regarding the preferred embedded UI option for Agent Assist.",
+          "Confirm the security protocols and compliance requirements for the Two-Way Texting initiative coming out of the recent Rapid Architecture Governance sessions.",
+          "Track the progress of the express RFP for Scan AI and the associated business case analysis for P&C process optimization.",
+          "Align with Ramesh and Charlotte on the outcomes of the June 3 joint tech-business readout session."
+        ],
+        "title": "D&S Tech Partners Connect",
+        "start_label": "9:00 AM",
+        "end_label": "10:00 AM"
+      }
     },
     {
       "id": "1233nnhj51gke2qdkbm5no622h",
@@ -61,7 +83,18 @@
       "end_label": "1:30 PM",
       "summary": "A visions of the future of Practicing Architecture",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your work notes lack direct references to \"Architecture as code\"\u2014focusing instead on modular API integrations, workflow automation, and rapid governance. You must drive the transition away from legacy, manual systems toward programmatically defined pipelines\u2014specifically leveraging AWS API integrations and automated Fivetran data flows. Standardizing these architectural patterns remains critical\u2014requiring clear RACI frameworks for your Integration Architects to ensure process compliance across all upcoming migrations.",
+        "tasks": [
+          "Establish a clear RACI matrix\u2014outlining specific technical decision-making responsibilities\u2014to assist Integration Architects with system transitions.",
+          "Assess the API readiness of existing platforms to facilitate agentic workflows and programmatic system integrations.",
+          "Implement strict optimization guidelines\u2014targeting token consumption and licensing\u2014to control ServiceNow and generative AI tool costs.",
+          "Decommission legacy, manual processes by replacing them with programmatically defined UI components and automated pipelines."
+        ],
+        "title": "A visions of the future of Practicing Architecture",
+        "start_label": "1:00 PM",
+        "end_label": "1:30 PM"
+      }
     },
     {
       "id": "00o4qq9igk6lun12i4amp3qcnj",
@@ -71,7 +104,18 @@
       "end_label": "3:00 PM",
       "summary": "Architecture Overview Session with Ryan Beauchamp",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You established a strategic technology partnership during your introductory meeting with Ryan Beauchamp\u2014aligning the National Programs team under the retail storefront with the CTO architecture organization. The discussion focused on digital transformation efforts within P&C insurance\u2014specifically navigating transitions from Khoros to Sprinkler, two-way texting, and new guidewire platforms. You committed to follow-up deep dives regarding billing, chat, and social\u2014requiring coordination with key architects and directors.",
+        "tasks": [
+          "Schedule the follow-up deep-dive meeting with Ryan Beauchamp to review billing, chat, and social business areas.",
+          "Coordinate invitees for the upcoming sessions\u2014specifically ensuring Brett Kilboss, Natasha Jeffords, Brian Klusman, and James Carris are included.",
+          "Request the promised architectural overview documentation detailing the team structure and responsibilities.",
+          "Align the National Programs roadmap with ongoing DNS transformation initiatives\u2014focusing on the transition from Khoros to Sprinkler."
+        ],
+        "title": "Architecture Overview Session with Ryan Beauchamp",
+        "start_label": "2:00 PM",
+        "end_label": "3:00 PM"
+      }
     },
     {
       "id": "4lmbrb8aoic1f69lju2udqprj3",
@@ -81,60 +125,83 @@
       "end_label": "4:00 PM",
       "summary": "Tech BOD",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Address the escalating friction between business units pushing for out-of-the-box vendor UIs and technology leaders demanding custom internal builds\u2014a systemic clash stalling both the AWS MSR desktop and Agent Assist initiatives. Resolve the operational capacity deficits immediately\u2014Integration Architects lack the necessary skills for their expanded decision-making roles, key backfills remain frozen, and the transition of pilot applications into production lacks clear governance. Standardize token consumption policies across AI platforms\u2014specifically Microsoft Copilot, Scan AI, and ServiceNow\u2014to prevent unsustainable licensing costs.",
+        "tasks": [
+          "Resolve the architectural deadlock regarding out-of-the-box versus embedded UI options for the Agent Assist and MSR desktop pilots.",
+          "Create a RACI matrix and technical support framework to address the skill and capacity gaps of the Integration Architects.",
+          "Pause the ServiceNow RFP and establish a baseline for actual token consumption before committing to long-term licensing budgets.",
+          "Define clear ownership and STLC requirements for transitioning pilot applications through the NART process into production."
+        ],
+        "title": "Tech BOD",
+        "start_label": "3:00 PM",
+        "end_label": "4:00 PM"
+      }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">TD Sync</h2>\n            <div class=\"focus-loc\">Mark&#x27;s Office</div>\n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">TD Sync</h2>\n            <div class=\"focus-loc\">Mark&#x27;s Office</div>\n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">The last TD Sync\u2014focused heavily on AWS integration paths for the MSR desktop\u2014identified the embedded UI widget as the preferred Proof of Concept path despite organizational friction regarding the eventual decommissioning of Conversant. You must validate the SFO procurement intake process\u2014specifically aligning on early PMO and SFO touchpoints before contracts are finalized\u2014to ensure proper governance. Finally, you need to catch up with Michael Somers\u2014who has no recent mention in the work notes\u2014to finalize the integration strategy and validate these financial pathways.</p>\n                <ul class=\"focus-prep-tasks\"><li>Validate the SFO intake process\u2014specifically the early touchpoints for technology procurement and prioritization\u2014before any contracts are signed.</li><li>Schedule a catch-up with Michael Somers to align on the SFO validation path and overall integration architecture.</li><li>Clarify the AWS integration slide messaging\u2014specifically the &#x27;Path to Production&#x27; note\u2014to resolve leadership misinterpretations regarding Conversant decommissioning.</li><li>Review the ServiceNow pricing structure\u2014specifically the token-consumption model and the five-month baseline proposal\u2014prior to the upcoming meeting with Dan.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    <div class=\"t-loc\">Mark&#x27;s Office</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">D&amp;S Tech Partners Connect</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arch Huddle</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Monthly MBR</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Vulnerability Exceptions and Architectural Waivers</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">A visions of the future of Practicing Architecture</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Overview Session with Ryan Beauchamp</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Tech BOD</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get the Business Process Health scorecard meeting set up - Tiffany, Suresh, Sean, IE, </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up Marketing Tech Overview with Geoff Troidl (Amit, Matt)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Jonathan and Dennis Reams stuff</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review MBM Content today!!</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 8</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Michael Somers for best path forward on SFO validation</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 8</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Ask Robert if he can run next TD Review Group meeting - (EMG planning Session)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up follow up meeting with Regina Hirner and James</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 8</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">review P&amp;C system stability deck (downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Sree Rella on ServiceNow</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Brevity, then schedule the Jeff meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Request to TD update and Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Suhas an update on TDs</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 2</span>\n            </div>",
   "preps": {
-    "8tdc6utj5us6av9qj4pgdnri48": {
-      "summary": "You face rising friction and workload concerns across the team\u2014driven by data migration transitions and a lack of clear leadership guidance. Resourcing remains a critical pain point\u2014the backfills for Matt Unsworth and Deepak are currently unresolved and marked as TBD. You must address the reality of teammates leaving without backfills\u2014forcing tactical reassignments as the team operates under the assumption that these vacant roles will not be filled anytime soon.",
+    "50da0q296ep63b33q5klhf6a48": {
+      "summary": "The last TD Sync\u2014focused heavily on AWS integration paths for the MSR desktop\u2014identified the embedded UI widget as the preferred Proof of Concept path despite organizational friction regarding the eventual decommissioning of Conversant. You must validate the SFO procurement intake process\u2014specifically aligning on early PMO and SFO touchpoints before contracts are finalized\u2014to ensure proper governance. Finally, you need to catch up with Michael Somers\u2014who has no recent mention in the work notes\u2014to finalize the integration strategy and validate these financial pathways.",
       "tasks": [
-        "Address the unresolved TBD status of the Matt Unsworth and Deepak backfills with Claire to establish clear hiring timelines.",
-        "Detail the specific tactical reassignments forced by the current lack of backfills to highlight the operational strain on remaining team members.",
-        "Report the growing friction and workload concerns surrounding the new data pipelines and source system migrations.",
-        "Request explicit leadership guidance on the NART process and Pilot application transitions to alleviate team confusion."
+        "Validate the SFO intake process\u2014specifically the early touchpoints for technology procurement and prioritization\u2014before any contracts are signed.",
+        "Schedule a catch-up with Michael Somers to align on the SFO validation path and overall integration architecture.",
+        "Clarify the AWS integration slide messaging\u2014specifically the 'Path to Production' note\u2014to resolve leadership misinterpretations regarding Conversant decommissioning.",
+        "Review the ServiceNow pricing structure\u2014specifically the token-consumption model and the five-month baseline proposal\u2014prior to the upcoming meeting with Dan."
       ],
-      "title": "Monthly 1:1 w/Claire Veitenheimer | Mark Francis",
+      "title": "TD Sync",
       "start_label": "8:30 AM",
-      "end_label": "8:55 AM"
+      "end_label": "9:00 AM"
     },
-    "mfpj6c3e65dtvjdkk7vp7a3aq0": {
-      "summary": "Analyze the friction surrounding ServiceNow\u2014specifically the paused RFP, the commercial hold by Dan Griffiths, and the pricing risk of the 13,000-assist limit. Compare the bundled ServiceNow capabilities against overlapping alternatives like Flowable, Solonis, Celonis, and homegrown event-monitoring tools to avoid vendor lock-in. Address the unresolved architectural debate\u2014particularly the choice between out-of-the-box vendor UIs and embedded desktop widgets\u2014before you commit to the demo.",
+    "0b9ed0d8ihdknd249c0kncnbgd": {
+      "summary": "You reviewed the May 26 D&S Partners meeting\u2014focusing on the launch of the pre-arrival summary pilot, Bedrock knowledge base risks, and Scan AI RFP planning. Regarding the Agent Assist tech approach, a major architectural debate exists between three UI options\u2014an out-of-the-box AWS workspace, a custom homegrown solution, and the preferred embedded UI widget. Two-way SMS security and Agent Assist setups are driving intense organizational storming\u2014specifically during recent Rapid Architecture Governance sessions meant to align business requirements with strict tech leadership boundaries.",
       "tasks": [
-        "Reconcile the paused ServiceNow RFP with Dan Griffiths\u2014securing clarity on his direct feedback before the June 10th meeting.",
-        "Audit the overlapping capabilities of Flowable and Solonis\u2014evaluating these bundled vendor solutions against your homegrown event-monitoring tools.",
-        "Establish a strict governance process for 'Assist' token usage\u2014mitigating the risk of the 13,000-assist cap during note summarization.",
-        "Resolve the UI standoff between the CTO organization and business teams\u2014choosing between AWS out-of-the-box setups and embedded widgets."
+        "Resolve the architectural friction between the CTO organization and business teams regarding the preferred embedded UI option for Agent Assist.",
+        "Confirm the security protocols and compliance requirements for the Two-Way Texting initiative coming out of the recent Rapid Architecture Governance sessions.",
+        "Track the progress of the express RFP for Scan AI and the associated business case analysis for P&C process optimization.",
+        "Align with Ramesh and Charlotte on the outcomes of the June 3 joint tech-business readout session."
       ],
-      "title": "Integrated BPM Solution - Claims Demo",
+      "title": "D&S Tech Partners Connect",
+      "start_label": "9:00 AM",
+      "end_label": "10:00 AM"
+    },
+    "01vmjkpuikmjmi9invg0hg4e77": {
+      "summary": "Your work notes lack direct references to \"Architecture as code\"\u2014focusing instead on modular API integrations, workflow automation, and rapid governance. You must drive the transition away from legacy, manual systems toward programmatically defined pipelines\u2014specifically leveraging AWS API integrations and automated Fivetran data flows. Standardizing these architectural patterns remains critical\u2014requiring clear RACI frameworks for your Integration Architects to ensure process compliance across all upcoming migrations.",
+      "tasks": [
+        "Establish a clear RACI matrix\u2014outlining specific technical decision-making responsibilities\u2014to assist Integration Architects with system transitions.",
+        "Assess the API readiness of existing platforms to facilitate agentic workflows and programmatic system integrations.",
+        "Implement strict optimization guidelines\u2014targeting token consumption and licensing\u2014to control ServiceNow and generative AI tool costs.",
+        "Decommission legacy, manual processes by replacing them with programmatically defined UI components and automated pipelines."
+      ],
+      "title": "A visions of the future of Practicing Architecture",
+      "start_label": "1:00 PM",
+      "end_label": "1:30 PM"
+    },
+    "00o4qq9igk6lun12i4amp3qcnj": {
+      "summary": "You established a strategic technology partnership during your introductory meeting with Ryan Beauchamp\u2014aligning the National Programs team under the retail storefront with the CTO architecture organization. The discussion focused on digital transformation efforts within P&C insurance\u2014specifically navigating transitions from Khoros to Sprinkler, two-way texting, and new guidewire platforms. You committed to follow-up deep dives regarding billing, chat, and social\u2014requiring coordination with key architects and directors.",
+      "tasks": [
+        "Schedule the follow-up deep-dive meeting with Ryan Beauchamp to review billing, chat, and social business areas.",
+        "Coordinate invitees for the upcoming sessions\u2014specifically ensuring Brett Kilboss, Natasha Jeffords, Brian Klusman, and James Carris are included.",
+        "Request the promised architectural overview documentation detailing the team structure and responsibilities.",
+        "Align the National Programs roadmap with ongoing DNS transformation initiatives\u2014focusing on the transition from Khoros to Sprinkler."
+      ],
+      "title": "Architecture Overview Session with Ryan Beauchamp",
       "start_label": "2:00 PM",
-      "end_label": "2:50 PM"
+      "end_label": "3:00 PM"
     },
-    "9h35j8a7gen770a5em0oatlhao": {
-      "summary": "Review the critical updates from your June 4 weekly staff meeting\u2014specifically the shifting of technical decision-making to Integration Architects, stalled backfills for Matt Unsworth and Deepak, and ongoing friction around data migration pipelines. Address the mounting organizational tensions\u2014specifically the AWS desktop integration paths and the contentious Agent Assist UI options\u2014before meeting with Mike. Align on the paused ServiceNow RFP strategy\u2014notably the token optimization issue\u2014to protect the budget prior to your upcoming leadership presentations.",
+    "4lmbrb8aoic1f69lju2udqprj3": {
+      "summary": "Address the escalating friction between business units pushing for out-of-the-box vendor UIs and technology leaders demanding custom internal builds\u2014a systemic clash stalling both the AWS MSR desktop and Agent Assist initiatives. Resolve the operational capacity deficits immediately\u2014Integration Architects lack the necessary skills for their expanded decision-making roles, key backfills remain frozen, and the transition of pilot applications into production lacks clear governance. Standardize token consumption policies across AI platforms\u2014specifically Microsoft Copilot, Scan AI, and ServiceNow\u2014to prevent unsustainable licensing costs.",
       "tasks": [
-        "Brief Mike on the resource constraints resulting from the frozen Matt Unsworth and Deepak backfills.",
-        "Establish a clear RACI matrix for the Integration Architects to manage technical decision-making gaps.",
-        "Resolve the architectural conflict between the out-of-the-box AWS UI and custom homegrown solutions.",
-        "Align on the ServiceNow pricing model and token governance strategy prior to the June 10 meeting with Dan."
+        "Resolve the architectural deadlock regarding out-of-the-box versus embedded UI options for the Agent Assist and MSR desktop pilots.",
+        "Create a RACI matrix and technical support framework to address the skill and capacity gaps of the Integration Architects.",
+        "Pause the ServiceNow RFP and establish a baseline for actual token consumption before committing to long-term licensing budgets.",
+        "Define clear ownership and STLC requirements for transitioning pilot applications through the NART process into production."
       ],
-      "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
-      "start_label": "3:30 PM",
-      "end_label": "3:55 PM"
-    },
-    "ba92rfm44iihb38gb63cb51hl0": {
-      "summary": "Your analyzed work notes contain no explicit mentions of Sai or action items from Ray\u2014requiring a pivot to other high-priority architectural items during this sync. You must address critical organizational pain points\u2014specifically the Integration Architect capacity constraints and the architectural friction surrounding the AWS Agent Assist UI integration. Prepare to brief Sai on these unresolved platform issues\u2014including the ServiceNow pricing risks\u2014to ensure alignment before key leadership readouts.",
-      "tasks": [
-        "Establish the Integration Architect RACI matrix\u2014addressing capacity and skill gaps\u2014to stabilize technical decision-making.",
-        "Resolve the AWS Agent Assist UI path dispute\u2014advocating for the embedded widget\u2014to clarify the timeline and prevent rumors about decommissioning Conversant.",
-        "Review the ServiceNow token pricing risks\u2014specifically the 13,000 assist ceiling\u2014before resuming stalled commercial discussions.",
-        "Confirm the backfill status for Deepak and Matt Unsworth\u2014currently flagged as TBD\u2014to finalize resource reassignments."
-      ],
-      "title": "Monthly Architecture Sync with Sai | Mark Francis",
-      "start_label": "4:30 PM",
-      "end_label": "4:55 PM"
+      "title": "Tech BOD",
+      "start_label": "3:00 PM",
+      "end_label": "4:00 PM"
     }
   }
 }
