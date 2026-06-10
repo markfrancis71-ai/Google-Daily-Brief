@@ -1,147 +1,102 @@
 {
-  "refreshed_at": "2026-06-09T23:55:11.056833-05:00",
-  "refreshed_label": "11:55 PM",
+  "refreshed_at": "2026-06-10T03:54:56.107667-05:00",
+  "refreshed_label": "3:54 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "50da0q296ep63b33q5klhf6a48",
-      "start_iso": "2026-06-09T08:30:00-05:00",
-      "end_iso": "2026-06-09T09:00:00-05:00",
-      "start_label": "8:30 AM",
+      "id": "3hv9qca58j0h3bultihqq4nojp",
+      "start_iso": "2026-06-10T08:00:00-05:00",
+      "end_iso": "2026-06-10T09:00:00-05:00",
+      "start_label": "8:00 AM",
       "end_label": "9:00 AM",
-      "summary": "TD Sync",
-      "location": "Mark's Office",
-      "prep": {
-        "summary": "The last TD Sync\u2014focused heavily on AWS integration paths for the MSR desktop\u2014identified the embedded UI widget as the preferred Proof of Concept path despite organizational friction regarding the eventual decommissioning of Conversant. You must validate the SFO procurement intake process\u2014specifically aligning on early PMO and SFO touchpoints before contracts are finalized\u2014to ensure proper governance. Finally, you need to catch up with Michael Somers\u2014who has no recent mention in the work notes\u2014to finalize the integration strategy and validate these financial pathways.",
-        "tasks": [
-          "Validate the SFO intake process\u2014specifically the early touchpoints for technology procurement and prioritization\u2014before any contracts are signed.",
-          "Schedule a catch-up with Michael Somers to align on the SFO validation path and overall integration architecture.",
-          "Clarify the AWS integration slide messaging\u2014specifically the 'Path to Production' note\u2014to resolve leadership misinterpretations regarding Conversant decommissioning.",
-          "Review the ServiceNow pricing structure\u2014specifically the token-consumption model and the five-month baseline proposal\u2014prior to the upcoming meeting with Dan."
-        ],
-        "title": "TD Sync",
-        "start_label": "8:30 AM",
-        "end_label": "9:00 AM"
-      }
-    },
-    {
-      "id": "0b9ed0d8ihdknd249c0kncnbgd",
-      "start_iso": "2026-06-09T09:00:00-05:00",
-      "end_iso": "2026-06-09T10:00:00-05:00",
-      "start_label": "9:00 AM",
-      "end_label": "10:00 AM",
-      "summary": "D&S Tech Partners Connect",
-      "location": "",
-      "prep": {
-        "summary": "You reviewed the May 26 D&S Partners meeting\u2014focusing on the launch of the pre-arrival summary pilot, Bedrock knowledge base risks, and Scan AI RFP planning. Regarding the Agent Assist tech approach, a major architectural debate exists between three UI options\u2014an out-of-the-box AWS workspace, a custom homegrown solution, and the preferred embedded UI widget. Two-way SMS security and Agent Assist setups are driving intense organizational storming\u2014specifically during recent Rapid Architecture Governance sessions meant to align business requirements with strict tech leadership boundaries.",
-        "tasks": [
-          "Resolve the architectural friction between the CTO organization and business teams regarding the preferred embedded UI option for Agent Assist.",
-          "Confirm the security protocols and compliance requirements for the Two-Way Texting initiative coming out of the recent Rapid Architecture Governance sessions.",
-          "Track the progress of the express RFP for Scan AI and the associated business case analysis for P&C process optimization.",
-          "Align with Ramesh and Charlotte on the outcomes of the June 3 joint tech-business readout session."
-        ],
-        "title": "D&S Tech Partners Connect",
-        "start_label": "9:00 AM",
-        "end_label": "10:00 AM"
-      }
-    },
-    {
-      "id": "1233nnhj51gke2qdkbm5no622h",
-      "start_iso": "2026-06-09T09:00:00-05:00",
-      "end_iso": "2026-06-09T10:00:00-05:00",
-      "start_label": "9:00 AM",
-      "end_label": "10:00 AM",
-      "summary": "Arch Huddle",
+      "summary": "TF Standup",
       "location": "",
       "prep": null
     },
     {
-      "id": "3hu5apdqptv64245neju6uuq6e",
-      "start_iso": "2026-06-09T10:00:00-05:00",
-      "end_iso": "2026-06-09T12:00:00-05:00",
-      "start_label": "10:00 AM",
-      "end_label": "12:00 PM",
-      "summary": "EA Monthly MBR",
+      "id": "0ttf9duj7385ftusvir025mgsj",
+      "start_iso": "2026-06-10T09:00:00-05:00",
+      "end_iso": "2026-06-10T09:30:00-05:00",
+      "start_label": "9:00 AM",
+      "end_label": "9:30 AM",
+      "summary": "Army 251st Birthday",
       "location": "",
       "prep": null
     },
     {
-      "id": "6qkoekj3fr22fgeuoip42t0bn7",
-      "start_iso": "2026-06-09T12:00:00-05:00",
-      "end_iso": "2026-06-09T13:00:00-05:00",
+      "id": "3lhok9182a1limc1i7nlaol3vl",
+      "start_iso": "2026-06-10T09:30:00-05:00",
+      "end_iso": "2026-06-10T10:30:00-05:00",
+      "start_label": "9:30 AM",
+      "end_label": "10:30 AM",
+      "summary": "Arch Forum Panel",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "4h6ohm3sbif11dbm3mifhoneu3",
+      "start_iso": "2026-06-10T10:30:00-05:00",
+      "end_iso": "2026-06-10T11:00:00-05:00",
+      "start_label": "10:30 AM",
+      "end_label": "11:00 AM",
+      "summary": "Weekly SN horizontal planning",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "4tvt9fd1mo969rne6u6lok19km",
+      "start_iso": "2026-06-10T11:00:00-05:00",
+      "end_iso": "2026-06-10T11:30:00-05:00",
+      "start_label": "11:00 AM",
+      "end_label": "11:30 AM",
+      "summary": "Products and Services Phase 3",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "35nkbmfq2al3c5vcfo9cegri3q",
+      "start_iso": "2026-06-10T12:00:00-05:00",
+      "end_iso": "2026-06-10T13:00:00-05:00",
       "start_label": "12:00 PM",
       "end_label": "1:00 PM",
-      "summary": "Vulnerability Exceptions and Architectural Waivers",
+      "summary": "Team Lunch - Ask me Anything",
       "location": "",
       "prep": null
     },
     {
-      "id": "01vmjkpuikmjmi9invg0hg4e77",
-      "start_iso": "2026-06-09T13:00:00-05:00",
-      "end_iso": "2026-06-09T13:30:00-05:00",
+      "id": "7b5vccd800h0nptsu3bhofbuhh",
+      "start_iso": "2026-06-10T13:00:00-05:00",
+      "end_iso": "2026-06-10T15:00:00-05:00",
       "start_label": "1:00 PM",
-      "end_label": "1:30 PM",
-      "summary": "A visions of the future of Practicing Architecture",
-      "location": "",
-      "prep": {
-        "summary": "Your work notes lack direct references to \"Architecture as code\"\u2014focusing instead on modular API integrations, workflow automation, and rapid governance. You must drive the transition away from legacy, manual systems toward programmatically defined pipelines\u2014specifically leveraging AWS API integrations and automated Fivetran data flows. Standardizing these architectural patterns remains critical\u2014requiring clear RACI frameworks for your Integration Architects to ensure process compliance across all upcoming migrations.",
-        "tasks": [
-          "Establish a clear RACI matrix\u2014outlining specific technical decision-making responsibilities\u2014to assist Integration Architects with system transitions.",
-          "Assess the API readiness of existing platforms to facilitate agentic workflows and programmatic system integrations.",
-          "Implement strict optimization guidelines\u2014targeting token consumption and licensing\u2014to control ServiceNow and generative AI tool costs.",
-          "Decommission legacy, manual processes by replacing them with programmatically defined UI components and automated pipelines."
-        ],
-        "title": "A visions of the future of Practicing Architecture",
-        "start_label": "1:00 PM",
-        "end_label": "1:30 PM"
-      }
-    },
-    {
-      "id": "00o4qq9igk6lun12i4amp3qcnj",
-      "start_iso": "2026-06-09T14:00:00-05:00",
-      "end_iso": "2026-06-09T15:00:00-05:00",
-      "start_label": "2:00 PM",
       "end_label": "3:00 PM",
-      "summary": "Architecture Overview Session with Ryan Beauchamp",
+      "summary": "EA Calibrations",
       "location": "",
-      "prep": {
-        "summary": "You established a strategic technology partnership during your introductory meeting with Ryan Beauchamp\u2014aligning the National Programs team under the retail storefront with the CTO architecture organization. The discussion focused on digital transformation efforts within P&C insurance\u2014specifically navigating transitions from Khoros to Sprinkler, two-way texting, and new guidewire platforms. You committed to follow-up deep dives regarding billing, chat, and social\u2014requiring coordination with key architects and directors.",
-        "tasks": [
-          "Schedule the follow-up deep-dive meeting with Ryan Beauchamp to review billing, chat, and social business areas.",
-          "Coordinate invitees for the upcoming sessions\u2014specifically ensuring Brett Kilboss, Natasha Jeffords, Brian Klusman, and James Carris are included.",
-          "Request the promised architectural overview documentation detailing the team structure and responsibilities.",
-          "Align the National Programs roadmap with ongoing DNS transformation initiatives\u2014focusing on the transition from Khoros to Sprinkler."
-        ],
-        "title": "Architecture Overview Session with Ryan Beauchamp",
-        "start_label": "2:00 PM",
-        "end_label": "3:00 PM"
-      }
+      "prep": null
     },
     {
-      "id": "4lmbrb8aoic1f69lju2udqprj3",
-      "start_iso": "2026-06-09T15:00:00-05:00",
-      "end_iso": "2026-06-09T16:00:00-05:00",
+      "id": "3otpsb6vo7v24j8fkqhj2t0ovk",
+      "start_iso": "2026-06-10T15:00:00-05:00",
+      "end_iso": "2026-06-10T15:30:00-05:00",
       "start_label": "3:00 PM",
-      "end_label": "4:00 PM",
-      "summary": "Tech BOD",
+      "end_label": "3:30 PM",
+      "summary": "Monthly Arch Sync with Sai",
       "location": "",
-      "prep": {
-        "summary": "Address the escalating friction between business units pushing for out-of-the-box vendor UIs and technology leaders demanding custom internal builds\u2014a systemic clash stalling both the AWS MSR desktop and Agent Assist initiatives. Resolve the operational capacity deficits immediately\u2014Integration Architects lack the necessary skills for their expanded decision-making roles, key backfills remain frozen, and the transition of pilot applications into production lacks clear governance. Standardize token consumption policies across AI platforms\u2014specifically Microsoft Copilot, Scan AI, and ServiceNow\u2014to prevent unsustainable licensing costs.",
-        "tasks": [
-          "Resolve the architectural deadlock regarding out-of-the-box versus embedded UI options for the Agent Assist and MSR desktop pilots.",
-          "Create a RACI matrix and technical support framework to address the skill and capacity gaps of the Integration Architects.",
-          "Pause the ServiceNow RFP and establish a baseline for actual token consumption before committing to long-term licensing budgets.",
-          "Define clear ownership and STLC requirements for transitioning pilot applications through the NART process into production."
-        ],
-        "title": "Tech BOD",
-        "start_label": "3:00 PM",
-        "end_label": "4:00 PM"
-      }
+      "prep": null
+    },
+    {
+      "id": "6gktbm92usqd7n6l2og23pta6k",
+      "start_iso": "2026-06-10T15:30:00-05:00",
+      "end_iso": "2026-06-10T16:00:00-05:00",
+      "start_label": "3:30 PM",
+      "end_label": "4:00 PM",
+      "summary": "Skan.ai Follow up - Sean Garner",
+      "location": "",
+      "prep": null
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    <div class=\"t-loc\">Mark&#x27;s Office</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">D&amp;S Tech Partners Connect</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arch Huddle</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Monthly MBR</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Vulnerability Exceptions and Architectural Waivers</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">A visions of the future of Practicing Architecture</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Overview Session with Ryan Beauchamp</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Tech BOD</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review platform mindset enterprise metrics from Jennifer and prepare for morning targets meeting</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Manage scheduling for potential escalation meeting with Jeff Kazinski regarding Zenerate/Brevity overlap</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Jonathan on quoting API readiness evaluation for MCP</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Get update from Brian Simkin&#x27;s team on Scan.AI RFP readiness</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Walk through formal Scan.AI business case in 1:1 with Sean Garner</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Consolidate IT position paper on process intelligence at EA association level</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Address Information Architect bandwidth strain in 1:1 with Claire</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review links for Spartan dashboard and Dennis Re&#x27;s CI/CD pipeline evaluation dashboard</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up meeting with Jesus to discuss MCP Gateway and agentic fulfillment POC planning</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Praveena to find a staff architect for Business Process Health Scorecard initiative</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Business Process Health Scorecard alignment meeting with Experience Intelligence, Sesh, Sean, and Tiffany</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare architecture update presentation for Suhas&#x27;s EMG planning session</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add a monthly Sync with Anthony Lopez</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get CMT Atlas stakeholder meeting scheduled</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Michael Somers for best path forward on SFO validation (Meet with Robert G. first)</span>\n                <span class=\"capsule capsule--caution\">Due Jun 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Give Jen Erickson TDs for Jeff&#x27;s MBM</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get the Business Process Health scorecard meeting set up - Tiffany, Suresh, Sean, IE, </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up Marketing Tech Overview with Geoff Troidl (Amit, Matt)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Jonathan and Dennis Reams stuff</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">TF Standup</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TF Standup</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Army 251st Birthday</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arch Forum Panel</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly SN horizontal planning</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Products and Services Phase 3</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Team Lunch - Ask me Anything</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Calibrations</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Arch Sync with Sai</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Skan.ai Follow up - Sean Garner</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review platform mindset enterprise metrics from Jennifer and prepare for morning targets meeting</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Manage scheduling for potential escalation meeting with Jeff Kazinski regarding Zenerate/Brevity overlap</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Jonathan on quoting API readiness evaluation for MCP</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Get update from Brian Simkin&#x27;s team on Scan.AI RFP readiness</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Walk through formal Scan.AI business case in 1:1 with Sean Garner</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Consolidate IT position paper on process intelligence at EA association level</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Address Information Architect bandwidth strain in 1:1 with Claire</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review links for Spartan dashboard and Dennis Re&#x27;s CI/CD pipeline evaluation dashboard</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up meeting with Jesus to discuss MCP Gateway and agentic fulfillment POC planning</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Praveena to find a staff architect for Business Process Health Scorecard initiative</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Business Process Health Scorecard alignment meeting with Experience Intelligence, Sesh, Sean, and Tiffany</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare architecture update presentation for Suhas&#x27;s EMG planning session</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add a monthly Sync with Anthony Lopez</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get CMT Atlas stakeholder meeting scheduled</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Michael Somers for best path forward on SFO validation (Meet with Robert G. first)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Give Jen Erickson TDs for Jeff&#x27;s MBM</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 9</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get the Business Process Health scorecard meeting set up - Tiffany, Suresh, Sean, IE, </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 9</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up Marketing Tech Overview with Geoff Troidl (Amit, Matt)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 9</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Jonathan and Dennis Reams stuff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 9</span>\n            </div>",
   "preps": {
     "50da0q296ep63b33q5klhf6a48": {
       "summary": "The last TD Sync\u2014focused heavily on AWS integration paths for the MSR desktop\u2014identified the embedded UI widget as the preferred Proof of Concept path despite organizational friction regarding the eventual decommissioning of Conversant. You must validate the SFO procurement intake process\u2014specifically aligning on early PMO and SFO touchpoints before contracts are finalized\u2014to ensure proper governance. Finally, you need to catch up with Michael Somers\u2014who has no recent mention in the work notes\u2014to finalize the integration strategy and validate these financial pathways.",
