@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-16T07:42:22.525113-05:00",
-  "refreshed_label": "7:42 AM",
+  "refreshed_at": "2026-06-16T07:54:48.961561-05:00",
+  "refreshed_label": "7:54 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -42,12 +42,12 @@
       "summary": "Monthly 1:1 w/Michael Hallock | Mark Francis (series end 6/5/26)",
       "location": "",
       "prep": {
-        "summary": "Locate no matches in your 'Work Notes' folder for previous meetings with Thomas or Larry\u2014meaning you lack direct context on those specific interactions. Prepare instead to lead the discussion on critical ongoing operational shifts\u2014specifically the AWS desktop architecture transition and the cybersecurity resource constraints. Use this monthly touchpoint to force alignment on these parallel paths before the series ends in June.",
+        "summary": "Locate alternative sources for the meetings with Thomas and Larry\u2014the provided work notes contain no references to either individual\u2014leaving a critical gap in your preparation. Plan to address these missing updates\u2014specifically regarding Thomas's strategic input and Larry's alignment on technical integrations\u2014by sourcing status updates directly from your communication channels. Resolve these documentation gaps prior to the 1:1\u2014ensuring you present a complete operational picture to Michael and Mark.",
         "tasks": [
-          "Request clarification on the missing Thomas and Larry meeting details\u2014establishing the exact context needed for your next sync.",
-          "Evaluate the embedded UI widget option for the MSR desktop\u2014preventing premature commitments to full platform replacements.",
-          "Assess the fifteen-to-twenty percent capacity reduction caused by the cybersecurity uplift\u2014re-prioritizing near-term deliverables.",
-          "Consolidate the P&C business cases into a unified strategic document\u2014aligning task mining initiatives directly with headcount reduction targets."
+          "Search external communication history\u2014including email and chat logs\u2014to reconstruct the key outcomes from your last meeting with Thomas.",
+          "Contact Larry directly\u2014or review shared team repositories\u2014to extract the action items and decisions from your most recent alignment session.",
+          "Flag the missing documentation\u2014specifically the Thomas and Larry updates\u2014as priority items to resolve before the series end on June 5, 2026.",
+          "Draft a brief progress update\u2014highlighting dependencies and unresolved items from both workstreams\u2014to guide the discussion with Michael and Mark."
         ],
         "title": "Monthly 1:1 w/Michael Hallock | Mark Francis (series end 6/5/26)",
         "start_label": "10:30 AM",
@@ -103,12 +103,12 @@
       "summary": "Monthly 1:1 w/Claire Veitenheimer | Mark Francis",
       "location": "",
       "prep": {
-        "summary": "You have no matching work notes for your past discussions with Jon or Praveena\u2014meaning you must reconstruct these touchpoints from your direct calendar or external files. Focus your prep on general alignment areas\u2014such as the AWS agent-assist POC or the ongoing P&C process strategy\u2014to bridge these information gaps before meeting with Claire. Highlight these missing items immediately to keep the 1:1 structured and productive.",
+        "summary": "No work notes matched your recent meetings with Jon or Praveena\u2014the search of your Drive folder returned no documents. You must pivot your preparation to the active operational bottlenecks\u2014specifically the AWS MSR desktop pilot friction and the ongoing Integration Architect skill-gap concerns. Address these unresolved program risks directly with Claire to establish clear alignment.",
         "tasks": [
-          "Search your local drive for any unindexed records of the last meetings with Jon and Praveena\u2014focusing on recent D&S and architecture syncs.",
-          "Draft an agenda for Claire to address the resourcing constraints\u2014specifically the unresolved backfills for Matt Unsworth and Deepak.",
-          "Define the scope of the AWS agent-assist POC\u2014clarifying the integration of the embedded UI widget inside the Conversant desktop.",
-          "Prepare for a potential capacity reduction of fifteen to twenty percent\u2014stemming from the upcoming cybersecurity uplift program."
+          "Request clarification on Jon's and Praveena's current priorities\u2014no historical notes exist in your files to guide this review.",
+          "Address the outstanding resource backfills for Matt Unsworth and Deepak\u2014the current lack of headcount hinders tactical execution.",
+          "Align on the Integration Architect competency model\u2014the transition of technical decision-making requires immediate skills mapping.",
+          "Clarify the scope of the AWS agent assist proof of concept\u2014the business continues to push for an unviable desktop replacement."
         ],
         "title": "Monthly 1:1 w/Claire Veitenheimer | Mark Francis",
         "start_label": "1:30 PM",
@@ -144,12 +144,13 @@
       "summary": "Enterprise Architecture Leadership Sync (series ends 1/...)",
       "location": "",
       "prep": {
-        "summary": "You must address critical operational shifts across P&C and Lifeco\u2014specifically the parallel execution of the Skan.ai task-mining pilot and the integration of AWS assist widgets into the MSR desktop to avoid complete system disruption. Strategic execution faces severe capacity constraints\u2014including a 15\u201320% delivery reduction from cybersecurity hygiene work and unresolved backfills for Matt Unsworth and Deepak\u2014while technical decision-making shifts to Integration Architects who require urgent training. Additionally, you must resolve the ongoing friction surrounding data migrations to 5Tran and Iceberg alongside the complex compliance requirements of the NART process.",
+        "summary": "Reviewing your recent work notes reveals systemic operational shifts\u2014notably the 15\u201320% capacity reduction from the cybersecurity uplift and the transfer of decision-making to Integration Architects. You must navigate technical friction across key platforms\u2014specifically the AWS desktop integration POC and the parallel Skan.ai task mining pilot. Major delivery bottlenecks persist\u2014including unresolved backfills for critical roles and security compliance blocks on the Claims visual voicemail initiative.",
         "tasks": [
-          "Establish a clear RACI matrix for Integration Architects\u2014addressing their capacity and skill gaps\u2014before delegating further technical decision-making.",
-          "Resolve the outstanding backfills for Matt Unsworth and Deepak to mitigate resource constraints across your delivery schedules.",
-          "Monitor the consolidation of P&C business cases under Robbie\u2014specifically aligning Claims, DNS, and Agency\u2014to support the targeted September/October Skan.ai production pilot.",
-          "Address the security and compliance hurdles regarding PII/NPI sharing that are currently holding up the visual voicemail and two-way texting rollouts."
+          "Consolidate the P&C business cases across Claims, DNS, and Agency to support the Skan.ai pilot by September.",
+          "Establish a clear RACI matrix to address skill and capacity gaps for Integration Architects taking on technical decision-making.",
+          "Resolve the security and compliance hurdles blocking the integration of visual voicemail and two-way texting with HiMarley.",
+          "Enforce the new 60\u201390 day lead-time process for contract reviews to control vendor negotiation outcomes.",
+          "Restrict GitHub Copilot access to defined technical roles to manage enterprise credit consumption."
         ],
         "title": "Enterprise Architecture Leadership Sync (series ends 1/...)",
         "start_label": "3:05 PM",
@@ -165,12 +166,12 @@
       "summary": "Conversational Quote App",
       "location": "",
       "prep": {
-        "summary": "Review the June 11 Skan.ai RFP session\u2014the only documented meeting with Suresh in your folder\u2014which focused on parallel paths for task mining via SCANT and aligning P&C business cases. No records exist for a second meeting with Suresh or any meeting with Jonathan\u2014requiring you to gather these status updates directly during the session. Use this context to align the Conversational Quote App with your broader digital transformation goals\u2014specifically reducing contact center volumes.",
+        "summary": "Reviewing your available work notes reveals only one recent touchpoint with Suresh\u2014the Skan.ai RFP meeting on June 11\u2014where he was targeted to connect with Jim Diagostino and the Tech PMO. No record of a second meeting with Suresh or any meeting with Jonathan exists in your files\u2014leaving critical gaps in your meeting prep. You must retrieve these missing discussion details to successfully align the Conversational Quote App with their current expectations.",
         "tasks": [
-          "Confirm Suresh's progress regarding his offline alignment with Jim Diagostino and the Tech PMO on SCANT task mining.",
-          "Reconstruct the missing meeting outcomes with Jonathan to address outstanding conversational app design decisions.",
-          "Map the Conversational Quote App requirements to the model-driven architecture and reusable APIs discussed on June 15.",
-          "Secure the consolidated P&C business case from Robbie to verify headcount reduction targets match your application goals."
+          "Follow up with Suresh regarding his offline alignment with Jim Diagostino and the Tech PMO.",
+          "Request the missing meeting notes for both Jonathan and the second session with Suresh\u2014ensuring total coverage of recent discussions.",
+          "Align the Conversational Quote App objectives with the broader P&C process strategy\u2014specifically the move toward model-driven architectures.",
+          "Verify API readiness for agentic workflows to support the upcoming conversational integration."
         ],
         "title": "Conversational Quote App",
         "start_label": "4:30 PM",
@@ -183,48 +184,49 @@
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to Andy Jamison on latest whitepaper on 2way SMS</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Ryan and Gunjan on 2 way SMS</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Michael Somers for best path forward on SFO validation (Meet with Robert G. first)</span>\n                <span class=\"capsule capsule--caution\">Due Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Consolidate IT position paper on process intelligence at EA association level</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Obsolescence Report fix TIME</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare architecture update presentation for Suhas&#x27;s EMG planning session</span>\n                <span class=\"capsule capsule--caution\">Due Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get the Business Process Health scorecard meeting set up - Tiffany, Suresh, Sean, IE, </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Business Process Health Scorecard alignment meeting with Experience Intelligence, Sesh, Sean, and Tiffany - First - Reach out to Calvin</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up meeting with Jesus to discuss MCP Gateway and agentic fulfillment POC planning</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review links for Spartan dashboard and Dennis Re&#x27;s CI/CD pipeline evaluation dashboard</span>\n                <span class=\"capsule capsule--caution\">Due Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Jonathan and Dennis Reams stuff</span>\n                <span class=\"capsule capsule--caution\">Due Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Jonathan on quoting API readiness evaluation for MCP</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update weekly strategic plan and Post</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review P&amp;C Strategic Weekly Brief. Set up any tasks for the week. </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Robert. Get him to manage the TD Review Group meeting on Monday afternoon. </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Buy Google speaker. </span>\n                <span class=\"capsule capsule--neutral\">Due Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Get update from Brian Simkin&#x27;s team (Reach out to Michelle Zimmerman)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
     "av2mhgd1v2qjih9iabiie1jtfg": {
-      "summary": "Locate no matches in your 'Work Notes' folder for previous meetings with Thomas or Larry\u2014meaning you lack direct context on those specific interactions. Prepare instead to lead the discussion on critical ongoing operational shifts\u2014specifically the AWS desktop architecture transition and the cybersecurity resource constraints. Use this monthly touchpoint to force alignment on these parallel paths before the series ends in June.",
+      "summary": "Locate alternative sources for the meetings with Thomas and Larry\u2014the provided work notes contain no references to either individual\u2014leaving a critical gap in your preparation. Plan to address these missing updates\u2014specifically regarding Thomas's strategic input and Larry's alignment on technical integrations\u2014by sourcing status updates directly from your communication channels. Resolve these documentation gaps prior to the 1:1\u2014ensuring you present a complete operational picture to Michael and Mark.",
       "tasks": [
-        "Request clarification on the missing Thomas and Larry meeting details\u2014establishing the exact context needed for your next sync.",
-        "Evaluate the embedded UI widget option for the MSR desktop\u2014preventing premature commitments to full platform replacements.",
-        "Assess the fifteen-to-twenty percent capacity reduction caused by the cybersecurity uplift\u2014re-prioritizing near-term deliverables.",
-        "Consolidate the P&C business cases into a unified strategic document\u2014aligning task mining initiatives directly with headcount reduction targets."
+        "Search external communication history\u2014including email and chat logs\u2014to reconstruct the key outcomes from your last meeting with Thomas.",
+        "Contact Larry directly\u2014or review shared team repositories\u2014to extract the action items and decisions from your most recent alignment session.",
+        "Flag the missing documentation\u2014specifically the Thomas and Larry updates\u2014as priority items to resolve before the series end on June 5, 2026.",
+        "Draft a brief progress update\u2014highlighting dependencies and unresolved items from both workstreams\u2014to guide the discussion with Michael and Mark."
       ],
       "title": "Monthly 1:1 w/Michael Hallock | Mark Francis (series end 6/5/26)",
       "start_label": "10:30 AM",
       "end_label": "10:55 AM"
     },
     "tkbg51ibq5i5vtklkv8pa69pao": {
-      "summary": "You have no matching work notes for your past discussions with Jon or Praveena\u2014meaning you must reconstruct these touchpoints from your direct calendar or external files. Focus your prep on general alignment areas\u2014such as the AWS agent-assist POC or the ongoing P&C process strategy\u2014to bridge these information gaps before meeting with Claire. Highlight these missing items immediately to keep the 1:1 structured and productive.",
+      "summary": "No work notes matched your recent meetings with Jon or Praveena\u2014the search of your Drive folder returned no documents. You must pivot your preparation to the active operational bottlenecks\u2014specifically the AWS MSR desktop pilot friction and the ongoing Integration Architect skill-gap concerns. Address these unresolved program risks directly with Claire to establish clear alignment.",
       "tasks": [
-        "Search your local drive for any unindexed records of the last meetings with Jon and Praveena\u2014focusing on recent D&S and architecture syncs.",
-        "Draft an agenda for Claire to address the resourcing constraints\u2014specifically the unresolved backfills for Matt Unsworth and Deepak.",
-        "Define the scope of the AWS agent-assist POC\u2014clarifying the integration of the embedded UI widget inside the Conversant desktop.",
-        "Prepare for a potential capacity reduction of fifteen to twenty percent\u2014stemming from the upcoming cybersecurity uplift program."
+        "Request clarification on Jon's and Praveena's current priorities\u2014no historical notes exist in your files to guide this review.",
+        "Address the outstanding resource backfills for Matt Unsworth and Deepak\u2014the current lack of headcount hinders tactical execution.",
+        "Align on the Integration Architect competency model\u2014the transition of technical decision-making requires immediate skills mapping.",
+        "Clarify the scope of the AWS agent assist proof of concept\u2014the business continues to push for an unviable desktop replacement."
       ],
       "title": "Monthly 1:1 w/Claire Veitenheimer | Mark Francis",
       "start_label": "1:30 PM",
       "end_label": "1:55 PM"
     },
     "k7ssgc6tnu3s6nbbtlroh448gs": {
-      "summary": "You must address critical operational shifts across P&C and Lifeco\u2014specifically the parallel execution of the Skan.ai task-mining pilot and the integration of AWS assist widgets into the MSR desktop to avoid complete system disruption. Strategic execution faces severe capacity constraints\u2014including a 15\u201320% delivery reduction from cybersecurity hygiene work and unresolved backfills for Matt Unsworth and Deepak\u2014while technical decision-making shifts to Integration Architects who require urgent training. Additionally, you must resolve the ongoing friction surrounding data migrations to 5Tran and Iceberg alongside the complex compliance requirements of the NART process.",
+      "summary": "Reviewing your recent work notes reveals systemic operational shifts\u2014notably the 15\u201320% capacity reduction from the cybersecurity uplift and the transfer of decision-making to Integration Architects. You must navigate technical friction across key platforms\u2014specifically the AWS desktop integration POC and the parallel Skan.ai task mining pilot. Major delivery bottlenecks persist\u2014including unresolved backfills for critical roles and security compliance blocks on the Claims visual voicemail initiative.",
       "tasks": [
-        "Establish a clear RACI matrix for Integration Architects\u2014addressing their capacity and skill gaps\u2014before delegating further technical decision-making.",
-        "Resolve the outstanding backfills for Matt Unsworth and Deepak to mitigate resource constraints across your delivery schedules.",
-        "Monitor the consolidation of P&C business cases under Robbie\u2014specifically aligning Claims, DNS, and Agency\u2014to support the targeted September/October Skan.ai production pilot.",
-        "Address the security and compliance hurdles regarding PII/NPI sharing that are currently holding up the visual voicemail and two-way texting rollouts."
+        "Consolidate the P&C business cases across Claims, DNS, and Agency to support the Skan.ai pilot by September.",
+        "Establish a clear RACI matrix to address skill and capacity gaps for Integration Architects taking on technical decision-making.",
+        "Resolve the security and compliance hurdles blocking the integration of visual voicemail and two-way texting with HiMarley.",
+        "Enforce the new 60\u201390 day lead-time process for contract reviews to control vendor negotiation outcomes.",
+        "Restrict GitHub Copilot access to defined technical roles to manage enterprise credit consumption."
       ],
       "title": "Enterprise Architecture Leadership Sync (series ends 1/...)",
       "start_label": "3:05 PM",
       "end_label": "3:55 PM"
     },
     "tjutuqjin2eqvaibobs9o07cck": {
-      "summary": "Review the June 11 Skan.ai RFP session\u2014the only documented meeting with Suresh in your folder\u2014which focused on parallel paths for task mining via SCANT and aligning P&C business cases. No records exist for a second meeting with Suresh or any meeting with Jonathan\u2014requiring you to gather these status updates directly during the session. Use this context to align the Conversational Quote App with your broader digital transformation goals\u2014specifically reducing contact center volumes.",
+      "summary": "Reviewing your available work notes reveals only one recent touchpoint with Suresh\u2014the Skan.ai RFP meeting on June 11\u2014where he was targeted to connect with Jim Diagostino and the Tech PMO. No record of a second meeting with Suresh or any meeting with Jonathan exists in your files\u2014leaving critical gaps in your meeting prep. You must retrieve these missing discussion details to successfully align the Conversational Quote App with their current expectations.",
       "tasks": [
-        "Confirm Suresh's progress regarding his offline alignment with Jim Diagostino and the Tech PMO on SCANT task mining.",
-        "Reconstruct the missing meeting outcomes with Jonathan to address outstanding conversational app design decisions.",
-        "Map the Conversational Quote App requirements to the model-driven architecture and reusable APIs discussed on June 15.",
-        "Secure the consolidated P&C business case from Robbie to verify headcount reduction targets match your application goals."
+        "Follow up with Suresh regarding his offline alignment with Jim Diagostino and the Tech PMO.",
+        "Request the missing meeting notes for both Jonathan and the second session with Suresh\u2014ensuring total coverage of recent discussions.",
+        "Align the Conversational Quote App objectives with the broader P&C process strategy\u2014specifically the move toward model-driven architectures.",
+        "Verify API readiness for agentic workflows to support the upcoming conversational integration."
       ],
       "title": "Conversational Quote App",
       "start_label": "4:30 PM",
