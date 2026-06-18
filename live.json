@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-18T06:02:13.896579-05:00",
-  "refreshed_label": "6:02 AM",
+  "refreshed_at": "2026-06-18T06:55:35.587531-05:00",
+  "refreshed_label": "6:55 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,18 @@
       "end_label": "9:00 AM",
       "summary": "Architecture Sync with Faith Remley",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your work notes position the Skan.ai SCANT tool as an immediate task-mining opportunity\u2014aiming for a September or October pilot\u2014while the broader process strategy runs in parallel. You have no recorded mentions of Celonis or experience intelligence in your files\u2014suggesting these initiatives are either unstarted or tracked elsewhere. You must also reconstruct the outcomes of your last meeting with Alexis\u2014which remains completely unrepresented in your current meeting logs.",
+        "tasks": [
+          "Follow up with Robbie to consolidate the P&C business cases\u2014including Claims, DNS, and Agency\u2014into a unified strategic view.",
+          "Obtain the specific requirements for process monitoring and health scorecards\u2014which Faith and her team are responsible for documenting.",
+          "Reconcile the lack of work notes regarding Celonis and experience intelligence\u2014confirming if these remain active priorities for Faith.",
+          "Investigate the missing details from your last meeting with Alexis\u2014as no transcript or summary was captured in your current files."
+        ],
+        "title": "Architecture Sync with Faith Remley",
+        "start_label": "8:30 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "kdbrhp4dpbh10holtup4t4odkc",
@@ -61,7 +72,19 @@
       "end_label": "12:00 PM",
       "summary": "Weekly Staff \u2013 P&C CTO Leadership",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Synthesize key topics from the last seven days to prepare for your staff meeting\u2014focusing on critical architectural shifts and severe capacity constraints. You must address team burnout following the departures of Unsworth and Fred Diel\u2014while aligning with Deepak to clarify decision-making authority in the P&C space. Track the active technical streams\u2014specifically the \"quick and dirty\" chatbot prototypes using the existing billing codebase, the Skan.ai task mining pilot, and the security hurdles delaying the claims two-way texting rollout.",
+        "tasks": [
+          "Align with Deepak to define clear decision-making accountability within the P&C architecture space to mitigate organizational complexity.",
+          "Finalize the technical approach for the upcoming chatbot prototype using the existing bill pay design rather than custom-building toolsets.",
+          "Resolve the security and compliance hurdles regarding PII/NPI sharing that are currently stalling the HiMarley visual voicemail integration.",
+          "Consolidate the cross-divisional business cases for Skan.ai task mining into a unified P&C view to support the planned autumn pilot.",
+          "Prepare the required architecture presentation materials for Suhas's upcoming planning meeting."
+        ],
+        "title": "Weekly Staff \u2013 P&C CTO Leadership",
+        "start_label": "11:00 AM",
+        "end_label": "12:00 PM"
+      }
     },
     {
       "id": "h9c5ca1av0s2gohpk9rvr2mbe4",
@@ -111,36 +134,60 @@
       "end_label": "3:55 PM",
       "summary": "Monthly 1:1 w/Dan Weaver | Mark Francis (series end 12/2/...)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Reviewing your recent work notes reveals no record of your last meeting with Dan Weaver or any recent mentions of ServiceNow\u2014you must prepare to address these topics without historical context. For P&C stability and obsolescence, your notes highlight a capacity crisis on the architecture team\u2014hindering modernization\u2014alongside critical caution phases in Claims Evolution due to security and compliance hurdles. Address these structural bottlenecks\u2014specifically the lack of clear decision-making authority\u2014to unblock vulnerability remediation and platform stability initiatives.",
+        "tasks": [
+          "Ask Dan for his direct updates on ServiceNow roadmap alignment.",
+          "Align with Deepak to define clear decision-making authority within the P&C architecture space.",
+          "Address the severe capacity constraints on your architecture team\u2014mitigating burnout to free up resources for obsolescence remediation.",
+          "Review the security and compliance hurdles stalling the Claims Evolution rollout."
+        ],
+        "title": "Monthly 1:1 w/Dan Weaver | Mark Francis (series end 12/2/...)",
+        "start_label": "3:30 PM",
+        "end_label": "3:55 PM"
+      }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Architecture Sync with Faith Remley</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Architecture Sync with Faith Remley</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Your work notes position the Skan.ai SCANT tool as an immediate task-mining opportunity\u2014aiming for a September or October pilot\u2014while the broader process strategy runs in parallel. You have no recorded mentions of Celonis or experience intelligence in your files\u2014suggesting these initiatives are either unstarted or tracked elsewhere. You must also reconstruct the outcomes of your last meeting with Alexis\u2014which remains completely unrepresented in your current meeting logs.</p>\n                <ul class=\"focus-prep-tasks\"><li>Follow up with Robbie to consolidate the P&amp;C business cases\u2014including Claims, DNS, and Agency\u2014into a unified strategic view.</li><li>Obtain the specific requirements for process monitoring and health scorecards\u2014which Faith and her team are responsible for documenting.</li><li>Reconcile the lack of work notes regarding Celonis and experience intelligence\u2014confirming if these remain active priorities for Faith.</li><li>Investigate the missing details from your last meeting with Alexis\u2014as no transcript or summary was captured in your current files.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Sync with Faith Remley</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">ASG Huddle</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync with Jeff - CMT Atlas Telematics Pilot \u2013 Discussion</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">CEO Complaint re. Spouse Digital Online Access</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff \u2013 P&amp;C CTO Leadership</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 12:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Join us for Flying to New Heights: A Place for All of Us w...</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Skan AI Pilot</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly: LOB Arch Cross-Portfolio Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly 1:1 w/Dan Weaver | Mark Francis (series end 12/2/...)</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up Arch overview with Business Engage partners</span>\n                <span class=\"capsule capsule--caution\">Due Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do Tech Decision update email for Jeff/Suhas</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at new investments - get meeting back with Matt Gibson</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get the Business Process Health scorecard meeting set up - Tiffany, Suresh, Sean, IE, </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare architecture update presentation for Suhas&#x27;s EMG planning session</span>\n                <span class=\"capsule capsule--caution\">Due Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review links for Spartan dashboard and Dennis Re&#x27;s CI/CD pipeline evaluation dashboard</span>\n                <span class=\"capsule capsule--caution\">Due Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Jonathan and Dennis Reams stuff</span>\n                <span class=\"capsule capsule--caution\">Due Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Buy Google speaker. </span>\n                <span class=\"capsule capsule--neutral\">Due Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "kp8nqc3oh87aal0s4ehhmtn9dk": {
-      "summary": "Review your team's weekly activity\u2014it highlights severe capacity constraints on the architecture team due to recent high-profile departures\u2014while strategic transformation pushes forward in underwriting and the Life Company. Manage your technical execution alongside a major cybersecurity uplift program\u2014this hygiene initiative alone threatens a 15\u201320% capacity hit on current delivery schedules. Push for consolidated business cases on the Skan.ai RFP while navigating the compliance hurdles halting your claims evolution tools.",
+    "eargptf489apar9keja1phu2kc": {
+      "summary": "Your work notes position the Skan.ai SCANT tool as an immediate task-mining opportunity\u2014aiming for a September or October pilot\u2014while the broader process strategy runs in parallel. You have no recorded mentions of Celonis or experience intelligence in your files\u2014suggesting these initiatives are either unstarted or tracked elsewhere. You must also reconstruct the outcomes of your last meeting with Alexis\u2014which remains completely unrepresented in your current meeting logs.",
       "tasks": [
-        "Engage with Deepak to define clear decision-making authority\u2014resolving the leadership and accountability gaps in the P&C architecture space.",
-        "Consolidate the scattered business cases from Claims, DNS, and Agency\u2014building a unified P&C view to support the upcoming Skan.ai RFP pilot.",
-        "Realign delivery schedules immediately\u2014adjusting project timelines to absorb the 15\u201320% capacity loss driven by the cybersecurity uplift program.",
-        "Resolve the security and compliance blocks regarding PII/NPI sharing\u2014clearing the path for the HiMarley visual voicemail integration."
+        "Follow up with Robbie to consolidate the P&C business cases\u2014including Claims, DNS, and Agency\u2014into a unified strategic view.",
+        "Obtain the specific requirements for process monitoring and health scorecards\u2014which Faith and her team are responsible for documenting.",
+        "Reconcile the lack of work notes regarding Celonis and experience intelligence\u2014confirming if these remain active priorities for Faith.",
+        "Investigate the missing details from your last meeting with Alexis\u2014as no transcript or summary was captured in your current files."
       ],
-      "title": "TF Standup",
-      "start_label": "8:00 AM",
+      "title": "Architecture Sync with Faith Remley",
+      "start_label": "8:30 AM",
       "end_label": "9:00 AM"
     },
-    "ru35oj526k9qo8aim3uuni4i6g": {
-      "summary": "Your Google Drive contains no files with \"Abe\" in the title\u2014nor do your recent notes mention Rebecca or Celonis directly. The Skan.ai RFP notes from June 11 cover process and task mining\u2014topics highly relevant to Celonis capabilities. You must address these information gaps\u2014especially regarding personnel challenges and organizational complexity\u2014during your 1:1.",
+    "c0s21u4nvph4vc7kve5corb9l4_20260618T160000Z": {
+      "summary": "Synthesize key topics from the last seven days to prepare for your staff meeting\u2014focusing on critical architectural shifts and severe capacity constraints. You must address team burnout following the departures of Unsworth and Fred Diel\u2014while aligning with Deepak to clarify decision-making authority in the P&C space. Track the active technical streams\u2014specifically the \"quick and dirty\" chatbot prototypes using the existing billing codebase, the Skan.ai task mining pilot, and the security hurdles delaying the claims two-way texting rollout.",
       "tasks": [
-        "Locate the missing files containing \"Abe\" in the title\u2014either by checking alternative storage folders or syncing with team members.",
-        "Investigate the discussions regarding Rebecca\u2014specifically her current alignment with the underwriting or claims evolution initiatives.",
-        "Compare the Skan.ai task mining capabilities against Celonis\u2014focusing on the target production pilot timeline for September.",
-        "Resolve the decision-making bottleneck in P&C architecture with Deepak\u2014addressing the capacity constraints caused by recent leadership departures."
+        "Align with Deepak to define clear decision-making accountability within the P&C architecture space to mitigate organizational complexity.",
+        "Finalize the technical approach for the upcoming chatbot prototype using the existing bill pay design rather than custom-building toolsets.",
+        "Resolve the security and compliance hurdles regarding PII/NPI sharing that are currently stalling the HiMarley visual voicemail integration.",
+        "Consolidate the cross-divisional business cases for Skan.ai task mining into a unified P&C view to support the planned autumn pilot.",
+        "Prepare the required architecture presentation materials for Suhas's upcoming planning meeting."
       ],
-      "title": "Monthly 1:1w/ Abe Capetillo | Mark Francis",
-      "start_label": "2:35 PM",
-      "end_label": "3:00 PM"
+      "title": "Weekly Staff \u2013 P&C CTO Leadership",
+      "start_label": "11:00 AM",
+      "end_label": "12:00 PM"
+    },
+    "u8qkh4gkhvqsbbqtda35i53vd4": {
+      "summary": "Reviewing your recent work notes reveals no record of your last meeting with Dan Weaver or any recent mentions of ServiceNow\u2014you must prepare to address these topics without historical context. For P&C stability and obsolescence, your notes highlight a capacity crisis on the architecture team\u2014hindering modernization\u2014alongside critical caution phases in Claims Evolution due to security and compliance hurdles. Address these structural bottlenecks\u2014specifically the lack of clear decision-making authority\u2014to unblock vulnerability remediation and platform stability initiatives.",
+      "tasks": [
+        "Ask Dan for his direct updates on ServiceNow roadmap alignment.",
+        "Align with Deepak to define clear decision-making authority within the P&C architecture space.",
+        "Address the severe capacity constraints on your architecture team\u2014mitigating burnout to free up resources for obsolescence remediation.",
+        "Review the security and compliance hurdles stalling the Claims Evolution rollout."
+      ],
+      "title": "Monthly 1:1 w/Dan Weaver | Mark Francis (series end 12/2/...)",
+      "start_label": "3:30 PM",
+      "end_label": "3:55 PM"
     }
   }
 }
