@@ -1,10 +1,71 @@
 {
-  "refreshed_at": "2026-06-21T19:17:53.158807-05:00",
-  "refreshed_label": "7:17 PM",
+  "refreshed_at": "2026-06-22T00:36:34.120045-05:00",
+  "refreshed_label": "12:36 AM",
   "tz_label": "Chicago",
-  "events": [],
-  "focus_html": "",
-  "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at new investments - get meeting back with Matt Gibson</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">look up Vince Puchichelli on Suchi&#x27;s team</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get the Business Process Health scorecard meeting set up - ALO</span>\n                <span class=\"capsule capsule--caution\">Due Jun 22</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Ping Thomas on Data Dog Rum useage here</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 18</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Come up with Strawman Architecture for Business Processs workbench</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Buy Google speaker.</span>\n                <span class=\"capsule capsule--neutral\">Due Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up Arch overview with Business Engage partners</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do Tech Decision update email for Jeff/Suhas</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 18</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare architecture update presentation for Suhas&#x27;s EMG planning session</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review links for Spartan dashboard and Dennis Re&#x27;s CI/CD pipeline evaluation dashboard</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Jonathan and Dennis Reams stuff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
+  "events": [
+    {
+      "id": "409bec11dmo9jq0id49kvsvcc2",
+      "start_iso": "2026-06-22T08:30:00-05:00",
+      "end_iso": "2026-06-22T09:00:00-05:00",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM",
+      "summary": "EMG Engage - Lisa Villalon",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "24vihdkvqrudv2fmsl33t0s9t7",
+      "start_iso": "2026-06-22T09:00:00-05:00",
+      "end_iso": "2026-06-22T09:30:00-05:00",
+      "start_label": "9:00 AM",
+      "end_label": "9:30 AM",
+      "summary": "Monthly Sync with Abe",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "4i78qndp8q9jbk1bir01gagp1b",
+      "start_iso": "2026-06-22T10:00:00-05:00",
+      "end_iso": "2026-06-22T12:30:00-05:00",
+      "start_label": "10:00 AM",
+      "end_label": "12:30 PM",
+      "summary": "P&C IT EMG Planning Session",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "5n89p2f8nac8vnm9kp422cucgf",
+      "start_iso": "2026-06-22T13:00:00-05:00",
+      "end_iso": "2026-06-22T13:30:00-05:00",
+      "start_label": "1:00 PM",
+      "end_label": "1:30 PM",
+      "summary": "Jonathan 1on1",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "7ol3o3n6pv7lgj52e600ud6fv4",
+      "start_iso": "2026-06-22T15:00:00-05:00",
+      "end_iso": "2026-06-22T15:30:00-05:00",
+      "start_label": "3:00 PM",
+      "end_label": "3:30 PM",
+      "summary": "Celonis Claims Data Mining Effort",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "4p1f93c889hcn7sbi4qjatd253",
+      "start_iso": "2026-06-22T16:00:00-05:00",
+      "end_iso": "2026-06-22T17:00:00-05:00",
+      "start_label": "4:00 PM",
+      "end_label": "5:00 PM",
+      "summary": "Review ASG Content",
+      "location": "",
+      "prep": null
+    }
+  ],
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">EMG Engage - Lisa Villalon</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Lisa Villalon</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Sync with Abe</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C IT EMG Planning Session</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Jonathan 1on1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Celonis Claims Data Mining Effort</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review ASG Content</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at new investments - get meeting back with Matt Gibson</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">look up Vince Puchichelli on Suchi&#x27;s team</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get the Business Process Health scorecard meeting set up - ALO</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Ping Thomas on Data Dog Rum useage here</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 18</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Come up with Strawman Architecture for Business Processs workbench</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Buy Google speaker.</span>\n                <span class=\"capsule capsule--neutral\">Due Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up Arch overview with Business Engage partners</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do Tech Decision update email for Jeff/Suhas</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 18</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare architecture update presentation for Suhas&#x27;s EMG planning session</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review links for Spartan dashboard and Dennis Re&#x27;s CI/CD pipeline evaluation dashboard</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Jonathan and Dennis Reams stuff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {}
 }
