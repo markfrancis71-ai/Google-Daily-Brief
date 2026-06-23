@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-23T07:46:32.294814-05:00",
-  "refreshed_label": "7:46 AM",
+  "refreshed_at": "2026-06-23T08:08:56.318560-05:00",
+  "refreshed_label": "8:08 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -22,12 +22,12 @@
       "summary": "Sync With Mark",
       "location": "",
       "prep": {
-        "summary": "You need to prepare for your sync with Mark by reviewing the June 15 discussion with Praveena\u2014which centered on Rebecca's transition, James's architectural coaching, and escalating the need for dedicated data architecture support. Today's agenda focuses on assigning Amit to the overarching business health scorecard\u2014an initiative closely tied to the \"Process Owner's Cockpit\" and Celonis visualization efforts detailed in your recent work notes. Reviewing these interconnected threads will help you position Amit effectively to address the critical data integration and latency challenges facing the enterprise.",
+        "summary": "Your last discussion with Praveena on June 15 focused on critical resource constraints\u2014specifically managing Rebecca's departure transition, securing data architecture support, and coaching James on stakeholder interactions. You also addressed technical hurdles around 2-Way SMS claims risk\u2014a lingering issue requiring security clearance\u2014and agreed to map out Praveena's career strategy. Today you must align on assigning Amit to the overarching business health scorecard\u2014an initiative tied directly to the enterprise cockpit architecture.",
         "tasks": [
-          "Finalize the candidate requirements for Rebecca's backfill\u2014ensuring a better organizational fit.",
-          "Address the outstanding data architecture support escalation\u2014specifically regarding the transition of \"Picks\" to Brian Klusman.",
-          "Assign Amit to the overarching business health scorecard\u2014leveraging the framework Mark is architecting for the \"Process Owner's Cockpit.\"",
-          "Align Amit's onboarding with the ongoing Celonis claims visualization pivot\u2014specifically targeting the data latency challenges identified in the Snowflake and DL3 pipelines."
+          "Finalize the candidate requirements and transition plan for Rebecca's backfill.",
+          "Confirm the assignment of Amit to the overarching business health scorecard.",
+          "Secure a definitive stance from the security and privacy teams regarding 2-Way SMS claims risk.",
+          "Schedule a dedicated career strategy session with Praveena to discuss her professional growth."
         ],
         "title": "Sync With Mark",
         "start_label": "10:00 AM",
@@ -82,7 +82,19 @@
       "end_label": "4:00 PM",
       "summary": "Bi-weekly: Tech BoD",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You must navigate several pressing architecture shifts \u2014 including migrating to direct Kafka-to-Celonis pipelines for real-time process observability, securing data ownership on Iceberg/AWS for the CMT telematics POC, and modernizing legacy Life Company infrastructure. For cascading messages \u2014 ensure the architecture team immediately reviews and validates the 'Time Recommendation' details in the TPM dashboard for all 'Migrate' or 'Eliminate' applications to prevent flawed funding decisions. You must also prepare the team for upcoming governance reviews regarding HiMarley security hurdles and the newly introduced 'Platform Mindset' metrics.",
+        "tasks": [
+          "Validate the 'Time Recommendation' details in the TPM dashboard for all applications marked in 'Migrate' or 'Eliminate' status.",
+          "Draft the Enterprise Architecture position paper harmonizing Celonis, ScanAI, and the existing Beam/Snowflake infrastructure.",
+          "Resolve the security and compliance hurdles regarding PII/NPI sharing for the HiMarley voicemail and texting integration.",
+          "Evaluate the initial vector embedding data output from the CMT POC to determine its predictive value before further contract negotiations.",
+          "Establish the quarterly targets for the new 'Platform Mindset' metric to meet the impending leadership submission deadline."
+        ],
+        "title": "Bi-weekly: Tech BoD",
+        "start_label": "3:05 PM",
+        "end_label": "4:00 PM"
+      }
     }
   ],
   "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">9:00 AM &mdash; 10:00 AM</div>\n            <h2 class=\"focus-title\">Architecture Huddle</h2>\n            \n            \n        </section>",
@@ -90,16 +102,29 @@
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Praveena about Amit</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at new investments - get meeting back with Matt Gibson</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">look up Vince Puchichelli on Suchi&#x27;s team</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get the Business Process Health scorecard meeting set up - ALO</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 22</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Ping Thomas on Data Dog Rum useage here</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 18</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Come up with Strawman Architecture for Business Processs workbench</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Buy Google speaker.</span>\n                <span class=\"capsule capsule--caution\">Due Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up Arch overview with Business Engage partners</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do Tech Decision update email for Jeff/Suhas</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 18</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare architecture update presentation for Suhas&#x27;s EMG planning session</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review links for Spartan dashboard and Dennis Re&#x27;s CI/CD pipeline evaluation dashboard</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Jonathan and Dennis Reams stuff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
     "hqmbc7plags8os9is98smffcvg": {
-      "summary": "You need to prepare for your sync with Mark by reviewing the June 15 discussion with Praveena\u2014which centered on Rebecca's transition, James's architectural coaching, and escalating the need for dedicated data architecture support. Today's agenda focuses on assigning Amit to the overarching business health scorecard\u2014an initiative closely tied to the \"Process Owner's Cockpit\" and Celonis visualization efforts detailed in your recent work notes. Reviewing these interconnected threads will help you position Amit effectively to address the critical data integration and latency challenges facing the enterprise.",
+      "summary": "Your last discussion with Praveena on June 15 focused on critical resource constraints\u2014specifically managing Rebecca's departure transition, securing data architecture support, and coaching James on stakeholder interactions. You also addressed technical hurdles around 2-Way SMS claims risk\u2014a lingering issue requiring security clearance\u2014and agreed to map out Praveena's career strategy. Today you must align on assigning Amit to the overarching business health scorecard\u2014an initiative tied directly to the enterprise cockpit architecture.",
       "tasks": [
-        "Finalize the candidate requirements for Rebecca's backfill\u2014ensuring a better organizational fit.",
-        "Address the outstanding data architecture support escalation\u2014specifically regarding the transition of \"Picks\" to Brian Klusman.",
-        "Assign Amit to the overarching business health scorecard\u2014leveraging the framework Mark is architecting for the \"Process Owner's Cockpit.\"",
-        "Align Amit's onboarding with the ongoing Celonis claims visualization pivot\u2014specifically targeting the data latency challenges identified in the Snowflake and DL3 pipelines."
+        "Finalize the candidate requirements and transition plan for Rebecca's backfill.",
+        "Confirm the assignment of Amit to the overarching business health scorecard.",
+        "Secure a definitive stance from the security and privacy teams regarding 2-Way SMS claims risk.",
+        "Schedule a dedicated career strategy session with Praveena to discuss her professional growth."
       ],
       "title": "Sync With Mark",
       "start_label": "10:00 AM",
       "end_label": "10:30 AM"
+    },
+    "k7cmccgivnq7gestsqvgq8gf3g": {
+      "summary": "You must navigate several pressing architecture shifts \u2014 including migrating to direct Kafka-to-Celonis pipelines for real-time process observability, securing data ownership on Iceberg/AWS for the CMT telematics POC, and modernizing legacy Life Company infrastructure. For cascading messages \u2014 ensure the architecture team immediately reviews and validates the 'Time Recommendation' details in the TPM dashboard for all 'Migrate' or 'Eliminate' applications to prevent flawed funding decisions. You must also prepare the team for upcoming governance reviews regarding HiMarley security hurdles and the newly introduced 'Platform Mindset' metrics.",
+      "tasks": [
+        "Validate the 'Time Recommendation' details in the TPM dashboard for all applications marked in 'Migrate' or 'Eliminate' status.",
+        "Draft the Enterprise Architecture position paper harmonizing Celonis, ScanAI, and the existing Beam/Snowflake infrastructure.",
+        "Resolve the security and compliance hurdles regarding PII/NPI sharing for the HiMarley voicemail and texting integration.",
+        "Evaluate the initial vector embedding data output from the CMT POC to determine its predictive value before further contract negotiations.",
+        "Establish the quarterly targets for the new 'Platform Mindset' metric to meet the impending leadership submission deadline."
+      ],
+      "title": "Bi-weekly: Tech BoD",
+      "start_label": "3:05 PM",
+      "end_label": "4:00 PM"
     }
   }
 }
