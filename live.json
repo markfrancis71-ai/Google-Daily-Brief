@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-25T04:57:13.415065-05:00",
-  "refreshed_label": "4:57 AM",
+  "refreshed_at": "2026-06-25T05:43:03.121351-05:00",
+  "refreshed_label": "5:43 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,18 @@
       "end_label": "9:00 AM",
       "summary": "Sync on Process health scorecard",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You transitioned the P&C claims process observability strategy from ServiceNow to Celonis\u2014relying on Celonis's successful proof of concept to drive the change. The claims business faces a strict three-month mandate to mine their processes in Celonis\u2014leveraging streaming data from Kafka and Snowflake for the new Business Process Owner Workbench. You must deliver an urgent architecture position paper to Suresh\u2014detailing this workbench framework and addressing integration challenges with legacy systems.",
+        "tasks": [
+          "Draft the architecture position paper for Suresh\u2014defining the technical framework and components for the Business Process Owner Workbench.",
+          "Establish the implementation timeline with Calvin's team\u2014ensuring the claims business meets its three-month process mining deadline.",
+          "Define a remediation plan for legacy platforms\u2014specifically Legacy Auto\u2014that do not currently emit the Kafka events required for real-time monitoring.",
+          "Align with Tiffany Ryan, Faith Remley, and Suresh\u2014clarifying the definitions and integration paths for Skan.ai desktop telemetry and risk controls."
+        ],
+        "title": "Sync on Process health scorecard",
+        "start_label": "8:30 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "sspch1fus3g4eniu5oe3dk2ouk",
@@ -61,7 +72,18 @@
       "end_label": "11:00 AM",
       "summary": "Monthly 1:1 w/Aaron Bend",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your March 25 meeting with Aaron focused on opposing the costly Ernix migration\u2014estimated at $20M\u2013$25M\u2014until foundational data modeling issues in Snowflake are resolved. You also evaluated the Project 002 initiative\u2014specifically the complex Guidewire-to-Paz reverse data flow for renewals\u2014and discussed AI-enabled development velocity. No work notes were found for your last meeting with Dan\u2014you must coordinate with him directly to bridge his recent updates with Aaron's strategic priorities.",
+        "tasks": [
+          "Reiterate the architectural stance against the Ernix migration\u2014maintain focus on resolving the Snowflake data issues first.",
+          "Flag the Guidewire-to-Paz reverse data flow complexity\u2014demand a status update on data translation challenges for renewal processing.",
+          "Confirm Dan's latest project status\u2014retrieve his recent meeting outcomes directly to align shared operational goals before speaking with Aaron.",
+          "Track the progress of AI-enabled development initiatives\u2014evaluate if agentic automation tools have begun accelerating delivery timelines."
+        ],
+        "title": "Monthly 1:1 w/Aaron Bend",
+        "start_label": "10:30 AM",
+        "end_label": "11:00 AM"
+      }
     },
     {
       "id": "52mmtqegtrvropgerjhs3j153o",
@@ -71,7 +93,18 @@
       "end_label": "12:00 PM",
       "summary": "Weekly Staff \u2013 P&C CTO Leadership",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review your key operational shifts from the past week\u2014specifically the newly mandated \"Go TPDT\" procurement governance framework and the $15 million CMT Telematics POC on AWS. Balance these delivery tracks with the core directives from the June 24 EA SLT\u2014completing mid-year reviews immediately and streamlining meeting attendance via the new decision-making infographics. Track the ongoing Underwriting and Claims evolutions\u2014including the critical Celonis integration and the delayed HiMarley texting security clearances.",
+        "tasks": [
+          "Submit your pending mid-year performance reviews immediately to meet today's deadline from the EA SLT.",
+          "Update the procurement engagement wiki FAQ to clarify what must occur before an architect can approve a purchase plan.",
+          "Analyze the CMT vector embedding data to validate its actual risk-prediction value before committing to the $15 million platform spend.",
+          "Resolve the outstanding PII and NPI compliance hurdles blocking the HiMarley two-way texting integration."
+        ],
+        "title": "Weekly Staff \u2013 P&C CTO Leadership",
+        "start_label": "11:00 AM",
+        "end_label": "12:00 PM"
+      }
     },
     {
       "id": "ejmn33ok4i5hnpdhuvkgkk60v8",
@@ -114,21 +147,45 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Sync on Process health scorecard</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Sync on Process health scorecard</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">You transitioned the P&amp;C claims process observability strategy from ServiceNow to Celonis\u2014relying on Celonis&#x27;s successful proof of concept to drive the change. The claims business faces a strict three-month mandate to mine their processes in Celonis\u2014leveraging streaming data from Kafka and Snowflake for the new Business Process Owner Workbench. You must deliver an urgent architecture position paper to Suresh\u2014detailing this workbench framework and addressing integration challenges with legacy systems.</p>\n                <ul class=\"focus-prep-tasks\"><li>Draft the architecture position paper for Suresh\u2014defining the technical framework and components for the Business Process Owner Workbench.</li><li>Establish the implementation timeline with Calvin&#x27;s team\u2014ensuring the claims business meets its three-month process mining deadline.</li><li>Define a remediation plan for legacy platforms\u2014specifically Legacy Auto\u2014that do not currently emit the Kafka events required for real-time monitoring.</li><li>Align with Tiffany Ryan, Faith Remley, and Suresh\u2014clarifying the definitions and integration paths for Skan.ai desktop telemetry and risk controls.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync on Process health scorecard</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Randy Burris | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:35 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-Monthly 1:1 w/Hima Obbu | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Portfolio &amp; Principal Architect Forum</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync w/ Robert Ghavidel</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly 1:1 w/Aaron Bend</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff \u2013 P&amp;C CTO Leadership</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Portfolio Review, Session 1 (June 2026 Q2 Assessment)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Skan AI Pilot</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Portfolio Review, Session 2 (June 2026 Q2 Assessment)</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Obsolescence list (email - McCarty)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Nate and Bharat. Make Adam optional, talking about options for visualization for observability. </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review tech decisions for ASG. </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Come up with Strawman Architecture for Business Processs workbench - Talk to Amit</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do Tech Decision update email for Jeff/Suhas</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--caution\">Due Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up Arch overview with Business Engage partners</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "iepeec7o0cc4jj2rudcb2gl4ng": {
-      "summary": "Manage the strategic pivot from ServiceNow to Celonis\u2014addressing critical 4-hour DL3 pipeline delays\u2014while delivering the urgent BPO Workbench architecture paper for Suresh. Address severe capacity strains and team burnout following the departures of Unsworth and Diel\u2014compounded by your own recent car accident injuries. Finalize the simplified chatbot prototype using the billing design and prep for the tax discussion\u2014noting that your Google Docs folder lacked tax-related documents.",
+    "hu0j56jcn8i47fimd8dsftsduk": {
+      "summary": "You transitioned the P&C claims process observability strategy from ServiceNow to Celonis\u2014relying on Celonis's successful proof of concept to drive the change. The claims business faces a strict three-month mandate to mine their processes in Celonis\u2014leveraging streaming data from Kafka and Snowflake for the new Business Process Owner Workbench. You must deliver an urgent architecture position paper to Suresh\u2014detailing this workbench framework and addressing integration challenges with legacy systems.",
       "tasks": [
-        "Draft the urgent architecture position paper for Suresh outlining the components and Kafka-Snowflake integration for the Celonis BPO Workbench.",
-        "Engage with Deepak to clarify decision-making authority in the P&C architecture space to mitigate team burnout following recent departures.",
-        "Finalize the chatbot prototype approach using the existing bill pay codebase instead of overcomplicating with MCP.",
-        "Raise the unaddressed tax topics directly with Jon since no relevant tax files were found in your work notes folder."
+        "Draft the architecture position paper for Suresh\u2014defining the technical framework and components for the Business Process Owner Workbench.",
+        "Establish the implementation timeline with Calvin's team\u2014ensuring the claims business meets its three-month process mining deadline.",
+        "Define a remediation plan for legacy platforms\u2014specifically Legacy Auto\u2014that do not currently emit the Kafka events required for real-time monitoring.",
+        "Align with Tiffany Ryan, Faith Remley, and Suresh\u2014clarifying the definitions and integration paths for Skan.ai desktop telemetry and risk controls."
       ],
-      "title": "Bi-weekly 1:1 w/Jon | Mark (series end 12/16/26)",
-      "start_label": "1:05 PM",
-      "end_label": "1:30 PM"
+      "title": "Sync on Process health scorecard",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM"
+    },
+    "eaq39r4e3arco1fvectuudpgdc": {
+      "summary": "Your March 25 meeting with Aaron focused on opposing the costly Ernix migration\u2014estimated at $20M\u2013$25M\u2014until foundational data modeling issues in Snowflake are resolved. You also evaluated the Project 002 initiative\u2014specifically the complex Guidewire-to-Paz reverse data flow for renewals\u2014and discussed AI-enabled development velocity. No work notes were found for your last meeting with Dan\u2014you must coordinate with him directly to bridge his recent updates with Aaron's strategic priorities.",
+      "tasks": [
+        "Reiterate the architectural stance against the Ernix migration\u2014maintain focus on resolving the Snowflake data issues first.",
+        "Flag the Guidewire-to-Paz reverse data flow complexity\u2014demand a status update on data translation challenges for renewal processing.",
+        "Confirm Dan's latest project status\u2014retrieve his recent meeting outcomes directly to align shared operational goals before speaking with Aaron.",
+        "Track the progress of AI-enabled development initiatives\u2014evaluate if agentic automation tools have begun accelerating delivery timelines."
+      ],
+      "title": "Monthly 1:1 w/Aaron Bend",
+      "start_label": "10:30 AM",
+      "end_label": "11:00 AM"
+    },
+    "52mmtqegtrvropgerjhs3j153o": {
+      "summary": "Review your key operational shifts from the past week\u2014specifically the newly mandated \"Go TPDT\" procurement governance framework and the $15 million CMT Telematics POC on AWS. Balance these delivery tracks with the core directives from the June 24 EA SLT\u2014completing mid-year reviews immediately and streamlining meeting attendance via the new decision-making infographics. Track the ongoing Underwriting and Claims evolutions\u2014including the critical Celonis integration and the delayed HiMarley texting security clearances.",
+      "tasks": [
+        "Submit your pending mid-year performance reviews immediately to meet today's deadline from the EA SLT.",
+        "Update the procurement engagement wiki FAQ to clarify what must occur before an architect can approve a purchase plan.",
+        "Analyze the CMT vector embedding data to validate its actual risk-prediction value before committing to the $15 million platform spend.",
+        "Resolve the outstanding PII and NPI compliance hurdles blocking the HiMarley two-way texting integration."
+      ],
+      "title": "Weekly Staff \u2013 P&C CTO Leadership",
+      "start_label": "11:00 AM",
+      "end_label": "12:00 PM"
     }
   }
 }
