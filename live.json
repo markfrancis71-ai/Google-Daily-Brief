@@ -1,24 +1,10 @@
 {
-  "refreshed_at": "2026-06-27T04:50:54.380889-05:00",
-  "refreshed_label": "4:50 AM",
+  "refreshed_at": "2026-06-27T05:07:47.711028-05:00",
+  "refreshed_label": "5:07 AM",
   "tz_label": "Chicago",
   "events": [],
   "focus_html": "",
   "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Jonathan on MCP readiness </span>\n                <span class=\"capsule capsule--caution\">Due Jun 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Praveena on succession </span>\n                <span class=\"capsule capsule--caution\">Due Jun 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--caution\">Due Jun 30</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at rewards/points allocations</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up Arch overview with Business Engage partners</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
-  "preps": {
-    "iki81pg672h2nkrin3fl0j5nfs": {
-      "summary": "You face critical organizational and talent pressures\u2014most notably Rebecca\u2019s June 28 departure and a total lack of succession plans for key personnel like Wilkins\u2014which are compounded by severe staffing gaps in P&C data architecture and heavy vendor reliance. You must also navigate massive restructuring changes following Saad Ahmed's departure and address the June 28 deadline for the critical security vulnerability initiative. No direct notes exist for the pulse survey\u2014implying you must seek updates on employee sentiment during this period of high turnover and reorganizational friction.",
-      "tasks": [
-        "Address the critical staffing gaps immediately\u2014specifically backfilling Rebecca's vacated role before June 28 and securing a dedicated P&C data architect to resolve high-profile data errors.",
-        "Finalize the formal succession plans requested by Deepok for Wilkins, Burris, Proft, and Karis to mitigate key-person dependency risks.",
-        "Establish the engineering \"tiger team\" and war room to meet the June 28 deadline for 100% compliance on high-end critical security vulnerability remediation.",
-        "Clarify the ownership and allocation of the separate $880k process optimization and $1.2M GenAI funding buckets to resolve the Pega backlog bottleneck.",
-        "Request direct updates on the pulse survey results during the meeting to gauge staff sentiment amid these intensive organizational restructures."
-      ],
-      "title": "Combined Full Staff & Monthly Leadership meeting",
-      "start_label": "9:00 AM",
-      "end_label": "10:00 AM"
-    }
-  }
+  "preps": {}
 }
