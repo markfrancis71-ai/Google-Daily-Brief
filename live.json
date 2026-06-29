@@ -1,10 +1,141 @@
 {
-  "refreshed_at": "2026-06-28T23:43:56.907206-05:00",
-  "refreshed_label": "11:43 PM",
+  "refreshed_at": "2026-06-29T04:19:27.032169-05:00",
+  "refreshed_label": "4:19 AM",
   "tz_label": "Chicago",
-  "events": [],
-  "focus_html": "",
-  "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a workload balancing meeting</span>\n                <span class=\"capsule capsule--caution\">Due Jun 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Jonathan on MCP readiness </span>\n                <span class=\"capsule capsule--caution\">Due Jun 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Praveena on succession </span>\n                <span class=\"capsule capsule--caution\">Due Jun 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--caution\">Due Jun 30</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at rewards/points allocations</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up Arch overview with Business Engage partners</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
+  "events": [
+    {
+      "id": "hebt3o4cnc5rg6edd4id4853u4",
+      "start_iso": "2026-06-29T08:30:00-05:00",
+      "end_iso": "2026-06-29T08:55:00-05:00",
+      "start_label": "8:30 AM",
+      "end_label": "8:55 AM",
+      "summary": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "lmundt4c56ugb1t2q7ptmn75qc",
+      "start_iso": "2026-06-29T09:05:00-05:00",
+      "end_iso": "2026-06-29T09:30:00-05:00",
+      "start_label": "9:05 AM",
+      "end_label": "9:30 AM",
+      "summary": "Claims Bi-Annual Application Assessment Review",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "2bejlogvmp21cegiacvc059lus",
+      "start_iso": "2026-06-29T09:30:00-05:00",
+      "end_iso": "2026-06-29T09:55:00-05:00",
+      "start_label": "9:30 AM",
+      "end_label": "9:55 AM",
+      "summary": "Weekly: Calendar Review",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "ndn95lv1ikil9rf13fa7hbf62k",
+      "start_iso": "2026-06-29T09:30:00-05:00",
+      "end_iso": "2026-06-29T11:00:00-05:00",
+      "start_label": "9:30 AM",
+      "end_label": "11:00 AM",
+      "summary": "Process Intelligence Vision/ Working Session",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "0dri50hdkrg4fo7n4l9fd0u4nk",
+      "start_iso": "2026-06-29T10:00:00-05:00",
+      "end_iso": "2026-06-29T10:25:00-05:00",
+      "start_label": "10:00 AM",
+      "end_label": "10:25 AM",
+      "summary": "Mid-Year Check-In w/Praveena | Mark",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "jd7qn820ggr5vb5h8caii302rk",
+      "start_iso": "2026-06-29T10:00:00-05:00",
+      "end_iso": "2026-06-29T12:00:00-05:00",
+      "start_label": "10:00 AM",
+      "end_label": "12:00 PM",
+      "summary": "Foundry - Property Core Team Onboarding",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "aomqh89ddm852rmdusbvthlkps",
+      "start_iso": "2026-06-29T10:30:00-05:00",
+      "end_iso": "2026-06-29T10:55:00-05:00",
+      "start_label": "10:30 AM",
+      "end_label": "10:55 AM",
+      "summary": "Control Test Failure / Issue",
+      "location": "ZRSCENTS007.B426@usaa.com",
+      "prep": null
+    },
+    {
+      "id": "9oetd8ube80hqg3eaechc4h0mc",
+      "start_iso": "2026-06-29T11:00:00-05:00",
+      "end_iso": "2026-06-29T11:25:00-05:00",
+      "start_label": "11:00 AM",
+      "end_label": "11:25 AM",
+      "summary": "Architecture Follow-up with Regina Hirner",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "91mudbc4v3n45i9o749ghbhkl0",
+      "start_iso": "2026-06-29T13:00:00-05:00",
+      "end_iso": "2026-06-29T13:25:00-05:00",
+      "start_label": "1:00 PM",
+      "end_label": "1:25 PM",
+      "summary": "EMG Engage - Intro to Architecture w/Mark Francis | Villalon, Lisa",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "19qhcr2301uig1hecjdpl3ecbc_20260629T190000Z",
+      "start_iso": "2026-06-29T14:00:00-05:00",
+      "end_iso": "2026-06-29T15:00:00-05:00",
+      "start_label": "2:00 PM",
+      "end_label": "3:00 PM",
+      "summary": "Bi-weekly: Tech Decision Review Group",
+      "location": "https://usaa.zoom.us/j/9924...",
+      "prep": null
+    },
+    {
+      "id": "i28ugaovvn0bbr8eqke9meofks",
+      "start_iso": "2026-06-29T15:00:00-05:00",
+      "end_iso": "2026-06-29T16:00:00-05:00",
+      "start_label": "3:00 PM",
+      "end_label": "4:00 PM",
+      "summary": "ASG Final Content Review",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "hmnfsk2euj2ibtv30uk2t4sp74",
+      "start_iso": "2026-06-29T16:00:00-05:00",
+      "end_iso": "2026-06-29T16:25:00-05:00",
+      "start_label": "4:00 PM",
+      "end_label": "4:25 PM",
+      "summary": "Bi-weekly - 1:1 w/Mark Francis | Deepak",
+      "location": "ZRSCENTS007.B426@usaa.com",
+      "prep": null
+    },
+    {
+      "id": "sd5iais1h7lqsg0rie6h3emiog",
+      "start_iso": "2026-06-29T16:05:00-05:00",
+      "end_iso": "2026-06-29T17:00:00-05:00",
+      "start_label": "4:05 PM",
+      "end_label": "5:00 PM",
+      "summary": "Review Generated Claims Lifecycle",
+      "location": "",
+      "prep": null
+    }
+  ],
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 8:55 AM</div>\n            <h2 class=\"focus-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 8:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:05 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Claims Bi-Annual Application Assessment Review</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly: Calendar Review</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Process Intelligence Vision/ Working Session</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Mid-Year Check-In w/Praveena | Mark</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Foundry - Property Core Team Onboarding</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Control Test Failure / Issue</div>\n                    <div class=\"t-loc\">ZRSCENTS007.B426@usaa.com</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Follow-up with Regina Hirner</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | Villalon, Lisa</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly: Tech Decision Review Group</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9924...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">ASG Final Content Review</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly - 1:1 w/Mark Francis | Deepak</div>\n                    <div class=\"t-loc\">ZRSCENTS007.B426@usaa.com</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:05 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review Generated Claims Lifecycle</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a workload balancing meeting</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Jonathan on MCP readiness </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Praveena on succession </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--caution\">Due Jun 30</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at rewards/points allocations</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up Arch overview with Business Engage partners</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {}
 }
