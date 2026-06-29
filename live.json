@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-06-29T04:19:27.032169-05:00",
-  "refreshed_label": "4:19 AM",
+  "refreshed_at": "2026-06-29T07:34:55.212837-05:00",
+  "refreshed_label": "7:34 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,18 @@
       "end_label": "8:55 AM",
       "summary": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your last meeting with Mike on May 28 focused on organizational uncertainty\u2014specifically surrounding leadership priorities and the future of the Enterprise Cloud Platform Architecture (ECPA). You discussed shifting data architectural oversight away from Chris\u2014while also addressing the onboarding of Marissa's team to support technical architecture needs. No work notes matched the last meeting with Aaron\u2014requiring you to gather updates on his active tracks during the session.",
+        "tasks": [
+          "Review the status of Michael Halleck's ECPA assessment\u2014determining if the platform will receive funding or prioritization.",
+          "Schedule the onboarding alignment session with Marissa and her team\u2014easing current architecture bandwidth constraints.",
+          "Reassess data architectural oversight transition plans\u2014ensuring continuity after the responsibilities shifted away from Chris.",
+          "Request an update regarding Aaron's recent activities\u2014covering his current progress and outstanding deliverables due to the lack of local notes."
+        ],
+        "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
+        "start_label": "8:30 AM",
+        "end_label": "8:55 AM"
+      }
     },
     {
       "id": "lmundt4c56ugb1t2q7ptmn75qc",
@@ -51,7 +62,18 @@
       "end_label": "10:25 AM",
       "summary": "Mid-Year Check-In w/Praveena | Mark",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You have only one recorded meeting note with Praveena in the provided files\u2014the June 25 session\u2014preventing a full four-meeting historical summary. In this June 25 meeting, you coordinated on staffing and the critical July 1 resource roll-off\u2014focusing on securing Dan's approval for the pending job requisition. You also aligned on budget strategies to justify the immediate backfill and established OOO coverage for the upcoming All People Leaders meeting.",
+        "tasks": [
+          "Secure leadership approval from Dan for the pending job requisition before the July 1 resource roll-off.",
+          "Hand over the polished job description template to Talent Acquisition immediately upon funding approval.",
+          "Confirm Praveena has the necessary context to cover the All People Leaders meeting during your absence.",
+          "Follow up on the executive meet-and-greets and the associated architect coordination list submitted to Rebecca."
+        ],
+        "title": "Mid-Year Check-In w/Praveena | Mark",
+        "start_label": "10:00 AM",
+        "end_label": "10:25 AM"
+      }
     },
     {
       "id": "jd7qn820ggr5vb5h8caii302rk",
@@ -71,7 +93,18 @@
       "end_label": "10:55 AM",
       "summary": "Control Test Failure / Issue",
       "location": "ZRSCENTS007.B426@usaa.com",
-      "prep": null
+      "prep": {
+        "summary": "You need to track the recent pivot on the Task Management RFP technical decision\u2014originally owned by Charles Ballasting\u2014which is now fully transitioned to the Property & Casualty team. P&C is actively reworking the scope and developing their own business case\u2014effectively ending the centralized initiative approach. Additionally\u2014with Amit going out of office for several weeks\u2014you must execute a final workload transition during your next 1:1 and secure a backup for the SGV portfolio.",
+        "tasks": [
+          "Reassign the Task Management technical decision scope to reflect the new Property & Casualty focus.",
+          "Execute a comprehensive workload download with Amit during your upcoming 1:1 to cover his extended absence.",
+          "Solicit a volunteer from the team to replace Matt Unsworth as the SGV portfolio Active Directory group backup.",
+          "Update the team wiki to align precisely with the active SGV portfolio Active Directory group membership."
+        ],
+        "title": "Control Test Failure / Issue",
+        "start_label": "10:30 AM",
+        "end_label": "10:55 AM"
+      }
     },
     {
       "id": "9oetd8ube80hqg3eaechc4h0mc",
@@ -121,7 +154,19 @@
       "end_label": "4:25 PM",
       "summary": "Bi-weekly - 1:1 w/Mark Francis | Deepak",
       "location": "ZRSCENTS007.B426@usaa.com",
-      "prep": null
+      "prep": {
+        "summary": "Review your key operational shifts from the past two weeks\u2014including the P&C team taking over the task management RFP, the implementation of the new \"Go TPDT\" tech procurement workflow, and the high-stakes $15 million CMT telematics POC. Address the severe P&C pricing data crisis identified in your sync with Adam and Dan\u2014where underlying legacy defects in the Snowflake migration threaten up to a $1 billion business impact\u2014and plan to tackle the highly fragmented \"Hydra\" operating model. Note that no work notes matched your last meeting with Jon\u2014you will need to request a direct status update from Deepak on this front.",
+        "tasks": [
+          "Resolve the volunteer backup role for the SGV portfolio Active Directory group\u2014previously managed by Matt Unsworth\u2014before Amit begins his out-of-office leave.",
+          "Monitor the mandated rebuild of the 2018 dwelling loss model\u2014transitioning from flat to hierarchical architecture\u2014to mitigate the $250 million annual mainframe carry cost.",
+          "Establish clear architectural responsibilities for renewals and trial guidelines\u2014specifically updating the \"Technology Engagement in Procurement\" wiki\u2014to finalize the new intake process.",
+          "Investigate the compliance and security hurdles delaying the Visual Voicemail and Two-Way Texting initiative\u2014currently stalled under HiMarley integration\u2014before the targeted Q4 launch.",
+          "Align with Deepak on the status of your last discussion with Jon\u2014given that no matching work notes were found in your Google Drive folder."
+        ],
+        "title": "Bi-weekly - 1:1 w/Mark Francis | Deepak",
+        "start_label": "4:00 PM",
+        "end_label": "4:25 PM"
+      }
     },
     {
       "id": "sd5iais1h7lqsg0rie6h3emiog",
@@ -134,8 +179,58 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 8:55 AM</div>\n            <h2 class=\"focus-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 8:55 AM</div>\n            <h2 class=\"focus-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Your last meeting with Mike on May 28 focused on organizational uncertainty\u2014specifically surrounding leadership priorities and the future of the Enterprise Cloud Platform Architecture (ECPA). You discussed shifting data architectural oversight away from Chris\u2014while also addressing the onboarding of Marissa&#x27;s team to support technical architecture needs. No work notes matched the last meeting with Aaron\u2014requiring you to gather updates on his active tracks during the session.</p>\n                <ul class=\"focus-prep-tasks\"><li>Review the status of Michael Halleck&#x27;s ECPA assessment\u2014determining if the platform will receive funding or prioritization.</li><li>Schedule the onboarding alignment session with Marissa and her team\u2014easing current architecture bandwidth constraints.</li><li>Reassess data architectural oversight transition plans\u2014ensuring continuity after the responsibilities shifted away from Chris.</li><li>Request an update regarding Aaron&#x27;s recent activities\u2014covering his current progress and outstanding deliverables due to the lack of local notes.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 8:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:05 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Claims Bi-Annual Application Assessment Review</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly: Calendar Review</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Process Intelligence Vision/ Working Session</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Mid-Year Check-In w/Praveena | Mark</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Foundry - Property Core Team Onboarding</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Control Test Failure / Issue</div>\n                    <div class=\"t-loc\">ZRSCENTS007.B426@usaa.com</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Follow-up with Regina Hirner</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Intro to Architecture w/Mark Francis | Villalon, Lisa</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly: Tech Decision Review Group</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9924...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">ASG Final Content Review</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly - 1:1 w/Mark Francis | Deepak</div>\n                    <div class=\"t-loc\">ZRSCENTS007.B426@usaa.com</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:05 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review Generated Claims Lifecycle</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a workload balancing meeting</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Jonathan on MCP readiness </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Praveena on succession </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--caution\">Due Jun 30</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at rewards/points allocations</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up Arch overview with Business Engage partners</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
-  "preps": {}
+  "preps": {
+    "hebt3o4cnc5rg6edd4id4853u4": {
+      "summary": "Your last meeting with Mike on May 28 focused on organizational uncertainty\u2014specifically surrounding leadership priorities and the future of the Enterprise Cloud Platform Architecture (ECPA). You discussed shifting data architectural oversight away from Chris\u2014while also addressing the onboarding of Marissa's team to support technical architecture needs. No work notes matched the last meeting with Aaron\u2014requiring you to gather updates on his active tracks during the session.",
+      "tasks": [
+        "Review the status of Michael Halleck's ECPA assessment\u2014determining if the platform will receive funding or prioritization.",
+        "Schedule the onboarding alignment session with Marissa and her team\u2014easing current architecture bandwidth constraints.",
+        "Reassess data architectural oversight transition plans\u2014ensuring continuity after the responsibilities shifted away from Chris.",
+        "Request an update regarding Aaron's recent activities\u2014covering his current progress and outstanding deliverables due to the lack of local notes."
+      ],
+      "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis",
+      "start_label": "8:30 AM",
+      "end_label": "8:55 AM"
+    },
+    "0dri50hdkrg4fo7n4l9fd0u4nk": {
+      "summary": "You have only one recorded meeting note with Praveena in the provided files\u2014the June 25 session\u2014preventing a full four-meeting historical summary. In this June 25 meeting, you coordinated on staffing and the critical July 1 resource roll-off\u2014focusing on securing Dan's approval for the pending job requisition. You also aligned on budget strategies to justify the immediate backfill and established OOO coverage for the upcoming All People Leaders meeting.",
+      "tasks": [
+        "Secure leadership approval from Dan for the pending job requisition before the July 1 resource roll-off.",
+        "Hand over the polished job description template to Talent Acquisition immediately upon funding approval.",
+        "Confirm Praveena has the necessary context to cover the All People Leaders meeting during your absence.",
+        "Follow up on the executive meet-and-greets and the associated architect coordination list submitted to Rebecca."
+      ],
+      "title": "Mid-Year Check-In w/Praveena | Mark",
+      "start_label": "10:00 AM",
+      "end_label": "10:25 AM"
+    },
+    "aomqh89ddm852rmdusbvthlkps": {
+      "summary": "You need to track the recent pivot on the Task Management RFP technical decision\u2014originally owned by Charles Ballasting\u2014which is now fully transitioned to the Property & Casualty team. P&C is actively reworking the scope and developing their own business case\u2014effectively ending the centralized initiative approach. Additionally\u2014with Amit going out of office for several weeks\u2014you must execute a final workload transition during your next 1:1 and secure a backup for the SGV portfolio.",
+      "tasks": [
+        "Reassign the Task Management technical decision scope to reflect the new Property & Casualty focus.",
+        "Execute a comprehensive workload download with Amit during your upcoming 1:1 to cover his extended absence.",
+        "Solicit a volunteer from the team to replace Matt Unsworth as the SGV portfolio Active Directory group backup.",
+        "Update the team wiki to align precisely with the active SGV portfolio Active Directory group membership."
+      ],
+      "title": "Control Test Failure / Issue",
+      "start_label": "10:30 AM",
+      "end_label": "10:55 AM"
+    },
+    "hmnfsk2euj2ibtv30uk2t4sp74": {
+      "summary": "Review your key operational shifts from the past two weeks\u2014including the P&C team taking over the task management RFP, the implementation of the new \"Go TPDT\" tech procurement workflow, and the high-stakes $15 million CMT telematics POC. Address the severe P&C pricing data crisis identified in your sync with Adam and Dan\u2014where underlying legacy defects in the Snowflake migration threaten up to a $1 billion business impact\u2014and plan to tackle the highly fragmented \"Hydra\" operating model. Note that no work notes matched your last meeting with Jon\u2014you will need to request a direct status update from Deepak on this front.",
+      "tasks": [
+        "Resolve the volunteer backup role for the SGV portfolio Active Directory group\u2014previously managed by Matt Unsworth\u2014before Amit begins his out-of-office leave.",
+        "Monitor the mandated rebuild of the 2018 dwelling loss model\u2014transitioning from flat to hierarchical architecture\u2014to mitigate the $250 million annual mainframe carry cost.",
+        "Establish clear architectural responsibilities for renewals and trial guidelines\u2014specifically updating the \"Technology Engagement in Procurement\" wiki\u2014to finalize the new intake process.",
+        "Investigate the compliance and security hurdles delaying the Visual Voicemail and Two-Way Texting initiative\u2014currently stalled under HiMarley integration\u2014before the targeted Q4 launch.",
+        "Align with Deepak on the status of your last discussion with Jon\u2014given that no matching work notes were found in your Google Drive folder."
+      ],
+      "title": "Bi-weekly - 1:1 w/Mark Francis | Deepak",
+      "start_label": "4:00 PM",
+      "end_label": "4:25 PM"
+    }
+  }
 }
