@@ -1,23 +1,10 @@
 {
-  "refreshed_at": "2026-07-01T05:47:00.625791-05:00",
-  "refreshed_label": "5:47 AM",
+  "refreshed_at": "2026-07-01T06:23:48.999437-05:00",
+  "refreshed_label": "6:23 AM",
   "tz_label": "Chicago",
   "events": [],
   "focus_html": "",
   "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Michael Somers - Talk to Matt first</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 30</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Jonathan on MCP readiness </span>\n                <span class=\"capsule capsule--neutral\">Due Jul 6</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--caution\">Due Jul 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 30</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up an observability strategy meeting with Data</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 30</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Amit BPO Notebook</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 30</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at rewards/points allocations</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jun 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
-  "preps": {
-    "s3hebacrl58rj75r5bbf7kug6k": {
-      "summary": "Review your pivot from ServiceNow to Celonis\u2014the new visualization and process observability platform\u2014to meet the urgent three-month claims mining mandate. Draft the required position paper for Suresh detailing the BPO Workbench architecture, which leverages Kafka events and Snowflake data. Coordinate with Calvin's team to execute the data mining and manage Amit's portfolio during his upcoming multi-week absence\u2014starting with a final 1:1 download of his active work.",
-      "tasks": [
-        "Draft the urgent position paper for Suresh outlining the BPO Workbench architecture and components.",
-        "Coordinate with Calvin's team to shepherd the claims business through mining their data in Celonis within the three-month mandate.",
-        "Conduct a final download of active work with Amit during your upcoming 1:1 to establish coverage during his multi-week absence.",
-        "Engage Amit on the transition of the task management RFP to the Property & Casualty team."
-      ],
-      "title": "Sync up on BPM and observability architecture",
-      "start_label": "10:00 AM",
-      "end_label": "10:25 AM"
-    }
-  }
+  "preps": {}
 }
