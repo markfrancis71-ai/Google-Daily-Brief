@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-07-07T02:51:08.061183-05:00",
-  "refreshed_label": "2:51 AM",
+  "refreshed_at": "2026-07-07T05:56:42.810295-05:00",
+  "refreshed_label": "5:56 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -41,7 +41,18 @@
       "end_label": "3:00 PM",
       "summary": "Prep for work load balancing Discussion with Team",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review your Google Drive Work Notes to prepare for the upcoming team workload balancing discussion\u2014specifically focusing on your July 6 meeting with Deepak. Address the severe resource constraints in your Line of Business (LOB) data architecture support\u2014where Integration Architects are currently overwhelmed by data movement and third-party vendor integrations. Execute the plan to recruit Chris back part-time to alleviate this strain\u2014while establishing a ground-up view of team capacity during your upcoming workload rebalancing workshop.",
+        "tasks": [
+          "Schedule a prep session with Praveen to align on the ground-up team capacity workshop\u2014ensuring you obtain an uninhibited dialogue without executive presence.",
+          "Meet with John and Adam to finalize bringing Chris back part-time\u2014directly resolving the P&C team's data architecture resourcing struggles.",
+          "Rebalance immediate tasks away from the heavily strained claims team\u2014utilizing direct team feedback rather than relying solely on Jira metrics.",
+          "Address the security risk assessment blocking transactional SMS/DNS communication\u2014coordinating with security to find alternative encryption and compliance pathways."
+        ],
+        "title": "Prep for work load balancing Discussion with Team",
+        "start_label": "2:00 PM",
+        "end_label": "3:00 PM"
+      }
     },
     {
       "id": "4l2bu5kbv8shkcgrcpk7p6lj09",
@@ -61,84 +72,37 @@
       "end_label": "4:30 PM",
       "summary": "Review 2 Way SMS Risk Assessment",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+        "tasks": [],
+        "title": "Review 2 Way SMS Risk Assessment",
+        "start_label": "4:00 PM",
+        "end_label": "4:30 PM"
+      }
     }
   ],
   "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">10:00 AM &mdash; 11:00 AM</div>\n            <h2 class=\"focus-title\">P&amp;C Mini-planning Session: Claims</h2>\n            \n            \n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Mini-planning Session: Claims</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Sync with P&amp;C portfolio</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Divisional Change Review</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Prep for work load balancing Discussion with Team</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Tech BOD</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review 2 Way SMS Risk Assessment</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Respond to Mike (Pool)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">pay Bryan bill, call Trevor</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Michael Somers - Talk to Matt first</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at rewards/points allocations/update spreadsheet</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Alo follow-ups (see Desc)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Mike/Brian K about JBoss migration cost and funding</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out TD Approval Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review and highlight new investments</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Re-evaluate Strangler Fig Integration Points (Guidewire)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "5bdhvg02tu5c6uafo1ma6e4nvl": {
-      "summary": "Review the critical bottlenecks from your June 15 alignment with Suresh\u2014specifically the compliance deadlock on two-way SMS and the upcoming October tool bake-off. Monitor the transition of the Scan AI RFP to Mark's team following Simpkin's departure\u2014a key development as Suresh continues to advocate for the Scan visualization tool through Halo. Leverage the newly established architectural Wiki to justify your three-option evaluation directly to Suresh.",
+    "2dcjd1b2akn185cgp0d1q7qghn": {
+      "summary": "Review your Google Drive Work Notes to prepare for the upcoming team workload balancing discussion\u2014specifically focusing on your July 6 meeting with Deepak. Address the severe resource constraints in your Line of Business (LOB) data architecture support\u2014where Integration Architects are currently overwhelmed by data movement and third-party vendor integrations. Execute the plan to recruit Chris back part-time to alleviate this strain\u2014while establishing a ground-up view of team capacity during your upcoming workload rebalancing workshop.",
       "tasks": [
-        "Escalate the privacy and legal decision bottlenecks on two-way SMS to Jeff\u2014you must clear this hurdle to unblock the technical design.",
-        "Deliver the drafted one-pager to Dan Griffiths\u2014detailing the specific risk boundaries and ownership gaps holding up P&C initiatives.",
-        "Confirm the transition of the Scan AI RFP from Simpkin to Mark's team\u2014ensuring no loss of momentum on Suresh's favored visualization path.",
-        "Populate the architectural decision Wiki with evaluation criteria for the Celonis, Scan, and custom-build options\u2014providing Suresh with the transparent roadmap he requested."
+        "Schedule a prep session with Praveen to align on the ground-up team capacity workshop\u2014ensuring you obtain an uninhibited dialogue without executive presence.",
+        "Meet with John and Adam to finalize bringing Chris back part-time\u2014directly resolving the P&C team's data architecture resourcing struggles.",
+        "Rebalance immediate tasks away from the heavily strained claims team\u2014utilizing direct team feedback rather than relying solely on Jira metrics.",
+        "Address the security risk assessment blocking transactional SMS/DNS communication\u2014coordinating with security to find alternative encryption and compliance pathways."
       ],
-      "title": "Sync with Suresh Jargarlamudi",
-      "start_label": "8:30 AM",
-      "end_label": "9:00 AM"
+      "title": "Prep for work load balancing Discussion with Team",
+      "start_label": "2:00 PM",
+      "end_label": "3:00 PM"
     },
-    "577as3jgb8g0fa13l5bhknflna": {
-      "summary": "Prepare for your mid-year check-in by targeting key takeaways from your June 22 meeting with Jonathan\u2014specifically the push for Scan AI scope control and the pivot toward architecture as code. Align your discussion on Agentic readiness with the Gen AI Architecture Engagement Process\u2014focusing on reducing friction from unfunded injects and late notifications. Review Jonathan's comments directly in Workday\u2014as no matching notes were found in your Google Drive folder\u2014to ensure comprehensive performance alignment.",
-      "tasks": [
-        "Sync with Brian Simpkin regarding the Scan AI RFP\u2014restricting the focus to task mining to secure quick approval.",
-        "Verify the Auto-quote chatbot project alignment with Sima\u2014confirming the engineering team adheres to the agreed-upon pattern.",
-        "Address the Gen AI Architecture Engagement pipeline challenges\u2014resolving the friction around late notifications and unfunded business injects.",
-        "Access the Workday platform\u2014pulling Jonathan's feedback comments manually to prepare for performance discussions."
-      ],
-      "title": "Mid-year Check-in with Jonathan",
-      "start_label": "9:00 AM",
-      "end_label": "9:30 AM"
-    },
-    "67uglapchb2opie1q9bhii1tf1": {
-      "summary": "Your last meeting with Anthony Lopez\u2014focused on his onboarding under Suresh's organization\u2014centered on the integration of Scan AI to map user process flows for the Business Health Scorecard. Since then, Brian Simpkin stepped away from the Scan AI RFP\u2014passing ownership to Mark's team\u2014while Anthony continues pushing for Scan over in-house or Celonis visualization alternatives. You need to resolve this tool-selection friction and finalize the procurement intake paths.",
-      "tasks": [
-        "Confirm the transition of the Scan AI RFP ownership from Brian Simpkin to Mark's team.",
-        "Resolve the architectural tension between Anthony's preferred Scan solution and the alternative Celonis or custom-build options.",
-        "Align on the integration of Scan AI data into the central Business Health Scorecard.",
-        "Provide the draft technology procurement lifecycle diagram to clarify early PMO and SFO touchpoints."
-      ],
-      "title": "Monthly Architecture Sync with Anthony Lopez",
-      "start_label": "10:30 AM",
-      "end_label": "11:00 AM"
-    },
-    "72eqjl8tvettmqqr7fe9924e2v": {
-      "summary": "Review the Google Drive folder\u2014it contains no direct records of your last meetings with Justin or Abe. You must pivot to the broader P&C architecture updates\u2014specifically the transition of the Scan AI RFP and the ongoing Celonis claims process mapping\u2014to frame your sync with Justin. Focus the discussion on mitigating developer friction and resolving immediate staffing constraints across your active domains.",
-      "tasks": [
-        "Assume ownership of the Scan AI RFP transition\u2014previously managed by Simpkin\u2014and establish the strategy for the incoming evaluation.",
-        "Propose the Celonis claims lifestyle schema mapping\u2014instead of processing isolated PL3 steps\u2014to satisfy leadership's demand for end-to-end visualization.",
-        "Address the Gen AI process challenges\u2014specifically the late meeting notifications and unfunded business injects\u2014to protect your architects from governance bottlenecks.",
-        "Evaluate the July 1st contractor transfer feasibility\u2014along with shifting AI requirement ownership to Brian\u2014to alleviate Jonathan's workload."
-      ],
-      "title": "Bi-weekly meeting with Justin White",
-      "start_label": "11:00 AM",
-      "end_label": "11:30 AM"
-    },
-    "4mdd8majuk0q6eroh22rr9bnoo": {
-      "summary": "You must prepare for your discussion with Deepak by addressing his previous requests\u2014specifically regarding succession planning for Wilkins, Burris, Proft, and Karis. No direct meeting notes with Adam exist, but related project logs show his preference for in-house custom builds for the BPO Notebook visualization. Key enterprise themes over the last two weeks center on architecture process friction\u2014particularly the late notifications from the Gen AI Working Group\u2014and absorbing the newly transitioned Scan AI RFP.",
-      "tasks": [
-        "Finalize the succession planning templates for Wilkins, Proft, and Karis to address Deepak's outstanding request.",
-        "Establish the dedicated Wiki page detailing the three evaluation options for the BPO Notebook visualization.",
-        "Engage leadership to resolve late notification timelines for the weekly Gen AI Working Group reviews.",
-        "Formulate a transition plan to absorb the Scan AI RFP responsibilities into your team."
-      ],
-      "title": "Bi-weekly with Deepak",
-      "start_label": "1:00 PM",
-      "end_label": "1:30 PM"
-    },
-    "0gnhpeb5d5vnbdlrnr0ep8slnq": {
-      "summary": "Reviewing your recent work notes reveals a heavy focus on structural changes\u2014including onboarding new architecture talent and absorbing the Scan AI RFP\u2014while transitioning legacy platforms to Elixir Cloud. You must navigate process friction within the Gen AI Working Group caused by unfunded injects and compressed timelines. Additionally, you need to drive the BPO Notebook visualization strategy forward by evaluating Celonis, Scan, and custom-build options.",
-      "tasks": [
-        "Establish a dedicated Wiki page to document the evaluation of Salonis, Scan, and custom-built options for the BPO Notebook.",
-        "Transition ownership of the Scan AI RFP to Mark's team following Simpkin's departure.",
-        "Address Gen AI Working Group process bottlenecks\u2014specifically late notifications and unfunded business requests\u2014with leadership.",
-        "Prepare for the comprehensive breakdown of the 38-page Pulse survey feedback comments during the next scheduled call."
-      ],
-      "title": "P&C IT Stand-up",
-      "start_label": "3:00 PM",
-      "end_label": "3:30 PM"
+    "4idg2cn58ml8j222nnrnlak91q": {
+      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+      "tasks": [],
+      "title": "Review 2 Way SMS Risk Assessment",
+      "start_label": "4:00 PM",
+      "end_label": "4:30 PM"
     }
   }
 }
