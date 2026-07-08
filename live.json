@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-07-08T04:12:14.614823-05:00",
-  "refreshed_label": "4:12 AM",
+  "refreshed_at": "2026-07-08T05:18:38.602785-05:00",
+  "refreshed_label": "5:18 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -21,7 +21,18 @@
       "end_label": "11:30 AM",
       "summary": "P&C Architecture Workload Balancing Discussion",
       "location": "CONF SAT HO IT CONFERENCE...",
-      "prep": null
+      "prep": {
+        "summary": "You must prepare for the upcoming workload balancing session by reviewing the key takeaways from the previous alignment meeting with Praveena\u2014specifically the need to establish a ground-up view of actual team capacity rather than relying strictly on Jira data. The primary objective remains relieving the heavily strained claims team\u2014this involves addressing severe resource bottlenecks in data architecture and Celonis-related initiatives. You will need to leverage the outcomes from this prep session to drive the broader team workshop\u2014ensuring an open dialogue while shielding the team from premature leadership oversight.",
+        "tasks": [
+          "Establish a ground-up capacity baseline for the Enterprise Architecture team instead of relying solely on Jira metrics.",
+          "Request the part-time return of Chris to alleviate the high workload burden on data architecture and third-party integrations.",
+          "Prioritize the Celonis process mining mandates to resolve resource contention across parallel visualization initiatives.",
+          "Deliver a comprehensive summary of the workload workshop outcomes to leadership in lieu of their direct attendance."
+        ],
+        "title": "P&C Architecture Workload Balancing Discussion",
+        "start_label": "10:30 AM",
+        "end_label": "11:30 AM"
+      }
     },
     {
       "id": "p67662dcevbj8dgfqojf6fd0f4",
@@ -41,7 +52,18 @@
       "end_label": "1:00 PM",
       "summary": "Team Lunch/Ask me Anything (series ends 4/15/27)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You face critical resource bottlenecks across parallel Celonis initiatives\u2014driven by Dan Griffiths's 90-day mandate\u2014and severe data architecture constraints. Security mandates have ruled out transactional SMS\u2014forcing a strategic pivot to secure asynchronous chat to protect the P&C business case. Additionally, you must navigate a potential 50% funding cap on the Claims Evolution program\u2014threatening its $1.5 billion valuation\u2014alongside immature AI capabilities.",
+        "tasks": [
+          "Resolve the resource contention surrounding the Celonis process mining pilot by prioritizing Dan Griffiths's 90-day mandate over lower-priority visualization projects.",
+          "Pivot the current SMS proof of concept toward an asynchronous secure chat model to satisfy strict security and NYDFS compliance requirements.",
+          "Hold the scheduled workload balancing workshop to assess team capacity and finalize bringing Chris back part-time to relieve the strained data architecture team.",
+          "Address the financial and member-experience implications of the potential 50% pacing reduction on the Claims Evolution program."
+        ],
+        "title": "Team Lunch/Ask me Anything (series ends 4/15/27)",
+        "start_label": "12:00 PM",
+        "end_label": "1:00 PM"
+      }
     },
     {
       "id": "pt2683bekvgg3odig9i9eqo0ds",
@@ -61,31 +83,59 @@
       "end_label": "4:00 PM",
       "summary": "D&S Transformation Tech Partner Connect",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Security assessments have blocked transactional two-way SMS\u2014deeming it a non-starter due to regulatory compliance\u2014which forces you to pivot the 71-account proof of concept toward secure asynchronous chat and low-risk logistical coordination. Meanwhile, resource bottlenecks threaten the business process health scorecard\u2014the BPO notebook\u2014as Celonis efforts are split between this pilot, claims visualization, and a priority 90-day mining mandate. You must also finalize the incomplete BPO architecture diagram left outstanding by Emmitt before his holiday.",
+        "tasks": [
+          "Pivot the two-way SMS proof-of-concept scope\u2014focusing strictly on non-secure logistical claims coordination\u2014to comply with security mandates.",
+          "Finalize the incomplete BPO notebook architecture diagram and Wiki draft left outstanding before Emmitt's holiday.",
+          "Reallocate strained Celonis resources to balance the BPO notebook pilot against the higher-priority 90-day process mining mandate.",
+          "Address the business friction caused by the strict NYDFS-driven security rejection of transactional SMS."
+        ],
+        "title": "D&S Transformation Tech Partner Connect",
+        "start_label": "3:00 PM",
+        "end_label": "4:00 PM"
+      }
     }
   ],
   "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">TF Standup (series ends 7/9/26)</h2>\n            <div class=\"focus-loc\">CONF SAT HO Grace Hopper...</div>\n            \n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TF Standup (series ends 7/9/26)</div>\n                    <div class=\"t-loc\">CONF SAT HO Grace Hopper...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Architecture Workload Balancing Discussion</div>\n                    <div class=\"t-loc\">CONF SAT HO IT CONFERENCE...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Financial Review (Monthly)</div>\n                    <div class=\"t-loc\">Microsoft Teams Meeting</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Team Lunch/Ask me Anything (series ends 4/15/27)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Microsoft Teams Office Hours: Live Demos and Q&amp;A (Session 1)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">D&amp;S Transformation Tech Partner Connect</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--caution\">Due Jul 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Deepak&#x27;s emails</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 7</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 7</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Michael Somers - Talk to Matt first</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 7</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at rewards/points allocations/update spreadsheet</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 7</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 7</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Mike/Brian K about JBoss migration cost and funding</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 7</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out TD Approval Request to Jeff</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 7</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Re-evaluate Strangler Fig Integration Points (Guidewire)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "2dcjd1b2akn185cgp0d1q7qghn": {
-      "summary": "Review your Google Drive Work Notes to prepare for the upcoming team workload balancing discussion\u2014specifically focusing on your July 6 meeting with Deepak. Address the severe resource constraints in your Line of Business (LOB) data architecture support\u2014where Integration Architects are currently overwhelmed by data movement and third-party vendor integrations. Execute the plan to recruit Chris back part-time to alleviate this strain\u2014while establishing a ground-up view of team capacity during your upcoming workload rebalancing workshop.",
+    "qrsfiblolg75954f29j1i7tlfo": {
+      "summary": "You must prepare for the upcoming workload balancing session by reviewing the key takeaways from the previous alignment meeting with Praveena\u2014specifically the need to establish a ground-up view of actual team capacity rather than relying strictly on Jira data. The primary objective remains relieving the heavily strained claims team\u2014this involves addressing severe resource bottlenecks in data architecture and Celonis-related initiatives. You will need to leverage the outcomes from this prep session to drive the broader team workshop\u2014ensuring an open dialogue while shielding the team from premature leadership oversight.",
       "tasks": [
-        "Schedule a prep session with Praveen to align on the ground-up team capacity workshop\u2014ensuring you obtain an uninhibited dialogue without executive presence.",
-        "Meet with John and Adam to finalize bringing Chris back part-time\u2014directly resolving the P&C team's data architecture resourcing struggles.",
-        "Rebalance immediate tasks away from the heavily strained claims team\u2014utilizing direct team feedback rather than relying solely on Jira metrics.",
-        "Address the security risk assessment blocking transactional SMS/DNS communication\u2014coordinating with security to find alternative encryption and compliance pathways."
+        "Establish a ground-up capacity baseline for the Enterprise Architecture team instead of relying solely on Jira metrics.",
+        "Request the part-time return of Chris to alleviate the high workload burden on data architecture and third-party integrations.",
+        "Prioritize the Celonis process mining mandates to resolve resource contention across parallel visualization initiatives.",
+        "Deliver a comprehensive summary of the workload workshop outcomes to leadership in lieu of their direct attendance."
       ],
-      "title": "Prep for work load balancing Discussion with Team",
-      "start_label": "2:00 PM",
-      "end_label": "3:00 PM"
+      "title": "P&C Architecture Workload Balancing Discussion",
+      "start_label": "10:30 AM",
+      "end_label": "11:30 AM"
     },
-    "4idg2cn58ml8j222nnrnlak91q": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
-      "title": "Review 2 Way SMS Risk Assessment",
-      "start_label": "4:00 PM",
-      "end_label": "4:30 PM"
+    "6mgvp4hp2rb139s44dn9mr45h0": {
+      "summary": "You face critical resource bottlenecks across parallel Celonis initiatives\u2014driven by Dan Griffiths's 90-day mandate\u2014and severe data architecture constraints. Security mandates have ruled out transactional SMS\u2014forcing a strategic pivot to secure asynchronous chat to protect the P&C business case. Additionally, you must navigate a potential 50% funding cap on the Claims Evolution program\u2014threatening its $1.5 billion valuation\u2014alongside immature AI capabilities.",
+      "tasks": [
+        "Resolve the resource contention surrounding the Celonis process mining pilot by prioritizing Dan Griffiths's 90-day mandate over lower-priority visualization projects.",
+        "Pivot the current SMS proof of concept toward an asynchronous secure chat model to satisfy strict security and NYDFS compliance requirements.",
+        "Hold the scheduled workload balancing workshop to assess team capacity and finalize bringing Chris back part-time to relieve the strained data architecture team.",
+        "Address the financial and member-experience implications of the potential 50% pacing reduction on the Claims Evolution program."
+      ],
+      "title": "Team Lunch/Ask me Anything (series ends 4/15/27)",
+      "start_label": "12:00 PM",
+      "end_label": "1:00 PM"
+    },
+    "2ijpe0fio0mhjq2nsg7h13nreg": {
+      "summary": "Security assessments have blocked transactional two-way SMS\u2014deeming it a non-starter due to regulatory compliance\u2014which forces you to pivot the 71-account proof of concept toward secure asynchronous chat and low-risk logistical coordination. Meanwhile, resource bottlenecks threaten the business process health scorecard\u2014the BPO notebook\u2014as Celonis efforts are split between this pilot, claims visualization, and a priority 90-day mining mandate. You must also finalize the incomplete BPO architecture diagram left outstanding by Emmitt before his holiday.",
+      "tasks": [
+        "Pivot the two-way SMS proof-of-concept scope\u2014focusing strictly on non-secure logistical claims coordination\u2014to comply with security mandates.",
+        "Finalize the incomplete BPO notebook architecture diagram and Wiki draft left outstanding before Emmitt's holiday.",
+        "Reallocate strained Celonis resources to balance the BPO notebook pilot against the higher-priority 90-day process mining mandate.",
+        "Address the business friction caused by the strict NYDFS-driven security rejection of transactional SMS."
+      ],
+      "title": "D&S Transformation Tech Partner Connect",
+      "start_label": "3:00 PM",
+      "end_label": "4:00 PM"
     }
   }
 }
