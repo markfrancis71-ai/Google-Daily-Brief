@@ -1,103 +1,102 @@
 {
-  "refreshed_at": "2026-07-15T22:44:03.000257-05:00",
-  "refreshed_label": "10:44 PM",
+  "refreshed_at": "2026-07-16T01:06:47.221890-05:00",
+  "refreshed_label": "1:06 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "0erj6pt02osp636ko64tmfbk8p",
-      "start_iso": "2026-07-15T08:00:00-05:00",
-      "end_iso": "2026-07-15T09:00:00-05:00",
-      "start_label": "8:00 AM",
+      "id": "3p8l1qremibhhm0oqjjunab9rt",
+      "start_iso": "2026-07-16T08:30:00-05:00",
+      "end_iso": "2026-07-16T09:00:00-05:00",
+      "start_label": "8:30 AM",
       "end_label": "9:00 AM",
-      "summary": "Tech Fellow Standup",
+      "summary": "EMG Engage - Asmahan Garcia",
       "location": "",
-      "prep": {
-        "summary": "Your week centers on critical systemic escalations\u2014specifically the Second Line's unilateral override of your compliance rating to \"insufficient\"\u2014and managing a massive container vulnerability spike from 25,000 to 42,000. You are also steering complex tooling transitions\u2014navigating the migration from Zoom and Slack to Microsoft Teams, defining the boundary between Scan.ai and Celonis, and reviewing Sierra's conversational AI capabilities. These parallel efforts highlight a central trend\u2014balancing urgent risk remediation with long-term foundational capability building across the enterprise.",
-        "tasks": [
-          "Challenge the Second Line compliance team to provide a concrete remediation path\u2014specifically targeting WIAM and PAM streams\u2014to shield operational risk calculations from the \"insufficient\" rating.",
-          "Partner with Chain Guard to build hardened application-tier images\u2014targeting open-source frameworks like Netty and Tomcat\u2014to drive down the massive influx of 42,000 container vulnerabilities.",
-          "Draft the high-level one-pager for leadership\u2014utilizing the Celonis representative's email verification\u2014to establish Scan.ai as a distinct, net-new capability for desktop task mining.",
-          "Track the transition to the Microsoft Enterprise ecosystem\u2014specifically resolving the post-Zoom whiteboarding gap\u2014to ensure collaboration continuity for the P&C Architecture team."
-        ],
-        "title": "Tech Fellow Standup",
-        "start_label": "8:00 AM",
-        "end_label": "9:00 AM"
-      }
+      "prep": null
     },
     {
-      "id": "3ri3c1ceh5cibe8fnodk0ufad9",
-      "start_iso": "2026-07-15T09:00:00-05:00",
-      "end_iso": "2026-07-15T10:30:00-05:00",
-      "start_label": "9:00 AM",
+      "id": "4ac8faqkidrhqhtuh0960beklq",
+      "start_iso": "2026-07-16T09:30:00-05:00",
+      "end_iso": "2026-07-16T10:00:00-05:00",
+      "start_label": "9:30 AM",
+      "end_label": "10:00 AM",
+      "summary": "Praveena 1on1 (Mid-Year)",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "0toomolatokouiok48gq7dti1e",
+      "start_iso": "2026-07-16T10:00:00-05:00",
+      "end_iso": "2026-07-16T10:30:00-05:00",
+      "start_label": "10:00 AM",
       "end_label": "10:30 AM",
-      "summary": "Arch Forum",
+      "summary": "TD Sync",
       "location": "",
       "prep": null
     },
     {
-      "id": "0ko8md6c8a97r8pukrq84mfre9",
-      "start_iso": "2026-07-15T11:00:00-05:00",
-      "end_iso": "2026-07-15T11:30:00-05:00",
+      "id": "3piuqiulretlc0p34vf262k27i",
+      "start_iso": "2026-07-16T10:30:00-05:00",
+      "end_iso": "2026-07-16T11:00:00-05:00",
+      "start_label": "10:30 AM",
+      "end_label": "11:00 AM",
+      "summary": "Architecture Follow-up with Geoff Troidl",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "1ahns5rjkuusbg8sp7s60rvgu8",
+      "start_iso": "2026-07-16T11:00:00-05:00",
+      "end_iso": "2026-07-16T12:00:00-05:00",
       "start_label": "11:00 AM",
-      "end_label": "11:30 AM",
-      "summary": "Requirement Gathering AI tool",
+      "end_label": "12:00 PM",
+      "summary": "Weekly Staff",
       "location": "",
       "prep": null
     },
     {
-      "id": "1irj2fdfppsqfuk94tr8dncn6e",
-      "start_iso": "2026-07-15T12:00:00-05:00",
-      "end_iso": "2026-07-15T12:30:00-05:00",
+      "id": "5j7sofbnc8ci6md1354mogheqe",
+      "start_iso": "2026-07-16T12:00:00-05:00",
+      "end_iso": "2026-07-16T13:00:00-05:00",
       "start_label": "12:00 PM",
-      "end_label": "12:30 PM",
-      "summary": "P&C System Stability Status Update",
+      "end_label": "1:00 PM",
+      "summary": "Tech Fellow Lunch with Paul Mee",
+      "location": "IT Conf Room",
+      "prep": null
+    },
+    {
+      "id": "in4bd6kfvtnhf5nkgqh6v3tqr0",
+      "start_iso": "2026-07-16T13:00:00-05:00",
+      "end_iso": "2026-07-16T13:45:00-05:00",
+      "start_label": "1:00 PM",
+      "end_label": "1:45 PM",
+      "summary": "High School Internship Project Presentation: 104 years of Stra...",
       "location": "",
       "prep": null
     },
     {
-      "id": "2nmmn364p7v68icn4kgghr452f",
-      "start_iso": "2026-07-15T13:30:00-05:00",
-      "end_iso": "2026-07-15T14:00:00-05:00",
-      "start_label": "1:30 PM",
-      "end_label": "2:00 PM",
-      "summary": "CTXO Office Hours",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "5bp9mgcoh9t3df67kvqd2pen9h",
-      "start_iso": "2026-07-15T14:00:00-05:00",
-      "end_iso": "2026-07-15T15:00:00-05:00",
+      "id": "b2og3ns94ou0aoq3gbeamhdra4",
+      "start_iso": "2026-07-16T14:00:00-05:00",
+      "end_iso": "2026-07-16T15:00:00-05:00",
       "start_label": "2:00 PM",
       "end_label": "3:00 PM",
-      "summary": "CTT Walkthrough Request for CTRL0045524",
+      "summary": "Monthly: LOB Arch Cross-Portfolio Sync",
       "location": "",
       "prep": null
     },
     {
-      "id": "232uk6vk1kdq22ol00na9qqgik",
-      "start_iso": "2026-07-15T15:00:00-05:00",
-      "end_iso": "2026-07-15T16:00:00-05:00",
+      "id": "8hms756shh7maf39koi5u42j0k",
+      "start_iso": "2026-07-16T15:00:00-05:00",
+      "end_iso": "2026-07-16T16:00:00-05:00",
       "start_label": "3:00 PM",
       "end_label": "4:00 PM",
-      "summary": "Unified Connected Platform Arch",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "7raoqa7vis1i6ttmgr2h5b5jv9",
-      "start_iso": "2026-07-15T16:00:00-05:00",
-      "end_iso": "2026-07-15T16:30:00-05:00",
-      "start_label": "4:00 PM",
-      "end_label": "4:30 PM",
-      "summary": "Artifacts to support Products and Services",
+      "summary": "Ask me Anything/Full Staff with Jon",
       "location": "",
       "prep": null
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Tech Fellow Standup</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arch Forum</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Requirement Gathering AI tool</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 12:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C System Stability Status Update</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">CTXO Office Hours</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">CTT Walkthrough Request for CTRL0045524</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Unified Connected Platform Arch</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Artifacts to support Products and Services</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--caution\">Due Jul 16</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Figure out what to do with TDs - send a meeting</span>\n                <span class=\"capsule capsule--caution\">Due Jul 16</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to Ann Hines for Alignment on Use case work</span>\n                <span class=\"capsule capsule--caution\">Due Jul 16</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Verify Acme infrastructure dependency alignment with Calvin</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Construct action plan and risk rating for pending MII issue</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Align on AWS Connect Track 2/3 Sandbox strategy with Charlotte</span>\n                <span class=\"capsule capsule--caution\">Due Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Resolve mainframe entitlement ownership discrepancies with Ryan</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare for executive alignment meeting with Dan Griffiths</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 22</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize and acknowledge midyear review with Deepak</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 31</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">smart bear discussion - Matt Unsworth - talk to Jon about adding it to the Cross LOB meeting</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Mike - ask about adding the Base stuff to the list</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 14</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--caution\">Due Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--caution\">Due Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Re-evaluate Strangler Fig Integration Points (Guidewire)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">EMG Engage - Asmahan Garcia</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EMG Engage - Asmahan Garcia</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Praveena 1on1 (Mid-Year)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Follow-up with Geoff Troidl</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Tech Fellow Lunch with Paul Mee</div>\n                    <div class=\"t-loc\">IT Conf Room</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:45 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">High School Internship Project Presentation: 104 years of Stra...</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly: LOB Arch Cross-Portfolio Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Ask me Anything/Full Staff with Jon</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Figure out what to do with TDs - send a meeting</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Reach out to Ann Hines for Alignment on Use case work</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Verify Acme infrastructure dependency alignment with Calvin</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Construct action plan and risk rating for pending MII issue</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Align on AWS Connect Track 2/3 Sandbox strategy with Charlotte</span>\n                <span class=\"capsule capsule--caution\">Due Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Resolve mainframe entitlement ownership discrepancies with Ryan</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare for executive alignment meeting with Dan Griffiths</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 22</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Finalize and acknowledge midyear review with Deepak</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 31</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">smart bear discussion - Matt Unsworth - talk to Jon about adding it to the Cross LOB meeting</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Mike - ask about adding the Base stuff to the list</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 14</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do a Deep Dive on the Services Inventory and provide feedback</span>\n                <span class=\"capsule capsule--caution\">Due Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--caution\">Due Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Re-evaluate Strangler Fig Integration Points (Guidewire)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
     "0erj6pt02osp636ko64tmfbk8p": {
       "summary": "Your week centers on critical systemic escalations\u2014specifically the Second Line's unilateral override of your compliance rating to \"insufficient\"\u2014and managing a massive container vulnerability spike from 25,000 to 42,000. You are also steering complex tooling transitions\u2014navigating the migration from Zoom and Slack to Microsoft Teams, defining the boundary between Scan.ai and Celonis, and reviewing Sierra's conversational AI capabilities. These parallel efforts highlight a central trend\u2014balancing urgent risk remediation with long-term foundational capability building across the enterprise.",
