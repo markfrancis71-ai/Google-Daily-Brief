@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-07-17T03:27:00.026388-05:00",
-  "refreshed_label": "3:27 AM",
+  "refreshed_at": "2026-07-17T04:57:41.034176-05:00",
+  "refreshed_label": "4:57 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,18 @@
       "end_label": "9:00 AM",
       "summary": "Architecture Sync with Suhas",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Suhas has recently engaged you on process observability via Celonis\u2014specifically validating its integration with Skan.ai for the P&C scorecard\u2014and SMS risk assessment for the upcoming November claims release. Additionally, the new tech procurement process from June 23 establishes architects as early approval authorities\u2014meaning this sync likely triggers your new 'Go TPDT' pre-approval responsibilities. You must clarify if Suhas's invite concerns these new procurement rules, the pending Celonis observability position paper, or the 2-way SMS risk mitigation plan.",
+        "tasks": [
+          "Confirm if the Celonis position paper has been reviewed by leadership.",
+          "Finalize the template and control guidelines for the November claims release to mitigate PII risks.",
+          "Review the 'Technology Engagement in Procurement' wiki to verify architect approval steps before the sync.",
+          "Address the unresolved integration strategy between Celonis, Skan.ai, and Snowflake."
+        ],
+        "title": "Architecture Sync with Suhas",
+        "start_label": "8:30 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "1183s3d1h3kafkjn6k273tgva6",
@@ -31,61 +42,47 @@
       "end_label": "2:00 PM",
       "summary": "Quick Sync on Tech Decisions",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review the critical outcomes from your recent tech decision syncs\u2014particularly the June 24 sessions with Dan and Thomas\u2014to address mainframe data offloading and architectural governance. Establish the transition of IFR, ECPA, and policy summary databases to a Redis and Pub/Sub model\u2014this eliminates the stale data risks that leadership questioned. Resolve the ongoing governance friction between the CTO and CIO teams\u2014Thomas requires your active advocacy to prevent Dan's group from bypassing established architectural channels.",
+        "tasks": [
+          "Validate the Redis and Pub/Sub architectural design\u2014specifically the stale data indicator\u2014before offloading the IFR and ECPA databases from the mainframe.",
+          "Reinforce the CTO team's mandate in your upcoming sync with Dan\u2014preventing the CIO team from bypassing established architectural channels.",
+          "Resolve the compliance and technical blockages regarding the proposed \"splitter\" A/B testing concept.",
+          "Formulate the migration strategy for moving policy summary database workloads off the mainframe to reduce MIPS usage."
+        ],
+        "title": "Quick Sync on Tech Decisions",
+        "start_label": "1:30 PM",
+        "end_label": "2:00 PM"
+      }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Architecture Sync with Suhas</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Architecture Sync with Suhas</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Suhas has recently engaged you on process observability via Celonis\u2014specifically validating its integration with Skan.ai for the P&amp;C scorecard\u2014and SMS risk assessment for the upcoming November claims release. Additionally, the new tech procurement process from June 23 establishes architects as early approval authorities\u2014meaning this sync likely triggers your new &#x27;Go TPDT&#x27; pre-approval responsibilities. You must clarify if Suhas&#x27;s invite concerns these new procurement rules, the pending Celonis observability position paper, or the 2-way SMS risk mitigation plan.</p>\n                <ul class=\"focus-prep-tasks\"><li>Confirm if the Celonis position paper has been reviewed by leadership.</li><li>Finalize the template and control guidelines for the November claims release to mitigate PII risks.</li><li>Review the &#x27;Technology Engagement in Procurement&#x27; wiki to verify architect approval steps before the sync.</li><li>Address the unresolved integration strategy between Celonis, Skan.ai, and Snowflake.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Sync with Suhas</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly EA Touchpoint with Ian Benoist</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Quick Sync on Tech Decisions</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Mike - ask about adding the Base stuff to the list</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 16</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 16</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare for executive alignment meeting with Dan Griffiths</span>\n                <span class=\"capsule capsule--neutral\">Due Jul 22</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "4ac8faqkidrhqhtuh0960beklq": {
-      "summary": "Prepare for Praveena's mid-year review by targeting the July 31st deadline\u2014specifically her career trajectory following her Wharton executive program enrollment\u2014while navigating the massive organizational disruptions impacting leadership. Address outstanding transition items\u2014including the AI requirements tool handover to Brian and Steve Ferato's coverage of Auto\u2014to balance team capacity under the current hiring freeze. No work notes match the round-robin tech procurement or the TVO Stacy Clark meeting\u2014these must be addressed as new items today\u2014but you must use this session to align on executive exposure opportunities.",
+    "0o0v1m7uemcf0dqri1i7ldofsj": {
+      "summary": "Suhas has recently engaged you on process observability via Celonis\u2014specifically validating its integration with Skan.ai for the P&C scorecard\u2014and SMS risk assessment for the upcoming November claims release. Additionally, the new tech procurement process from June 23 establishes architects as early approval authorities\u2014meaning this sync likely triggers your new 'Go TPDT' pre-approval responsibilities. You must clarify if Suhas's invite concerns these new procurement rules, the pending Celonis observability position paper, or the 2-way SMS risk mitigation plan.",
       "tasks": [
-        "Finalize the formal mid-year performance review with Praveena before the July 31st deadline.",
-        "Map out executive visibility opportunities\u2014such as EMG engage sessions\u2014to leverage her Wharton program training.",
-        "Define the objectives for the Stacy Clark TVO meeting and the round-robin tech procurement since no historical notes exist for these topics.",
-        "Schedule dedicated syncs with Ray and Steve to manage succession planning and the Auto workload transition."
+        "Confirm if the Celonis position paper has been reviewed by leadership.",
+        "Finalize the template and control guidelines for the November claims release to mitigate PII risks.",
+        "Review the 'Technology Engagement in Procurement' wiki to verify architect approval steps before the sync.",
+        "Address the unresolved integration strategy between Celonis, Skan.ai, and Snowflake."
       ],
-      "title": "Praveena 1on1 (Mid-Year)",
-      "start_label": "9:30 AM",
-      "end_label": "10:00 AM"
+      "title": "Architecture Sync with Suhas",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM"
     },
-    "3piuqiulretlc0p34vf262k27i": {
-      "summary": "You have no specific work notes documenting a past meeting with Geoff Troidl\u2014though a July 15 Tech Fellow stand-up note reveals a \"Jeff\" was abruptly removed from employee roles, triggering an emergency meeting with the CTO. Reviewing your drive files shows active architectural initiatives\u2014specifically USAA two-way texting, IBM's proposed testing engagement, and the SSH Key Management project. Prepare for this follow-up by clarifying Geoff's organizational status and aligning on these critical engineering tracks.",
+    "1sc55d9gtf5p21om1l61u6vbvv": {
+      "summary": "Review the critical outcomes from your recent tech decision syncs\u2014particularly the June 24 sessions with Dan and Thomas\u2014to address mainframe data offloading and architectural governance. Establish the transition of IFR, ECPA, and policy summary databases to a Redis and Pub/Sub model\u2014this eliminates the stale data risks that leadership questioned. Resolve the ongoing governance friction between the CTO and CIO teams\u2014Thomas requires your active advocacy to prevent Dan's group from bypassing established architectural channels.",
       "tasks": [
-        "Confirm Geoff Troidl's current organizational status following the July 15 emergency leadership changes.",
-        "Review the pending 250 million dollar IBM testing proposal to address the architecture team's concerns regarding undefined use cases.",
-        "Establish a validation plan for the Guidewire pre-production testing environment to replace the proposed manual verification of 65,000 members.",
-        "Determine the deployment timeline for the Wiz migration to achieve full parity off Palo Alto products by the December 31, 2026 deadline."
+        "Validate the Redis and Pub/Sub architectural design\u2014specifically the stale data indicator\u2014before offloading the IFR and ECPA databases from the mainframe.",
+        "Reinforce the CTO team's mandate in your upcoming sync with Dan\u2014preventing the CIO team from bypassing established architectural channels.",
+        "Resolve the compliance and technical blockages regarding the proposed \"splitter\" A/B testing concept.",
+        "Formulate the migration strategy for moving policy summary database workloads off the mainframe to reduce MIPS usage."
       ],
-      "title": "Architecture Follow-up with Geoff Troidl",
-      "start_label": "10:30 AM",
-      "end_label": "11:00 AM"
-    },
-    "1ahns5rjkuusbg8sp7s60rvgu8": {
-      "summary": "Your past week of work notes reveals severe organizational shifts\u2014including a strict hiring freeze and the sudden removal of key leaders Jeff and Deepak\u2014alongside critical technical friction points. You must navigate massive vendor decisions\u2014specifically pushing back on a $250 million IBM testing proposal and migrating to Wiz for cloud security\u2014while keeping your team aligned on strict security protocols for Guidewire testing. Share the pending shifts in conversational AI strategy and the pushback on AWS production deployment tracks during your staff meeting to ensure operational alignment.",
-      "tasks": [
-        "Share the critical leadership departures of Jeff and Deepak\u2014and the resulting organizational freeze\u2014with your team immediately.",
-        "Halt any unmasked data testing in the Guidewire pre-production environment to enforce strict ISO and NIST security standards.",
-        "Brief your team on the selection of Wiz as the new strategic cloud security platform\u2014and the scheduled retirement of Prisma Cloud.",
-        "Prepare the technical case to formally oppose the $250 million IBM testing proposal at the next executive review.",
-        "Align with Charlotte and Ramesh to resolve the integration friction surrounding the AWS Track 3 production deployment."
-      ],
-      "title": "Weekly Staff",
-      "start_label": "11:00 AM",
-      "end_label": "12:00 PM"
-    },
-    "b2og3ns94ou0aoq3gbeamhdra4": {
-      "summary": "You must coordinate cross-portfolio alignment on several front-burner initiatives\u2014including the recent P&C capacity updates and upcoming 2026 infrastructure compliance mandates\u2014while enforcing the new platform-first spending rules across your teams. You need to brief staff on rejecting redundant tools like Brevity in favor of enterprise standards like Zenerate to optimize tech spend. No work notes exist regarding SmartBear\u2014meaning you must initiate a baseline discussion on how this testing suite fits into current modernization efforts.",
-      "tasks": [
-        "Direct your teams to prioritize existing enterprise software licenses over niche products in compliance with the new CIO spending mandate.",
-        "Deliver updates to staff on key horizontal alignment items\u2014specifically the upcoming 2026 AMSTACK compliance requirements.",
-        "Block the acquisition of duplicate software tools by steering the agency team toward Zenerate instead of Brevity.",
-        "Initiate a discovery effort regarding SmartBear usage and licensing to determine its alignment with the enterprise platform-first directive."
-      ],
-      "title": "Monthly: LOB Arch Cross-Portfolio Sync",
-      "start_label": "2:00 PM",
-      "end_label": "3:00 PM"
+      "title": "Quick Sync on Tech Decisions",
+      "start_label": "1:30 PM",
+      "end_label": "2:00 PM"
     }
   }
 }
