@@ -1,35 +1,10 @@
 {
-  "refreshed_at": "2026-07-18T03:01:50.824643-05:00",
-  "refreshed_label": "3:01 AM",
+  "refreshed_at": "2026-07-18T04:24:17.459347-05:00",
+  "refreshed_label": "4:24 AM",
   "tz_label": "Chicago",
   "events": [],
   "focus_html": "",
   "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Mike - ask about adding the Base stuff to the list</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare for executive alignment meeting with Dan Griffiths</span>\n                <span class=\"capsule capsule--caution\">Due Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Hohimer - welcome back</span>\n                <span class=\"capsule capsule--caution\">Due Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update Praveena&#x27;s mid-year and submit</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 17</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
-  "preps": {
-    "0o0v1m7uemcf0dqri1i7ldofsj": {
-      "summary": "Suhas has recently engaged you on process observability via Celonis\u2014specifically validating its integration with Skan.ai for the P&C scorecard\u2014and SMS risk assessment for the upcoming November claims release. Additionally, the new tech procurement process from June 23 establishes architects as early approval authorities\u2014meaning this sync likely triggers your new 'Go TPDT' pre-approval responsibilities. You must clarify if Suhas's invite concerns these new procurement rules, the pending Celonis observability position paper, or the 2-way SMS risk mitigation plan.",
-      "tasks": [
-        "Confirm if the Celonis position paper has been reviewed by leadership.",
-        "Finalize the template and control guidelines for the November claims release to mitigate PII risks.",
-        "Review the 'Technology Engagement in Procurement' wiki to verify architect approval steps before the sync.",
-        "Address the unresolved integration strategy between Celonis, Skan.ai, and Snowflake."
-      ],
-      "title": "Architecture Sync with Suhas",
-      "start_label": "8:30 AM",
-      "end_label": "9:00 AM"
-    },
-    "1sc55d9gtf5p21om1l61u6vbvv": {
-      "summary": "Review the critical outcomes from your recent tech decision syncs\u2014particularly the June 24 sessions with Dan and Thomas\u2014to address mainframe data offloading and architectural governance. Establish the transition of IFR, ECPA, and policy summary databases to a Redis and Pub/Sub model\u2014this eliminates the stale data risks that leadership questioned. Resolve the ongoing governance friction between the CTO and CIO teams\u2014Thomas requires your active advocacy to prevent Dan's group from bypassing established architectural channels.",
-      "tasks": [
-        "Validate the Redis and Pub/Sub architectural design\u2014specifically the stale data indicator\u2014before offloading the IFR and ECPA databases from the mainframe.",
-        "Reinforce the CTO team's mandate in your upcoming sync with Dan\u2014preventing the CIO team from bypassing established architectural channels.",
-        "Resolve the compliance and technical blockages regarding the proposed \"splitter\" A/B testing concept.",
-        "Formulate the migration strategy for moving policy summary database workloads off the mainframe to reduce MIPS usage."
-      ],
-      "title": "Quick Sync on Tech Decisions",
-      "start_label": "1:30 PM",
-      "end_label": "2:00 PM"
-    }
-  }
+  "preps": {}
 }
