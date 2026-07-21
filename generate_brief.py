@@ -361,8 +361,18 @@ Return JSON only. Keys: "overview" (string), "suggestions" (array of strings).
         # Don't let a transient Gemini outage (e.g. 503 / quota error) sink the
         # whole publish — ship the schedule + open work with a degraded overview.
         print(f"AI summary unavailable ({type(e).__name__}: {e}); using fallback.")
+        # Opt-in debugging: when DEBUG_AI_ERRORS=1, surface a short, clipped
+        # error string in the overview so build logs aren't required to debug
+        # CI misconfigurations. This is only enabled when explicitly set.
+        debug = os.environ.get("DEBUG_AI_ERRORS") == "1"
+        overview = "AI insights are unavailable right now — the schedule and open work below are current."
+        if debug:
+            err_msg = f"{type(e).__name__}: {e}"
+            if len(err_msg) > 250:
+                err_msg = err_msg[:247] + "..."
+            overview = f"{overview} (AI error: {err_msg})"
         return {
-            "overview": "AI insights are unavailable right now — the schedule and open work below are current.",
+            "overview": overview,
             "suggestions": [],
         }
 
