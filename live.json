@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-07-21T04:57:47.213462-05:00",
-  "refreshed_label": "4:57 AM",
+  "refreshed_at": "2026-07-21T05:25:58.881345-05:00",
+  "refreshed_label": "5:25 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -21,7 +21,18 @@
       "end_label": "10:25 AM",
       "summary": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis (series ends 1/5/2...)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You face a packed agenda\u2014you must align Mike on the Arvy Prep outcomes, focusing on the standardized slide templates, the four-pillar operating model visual, and the tight five-minute-per-portfolio constraint for the RV session. You must also resolve critical carryovers from your June 29 meeting\u2014specifically your pending succession plan, the application rationalization spreadsheet updates, and the broken property loss model.",
+        "tasks": [
+          "Submit your succession planning brief for yourself and James to meet leadership requirements.",
+          "Provide updates to the locked application rationalization spreadsheet to target the fifty-million-dollar hygiene fund.",
+          "Address the unusable property loss model with Jeff and explore bringing Chris back part-time to fill the data architect gap.",
+          "Execute the standardized portfolio slide updates and coordinate with John for the Tech Fellows dress rehearsal."
+        ],
+        "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis (series ends 1/5/2...)",
+        "start_label": "10:00 AM",
+        "end_label": "10:25 AM"
+      }
     },
     {
       "id": "bbhg5486k2b7k2klmveqhiamr8",
@@ -71,67 +82,47 @@
       "end_label": "4:00 PM",
       "summary": "Bi-weekly: Tech BoD (series ending 12/22/26)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You have successfully cleared the preparation track for the Arvy reviews\u2014standardizing the fifteen portfolio slides under the new \"portfolio value\" template and routing the finalized deck through John in the Box folder. The primary operational objectives\u2014aligning on the centralized architecture narrative and mapping the core capabilities\u2014are now complete. You must now pivot to the upcoming Tech BoD requirements\u2014specifically addressing the application lifecycle status in TPM and the pending Platform Mindset metrics.",
+        "tasks": [
+          "Verify the finalized Arvy deck in the Tech Fellows Box folder\u2014ensuring all fifteen portfolios reflect the new value-focused layout.",
+          "Confirm the dress rehearsal schedule with the Tech Fellows\u2014preventing an unorchestrated run-through during the live session with RV.",
+          "Sync with Brenda to secure the room reservation for the Thursday lunch session with RV\u2014guaranteeing all seven Tech Fellows are invited.",
+          "Validate the \"Time Recommendation\" metadata for all applications marked for migration or elimination in TPM\u2014meeting the leadership compliance deadline."
+        ],
+        "title": "Bi-weekly: Tech BoD (series ending 12/22/26)",
+        "start_label": "3:00 PM",
+        "end_label": "4:00 PM"
+      }
     }
   ],
   "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">9:00 AM &mdash; 10:00 AM</div>\n            <h2 class=\"focus-title\">Arvy EA Overview Dry Run</h2>\n            \n            \n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arvy EA Overview Dry Run</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Mike Wilkins | Mark Francis (series ends 1/5/2...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Just In Time (JIT) Training Opportunity: IAM Security Cat...</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly: AEF Forum Meeting (series ends 12/21/27)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Change Review Group (CRG)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly: Tech BoD (series ending 12/22/26)</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Take your shot </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Untitled</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at generated Task and figure out which ones to manage, look at work notes htmls</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule team alignment meeting for Ari onboarding</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update Praveena&#x27;s mid-year and submit</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Check Dragon&#x27;s Lair monthly event schedules</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Mike - ask about adding the Base stuff to the list</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare property technical landscape capability heat map</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send property Executive Director introductory docs</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update mid-year reviews with succession expectations</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up onboarding folder for new executive Ari</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Meet with Tech Fellows re: architecture value</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare for executive alignment meeting with Dan Griffiths</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Hohimer - welcome back</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "613jvo8hikdmuscksfb3oqbk29": {
-      "summary": "No work notes exist for Stephanie Acosta\u2014you must check your inbox directly to review her correspondence before the meeting. The team is actively opposing a massive $250 million IBM testing proposal\u2014while simultaneously taking ownership of immediate tech decision approvals during this executive transition. You must also discuss the proposed elimination of low-value \"one-pagers\"\u2014replacing them with self-service HTML fact sheets or simple one-liner notifications.",
+    "kb8pu4iok9n36dlhcl3spsddbo": {
+      "summary": "You face a packed agenda\u2014you must align Mike on the Arvy Prep outcomes, focusing on the standardized slide templates, the four-pillar operating model visual, and the tight five-minute-per-portfolio constraint for the RV session. You must also resolve critical carryovers from your June 29 meeting\u2014specifically your pending succession plan, the application rationalization spreadsheet updates, and the broken property loss model.",
       "tasks": [
-        "Search your email inbox for recent messages from Stephanie Acosta\u2014clarify her specific requests before the sync begins.",
-        "Oppose the $250 million IBM testing proposal\u2014citing the lack of defined use cases and the team's preference to build internally.",
-        "Establish interim guidelines for tech decision approvals\u2014navigating the shift in ownership while the new executives onboard.",
-        "Advocate for the elimination of dense one-pagers\u2014proposing a transition to HTML fact sheets and automated dashboard notifications."
+        "Submit your succession planning brief for yourself and James to meet leadership requirements.",
+        "Provide updates to the locked application rationalization spreadsheet to target the fifty-million-dollar hygiene fund.",
+        "Address the unusable property loss model with Jeff and explore bringing Chris back part-time to fill the data architect gap.",
+        "Execute the standardized portfolio slide updates and coordinate with John for the Tech Fellows dress rehearsal."
       ],
-      "title": "Quick Sync on Tech Decisions",
-      "start_label": "8:30 AM",
-      "end_label": "9:00 AM"
-    },
-    "2vn2lk2508i4mrm60n8144o74t": {
-      "summary": "You have tracked several critical workstreams across your last five bi-weekly meetings with Jonathan\u2014most notably the reallocation of auto ecosystem responsibilities to Deepak and the strategic pivot of the paused IDP project. Your core architectural initiatives\u2014Spartan, Snowflake sandbox integration, and agentic fulfillment\u2014require clear next steps regarding data access and tooling strategy. You must resolve outstanding alignment issues with external stakeholders\u2014specifically Brian Simpkin on Scan AI scope and Sima on chatbot patterns\u2014before committing to the next delivery phase.",
-      "tasks": [
-        "Transition LOB and auto ecosystem architectural responsibilities to Deepak\u2014enabling his request for hands-on technical work.",
-        "Align with Kamali Kampati to merge the paused IDP questionnaire analysis into Phil Stackhouse's parallel project\u2014saving resources.",
-        "Resolve the Scan AI scoping issues with Brian Simpkin\u2014keeping the focus strictly on task mining.",
-        "Define the data access pathways for Project Spartan with Brian Osterkamp\u2014unifying the codebase with the pipeline dashboards."
-      ],
-      "title": "bi-weekly 1on1 with Jonathan",
-      "start_label": "9:00 AM",
-      "end_label": "9:30 AM"
-    },
-    "6fl35hmeo17iigp24qs39cdtrg": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
-      "title": "Bi-weekly with Justin",
+      "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis (series ends 1/5/2...)",
       "start_label": "10:00 AM",
-      "end_label": "10:30 AM"
+      "end_label": "10:25 AM"
     },
-    "262k656jmfk8gutj7tff7paroa": {
-      "summary": "You must prepare for the stand-up by focusing on the transition from legacy pricing to GuideWire\u2014which has disrupted modeling processes\u2014and the ongoing push under Suhas to consolidate process observability tools like Celonis and Skan.ai. Your previous discussions highlight critical operational shifts\u2014such as moving 500 technology employees to Chris Vasquez's operations group and migrating O2 policies to Guidewire starting in Wisconsin. You also face unresolved data quality concerns and a lack of dedicated data architects\u2014issues that continue to cause ripple effects in modeling and premium calculations.",
+    "fltbqk0kdu1p4j8ff00ahj0v8c": {
+      "summary": "You have successfully cleared the preparation track for the Arvy reviews\u2014standardizing the fifteen portfolio slides under the new \"portfolio value\" template and routing the finalized deck through John in the Box folder. The primary operational objectives\u2014aligning on the centralized architecture narrative and mapping the core capabilities\u2014are now complete. You must now pivot to the upcoming Tech BoD requirements\u2014specifically addressing the application lifecycle status in TPM and the pending Platform Mindset metrics.",
       "tasks": [
-        "Harden the manual processes\u2014specifically the 20,000 custom Python scripts\u2014into enterprise-grade IT assets under the new Pricing Technology Team.",
-        "Finalize the architecture position paper validating Celonis as the primary visualization layer for process observability.",
-        "Address the lack of a dedicated P&C data architect to stop the downstream modeling and premium errors.",
-        "Review the operational readiness of the claims team before the November two-way SMS pilot implementation."
+        "Verify the finalized Arvy deck in the Tech Fellows Box folder\u2014ensuring all fifteen portfolios reflect the new value-focused layout.",
+        "Confirm the dress rehearsal schedule with the Tech Fellows\u2014preventing an unorchestrated run-through during the live session with RV.",
+        "Sync with Brenda to secure the room reservation for the Thursday lunch session with RV\u2014guaranteeing all seven Tech Fellows are invited.",
+        "Validate the \"Time Recommendation\" metadata for all applications marked for migration or elimination in TPM\u2014meeting the leadership compliance deadline."
       ],
-      "title": "P&C IT Stand-up",
-      "start_label": "2:00 PM",
-      "end_label": "2:30 PM"
-    },
-    "1l6lc3m23de5n50d2tf27ctf98": {
-      "summary": "Review your May 7 discussion with Ryan Rist\u2014the last documented sync\u2014where you debated the \"leapfrog\" telematics strategy versus ancillary insurance products. Address the outstanding fifteen-million-dollar CMT pilot proposal and the competing product workbench pitches from Bain and Accenture. Resolve the downstream integration questions for Billing and FinnPal\u2014unresolved since your March 16 sync\u2014to ensure team agility.",
-      "tasks": [
-        "Finalize the decision between the Tesla-style leapfrog telematics model and ancillary products\u2014such as pet insurance\u2014to clarify the incubator pathway.",
-        "Resolve the friction over the fifteen-million-dollar CMT pilot proposal by determining if direct-to-carrier OEM data is more viable.",
-        "Assess the competing product workbench pitches from Bain and Accenture to centralize product data.",
-        "Establish the downstream integration plan for Billing and FinnPal to prevent manual back-office bottlenecks."
-      ],
-      "title": "Bi-Monthly EA Sync with Ryan Rist",
-      "start_label": "2:30 PM",
-      "end_label": "3:00 PM"
+      "title": "Bi-weekly: Tech BoD (series ending 12/22/26)",
+      "start_label": "3:00 PM",
+      "end_label": "4:00 PM"
     }
   }
 }
