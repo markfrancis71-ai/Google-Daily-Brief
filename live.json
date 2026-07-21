@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-07-21T06:54:24.807864-05:00",
-  "refreshed_label": "6:54 AM",
+  "refreshed_at": "2026-07-21T07:32:53.283037-05:00",
+  "refreshed_label": "7:32 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -22,12 +22,12 @@
       "summary": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis (series ends 1/5/2...)",
       "location": "",
       "prep": {
-        "summary": "You face a packed agenda\u2014you must align Mike on the Arvy Prep outcomes, focusing on the standardized slide templates, the four-pillar operating model visual, and the tight five-minute-per-portfolio constraint for the RV session. You must also resolve critical carryovers from your June 29 meeting\u2014specifically your pending succession plan, the application rationalization spreadsheet updates, and the broken property loss model.",
+        "summary": "You must review the alignment from the Arvy Prep sessions\u2014specifically the shift to standardized portfolio value templates, the four-pillar operating model, and the strict five-minute presentation window per portfolio for the RV review. You also need to address critical follow-ups from your June 29 meeting with Mike\u2014including the severe staffing constraints, the locked application rationalization spreadsheet linked to the hygiene fund, and the need for succession plans. Finally, prepare to discuss the unusable property loss model and the outstanding control test failure.",
         "tasks": [
-          "Submit your succession planning brief for yourself and James to meet leadership requirements.",
-          "Provide updates to the locked application rationalization spreadsheet to target the fifty-million-dollar hygiene fund.",
-          "Address the unusable property loss model with Jeff and explore bringing Chris back part-time to fill the data architect gap.",
-          "Execute the standardized portfolio slide updates and coordinate with John for the Tech Fellows dress rehearsal."
+          "Convert all presentation slides to the newly standardized portfolio template prior to the upcoming Tech Fellows dry run.",
+          "Submit final updates to the locked application rationalization spreadsheet to leverage the fifty-million-dollar hygiene fund.",
+          "Draft succession planning placeholders for yourself and James to satisfy leadership requirements.",
+          "Investigate bringing Chris back part-time to address the critical P&C data architect gap and resolve the property loss model issues."
         ],
         "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis (series ends 1/5/2...)",
         "start_label": "10:00 AM",
@@ -83,12 +83,12 @@
       "summary": "Bi-weekly: Tech BoD (series ending 12/22/26)",
       "location": "",
       "prep": {
-        "summary": "You have successfully cleared the preparation track for the Arvy reviews\u2014standardizing the fifteen portfolio slides under the new \"portfolio value\" template and routing the finalized deck through John in the Box folder. The primary operational objectives\u2014aligning on the centralized architecture narrative and mapping the core capabilities\u2014are now complete. You must now pivot to the upcoming Tech BoD requirements\u2014specifically addressing the application lifecycle status in TPM and the pending Platform Mindset metrics.",
+        "summary": "You must finalize several outstanding Arvy prep deliverables\u2014specifically updating all presentation slides to the new standardized portfolio template\u2014before the upcoming review with RV. While John serves as the single point of contact for the finalized deck\u2014which is housed in the Tech Fellows Box folder\u2014you need to verify your portfolio slides focus on business value rather than rudimentary domain listings. Rehearsals must be scheduled prior to the Thursday session\u2014meaning your slides require immediate lock-down.",
         "tasks": [
-          "Verify the finalized Arvy deck in the Tech Fellows Box folder\u2014ensuring all fifteen portfolios reflect the new value-focused layout.",
-          "Confirm the dress rehearsal schedule with the Tech Fellows\u2014preventing an unorchestrated run-through during the live session with RV.",
-          "Sync with Brenda to secure the room reservation for the Thursday lunch session with RV\u2014guaranteeing all seven Tech Fellows are invited.",
-          "Validate the \"Time Recommendation\" metadata for all applications marked for migration or elimination in TPM\u2014meeting the leadership compliance deadline."
+          "Convert all your presentation slides to the newly approved portfolio template format focusing on business value and executive takeaways.",
+          "Coordinate with John to deposit your updated slides into the Tech Fellows Box folder prior to the scheduled dress rehearsal.",
+          "Update terminology on your slides\u2014shifting from 'horizontal planning' to 'Cross-Portfolio Strategic Planning' as advised by Mark.",
+          "Confirm with Brenda that you are officially added to the Thursday lunch meeting with RV."
         ],
         "title": "Bi-weekly: Tech BoD (series ending 12/22/26)",
         "start_label": "3:00 PM",
@@ -101,24 +101,24 @@
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Take your shot </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Untitled</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at generated Task and figure out which ones to manage, look at work notes htmls</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule team alignment meeting for Ari onboarding</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update Praveena&#x27;s mid-year and submit</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Check Dragon&#x27;s Lair monthly event schedules</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Mike - ask about adding the Base stuff to the list</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare property technical landscape capability heat map</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send property Executive Director introductory docs</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update mid-year reviews with succession expectations</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up onboarding folder for new executive Ari</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Meet with Tech Fellows re: architecture value</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prepare for executive alignment meeting with Dan Griffiths</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Hohimer - welcome back</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
     "kb8pu4iok9n36dlhcl3spsddbo": {
-      "summary": "You face a packed agenda\u2014you must align Mike on the Arvy Prep outcomes, focusing on the standardized slide templates, the four-pillar operating model visual, and the tight five-minute-per-portfolio constraint for the RV session. You must also resolve critical carryovers from your June 29 meeting\u2014specifically your pending succession plan, the application rationalization spreadsheet updates, and the broken property loss model.",
+      "summary": "You must review the alignment from the Arvy Prep sessions\u2014specifically the shift to standardized portfolio value templates, the four-pillar operating model, and the strict five-minute presentation window per portfolio for the RV review. You also need to address critical follow-ups from your June 29 meeting with Mike\u2014including the severe staffing constraints, the locked application rationalization spreadsheet linked to the hygiene fund, and the need for succession plans. Finally, prepare to discuss the unusable property loss model and the outstanding control test failure.",
       "tasks": [
-        "Submit your succession planning brief for yourself and James to meet leadership requirements.",
-        "Provide updates to the locked application rationalization spreadsheet to target the fifty-million-dollar hygiene fund.",
-        "Address the unusable property loss model with Jeff and explore bringing Chris back part-time to fill the data architect gap.",
-        "Execute the standardized portfolio slide updates and coordinate with John for the Tech Fellows dress rehearsal."
+        "Convert all presentation slides to the newly standardized portfolio template prior to the upcoming Tech Fellows dry run.",
+        "Submit final updates to the locked application rationalization spreadsheet to leverage the fifty-million-dollar hygiene fund.",
+        "Draft succession planning placeholders for yourself and James to satisfy leadership requirements.",
+        "Investigate bringing Chris back part-time to address the critical P&C data architect gap and resolve the property loss model issues."
       ],
       "title": "Bi-weekly 1:1 w/Mike Wilkins | Mark Francis (series ends 1/5/2...)",
       "start_label": "10:00 AM",
       "end_label": "10:25 AM"
     },
     "fltbqk0kdu1p4j8ff00ahj0v8c": {
-      "summary": "You have successfully cleared the preparation track for the Arvy reviews\u2014standardizing the fifteen portfolio slides under the new \"portfolio value\" template and routing the finalized deck through John in the Box folder. The primary operational objectives\u2014aligning on the centralized architecture narrative and mapping the core capabilities\u2014are now complete. You must now pivot to the upcoming Tech BoD requirements\u2014specifically addressing the application lifecycle status in TPM and the pending Platform Mindset metrics.",
+      "summary": "You must finalize several outstanding Arvy prep deliverables\u2014specifically updating all presentation slides to the new standardized portfolio template\u2014before the upcoming review with RV. While John serves as the single point of contact for the finalized deck\u2014which is housed in the Tech Fellows Box folder\u2014you need to verify your portfolio slides focus on business value rather than rudimentary domain listings. Rehearsals must be scheduled prior to the Thursday session\u2014meaning your slides require immediate lock-down.",
       "tasks": [
-        "Verify the finalized Arvy deck in the Tech Fellows Box folder\u2014ensuring all fifteen portfolios reflect the new value-focused layout.",
-        "Confirm the dress rehearsal schedule with the Tech Fellows\u2014preventing an unorchestrated run-through during the live session with RV.",
-        "Sync with Brenda to secure the room reservation for the Thursday lunch session with RV\u2014guaranteeing all seven Tech Fellows are invited.",
-        "Validate the \"Time Recommendation\" metadata for all applications marked for migration or elimination in TPM\u2014meeting the leadership compliance deadline."
+        "Convert all your presentation slides to the newly approved portfolio template format focusing on business value and executive takeaways.",
+        "Coordinate with John to deposit your updated slides into the Tech Fellows Box folder prior to the scheduled dress rehearsal.",
+        "Update terminology on your slides\u2014shifting from 'horizontal planning' to 'Cross-Portfolio Strategic Planning' as advised by Mark.",
+        "Confirm with Brenda that you are officially added to the Thursday lunch meeting with RV."
       ],
       "title": "Bi-weekly: Tech BoD (series ending 12/22/26)",
       "start_label": "3:00 PM",
