@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-07-24T04:39:03.229803-05:00",
-  "refreshed_label": "4:39 AM",
+  "refreshed_at": "2026-07-24T05:16:52.730939-05:00",
+  "refreshed_label": "5:16 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,13 @@
       "end_label": "8:00 AM",
       "summary": "Review List",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+        "tasks": [],
+        "title": "Review List",
+        "start_label": "7:30 AM",
+        "end_label": "8:00 AM"
+      }
     },
     {
       "id": "1ha727o4qr162h6re3t34ksj7r",
@@ -21,7 +27,18 @@
       "end_label": "9:00 AM",
       "summary": "James Bi-weekly 1:1",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your last sync with James on July 14 highlights unresolved AWS Connect confusion\u2014specifically Track 2 and 3 production goals\u2014and details your pitch to Anne Heinz for the IP-initiated asynchronous messaging proof of concept. Reviewing meetings from the past week reveals critical conflicts over the D&S two-way SMS strategy\u2014where you must defend the limited Phoenix pilot against the business's risky November 30 release timeline\u2014and demands strict adherence to the notifications-only security mandate.",
+        "tasks": [
+          "Align with Charlotte to clarify target requirements and establish clear POC boundaries for the AWS native workspace.",
+          "Follow up with Anne Heinz regarding the protocol swap security review for the Apple Messages for Business pilot.",
+          "Enforce the manual compensating controls for the 100-user Phoenix pilot to bypass immediate inline Data Loss Prevention automation blocks.",
+          "Reject the November 30 \"Big Bang\" release plan proposed by the business to mitigate operational risk prior to the code freeze."
+        ],
+        "title": "James Bi-weekly 1:1",
+        "start_label": "8:30 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "2ddpll64je7dhsqmd7o3ghadc7",
@@ -31,7 +48,18 @@
       "end_label": "10:00 AM",
       "summary": "Combined Full Staff",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You drove critical momentum across Claims UX initiatives\u2014navigating a 38% reduction in Guidewire activities and initiating a 90-day push for Capgemini design concepts\u2014while managing resource disputes between business funding and IT leadership. You established key architectural partnerships with the new Property Product Development team to accelerate speed-to-market efforts through the foundry concept. You also prepared high-stakes technical briefings for executive leadership\u2014specifically detailing the governance of 4,500 active applications\u2014amid broader staff feedback calling for reduced organizational complexity and faster execution.",
+        "tasks": [
+          "Resolve the IT capacity dispute with Dan Griffiths regarding the 32 rejected Capgemini resources for Claims UX execution.",
+          "Align with Sarah Hudson on your design scope for the 90-day Claims UX quick wins pilot.",
+          "Rehearse the Architecture and Technology Strategy presentation to meet the strict five-minute-per-portfolio constraint for the upcoming executive review.",
+          "Establish the architectural partnership framework with the newly appointed Executive Director of Product Development for Property Lines."
+        ],
+        "title": "Combined Full Staff",
+        "start_label": "9:00 AM",
+        "end_label": "10:00 AM"
+      }
     },
     {
       "id": "4rd7ltc3boor34eol6nsmu3dco",
@@ -54,33 +82,40 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">7:30 AM &mdash; 8:00 AM</div>\n            <h2 class=\"focus-title\">Review List</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">7:30 AM &mdash; 8:00 AM</div>\n            <h2 class=\"focus-title\">Review List</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Prep unavailable \u2014 Gemini was unreachable when this brief was built.</p>\n                \n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">7:30 AM</div>\n                    <div class=\"t-end\">&mdash; 8:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review List</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">James Bi-weekly 1:1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Combined Full Staff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">bi-weekly with Randy Burris</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Sync with Kathleen Ores Walsh</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Architect Team Delegation &amp; Alignment (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Share P&amp;C Portfolio Slide (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Establish AI &amp; Voice Readiness Architecture</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Accelerate Mainframe Offloading for Policy</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Re-evaluate Claims Workflows</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">ask Domingo Montalvo about white papers</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Krystal Gomez - BPM Notebook Design</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Work in the full staff agenda </span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 23</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Move notes from Word doc back to OneNote</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 23</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Check Dragon&#x27;s Lair monthly event schedules</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 23</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Hohimer - welcome back</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 23</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update Praveena&#x27;s mid-year and submit</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 23</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send property Executive Director introductory docs</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update mid-year reviews with succession expectations</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "6hefa2gu6pe86fpi217t1ltr18": {
-      "summary": "You must review the major takeaways from the July 22nd employee meeting and your strategic lunch with Arvy\u2014the newly appointed technology leader. The employee session highlighted strong financial performance exceeding plan\u2014offset by culture survey feedback demanding faster execution and reduced operational complexity. Your lunch meeting with Arvy established his core alignment principles\u2014namely driving platform convergence, co-authoring the autumn technology strategy, and establishing early architecture checkpoints to stop executive tool sprawl.",
-      "tasks": [
-        "Track the upcoming autumn technology strategy deliverables\u2014ensuring alignment with the September, October, and November board timelines.",
-        "Enforce the Technology Acquisition Process with Global Sourcing and Procurement\u2014blocking all final contract sign-offs until architecture is formally engaged.",
-        "Map all unmitigated architecture risks directly into the Archer IT risk system\u2014utilizing clear red, yellow, and green governance indicators.",
-        "Streamline internal team decision-making structures\u2014addressing the employee survey feedback regarding organizational fatigue and execution speed."
-      ],
-      "title": "Weekly Staff \u2013 P&C CTO Leadership (series ends 1/7/27)",
-      "start_label": "1:00 PM",
-      "end_label": "1:30 PM"
+    "1t4ds4i5i37ba1sj09sd5qf2sh": {
+      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+      "tasks": [],
+      "title": "Review List",
+      "start_label": "7:30 AM",
+      "end_label": "8:00 AM"
     },
-    "hdkc0mbtef3b3k6l1tqvtileog": {
-      "summary": "You must navigate the ongoing confusion between Skan and Celonis\u2014specifically regarding task mining versus process mining\u2014as leadership questions the need for Skan's desktop-level observations. While Celonis establishes your foundational Digital Twin through back-office event logs, it lacks the glass-view telemetry required for detailed human interaction mapping. The notes explicitly highlight using Celonis to optimize your current processes as a prerequisite phase\u2014ensuring workflows are fully streamlined before you integrate GenAI automation.",
+    "1ha727o4qr162h6re3t34ksj7r": {
+      "summary": "Your last sync with James on July 14 highlights unresolved AWS Connect confusion\u2014specifically Track 2 and 3 production goals\u2014and details your pitch to Anne Heinz for the IP-initiated asynchronous messaging proof of concept. Reviewing meetings from the past week reveals critical conflicts over the D&S two-way SMS strategy\u2014where you must defend the limited Phoenix pilot against the business's risky November 30 release timeline\u2014and demands strict adherence to the notifications-only security mandate.",
       "tasks": [
-        "Leverage the Celonis representative's email\u2014which explicitly recommended Skan for desktop UI logs\u2014to overcome RFP pushback from Suhas and Dan Griffiths.",
-        "Draft the high-level one-pager required by leadership\u2014distilling Mark's deep technical white paper\u2014to justify the Skan procurement.",
-        "Resolve the priority conflict between the 90-day horizontal PL3 mandate\u2014led by Abe Cavatio\u2014and the vertical 'Pay a Claim' visualization pivot.",
-        "Complete the Celonis architecture white paper\u2014specifically addressing adjuster and front-office behavior\u2014to establish the 360-degree process health layer."
+        "Align with Charlotte to clarify target requirements and establish clear POC boundaries for the AWS native workspace.",
+        "Follow up with Anne Heinz regarding the protocol swap security review for the Apple Messages for Business pilot.",
+        "Enforce the manual compensating controls for the 100-user Phoenix pilot to bypass immediate inline Data Loss Prevention automation blocks.",
+        "Reject the November 30 \"Big Bang\" release plan proposed by the business to mitigate operational risk prior to the code freeze."
       ],
-      "title": "Discuss task mining AI capabilities",
-      "start_label": "4:30 PM",
-      "end_label": "5:00 PM"
+      "title": "James Bi-weekly 1:1",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM"
+    },
+    "2ddpll64je7dhsqmd7o3ghadc7": {
+      "summary": "You drove critical momentum across Claims UX initiatives\u2014navigating a 38% reduction in Guidewire activities and initiating a 90-day push for Capgemini design concepts\u2014while managing resource disputes between business funding and IT leadership. You established key architectural partnerships with the new Property Product Development team to accelerate speed-to-market efforts through the foundry concept. You also prepared high-stakes technical briefings for executive leadership\u2014specifically detailing the governance of 4,500 active applications\u2014amid broader staff feedback calling for reduced organizational complexity and faster execution.",
+      "tasks": [
+        "Resolve the IT capacity dispute with Dan Griffiths regarding the 32 rejected Capgemini resources for Claims UX execution.",
+        "Align with Sarah Hudson on your design scope for the 90-day Claims UX quick wins pilot.",
+        "Rehearse the Architecture and Technology Strategy presentation to meet the strict five-minute-per-portfolio constraint for the upcoming executive review.",
+        "Establish the architectural partnership framework with the newly appointed Executive Director of Product Development for Property Lines."
+      ],
+      "title": "Combined Full Staff",
+      "start_label": "9:00 AM",
+      "end_label": "10:00 AM"
     }
   }
 }
