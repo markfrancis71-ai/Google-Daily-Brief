@@ -1,42 +1,10 @@
 {
-  "refreshed_at": "2026-07-25T04:11:06.600448-05:00",
-  "refreshed_label": "4:11 AM",
+  "refreshed_at": "2026-07-25T04:46:28.220342-05:00",
+  "refreshed_label": "4:46 AM",
   "tz_label": "Chicago",
   "events": [],
   "focus_html": "",
   "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Retrieve whatever permit stuff we have.. to support the SDLC ask </span>\n                <span class=\"capsule capsule--caution\">Due Jul 26</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">reach out to Julie Laferty for Deal Review prep</span>\n                <span class=\"capsule capsule--caution\">Due Jul 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update Home Planner</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review 2way sms use cases (Erin email)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Check Dragon&#x27;s Lair monthly event schedules</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update Praveena&#x27;s mid-year and submit</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Hohimer - welcome back</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Architect Team Delegation &amp; Alignment (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Share P&amp;C Portfolio Slide (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Establish AI &amp; Voice Readiness Architecture</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Accelerate Mainframe Offloading for Policy</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Re-evaluate Claims Workflows</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">ask Domingo Montalvo about white papers</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Krystal Gomez - BPM Notebook Design</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Move notes from Word doc back to OneNote</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 23</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 24</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send property Executive Director introductory docs</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update mid-year reviews with succession expectations</span>\n                \n            </div>",
-  "preps": {
-    "1t4ds4i5i37ba1sj09sd5qf2sh": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
-      "title": "Review List",
-      "start_label": "7:30 AM",
-      "end_label": "8:00 AM"
-    },
-    "1ha727o4qr162h6re3t34ksj7r": {
-      "summary": "Your last sync with James on July 14 highlights unresolved AWS Connect confusion\u2014specifically Track 2 and 3 production goals\u2014and details your pitch to Anne Heinz for the IP-initiated asynchronous messaging proof of concept. Reviewing meetings from the past week reveals critical conflicts over the D&S two-way SMS strategy\u2014where you must defend the limited Phoenix pilot against the business's risky November 30 release timeline\u2014and demands strict adherence to the notifications-only security mandate.",
-      "tasks": [
-        "Align with Charlotte to clarify target requirements and establish clear POC boundaries for the AWS native workspace.",
-        "Follow up with Anne Heinz regarding the protocol swap security review for the Apple Messages for Business pilot.",
-        "Enforce the manual compensating controls for the 100-user Phoenix pilot to bypass immediate inline Data Loss Prevention automation blocks.",
-        "Reject the November 30 \"Big Bang\" release plan proposed by the business to mitigate operational risk prior to the code freeze."
-      ],
-      "title": "James Bi-weekly 1:1",
-      "start_label": "8:30 AM",
-      "end_label": "9:00 AM"
-    },
-    "2ddpll64je7dhsqmd7o3ghadc7": {
-      "summary": "You drove critical momentum across Claims UX initiatives\u2014navigating a 38% reduction in Guidewire activities and initiating a 90-day push for Capgemini design concepts\u2014while managing resource disputes between business funding and IT leadership. You established key architectural partnerships with the new Property Product Development team to accelerate speed-to-market efforts through the foundry concept. You also prepared high-stakes technical briefings for executive leadership\u2014specifically detailing the governance of 4,500 active applications\u2014amid broader staff feedback calling for reduced organizational complexity and faster execution.",
-      "tasks": [
-        "Resolve the IT capacity dispute with Dan Griffiths regarding the 32 rejected Capgemini resources for Claims UX execution.",
-        "Align with Sarah Hudson on your design scope for the 90-day Claims UX quick wins pilot.",
-        "Rehearse the Architecture and Technology Strategy presentation to meet the strict five-minute-per-portfolio constraint for the upcoming executive review.",
-        "Establish the architectural partnership framework with the newly appointed Executive Director of Product Development for Property Lines."
-      ],
-      "title": "Combined Full Staff",
-      "start_label": "9:00 AM",
-      "end_label": "10:00 AM"
-    }
-  }
+  "preps": {}
 }
