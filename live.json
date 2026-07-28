@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-07-28T05:09:43.565448-05:00",
-  "refreshed_label": "5:09 AM",
+  "refreshed_at": "2026-07-28T05:35:17.184018-05:00",
+  "refreshed_label": "5:35 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -41,7 +41,18 @@
       "end_label": "10:25 AM",
       "summary": "Bi-weekly 1:1 w/Praveena | Mark (series ends 1/4/27)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Align your upcoming session with the July 16 discussion\u2014specifically the transition under Scott and the deliberate pivot away from \"widget counting\" toward high-value business strategy. Your mid-year accomplishments showcase strong operational management\u2014including completing Rebecca's review, securing critical succession updates for Mike Wilkins and Ray, and balancing Thomas's workload by transitioning Auto to Steve Ferato. You also finalized the job description template for Talent Acquisition and initiated the AI requirements tool transition to Brian.",
+        "tasks": [
+          "Establish the weekly stand-up cadence\u2014allowing the team to systematically evaluate active projects and reject low-priority requests.",
+          "Finalize the transition of the Auto domain to Steve Ferato\u2014relieving Thomas's workload to allow focus on core responsibilities.",
+          "Follow up with Deepak and John on the pending job requisition\u2014securing necessary approvals to backfill the rolled-off resource.",
+          "Build the formal P&C architecture succession and mentorship spreadsheet\u2014targeting completion before next quarter to stabilize the talent pipeline."
+        ],
+        "title": "Bi-weekly 1:1 w/Praveena | Mark (series ends 1/4/27)",
+        "start_label": "10:00 AM",
+        "end_label": "10:25 AM"
+      }
     },
     {
       "id": "c7sm1odd5q22thn30i1mg516uo",
@@ -51,7 +62,18 @@
       "end_label": "10:55 AM",
       "summary": "EA Architecture Sync",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your last sync with Larry Abel on June 26 revealed catastrophic failures in the Property Loss Model\u2014prompting a complete rebuild mandate led by Ben Potter and Hima\u2014which delays the Wisconsin V2 rollout and demands a three-to-six-month delivery timeline. Meanwhile, your July 17 pricing discussion with Suhas exposed severe modeling disruptions during the Ratabase-to-GuideWire migration\u2014specifically breaking the feedback loop for model adjustments\u2014alongside a dangerous reliance on 20,000 manual Python scripts and Excel applications. Resolving these overlapping architectural breakdowns requires establishing strict data quality controls under Dan Caldwell and Hima while transitioning mathematical modeling to a dedicated enterprise technology team.",
+        "tasks": [
+          "Confirm the requirements gathering timeline for the Property Loss Model rebuild with Ben Potter and Hima\u2014ensuring the team separates source data issues from downstream transformation logic.",
+          "Establish ownership boundaries between actuaries and the proposed Pricing Technology Team\u2014systematically retiring the 20,000 legacy Python scripts and Excel applications.",
+          "Review the \"Dammit\" scope boundaries with Dan Caldwell to guarantee immediate data quality controls align with the broader GuideWire M1 migration timeline.",
+          "Address the dual-environment support gap for rating models\u2014restoring the critical model adjustment capabilities for the actuarial teams."
+        ],
+        "title": "EA Architecture Sync",
+        "start_label": "10:30 AM",
+        "end_label": "10:55 AM"
+      }
     },
     {
       "id": "u8penhfulhdk7i5160mmnv63mo",
@@ -61,7 +83,18 @@
       "end_label": "11:25 AM",
       "summary": "Monthly: Architecture Sync with Deepak Srinivasan | Mark Francis",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You must reconcile the core themes from your last syncs\u2014namely Ryan Rist's update on leadership turnover and the pivot to native OEM telematics, alongside Sai's escalations regarding AI adoption bottlenecks. Address the organizational resistance\u2014specifically the slow Model Risk Management approvals\u2014by proposing autonomous tiger teams. Frame your architectural recommendations around these friction points to align with Deepak Srinivasan on the transition to a Best of Suite model.",
+        "tasks": [
+          "Finalize the competitive analysis snippet for the Suhas management meeting to address Sai's delivery concerns.",
+          "Formulate an architecture plan to transition from CMT mobile telematics to direct OEM vehicle data.",
+          "Establish a pilot program for a headless, AI-enabled quoting capability using a highly autonomous tiger team.",
+          "Audit the diagnostic tools currently managing the system's operational stability following the recent leadership changes."
+        ],
+        "title": "Monthly: Architecture Sync with Deepak Srinivasan | Mark Francis",
+        "start_label": "11:00 AM",
+        "end_label": "11:25 AM"
+      }
     },
     {
       "id": "q75u64v752g4u9crli29ohv1ac",
@@ -121,7 +154,18 @@
       "end_label": "2:30 PM",
       "summary": "Sierra & USAA | Follow-Up / Demo Use Case Sync",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review your July 13 alignment session with Sierra\u2014founded by Brett Taylor and Clay Bavor\u2014to prepare for today's follow-up use case sync. You discussed Sierra's unified conversational AI platform capabilities\u2014specifically contrasting public member-facing deployment with their internal \"Live Assist\" CRM desktop layer. The team confirmed a hybrid AI strategy\u2014targeting the automation of repetitive, low-complexity tasks like incomplete First Notice of Loss filings to free up human specialists for complex interactions.",
+        "tasks": [
+          "Align Sierra's conversational platform with USAA's backend systems of record\u2014specifically focusing on real-time API and MCP server integrations.",
+          "Define the boundaries between member-facing conversational agents and the internal \"Live Assist\" desktop CRM tool.",
+          "Establish clear criteria for proactive outreach use cases\u2014such as automated follow-ups for incomplete First Notice of Loss filings.",
+          "Confirm the technical architecture requirements for maintaining seamless context and memory across voice, chat, and mobile channels."
+        ],
+        "title": "Sierra & USAA | Follow-Up / Demo Use Case Sync",
+        "start_label": "2:00 PM",
+        "end_label": "2:30 PM"
+      }
     },
     {
       "id": "71kb8itqau4oe1kbcsmba65pq4",
@@ -131,36 +175,85 @@
       "end_label": "3:55 PM",
       "summary": "Enterprise Architecture Leadership Sync (series ends 1...)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Align with Arvy\u2014the new technology leader driving platform convergence\u2014and prepare for the upcoming September-to-November board strategy deliverables. Establish a unified architecture operating model\u2014clarifying the distinction between Tech Fellows and Distinguished Architects\u2014while addressing persistent legacy mainframe constraints within the PNC portfolio. Enforce the critical SDLC checkpoints\u2014specifically the automated NFR mapping and the Jira-integrated \"Permit to Design/Build/Operate\" gateways\u2014to stop downstream tool sprawl and secure early architectural engagement.",
+        "tasks": [
+          "Review the technology strategy co-authoring timeline\u2014stretching from September through November\u2014to prepare for the upcoming alignment session with Dan.",
+          "Enforce the mandatory architecture decision records (ADRs) before vendor procurement\u2014preventing duplicate software onboarding and uncoordinated contract finalization.",
+          "Implement the SDLC gateway overlays in Jira\u2014establishing strict \"Permit to Design / Build / Operate\" checkpoints across the engineering lifecycle.",
+          "Automate the non-functional requirement (NFR) mapping to IT General Controls\u2014eliminating manual evidence collection for the audit team.",
+          "Phase out legacy organizational terminology\u2014specifically CTXO and EA\u2014to align communication under the new Architecture and Tech Strategy (ATS) identity."
+        ],
+        "title": "Enterprise Architecture Leadership Sync (series ends 1...)",
+        "start_label": "3:05 PM",
+        "end_label": "3:55 PM"
+      }
     }
   ],
   "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 11:00 AM</div>\n            <h2 class=\"focus-title\">Priority Meeting Claims Evolution and QA Pods Plans</h2>\n            \n            \n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Priority Meeting Claims Evolution and QA Pods Plans</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Aris Mapping Capgemini 127593</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture Huddle (series ends 12/29/26)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Praveena | Mark (series ends 1/4/27)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA Architecture Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly: Architecture Sync with Deepak Srinivasan | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:30 AM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Tech Readiness/Architecture needs - Working Session</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly 1:1 w/Claire Veitenheimer | Mark Francis (series ends...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:50 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C Change Review Group (CRG)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 1:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Architecture &amp; Tech Strategy All Hands</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sierra &amp; USAA | Follow-Up / Demo Use Case Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:05 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Enterprise Architecture Leadership Sync (series ends 1...)</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update Praveena&#x27;s and everyone elses mid-year and submit</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Connect Telematics arch</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Krystal Gomez - BPM Notebook Design -- After you sync with ALO</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--caution\">Due Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Track and and long term goals</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Architect Team Delegation &amp; Alignment (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Share P&amp;C Portfolio Slide (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Establish AI &amp; Voice Readiness Architecture</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Accelerate Mainframe Offloading for Policy</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Re-evaluate Claims Workflows</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send property Executive Director introductory docs</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update mid-year reviews with succession expectations</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Android Automotive research video on operational services and in-automobile experience - send out email today</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "ksk5dqh11ql3h8ros840efd3r4": {
-      "summary": "Address the outstanding initiatives driven by Aaron Bend\u2014specifically the Unified Telematics Platform vision from mid-May and the Underwriting Workbench prototype from late March. Review the design patterns under development for the telematics platform\u2014this establishes the core technical direction. Monitor the progress of Aaron\u2019s quick prototype for the Underwriting Workbench\u2014a critical step to balance fast execution with long-term support.",
+    "o8nj06adqm85c9lfkk3phcm0so": {
+      "summary": "Align your upcoming session with the July 16 discussion\u2014specifically the transition under Scott and the deliberate pivot away from \"widget counting\" toward high-value business strategy. Your mid-year accomplishments showcase strong operational management\u2014including completing Rebecca's review, securing critical succession updates for Mike Wilkins and Ray, and balancing Thomas's workload by transitioning Auto to Steve Ferato. You also finalized the job description template for Talent Acquisition and initiated the AI requirements tool transition to Brian.",
       "tasks": [
-        "Align with Aaron Bend on the current development status of the Unified Telematics Platform architecture.",
-        "Confirm the delivery timeline for the Underwriting Workbench prototype to ensure supportability.",
-        "Reconcile telematics design patterns with the transition to vendor-agnostic API pipelines.",
-        "Clarify ownership boundaries for the claims integration handoff to offload non-architectural tasks."
+        "Establish the weekly stand-up cadence\u2014allowing the team to systematically evaluate active projects and reject low-priority requests.",
+        "Finalize the transition of the Auto domain to Steve Ferato\u2014relieving Thomas's workload to allow focus on core responsibilities.",
+        "Follow up with Deepak and John on the pending job requisition\u2014securing necessary approvals to backfill the rolled-off resource.",
+        "Build the formal P&C architecture succession and mentorship spreadsheet\u2014targeting completion before next quarter to stabilize the talent pipeline."
       ],
-      "title": "Unified Connected Platform Architecture- Follow- Up",
-      "start_label": "9:00 AM",
-      "end_label": "9:50 AM"
-    },
-    "d76dvqvlvlohrt58jao0l4epec": {
-      "summary": "You must address the transition from rigid Guidewire tasks\u2014where the team slashed activities by 38%\u2014to a dynamic notification model centering on Capgemini's \"Next Best Action\" concept. Business leadership demands rapid 90-day progress on timeline alerts and status updates\u2014bypassing the slow Q1 2027 target\u2014but faces resistance from IT Leadership\u2014specifically Dan Griffiths\u2014who rejected funding for 32 extra resource positions. Your upcoming design sessions with Sarah Hudson must bridge this gap\u2014focusing on reducing adjuster \"snowblindness\" through intelligent prioritization without adding technical complexity.",
-      "tasks": [
-        "Connect with Director Rolando to finalize the pending action items from the July 22nd UX sync.",
-        "Align with Sarah Hudson on the 90-day quick-win designs\u2014prioritizing the pairing of timeline quality and status updates.",
-        "Resolve the staffing discrepancy with Dan Griffiths\u2014securing internal IT resources to offset the rejected Capgemini headcount.",
-        "Define the parameters of the \"Next Best Action\" framework\u2014replacing flat Guidewire alerts with dynamic, context-aware priorities."
-      ],
-      "title": "Future of Adjuster Alerting/ Notification Design",
+      "title": "Bi-weekly 1:1 w/Praveena | Mark (series ends 1/4/27)",
       "start_label": "10:00 AM",
-      "end_label": "10:45 AM"
+      "end_label": "10:25 AM"
+    },
+    "c7sm1odd5q22thn30i1mg516uo": {
+      "summary": "Your last sync with Larry Abel on June 26 revealed catastrophic failures in the Property Loss Model\u2014prompting a complete rebuild mandate led by Ben Potter and Hima\u2014which delays the Wisconsin V2 rollout and demands a three-to-six-month delivery timeline. Meanwhile, your July 17 pricing discussion with Suhas exposed severe modeling disruptions during the Ratabase-to-GuideWire migration\u2014specifically breaking the feedback loop for model adjustments\u2014alongside a dangerous reliance on 20,000 manual Python scripts and Excel applications. Resolving these overlapping architectural breakdowns requires establishing strict data quality controls under Dan Caldwell and Hima while transitioning mathematical modeling to a dedicated enterprise technology team.",
+      "tasks": [
+        "Confirm the requirements gathering timeline for the Property Loss Model rebuild with Ben Potter and Hima\u2014ensuring the team separates source data issues from downstream transformation logic.",
+        "Establish ownership boundaries between actuaries and the proposed Pricing Technology Team\u2014systematically retiring the 20,000 legacy Python scripts and Excel applications.",
+        "Review the \"Dammit\" scope boundaries with Dan Caldwell to guarantee immediate data quality controls align with the broader GuideWire M1 migration timeline.",
+        "Address the dual-environment support gap for rating models\u2014restoring the critical model adjustment capabilities for the actuarial teams."
+      ],
+      "title": "EA Architecture Sync",
+      "start_label": "10:30 AM",
+      "end_label": "10:55 AM"
+    },
+    "u8penhfulhdk7i5160mmnv63mo": {
+      "summary": "You must reconcile the core themes from your last syncs\u2014namely Ryan Rist's update on leadership turnover and the pivot to native OEM telematics, alongside Sai's escalations regarding AI adoption bottlenecks. Address the organizational resistance\u2014specifically the slow Model Risk Management approvals\u2014by proposing autonomous tiger teams. Frame your architectural recommendations around these friction points to align with Deepak Srinivasan on the transition to a Best of Suite model.",
+      "tasks": [
+        "Finalize the competitive analysis snippet for the Suhas management meeting to address Sai's delivery concerns.",
+        "Formulate an architecture plan to transition from CMT mobile telematics to direct OEM vehicle data.",
+        "Establish a pilot program for a headless, AI-enabled quoting capability using a highly autonomous tiger team.",
+        "Audit the diagnostic tools currently managing the system's operational stability following the recent leadership changes."
+      ],
+      "title": "Monthly: Architecture Sync with Deepak Srinivasan | Mark Francis",
+      "start_label": "11:00 AM",
+      "end_label": "11:25 AM"
+    },
+    "6grb2j90fcasldnq2spdpsle5s": {
+      "summary": "Review your July 13 alignment session with Sierra\u2014founded by Brett Taylor and Clay Bavor\u2014to prepare for today's follow-up use case sync. You discussed Sierra's unified conversational AI platform capabilities\u2014specifically contrasting public member-facing deployment with their internal \"Live Assist\" CRM desktop layer. The team confirmed a hybrid AI strategy\u2014targeting the automation of repetitive, low-complexity tasks like incomplete First Notice of Loss filings to free up human specialists for complex interactions.",
+      "tasks": [
+        "Align Sierra's conversational platform with USAA's backend systems of record\u2014specifically focusing on real-time API and MCP server integrations.",
+        "Define the boundaries between member-facing conversational agents and the internal \"Live Assist\" desktop CRM tool.",
+        "Establish clear criteria for proactive outreach use cases\u2014such as automated follow-ups for incomplete First Notice of Loss filings.",
+        "Confirm the technical architecture requirements for maintaining seamless context and memory across voice, chat, and mobile channels."
+      ],
+      "title": "Sierra & USAA | Follow-Up / Demo Use Case Sync",
+      "start_label": "2:00 PM",
+      "end_label": "2:30 PM"
+    },
+    "71kb8itqau4oe1kbcsmba65pq4": {
+      "summary": "Align with Arvy\u2014the new technology leader driving platform convergence\u2014and prepare for the upcoming September-to-November board strategy deliverables. Establish a unified architecture operating model\u2014clarifying the distinction between Tech Fellows and Distinguished Architects\u2014while addressing persistent legacy mainframe constraints within the PNC portfolio. Enforce the critical SDLC checkpoints\u2014specifically the automated NFR mapping and the Jira-integrated \"Permit to Design/Build/Operate\" gateways\u2014to stop downstream tool sprawl and secure early architectural engagement.",
+      "tasks": [
+        "Review the technology strategy co-authoring timeline\u2014stretching from September through November\u2014to prepare for the upcoming alignment session with Dan.",
+        "Enforce the mandatory architecture decision records (ADRs) before vendor procurement\u2014preventing duplicate software onboarding and uncoordinated contract finalization.",
+        "Implement the SDLC gateway overlays in Jira\u2014establishing strict \"Permit to Design / Build / Operate\" checkpoints across the engineering lifecycle.",
+        "Automate the non-functional requirement (NFR) mapping to IT General Controls\u2014eliminating manual evidence collection for the audit team.",
+        "Phase out legacy organizational terminology\u2014specifically CTXO and EA\u2014to align communication under the new Architecture and Tech Strategy (ATS) identity."
+      ],
+      "title": "Enterprise Architecture Leadership Sync (series ends 1...)",
+      "start_label": "3:05 PM",
+      "end_label": "3:55 PM"
     }
   }
 }
