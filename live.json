@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-07-30T04:22:39.159152-05:00",
-  "refreshed_label": "4:22 AM",
+  "refreshed_at": "2026-07-30T05:24:38.084022-05:00",
+  "refreshed_label": "5:24 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -17,30 +17,5 @@
   "focus_html": "",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">All day</div>\n                    \n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Happy birthday!</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Provide weekly updates - talk to Jen</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Claims Pain Points Docs (downloads) - run it through AI</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Gunjan on Platform def</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prep Tech Decision email with Arvy - sync before Friday</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up quick sync with Jule Laferty</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Track and and long term goals</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Call Maverich Surveys</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Connect Telematics arch</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send property Executive Director introductory docs</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
-  "preps": {
-    "k14ft7lr543qp7uo4i75dsqiac": {
-      "summary": "Your recent alignment conversations with Adam and Jon highlight critical capacity deficits across the data architecture\u2014specifically the P&C loss model crisis on Snowflake and the operational drag from the complex operating model. The transition of data design responsibilities has created significant friction and anxiety\u2014making Chris's potential involvement critical to stabilizing the team structure and closing the execution gaps. You need to leverage this sync to address these capacity constraints\u2014and ensure you check in on how Chris is doing personally.",
-      "tasks": [
-        "Ask Chris how he is doing and check on his overall transition and well-being.",
-        "Outline the critical capacity deficits\u2014specifically the Snowflake migration bottlenecks and the operational drag of the current seven-to-eight step handoff model.",
-        "Propose Chris's alignment to oversee the newly transitioned five-person data design team and buffer the friction with shadow architecture groups.",
-        "Secure commitment on Resource Capacity planning to support the P&C architecture milestones."
-      ],
-      "title": "Sync with Chris",
-      "start_label": "10:30 AM",
-      "end_label": "11:00 AM"
-    },
-    "lmh2ct5m46k02f92il48ebp380": {
-      "summary": "You must prepare for critical shifts coming from your recent leadership sessions\u2014most notably the upcoming August 4th architectural reorganization and headcount reduction. Recent alignment with RV and Arden establishes a harder line on architecture governance\u2014introducing strict permit-to-design tollgates and capability-based mapping\u2014while redefining your engagement model with TVO. Tooling directives provide clear start/stop/continue boundaries\u2014specifically stopping forced Jira Work Management and OurDoc compliance in favor of fit-for-purpose utility.",
-      "tasks": [
-        "Finalize preparation for the August 4th architectural staffing changes\u2014targeting a ten percent reduction\u2014by reviewing the finalized stack-ranked list with HR.",
-        "Establish explicit measurement criteria for Non-Functional Requirements to satisfy gaps identified during the Arden governance alignment session.",
-        "Decommission the mandatory usage of Jira Work Management and OurDoc for personal task tracking\u2014shifting instead to fit-for-purpose tooling.",
-        "Pivot the technology roadmap from domain-level strategies toward capability-based mapping to align with RV's platform strategy."
-      ],
-      "title": "Weekly Staff \u2013 P&C CTO Leadership (series ends 1/7/27)",
-      "start_label": "1:00 PM",
-      "end_label": "2:00 PM"
-    }
-  }
+  "preps": {}
 }
