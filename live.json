@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-08-03T03:33:58.351985-05:00",
-  "refreshed_label": "3:33 AM",
+  "refreshed_at": "2026-08-03T06:22:40.056438-05:00",
+  "refreshed_label": "6:22 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,18 @@
       "end_label": "8:55 AM",
       "summary": "Monthly 1:1 w/Thomas Weidemier | Mark Francis (series ends...)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your last meeting with Thomas on July 13 focused on critical Guidewire pre-production testing constraints\u2014specifically rejecting production credential reuse to maintain strict compliance standards. You aligned on replacing manual testing with automated validation scripts for 65,000 members\u2014while also establishing firm boundaries to keep Chris out of pricing and data modeling initiatives.",
+        "tasks": [
+          "Present the finalized, written automation plan\u2014using scripts and delta reports\u2014to validate the 65,000 members.",
+          "Enforce the rejection of production credential reuse for outbound service calls\u2014leveraging promised executive air cover to maintain security protocols.",
+          "Confirm Chris has remained completely disengaged from the pricing and data modeling initiatives\u2014preserving critical resource boundaries.",
+          "Verify the backlog status of the PNC Corporate Correspondence System\u2014confirming if the sunsetting work is officially funded and in flight."
+        ],
+        "title": "Monthly 1:1 w/Thomas Weidemier | Mark Francis (series ends...)",
+        "start_label": "8:30 AM",
+        "end_label": "8:55 AM"
+      }
     },
     {
       "id": "6u8nhl5il04uubu7pm7d1f06tg",
@@ -21,7 +32,18 @@
       "end_label": "9:25 AM",
       "summary": "Bi-weekly 1:1 w/Jonathan N | Mark F (series ends 1/4/27)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your last meeting with Jonathan on July 20 focused on the car sale marketplace RFI kickoff\u2014specifically involving vendors like Cox and JD Power\u2014and transitioning architectural responsibilities to Deepak. You also outlined the upcoming RV architecture presentation and progressed the Architecture as Code initiative to deploy an MCP endpoint with an agent. No Slack notes were found in your retrieved files\u2014you must check the Slack client directly for any real-time updates.",
+        "tasks": [
+          "Finalize the transfer of auto ecosystem architectural responsibilities to Deepak\u2014ensuring he gets hands-on design work rather than administrative overhead.",
+          "Deliver the 10-minute high-level presentation on strategic themes and risks for Thursday's RV meeting.",
+          "Advance the Architecture as Code runtime design\u2014focusing on deploying the initial MCP endpoint with an agent.",
+          "Check Slack manually for new team updates\u2014no digital messages were found in your current workspace notes."
+        ],
+        "title": "Bi-weekly 1:1 w/Jonathan N | Mark F (series ends 1/4/27)",
+        "start_label": "9:00 AM",
+        "end_label": "9:25 AM"
+      }
     },
     {
       "id": "mgg03foki679ccvti2vsss0aqc",
@@ -51,7 +73,18 @@
       "end_label": "10:55 AM",
       "summary": "Monthly Architecture Sync with Anthony Lopez (series ends 7/...)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review your recent alignment with Anthony Lopez on July 10 and July 6\u2014focusing on clarifying Skan versus Celonis capabilities to bypass executive pushback and advancing the task-mining RFP. Leverage the email from the Celonis representative\u2014who explicitly recommended Scan.ai for UI logs\u2014to prove to Suhas and Dan Griffiths that Celonis cannot fulfill your specific desktop task-mining needs. Address the critical resource bottlenecks stemming from Dan Griffiths' Claims mandate to keep the parallel BPO Notebook scorecard pilot moving forward.",
+        "tasks": [
+          "Deliver the high-level task-mining versus process-mining one-pager to resolve branding confusion for Suhas and Dan Griffiths.",
+          "Finalize the BPO Notebook architecture diagram left incomplete before Emmitt's holiday.",
+          "Route the GSP request to launch the task-mining RFP with Stereo Logic, Scan, Nice, and Celonis.",
+          "Resolve the Celonis resource contention by balancing the priority of the Claims mandate against the BPO scorecard pilot."
+        ],
+        "title": "Monthly Architecture Sync with Anthony Lopez (series ends 7/...)",
+        "start_label": "10:30 AM",
+        "end_label": "10:55 AM"
+      }
     },
     {
       "id": "gf8cgdmk30ghpk3kd06d1nj75s",
@@ -61,7 +94,13 @@
       "end_label": "11:25 AM",
       "summary": "Bi-weekly 1:1 w/Justin White | Mark Francis (series ends 1/4/2...)",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+        "tasks": [],
+        "title": "Bi-weekly 1:1 w/Justin White | Mark Francis (series ends 1/4/2...)",
+        "start_label": "11:00 AM",
+        "end_label": "11:25 AM"
+      }
     },
     {
       "id": "qsh8no3mfp1ggdjk3rlt2ucej0",
@@ -104,26 +143,6 @@
       "prep": null
     },
     {
-      "id": "egfgqhbtdakcjnltke47q7vans",
-      "start_iso": "2026-08-03T14:00:00-05:00",
-      "end_iso": "2026-08-03T14:25:00-05:00",
-      "start_label": "2:00 PM",
-      "end_label": "2:25 PM",
-      "summary": "Hold for PnC Shared Service Domain",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "emf9ohegs6p7frefegmr7a7hs8",
-      "start_iso": "2026-08-03T14:00:00-05:00",
-      "end_iso": "2026-08-03T15:00:00-05:00",
-      "start_label": "2:00 PM",
-      "end_label": "3:00 PM",
-      "summary": "Record to Report ART IDR/ SDR Review",
-      "location": "",
-      "prep": null
-    },
-    {
       "id": "i0a7se40dv6dj338mb55bjg8gc",
       "start_iso": "2026-08-03T14:30:00-05:00",
       "end_iso": "2026-08-03T14:55:00-05:00",
@@ -151,7 +170,18 @@
       "end_label": "3:55 PM",
       "summary": "Monthly: Architecture Sync with Deepak Srinivasan | Mark Francis",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your last session with Ryan Rist on July 20 focused on organizational upheaval\u2014specifically leadership departures and a shift toward a \"Best of Suite\" architecture\u2014while addressing operational stability gaps where 3,000 changes bypassed diagnostics. Telematics strategy is pivoting away from mobile-based CMT data toward direct OEM vehicle integration to bypass third-party margins. No work notes exist for your last meeting with Deepak Srinivasan\u2014requiring you to use this sync to clarify his stance on these platform shifts and the ongoing Snowflake integration patterns.",
+        "tasks": [
+          "Confirm Deepak's alignment on the \"Best of Suite\" transition\u2014especially regarding the tool consolidation efforts driven by Dan Griffith.",
+          "Present the architectural recommendation for Snowflake Reader Accounts\u2014positioning it as the cleaner alternative to S3 file extractions for Ernix Elevate.",
+          "Address the telematics pivot\u2014seeking clarity on whether the organization will bypass CMT to pursue direct OEM vehicle data partnerships.",
+          "Resolve the diagnostic capability gap\u2014proposing automated safeguards to prevent high-volume production changes from deploying without monitoring."
+        ],
+        "title": "Monthly: Architecture Sync with Deepak Srinivasan | Mark Francis",
+        "start_label": "3:30 PM",
+        "end_label": "3:55 PM"
+      }
     },
     {
       "id": "3ea7e3dhnb1br076qihsak94mc",
@@ -160,16 +190,6 @@
       "start_label": "4:00 PM",
       "end_label": "4:10 PM",
       "summary": "Review Arch Forum Agenda",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "8i2dcj0m4tv91uen4g9osio2t4",
-      "start_iso": "2026-08-03T16:00:00-05:00",
-      "end_iso": "2026-08-03T17:00:00-05:00",
-      "start_label": "4:00 PM",
-      "end_label": "5:00 PM",
-      "summary": "School Schedule - Zoom meetings after 4",
       "location": "",
       "prep": null
     },
@@ -184,8 +204,64 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 8:55 AM</div>\n            <h2 class=\"focus-title\">Monthly 1:1 w/Thomas Weidemier | Mark Francis (series ends...)</h2>\n            \n            \n        </section>",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 8:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly 1:1 w/Thomas Weidemier | Mark Francis (series ends...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Jonathan N | Mark F (series ends 1/4/27)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:45 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">QA Non-Regrettable Huddle</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AI Governance Layer</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Architecture Sync with Anthony Lopez (series ends 7/...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Justin White | Mark Francis (series ends 1/4/2...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 12:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Enterprise Architecture - Annual Risk Metric Refresh</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">PnC Shared Service Domain</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 1:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Platform Strategy</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Hold for PnC Shared Service Domain</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Record to Report ART IDR/ SDR Review</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AI Gateway Briefing</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C IT Stand Up</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly: Architecture Sync with Deepak Srinivasan | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:10 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review Arch Forum Agenda</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">School Schedule - Zoom meetings after 4</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C shadow arch</div>\n                    \n                </div>\n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 8:55 AM</div>\n            <h2 class=\"focus-title\">Monthly 1:1 w/Thomas Weidemier | Mark Francis (series ends...)</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Your last meeting with Thomas on July 13 focused on critical Guidewire pre-production testing constraints\u2014specifically rejecting production credential reuse to maintain strict compliance standards. You aligned on replacing manual testing with automated validation scripts for 65,000 members\u2014while also establishing firm boundaries to keep Chris out of pricing and data modeling initiatives.</p>\n                <ul class=\"focus-prep-tasks\"><li>Present the finalized, written automation plan\u2014using scripts and delta reports\u2014to validate the 65,000 members.</li><li>Enforce the rejection of production credential reuse for outbound service calls\u2014leveraging promised executive air cover to maintain security protocols.</li><li>Confirm Chris has remained completely disengaged from the pricing and data modeling initiatives\u2014preserving critical resource boundaries.</li><li>Verify the backlog status of the PNC Corporate Correspondence System\u2014confirming if the sunsetting work is officially funded and in flight.</li></ul>\n            </div>\n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 8:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly 1:1 w/Thomas Weidemier | Mark Francis (series ends...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Jonathan N | Mark F (series ends 1/4/27)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:45 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">QA Non-Regrettable Huddle</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AI Governance Layer</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Architecture Sync with Anthony Lopez (series ends 7/...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:25 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly 1:1 w/Justin White | Mark Francis (series ends 1/4/2...)</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 12:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Enterprise Architecture - Annual Risk Metric Refresh</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Lunch/ Desk Time</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">PnC Shared Service Domain</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 1:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Platform Strategy</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AI Gateway Briefing</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:25 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C IT Stand Up</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly: Architecture Sync with Deepak Srinivasan | Mark Francis</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:10 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Review Arch Forum Agenda</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:55 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C shadow arch</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review all slack messages and create tasks or answer as neccesary</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Find contacts prescription</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 31</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Provide weekly updates - talk to Jen</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 30</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Claims Pain Points Docs (downloads) - run it through AI</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Gunjan on Platform def</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Prep Tech Decision email with Arvy - sync before Friday</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up quick sync with Jule Laferty</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Track and and long term goals</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Call Maverich Surveys</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Connect Telematics arch</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Jul 29</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send property Executive Director introductory docs</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
-  "preps": {}
+  "preps": {
+    "j5panqk8fd0v0fjl54l1idpjnc": {
+      "summary": "Your last meeting with Thomas on July 13 focused on critical Guidewire pre-production testing constraints\u2014specifically rejecting production credential reuse to maintain strict compliance standards. You aligned on replacing manual testing with automated validation scripts for 65,000 members\u2014while also establishing firm boundaries to keep Chris out of pricing and data modeling initiatives.",
+      "tasks": [
+        "Present the finalized, written automation plan\u2014using scripts and delta reports\u2014to validate the 65,000 members.",
+        "Enforce the rejection of production credential reuse for outbound service calls\u2014leveraging promised executive air cover to maintain security protocols.",
+        "Confirm Chris has remained completely disengaged from the pricing and data modeling initiatives\u2014preserving critical resource boundaries.",
+        "Verify the backlog status of the PNC Corporate Correspondence System\u2014confirming if the sunsetting work is officially funded and in flight."
+      ],
+      "title": "Monthly 1:1 w/Thomas Weidemier | Mark Francis (series ends...)",
+      "start_label": "8:30 AM",
+      "end_label": "8:55 AM"
+    },
+    "6u8nhl5il04uubu7pm7d1f06tg": {
+      "summary": "Your last meeting with Jonathan on July 20 focused on the car sale marketplace RFI kickoff\u2014specifically involving vendors like Cox and JD Power\u2014and transitioning architectural responsibilities to Deepak. You also outlined the upcoming RV architecture presentation and progressed the Architecture as Code initiative to deploy an MCP endpoint with an agent. No Slack notes were found in your retrieved files\u2014you must check the Slack client directly for any real-time updates.",
+      "tasks": [
+        "Finalize the transfer of auto ecosystem architectural responsibilities to Deepak\u2014ensuring he gets hands-on design work rather than administrative overhead.",
+        "Deliver the 10-minute high-level presentation on strategic themes and risks for Thursday's RV meeting.",
+        "Advance the Architecture as Code runtime design\u2014focusing on deploying the initial MCP endpoint with an agent.",
+        "Check Slack manually for new team updates\u2014no digital messages were found in your current workspace notes."
+      ],
+      "title": "Bi-weekly 1:1 w/Jonathan N | Mark F (series ends 1/4/27)",
+      "start_label": "9:00 AM",
+      "end_label": "9:25 AM"
+    },
+    "lghsstnmgfi1qeq10bm3s0h2m8": {
+      "summary": "Review your recent alignment with Anthony Lopez on July 10 and July 6\u2014focusing on clarifying Skan versus Celonis capabilities to bypass executive pushback and advancing the task-mining RFP. Leverage the email from the Celonis representative\u2014who explicitly recommended Scan.ai for UI logs\u2014to prove to Suhas and Dan Griffiths that Celonis cannot fulfill your specific desktop task-mining needs. Address the critical resource bottlenecks stemming from Dan Griffiths' Claims mandate to keep the parallel BPO Notebook scorecard pilot moving forward.",
+      "tasks": [
+        "Deliver the high-level task-mining versus process-mining one-pager to resolve branding confusion for Suhas and Dan Griffiths.",
+        "Finalize the BPO Notebook architecture diagram left incomplete before Emmitt's holiday.",
+        "Route the GSP request to launch the task-mining RFP with Stereo Logic, Scan, Nice, and Celonis.",
+        "Resolve the Celonis resource contention by balancing the priority of the Claims mandate against the BPO scorecard pilot."
+      ],
+      "title": "Monthly Architecture Sync with Anthony Lopez (series ends 7/...)",
+      "start_label": "10:30 AM",
+      "end_label": "10:55 AM"
+    },
+    "gf8cgdmk30ghpk3kd06d1nj75s": {
+      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+      "tasks": [],
+      "title": "Bi-weekly 1:1 w/Justin White | Mark Francis (series ends 1/4/2...)",
+      "start_label": "11:00 AM",
+      "end_label": "11:25 AM"
+    },
+    "pctcs1kk78c6jqslpdaapg5kvg": {
+      "summary": "Your last session with Ryan Rist on July 20 focused on organizational upheaval\u2014specifically leadership departures and a shift toward a \"Best of Suite\" architecture\u2014while addressing operational stability gaps where 3,000 changes bypassed diagnostics. Telematics strategy is pivoting away from mobile-based CMT data toward direct OEM vehicle integration to bypass third-party margins. No work notes exist for your last meeting with Deepak Srinivasan\u2014requiring you to use this sync to clarify his stance on these platform shifts and the ongoing Snowflake integration patterns.",
+      "tasks": [
+        "Confirm Deepak's alignment on the \"Best of Suite\" transition\u2014especially regarding the tool consolidation efforts driven by Dan Griffith.",
+        "Present the architectural recommendation for Snowflake Reader Accounts\u2014positioning it as the cleaner alternative to S3 file extractions for Ernix Elevate.",
+        "Address the telematics pivot\u2014seeking clarity on whether the organization will bypass CMT to pursue direct OEM vehicle data partnerships.",
+        "Resolve the diagnostic capability gap\u2014proposing automated safeguards to prevent high-volume production changes from deploying without monitoring."
+      ],
+      "title": "Monthly: Architecture Sync with Deepak Srinivasan | Mark Francis",
+      "start_label": "3:30 PM",
+      "end_label": "3:55 PM"
+    }
+  }
 }
