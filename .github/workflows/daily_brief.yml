@@ -24,11 +24,24 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Verify AI secrets
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "${GEMINI_API_KEY:-}" ] && [ -z "${GOOGLE_API_KEY:-}" ]; then
+            echo "::error::No Gemini API key was provided via secrets.GEMINI_API_KEY or secrets.GOOGLE_API_KEY"
+            exit 1
+          fi
+          echo "GEMINI_API_KEY configured: $([ -n "${GEMINI_API_KEY:-}" ] && echo yes || echo no)"
+          echo "GOOGLE_API_KEY configured: $([ -n "${GOOGLE_API_KEY:-}" ] && echo yes || echo no)"
+
       - name: Generate brief
         env:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           USER_TIMEZONE: "America/Chicago"
         run: python generate_brief.py

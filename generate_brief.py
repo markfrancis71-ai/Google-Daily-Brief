@@ -20,7 +20,20 @@ SCOPES = [
 
 TIMEZONE = os.environ.get("USER_TIMEZONE", "America/New_York")
 MEETING_NOTES_FOLDER = os.environ.get("MEETING_NOTES_FOLDER", "Work Notes")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash")
+DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", DEFAULT_GEMINI_MODEL)
+
+
+def get_gemini_api_key():
+    """Return the Gemini API key from either GEMINI_API_KEY or GOOGLE_API_KEY."""
+    api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    return api_key.strip() if api_key else None
+
+
+def get_gemini_model():
+    """Return the configured Gemini model name, falling back to a supported default."""
+    model = os.environ.get("GEMINI_MODEL", DEFAULT_GEMINI_MODEL)
+    return model.strip() or DEFAULT_GEMINI_MODEL
 
 
 def get_google_credentials():
@@ -318,12 +331,16 @@ def _gemini_json(prompt, *, max_attempts=5):
     from google import genai
     from google.genai import errors as genai_errors
 
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    api_key = get_gemini_api_key()
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY or GOOGLE_API_KEY is not set")
+
+    client = genai.Client(api_key=api_key)
     delay = 30
     for attempt in range(1, max_attempts + 1):
         try:
             response = client.models.generate_content(
-                model=GEMINI_MODEL,
+                model=get_gemini_model(),
                 contents=prompt,
                 config={"response_mime_type": "application/json"},
             )
