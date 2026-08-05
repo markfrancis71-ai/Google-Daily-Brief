@@ -1094,10 +1094,11 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             background: var(--card-bg);
             border: 1px solid var(--card-border);
             border-radius: var(--r-lg);
-            padding: var(--s-6) var(--s-6);
+            padding: var(--s-6) calc(var(--s-6) + 4px);
             margin-bottom: var(--s-4);
             opacity: 0;
             transform: translateY(24px);
+            max-width: 100%;
         }}
         .card-head {{
             display: flex;
@@ -1180,6 +1181,7 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             font-weight: 400;
             color: var(--bone);
             letter-spacing: -0.005em;
+            max-width: 72ch;
         }}
 
         /* ── Plays ─────────────────────────────────────── */
@@ -1190,6 +1192,7 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             gap: var(--s-4);
             padding: var(--s-3) 0;
             border-bottom: 1px solid var(--hairline);
+            max-width: 100%;
         }}
         .play:first-child {{ padding-top: 0; }}
         .play:last-child {{ border-bottom: none; padding-bottom: 0; }}
@@ -1205,6 +1208,7 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             font-size: var(--fs-body);
             line-height: 1.55;
             color: var(--off-white);
+            max-width: 68ch;
         }}
 
         /* ── Timeline ──────────────────────────────────── */
@@ -1341,6 +1345,7 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             line-height: 1.6;
             color: var(--bone);
             margin-bottom: var(--s-4);
+            max-width: 72ch;
         }}
         .meeting-label {{
             font-family: var(--font-mono);
