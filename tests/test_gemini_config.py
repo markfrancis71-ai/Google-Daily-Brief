@@ -16,7 +16,7 @@ class GeminiConfigTests(unittest.TestCase):
 
     def test_uses_supported_default_model(self):
         with patch.dict(os.environ, {}, clear=True):
-            self.assertEqual(generate_brief.get_gemini_model(), "gemini-2.5-flash")
+            self.assertEqual(generate_brief.get_gemini_model(), "gemini-2.0-flash")
 
 
 if __name__ == "__main__":

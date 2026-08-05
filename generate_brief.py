@@ -20,7 +20,7 @@ SCOPES = [
 
 TIMEZONE = os.environ.get("USER_TIMEZONE", "America/New_York")
 MEETING_NOTES_FOLDER = os.environ.get("MEETING_NOTES_FOLDER", "Work Notes")
-DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"
+DEFAULT_GEMINI_MODEL = "gemini-2.0-flash"
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", DEFAULT_GEMINI_MODEL)
 
 
