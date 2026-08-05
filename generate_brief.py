@@ -943,7 +943,7 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             overflow-x: hidden;
         }}
 
-        .container {{ max-width: 1180px; margin: 0 auto; position: relative; }}
+        .container {{ max-width: 1440px; margin: 0 auto; position: relative; }}
 
         /* ── Grids ────────────────────────────────────── */
         .grid-hero, .grid-2 {{
@@ -952,8 +952,8 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
             grid-template-columns: 1fr;
             margin-bottom: var(--s-4);
         }}
-        .grid-hero:has(.focus-card) {{ grid-template-columns: 5fr 7fr; }}
-        .grid-2 {{ grid-template-columns: 5fr 7fr; }}
+        .grid-hero:has(.focus-card) {{ grid-template-columns: 6fr 6fr; }}
+        .grid-2 {{ grid-template-columns: 6fr 6fr; }}
         .grid-hero > .card, .grid-hero > .focus-card,
         .grid-2 > .card {{ margin-bottom: 0; height: 100%; }}
         @media (max-width: 960px) {{
@@ -963,7 +963,7 @@ def render_html(events, tasks, ai, meeting_reviews, preps=None):
         /* Header main split — title block on the left, Overview card on the right */
         .header-main {{
             display: grid;
-            grid-template-columns: 5fr 7fr;
+            grid-template-columns: 6fr 6fr;
             gap: var(--s-6);
             align-items: end;
             margin-bottom: var(--s-6);
