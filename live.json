@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-08-05T00:29:32.938653-05:00",
-  "refreshed_label": "12:29 AM",
+  "refreshed_at": "2026-08-05T00:38:02.401429-05:00",
+  "refreshed_label": "12:38 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -12,8 +12,13 @@
       "summary": "Weekly Tech BOD",
       "location": "",
       "prep": {
-        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-        "tasks": [],
+        "summary": "You must prepare for immediate structural pivots\u2014the last two Tech Fellow stand-ups focus heavily on establishing a composable platform strategy while managing severe organizational disruptions. You face critical governance changes\u2014including Jennifer\u2019s new SDLC risk-based one-pagers and the transition of the Arc Huddle into an active decision-making body\u2014alongside a complete freeze on hiring backfills. Furthermore, the architecture team strongly opposes the proposed $250 million IBM testing engagement\u2014citing undefined use cases\u2014while simultaneously navigating sudden executive removals that required emergency CTO intervention.",
+        "tasks": [
+          "Review Jennifer\u2019s upcoming SDLC and Technology Acquisition one-pagers\u2014focusing on risk-based engagement and early architectural intervention\u2014before they are finalized.",
+          "Establish a firm position on the proposed $250 million IBM testing framework\u2014which lacks clear use cases\u2014ahead of further vendor negotiations.",
+          "Reorganize the weekly Arc Huddle\u2014shifting it from an informational broadcast to an active problem-solving session\u2014to accelerate architecture decisions.",
+          "Prepare for the August 10th leadership offsite\u2014prioritizing platform placemats, technology lifecycle, and stop-start initiatives\u2014to align your direct reports."
+        ],
         "title": "Weekly Tech BOD",
         "start_label": "8:00 AM",
         "end_label": "9:00 AM"
@@ -48,8 +53,13 @@
       "summary": "Weekly Staff",
       "location": "",
       "prep": {
-        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-        "tasks": [],
+        "summary": "You must address critical resource constraints\u2014specifically by transitioning low-level design tasks to engineering to balance your workload\u2014while managing the platform strategy alignment for RV. Recent governance updates show friction in P&C data architecture and shadow architecture perceptions\u2014though the \"two-in-a-box\" model is succeeding\u2014requiring you to formalize RFP ownership for Scan AI.",
+        "tasks": [
+          "Transition low-level design tasks and basic subject matter queries to engineering staff\u2014safeguarding architectural capacity for oversight.",
+          "Formalize the transfer of technical ownership for the Scan AI and desktop task mining RFP\u2014moving it under technology/platform infrastructure.",
+          "Align the unaligned data architecture proposals driven by Dan Weaver's team\u2014restoring governance over rogue business proposals.",
+          "Update the platform strategy matrix to distinguish capabilities using primary versus secondary labels\u2014rather than relying solely on color indicators."
+        ],
         "title": "Weekly Staff",
         "start_label": "1:00 PM",
         "end_label": "2:00 PM"
@@ -74,8 +84,13 @@
       "summary": "D&S Transformation Tech Partner Connect",
       "location": "",
       "prep": {
-        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-        "tasks": [],
+        "summary": "The last D&S partners meeting shifted focus to active execution\u2014highlighting the October 2026 Billing Virtual Agent timeline and parallel Agent Assist tracks\u2014while delaying Claims integration until you have greater capability clarity. Your last sync with Jonathan marked a critical pivot for the ChatGPT initiative\u2014Suresh now demands direct deployment on the ChatGPT platform rather than internal sites. This shift forces a key architectural decision\u2014you must choose between hosting a tactical AWS endpoint immediately or waiting on Jesus and Doug for the enterprise gateway.",
+        "tasks": [
+          "Determine the deployment path for the ChatGPT MCP endpoint by weighing a tactical AWS workaround against the delayed enterprise gateway.",
+          "Escalate the required ChatGPT security compromises to Suresh, Yanka, and Enterprise Security for explicit waiver sign-offs.",
+          "Coordinate with Canon and Kunjin to ensure their participation in the next bi-weekly D&S transformation sync.",
+          "Review the upcoming integrated evolutionary demo for the Billing Virtual Agent in August."
+        ],
         "title": "D&S Transformation Tech Partner Connect",
         "start_label": "3:00 PM",
         "end_label": "4:00 PM"
@@ -90,42 +105,67 @@
       "summary": "Monthly Arch sync with Sai",
       "location": "",
       "prep": {
-        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-        "tasks": [],
+        "summary": "Review your June 19 discussion with Sai regarding the friction between business leadership and the technology organization\u2014specifically the rigid resistance to AI adoption. Contrast your slow, bureaucratic operating model with competitors like Liberty Mutual and Travelers\u2014they already deploy no-touch claims and agentic quoting. Address these bottlenecks by pushing for autonomous \"tiger teams\" and launching a low-risk, headless quoting pilot.",
+        "tasks": [
+          "Finalize the competitive analysis presentation snippet for the Suhas management meeting.",
+          "Evaluate leadership incentive structures to align performance with AI adoption goals.",
+          "Pilot a low-risk, AI-enabled headless quoting capability to demonstrate rapid value.",
+          "Prepare talking points on transitioning to high-autonomy tiger teams."
+        ],
         "title": "Monthly Arch sync with Sai",
         "start_label": "3:30 PM",
         "end_label": "4:00 PM"
       }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Weekly Tech BOD</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Prep unavailable \u2014 Gemini was unreachable when this brief was built.</p>\n                \n            </div>\n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Weekly Tech BOD</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">You must prepare for immediate structural pivots\u2014the last two Tech Fellow stand-ups focus heavily on establishing a composable platform strategy while managing severe organizational disruptions. You face critical governance changes\u2014including Jennifer\u2019s new SDLC risk-based one-pagers and the transition of the Arc Huddle into an active decision-making body\u2014alongside a complete freeze on hiring backfills. Furthermore, the architecture team strongly opposes the proposed $250 million IBM testing engagement\u2014citing undefined use cases\u2014while simultaneously navigating sudden executive removals that required emergency CTO intervention.</p>\n                <ul class=\"focus-prep-tasks\"><li>Review Jennifer\u2019s upcoming SDLC and Technology Acquisition one-pagers\u2014focusing on risk-based engagement and early architectural intervention\u2014before they are finalized.</li><li>Establish a firm position on the proposed $250 million IBM testing framework\u2014which lacks clear use cases\u2014ahead of further vendor negotiations.</li><li>Reorganize the weekly Arc Huddle\u2014shifting it from an informational broadcast to an active problem-solving session\u2014to accelerate architecture decisions.</li><li>Prepare for the August 10th leadership offsite\u2014prioritizing platform placemats, technology lifecycle, and stop-start initiatives\u2014to align your direct reports.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Tech BOD</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arch Forum Panel</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Github Tokens </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Technology Leadership Meeting</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">D&amp;S Transformation Tech Partner Connect</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Arch sync with Sai</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Risk and Control reports</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Connect Telematics arch</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Claims Pain Points Docs (downloads) - run it through AI</span>\n                <span class=\"capsule capsule--caution\">Due Aug 6</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Skan AI Pilot docs - ALO email (7-30)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Friction Free Quote architecture from ALO - Slack</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Email follow-up and set up meets for EMG engage from this week</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Ramesh about Track and and long term goals</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Matt about NBA reqs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Create &#x27;Pod Approach&#x27; write-up for Suhas</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Informatica Exception / Strategy: Follow up with John Clark and Chris on long-term alternatives or exception paths for the ~3,000\u20134,000 Informatica jobs tied to policy conversion ahead of the August 2027 deadline</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send property Executive Director introductory docs</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
     "7p95scocu556uds8in6ud1jeti": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
+      "summary": "You must prepare for immediate structural pivots\u2014the last two Tech Fellow stand-ups focus heavily on establishing a composable platform strategy while managing severe organizational disruptions. You face critical governance changes\u2014including Jennifer\u2019s new SDLC risk-based one-pagers and the transition of the Arc Huddle into an active decision-making body\u2014alongside a complete freeze on hiring backfills. Furthermore, the architecture team strongly opposes the proposed $250 million IBM testing engagement\u2014citing undefined use cases\u2014while simultaneously navigating sudden executive removals that required emergency CTO intervention.",
+      "tasks": [
+        "Review Jennifer\u2019s upcoming SDLC and Technology Acquisition one-pagers\u2014focusing on risk-based engagement and early architectural intervention\u2014before they are finalized.",
+        "Establish a firm position on the proposed $250 million IBM testing framework\u2014which lacks clear use cases\u2014ahead of further vendor negotiations.",
+        "Reorganize the weekly Arc Huddle\u2014shifting it from an informational broadcast to an active problem-solving session\u2014to accelerate architecture decisions.",
+        "Prepare for the August 10th leadership offsite\u2014prioritizing platform placemats, technology lifecycle, and stop-start initiatives\u2014to align your direct reports."
+      ],
       "title": "Weekly Tech BOD",
       "start_label": "8:00 AM",
       "end_label": "9:00 AM"
     },
     "43e3r5f6ab7eq1ujjrs0fb1l3b": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
+      "summary": "You must address critical resource constraints\u2014specifically by transitioning low-level design tasks to engineering to balance your workload\u2014while managing the platform strategy alignment for RV. Recent governance updates show friction in P&C data architecture and shadow architecture perceptions\u2014though the \"two-in-a-box\" model is succeeding\u2014requiring you to formalize RFP ownership for Scan AI.",
+      "tasks": [
+        "Transition low-level design tasks and basic subject matter queries to engineering staff\u2014safeguarding architectural capacity for oversight.",
+        "Formalize the transfer of technical ownership for the Scan AI and desktop task mining RFP\u2014moving it under technology/platform infrastructure.",
+        "Align the unaligned data architecture proposals driven by Dan Weaver's team\u2014restoring governance over rogue business proposals.",
+        "Update the platform strategy matrix to distinguish capabilities using primary versus secondary labels\u2014rather than relying solely on color indicators."
+      ],
       "title": "Weekly Staff",
       "start_label": "1:00 PM",
       "end_label": "2:00 PM"
     },
     "4lskq8a9na7alpf575qineo9pr": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
+      "summary": "The last D&S partners meeting shifted focus to active execution\u2014highlighting the October 2026 Billing Virtual Agent timeline and parallel Agent Assist tracks\u2014while delaying Claims integration until you have greater capability clarity. Your last sync with Jonathan marked a critical pivot for the ChatGPT initiative\u2014Suresh now demands direct deployment on the ChatGPT platform rather than internal sites. This shift forces a key architectural decision\u2014you must choose between hosting a tactical AWS endpoint immediately or waiting on Jesus and Doug for the enterprise gateway.",
+      "tasks": [
+        "Determine the deployment path for the ChatGPT MCP endpoint by weighing a tactical AWS workaround against the delayed enterprise gateway.",
+        "Escalate the required ChatGPT security compromises to Suresh, Yanka, and Enterprise Security for explicit waiver sign-offs.",
+        "Coordinate with Canon and Kunjin to ensure their participation in the next bi-weekly D&S transformation sync.",
+        "Review the upcoming integrated evolutionary demo for the Billing Virtual Agent in August."
+      ],
       "title": "D&S Transformation Tech Partner Connect",
       "start_label": "3:00 PM",
       "end_label": "4:00 PM"
     },
     "11lm97qoboikl0vpi7huqnmbkn": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
+      "summary": "Review your June 19 discussion with Sai regarding the friction between business leadership and the technology organization\u2014specifically the rigid resistance to AI adoption. Contrast your slow, bureaucratic operating model with competitors like Liberty Mutual and Travelers\u2014they already deploy no-touch claims and agentic quoting. Address these bottlenecks by pushing for autonomous \"tiger teams\" and launching a low-risk, headless quoting pilot.",
+      "tasks": [
+        "Finalize the competitive analysis presentation snippet for the Suhas management meeting.",
+        "Evaluate leadership incentive structures to align performance with AI adoption goals.",
+        "Pilot a low-risk, AI-enabled headless quoting capability to demonstrate rapid value.",
+        "Prepare talking points on transitioning to high-autonomy tiger teams."
+      ],
       "title": "Monthly Arch sync with Sai",
       "start_label": "3:30 PM",
       "end_label": "4:00 PM"
