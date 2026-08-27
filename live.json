@@ -1,85 +1,122 @@
 {
-  "refreshed_at": "2026-08-26T19:46:33.039357-05:00",
-  "refreshed_label": "7:46 PM",
+  "refreshed_at": "2026-08-27T05:39:35.400537-05:00",
+  "refreshed_label": "5:39 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "2eu80cvug3j4adrifvfpji5ctr",
-      "start_iso": "2026-08-26T09:00:00-05:00",
-      "end_iso": "2026-08-26T10:30:00-05:00",
-      "start_label": "9:00 AM",
-      "end_label": "10:30 AM",
-      "summary": "Arch Forum",
+      "id": "1jnvu1396s2l85fbj0568msu8v",
+      "start_iso": "2026-08-27T08:00:00-05:00",
+      "end_iso": "2026-08-27T09:00:00-05:00",
+      "start_label": "8:00 AM",
+      "end_label": "9:00 AM",
+      "summary": "Two Way Text Alignment",
       "location": "",
       "prep": null
     },
     {
-      "id": "32lquk02unbp8peul9b101hhmi",
-      "start_iso": "2026-08-26T10:00:00-05:00",
-      "end_iso": "2026-08-26T11:00:00-05:00",
-      "start_label": "10:00 AM",
-      "end_label": "11:00 AM",
-      "summary": "Risk Lens - Unified Telematics Read-out",
+      "id": "3ldv0vh35tun1qkem432mfn3i2",
+      "start_iso": "2026-08-27T09:00:00-05:00",
+      "end_iso": "2026-08-27T10:00:00-05:00",
+      "start_label": "9:00 AM",
+      "end_label": "10:00 AM",
+      "summary": "Enterprise Architecture Leadership",
       "location": "",
-      "prep": {
-        "summary": "You initiated the unified telematics platform vision\u2014driven by a direct request from Aaron Bend\u2014to construct a high-level architecture and standard design pattern. This foundational design\u2014tracked during your mid-May alignment with Steve\u2014aims to synthesize disparate telemetry feeds into a single enterprise framework. You must now evaluate this architectural pattern against the company's stricter automated deployment gates\u2014ensuring the design bypasses the governance bottlenecks currently stalling other horizontal capabilities.",
-        "tasks": [
-          "Retrieve the high-level telematics architecture\u2014originally drafted in mid-May for Aaron Bend\u2014to verify compatibility with the unified platform vision.",
-          "Resolve the outstanding governance blockages\u2014specifically the Model Risk Management and Gen AI Council chokeholds\u2014that threaten to delay telemetry data ingestion.",
-          "Map the telematics data stream requirements to the three-tier Snowflake architecture\u2014Base, Aggregate, and Memory\u2014to ensure compliance with the enterprise data product strategy.",
-          "Enforce strict alignment with the new automated deployment gates to prevent downstream pipeline blocks during the platform rollout."
-        ],
-        "title": "Risk Lens - Unified Telematics Read-out",
-        "start_label": "10:00 AM",
-        "end_label": "11:00 AM"
-      }
+      "prep": null
     },
     {
-      "id": "6onhter2ld8e8vfktv57csqfgo",
-      "start_iso": "2026-08-26T13:30:00-05:00",
-      "end_iso": "2026-08-26T14:00:00-05:00",
+      "id": "30i8i1lr1sa1p4kk1jg91va9oj",
+      "start_iso": "2026-08-27T10:00:00-05:00",
+      "end_iso": "2026-08-27T10:30:00-05:00",
+      "start_label": "10:00 AM",
+      "end_label": "10:30 AM",
+      "summary": "TD Sync",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "4g04qkj98k4jp1i4ovuicgnkfo",
+      "start_iso": "2026-08-27T10:30:00-05:00",
+      "end_iso": "2026-08-27T11:00:00-05:00",
+      "start_label": "10:30 AM",
+      "end_label": "11:00 AM",
+      "summary": "Platform Strategy",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "3jti05ftn7p5706060ptv32fdm",
+      "start_iso": "2026-08-27T11:00:00-05:00",
+      "end_iso": "2026-08-27T12:00:00-05:00",
+      "start_label": "11:00 AM",
+      "end_label": "12:00 PM",
+      "summary": "Weekly Staff ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "17rqu379ant1hhac15jqj0pt4g",
+      "start_iso": "2026-08-27T12:30:00-05:00",
+      "end_iso": "2026-08-27T13:00:00-05:00",
+      "start_label": "12:30 PM",
+      "end_label": "1:00 PM",
+      "summary": "USAA Consortium: Peer Insurer - 2 way SMS",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "3apvdksslnqg3voqepvqjuq5sq",
+      "start_iso": "2026-08-27T13:30:00-05:00",
+      "end_iso": "2026-08-27T14:00:00-05:00",
       "start_label": "1:30 PM",
       "end_label": "2:00 PM",
-      "summary": "Bi-Monthly with Hima Obbu",
+      "summary": "Skan.ai pilot",
       "location": "",
-      "prep": {
-        "summary": "You must brief Hima on the upcoming P&C Billing Bot employee pilot\u2014targeting 20 to 50 internal users\u2014and the scheduled late-May Two-Way Texting Rec sessions. Finalizing the security boundaries remains a critical precursor to these sessions\u2014requiring urgent alignment with Corey Newsome on governance roles. You also need to address the AWS POC for Agent Assist\u2014now delayed to June 11th\u2014and settle the outstanding funding disputes for AWS Professional Services.",
-        "tasks": [
-          "Confirm the final launch parameters and target audience for the P&C Billing Bot MVP.",
-          "Coordinate with Corey Newsome to lock down governance and control frameworks before the late-May texting sessions.",
-          "Resolve the internal funding deadlock regarding AWS Professional Services and environment rentals for the June 11th proof-of-concept.",
-          "Extract security precedents from the Claims team to accelerate the Digital Network Services framework."
-        ],
-        "title": "Bi-Monthly with Hima Obbu",
-        "start_label": "1:30 PM",
-        "end_label": "2:00 PM"
-      }
+      "prep": null
     },
     {
-      "id": "0dg47ne36mr7ss7p2bv48tavv3",
-      "start_iso": "2026-08-26T16:00:00-05:00",
-      "end_iso": "2026-08-26T16:30:00-05:00",
-      "start_label": "4:00 PM",
-      "end_label": "4:30 PM",
-      "summary": "D&S Partners Connect",
+      "id": "5tmju68s3i8ldvvtm1360cvfdn",
+      "start_iso": "2026-08-27T14:00:00-05:00",
+      "end_iso": "2026-08-27T15:00:00-05:00",
+      "start_label": "2:00 PM",
+      "end_label": "3:00 PM",
+      "summary": "Monthly Full Staff",
       "location": "",
-      "prep": {
-        "summary": "No work notes match the D&S Partners Connect or your conversation with James\u2014you must retrieve these specific details from external sources. Your recent files focus heavily on platform strategy\u2014specifically shifting ownership to business leaders and defining capabilities at the L2 level\u2014while streamlining tech acquisition. Use these core architectural parameters\u2014especially the strict CLM approval gate\u2014to guide your upcoming partner negotiations.",
-        "tasks": [
-          "Retrieve the previous D&S Partners Connect notes from your email to reconstruct your past takeaways.",
-          "Confirm the outstanding action items from your latest conversation with James.",
-          "Map all partner-provided capabilities to the enterprise L1 and L2 platform definitions to prevent duplication.",
-          "Apply the newly established technology acquisition triage process to any incoming partner proposals."
-        ],
-        "title": "D&S Partners Connect",
-        "start_label": "4:00 PM",
-        "end_label": "4:30 PM"
-      }
+      "prep": null
+    },
+    {
+      "id": "6tsf5dj7hqfgmjr9hqvjiovm7m",
+      "start_iso": "2026-08-27T15:00:00-05:00",
+      "end_iso": "2026-08-27T15:30:00-05:00",
+      "start_label": "3:00 PM",
+      "end_label": "3:30 PM",
+      "summary": "Two way Text Follow up",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "03e67b2c6barhgp4idg4j0668i",
+      "start_iso": "2026-08-27T15:30:00-05:00",
+      "end_iso": "2026-08-27T16:00:00-05:00",
+      "start_label": "3:30 PM",
+      "end_label": "4:00 PM",
+      "summary": "Aaron Bend 1on1",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "7f7ahkccop0gv28c9rk9pkc67m",
+      "start_iso": "2026-08-27T16:30:00-05:00",
+      "end_iso": "2026-08-27T17:00:00-05:00",
+      "start_label": "4:30 PM",
+      "end_label": "5:00 PM",
+      "summary": "AIA Next step",
+      "location": "",
+      "prep": null
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arch Forum</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Risk Lens - Unified Telematics Read-out</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-Monthly with Hima Obbu</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">D&amp;S Partners Connect</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up TD Review meeting with stakeholders</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Talk to Doug and Steve about Devin.ai</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Skan AI Pilot docs - ALO email (7-30)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule sprinkler service</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--caution\">Due Aug 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync up with Gunjan on MV meeting with P&amp;C</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do the RCSA training </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Automation Framework link from Jonathan</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Respond to Andy - review notes</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Friction Free Quote architecture from ALO - Slack</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Two Way Text Alignment</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Two Way Text Alignment</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Enterprise Architecture Leadership</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Platform Strategy</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:30 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">USAA Consortium: Peer Insurer - 2 way SMS</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Skan.ai pilot</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Full Staff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Two way Text Follow up</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Aaron Bend 1on1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AIA Next step</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Skan AI Pilot docs - ALO email (7-30)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule sprinkler service</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Friction Free Quote architecture from ALO - Slack</span>\n                <span class=\"capsule capsule--neutral\">Due Aug 31</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--neutral\">Due Aug 31</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Automation Framework link from Jonathan</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do the RCSA training </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Respond to Andy - review notes</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
     "32lquk02unbp8peul9b101hhmi": {
       "summary": "You initiated the unified telematics platform vision\u2014driven by a direct request from Aaron Bend\u2014to construct a high-level architecture and standard design pattern. This foundational design\u2014tracked during your mid-May alignment with Steve\u2014aims to synthesize disparate telemetry feeds into a single enterprise framework. You must now evaluate this architectural pattern against the company's stricter automated deployment gates\u2014ensuring the design bypasses the governance bottlenecks currently stalling other horizontal capabilities.",
