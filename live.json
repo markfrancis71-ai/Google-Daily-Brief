@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-08-27T07:54:51.135154-05:00",
-  "refreshed_label": "7:54 AM",
+  "refreshed_at": "2026-08-27T13:54:50.721765-05:00",
+  "refreshed_label": "1:54 PM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -12,12 +12,12 @@
       "summary": "Two Way Text Alignment",
       "location": "",
       "prep": {
-        "summary": "You must navigate major roadblocks for the Apple Messages for Business\u2014AMB\u2014rollout, specifically critical resource constraints\u2014which block Cognito and Customer Profile testing\u2014and outstanding DLP requirements from Ann Hines. While AWS Connect remains your preferred architecture over Twilio, security resource bottlenecks block all POC progress through year-end. To maintain momentum, you must leverage asynchronous chat via the mobile app as an immediate strategic accelerator\u2014bypassing the AMB hurdles entirely for now.",
+        "summary": "The August 26 sync reveals critical security and resource bottlenecks\u2014specifically outstanding threat modeling and a total lack of security engineering resources through year-end\u2014that block the Apple Messages for Business (AMB) proof of concept. You face unresolved Data Loss Prevention requirements from Ann Hines and an unauthenticated fallback gap, as Apple requires routing to human agents while internal systems prohibit unauthenticated digital chat. Consequently, the team is pivoting to asynchronous chat via the mobile app as the primary accelerator\u2014bypassing AMB hurdles while AWS Connect remains the preferred long-term architecture over Twilio.",
         "tasks": [
-          "Resolve the outstanding Data Loss Prevention requirements raised by Ann Hines for authenticated channels.",
-          "Establish an unauthenticated fallback routing protocol to human agents to satisfy Apple's platform requirements.",
-          "Prioritize the mobile app asynchronous chat deployment to bypass the year-end security resource freeze.",
-          "Finalize the architectural transition away from Twilio in favor of the preferred AWS Connect platform."
+          "Resolve the unauthenticated fallback dilemma to meet Apple's human-routing requirement without violating internal chat security policies.",
+          "Align with Ann Hines on Data Loss Prevention requirements for authenticated channels to resolve the contrast with voice and chat standards.",
+          "Secure cloud security, security engineering, and CCT resources to unblock the Cognito and Connect profile proof-of-concept testing.",
+          "Prioritize asynchronous chat via the mobile app as the immediate strategic alternative to bypass current AMB resource constraints."
         ],
         "title": "Two Way Text Alignment",
         "start_label": "8:00 AM",
@@ -33,12 +33,12 @@
       "summary": "Enterprise Architecture Leadership",
       "location": "",
       "prep": {
-        "summary": "The new TAP model establishes a formal, physical approval gate directly within CLM/GSP\u2014decoupling technical decisions from procurement milestones\u2014and introduces a preliminary AIA stage to eliminate late-stage surprises. Your platform strategy\u2014driven by the go/capabilityplatforms mapping\u2014requires defining business capabilities strictly down to Level 2 to identify duplicate tooling across payment rails, communications, and insurance lines. You must finalize the outstanding CLM system control release date with Wes and Brian Osterkamp to solidify this governance transition.",
+        "summary": "You are transitioning to the new TAP model\u2014this decouples technical decisions from acquisition milestones to prevent procurement delays while establishing a physical architecture approval gate directly in CLM. The platform strategy focuses strictly on mapping Level 1 and Level 2 capabilities\u2014such as the newly defined Communications and Payments platforms\u2014to expose tool duplication and drive enterprise consolidation. You must align the procurement-focused AIA Light stream with the broader enterprise architecture impact assessments to finalize this target state taxonomy.",
         "tasks": [
-          "Establish a tracking check-in with Wes and Brian Osterkamp\u2014the primary CLM owners\u2014to finalize the system control release date.",
-          "Document the end-to-end 'To-Be' workflow\u2014spanning triage, preliminary AIA, plan approval, and final CLM gate\u2014into a visual process map.",
-          "Map existing software applications to the Level 1 and Level 2 capability placemats\u2014focusing on finance, payments, and external sourcing\u2014to calculate total cost of ownership.",
-          "Align the comprehensive enterprise AIA stream led by Brian and Pravina with the procurement 'AIA Light' stream managed by Mark and Robert."
+          "Confirm the rollout timeline for the physical CLM/GSP approval control with Wes and Brian Osterkamp.",
+          "Map the existing tools in TPM to the newly defined Level 1 and Level 2 platform placemats to calculate total cost of ownership.",
+          "Align the procurement-focused AIA Light stream led by Mark and Robert with the comprehensive enterprise AIA stream.",
+          "Document the finalized end-to-end TAP workflow\u2014from triage and preliminary AIA to final CLM architecture approval\u2014into a standard operating procedure."
         ],
         "title": "Enterprise Architecture Leadership",
         "start_label": "9:00 AM",
@@ -54,12 +54,13 @@
       "summary": "TD Sync",
       "location": "",
       "prep": {
-        "summary": "You must align the operationalization of the Tech Acquisition Process (TAP)\u2014integrating the new architecture gating checkpoints in CLM and resolving the deal-review workflows discussed on August 11 and 24\u2014with the newly assigned director roles. Under the updated structure established in the August 24 and 25 syncs, directors will take direct ownership of the triage cadence and GSP meetings\u2014specifically Praveena leading triage, alongside Lori, Gavinol, and Mike Henry managing their respective governance domains. You need to finalize how these directors are recorded as formal owners in ServiceNow and confirm RV's sign-off protocols before contract execution.",
+        "summary": "Focus your preparation on operationalizing the Tech Acquisition Process\u2014commonly referred to as TAP\u2014by integrating independent architecture sign-offs directly into the CLM workflow before contract execution. You must align with the newly assigned director-level process owners\u2014Praveena leading Set Direction and triage, Lori on Govern Tech Direction, Gavinol on Govern Tech Portfolio, and Mike Henry driving Tech Strategy. This transition establishes the directors as the primary system owners in ServiceNow\u2014relegating counterparts to delegate roles\u2014while routing final approval authority directly to RV.",
         "tasks": [
-          "Configure ServiceNow and Risk management platforms to record directors as actual owners.",
-          "Finalize the transition of triage cadence and GSP meeting ownership to Praveena and the director cohort.",
-          "Define the communication mechanism for updating RV on Tech Decision Review Group outcomes.",
-          "Integrate the independent architecture sign-off gate into CLM to ensure reviews complete prior to contract execution."
+          "Retroactively clean up the Integrate.AI pilot artifacts to classify the decision\u2014this telematics pilot bypassed the formal TD process during its October signing.",
+          "Hand ownership of the tech acquisition triage cadence to Praveena\u2014and ensure Julie Lafferty is included in the transition.",
+          "Configure ServiceNow and risk management platforms to record the directors as official owners\u2014positioning your counterpart as a delegate approver.",
+          "Establish a formal communication mechanism to summarize Tech Decision Review Group outcomes\u2014ensuring RV remains informed of decisions when absent.",
+          "Cross-reference active architecture reviews against the Tech Spend dashboard\u2014identifying any missing pipeline initiatives before the sync."
         ],
         "title": "TD Sync",
         "start_label": "10:00 AM",
@@ -75,13 +76,12 @@
       "summary": "Platform Strategy",
       "location": "",
       "prep": {
-        "summary": "Review the consolidated platform capabilities on the new HTML site\u2014this replaces the messy spreadsheet to streamline the presentation for RV. Prepare for the internal working session to align on architecture cost modeling\u2014specifically mapping total cost of ownership and licensing into products rather than isolated applications. Note the ongoing delivery timeline tensions regarding the Aquila pricing platform\u2014which relies heavily on un-remediated User-Defined Applications\u2014and the frustrations surrounding the proposed data lineage RFP.",
+        "summary": "You must leverage the newly consolidated go capabilities HTML site\u2014designed to steer RV away from disorganized spreadsheets\u2014during tomorrow's internal platform strategy alignment session. The August 26th standup exposed critical bottlenecks around total cost of ownership mapping\u2014forcing a shift from isolated applications to product-based services\u2014and revealed severe resource deficits regarding Aquila pricing platform dependencies. You will also need to address escalating frustrations over redundant third-party vendor tools and delayed pricing model delivery timelines.",
         "tasks": [
-          "Review the newly created drag-and-drop HTML site for L2 capability alignment before presenting to leadership.",
-          "Map total cost of ownership and licensing directly to products and services to avoid legacy application anchorage.",
-          "Resolve the December versus January timeline conflict for the Aquila pricing platform delivery.",
-          "Identify internal domain experts to remediate critical User-Defined Applications.",
-          "Implement the streamlined Technical Decision intake process prior to upcoming procurement and plan approvals."
+          "Align the internal architecture team\u2014resolving all outstanding L1 and L2 capability placements\u2014prior to the upcoming platform strategy presentation with RV.",
+          "Map total cost of ownership and licensing structures into defined products\u2014avoiding legacy TPM anchorage while maintaining platform-level visibility.",
+          "Acquire specialized domain expertise to remediate critical User-Defined Applications\u2014safeguarding the December delivery target for the Aquila pricing platform.",
+          "Establish the streamlined Technical Decision intake process\u2014forcing architecture governance review prior to final procurement and plan approvals."
         ],
         "title": "Platform Strategy",
         "start_label": "10:30 AM",
@@ -97,12 +97,12 @@
       "summary": "Weekly Staff ",
       "location": "",
       "prep": {
-        "summary": "Drive alignment on the new TAP process\u2014which introduces a formal approval gate in CLM/GSP and an early Architecture Impact Assessment\u2014to streamline procurement and eliminate late-stage surprises. Resolve the cross-cutting issues identified across recent architecture discussions\u2014notably the P&C capacity constraints, the Solo AI gateway funding delays, and the identity-proofing compliance risks. Note that no work notes exist for the August 24 P&C IT directs meeting\u2014you must gather updates directly from attendees during the staff sync.",
+        "summary": "Review your notes from the past week\u2014they reveal persistent friction between delivery speed and governance controls. You must introduce the new TAP process\u2014now establishing formal CLM/GSP approval gates and an early Architecture Impact Assessment\u2014to eliminate downstream surprises. Note that no work notes exist for the August 24 P&C IT directs meeting\u2014you will need to steer that update using related feedback on P&C shadow architecture and resource bottlenecks.",
         "tasks": [
-          "Establish the rollout timeline for the physical CLM/GSP approval control\u2014partnering with Wes and Brian Osterkamp to replace the legacy email process.",
-          "Unblock the Solo Agent Gateway license\u2014tracking the funding request with Joe Monk now that Dan has returned from travel.",
-          "Define the architecture engagement model for high-priority execution pods\u2014limiting involvement to a time-boxed consulting model of one to two hours daily.",
-          "Draft the standard operating procedure for the 'To-Be' workflow\u2014mapping technology triage through final CLM architecture approval."
+          "Track down the implementation timeline for the physical CLM/GSP approval controls with Wes and Brian Osterkamp.",
+          "Secure the delayed Solo Agent Gateway funding from Dan to resolve the critical software licensing blocker.",
+          "Reconcile modern application inflation\u2014specifically the Guidewire auto counts\u2014by aligning business owners before beginning consolidation.",
+          "Establish the time-boxed consulting model for the 90-day execution pods to protect limited architecture capacity."
         ],
         "title": "Weekly Staff ",
         "start_label": "11:00 AM",
@@ -118,13 +118,12 @@
       "summary": "USAA Consortium: Peer Insurer - 2 way SMS",
       "location": "",
       "prep": {
-        "summary": "You must review previous research on peer insurers\u2014specifically Progressive and Allstate\u2014regarding their risk acceptance models for two-way SMS and Data Loss Prevention (DLP) controls. Industry sharing groups and consortium discussions reveal that peers manage texting risks through policy constraints rather than outright blocking workflows\u2014a critical benchmark as you evaluate a soft launch without real-time DLP. You also need to weigh the technical limitations of Twilio as an outbound aggregator against AWS Connect as the core platform\u2014while resolving the encryption and unauthenticated fallback challenges of Apple Messages for Business.",
+        "summary": "You must leverage previous research from the August 25 and 26 syncs to benchmark Francis Inc.\u2019s two-way SMS strategy against peer insurers like Progressive and Allstate\u2014focusing on how they navigate Data Loss Prevention (DLP) risks without halting workflows. Unresolved security gaps remain a critical bottleneck\u2014specifically the lack of security engineering resources to validate Cognito profiles and the outstanding threat modeling for Apple Messages for Business. Ann Hines is currently coordinating with the Governance Council and peer sharing groups to map these industry standards\u2014making your alignment with these findings vital for the consortium meeting.",
         "tasks": [
-          "Review peer insurer DLP practices\u2014specifically Progressive and Allstate\u2014to benchmark risk acceptance thresholds for two-way messaging.",
-          "Obtain the specific Data Loss Prevention requirements for FDM on Convexia/Cody's Aid from Rosie Lafio.",
-          "Resolve the architectural trade-offs between Twilio as a last-mile aggregator and AWS Connect as the preferred conversational platform.",
-          "Coordinate with Ann Hines to schedule the Governance Council evaluation of policy constraints and launch risks.",
-          "Assess the Claims QA sampling process to establish baseline visibility into potential data incidents during a soft launch."
+          "Review the benchmarked DLP and risk acceptance strategies of peer insurers\u2014specifically Progressive and Allstate\u2014before entering the consortium discussions.",
+          "Confirm the status of Ann Hines' outreach to the Governance Council and peer financial services sharing groups regarding messaging risk management.",
+          "Resolve the outstanding security engineering and cloud resource constraints currently blocking the Cognito and AWS Connect profile proof-of-concept testing.",
+          "Analyze the proposed claims QA sampling process to determine if post-facto audits can sufficiently mitigate the risks of a two-way SMS soft launch without active DLP."
         ],
         "title": "USAA Consortium: Peer Insurer - 2 way SMS",
         "start_label": "12:30 PM",
@@ -150,12 +149,13 @@
       "summary": "Monthly Full Staff",
       "location": "",
       "prep": {
-        "summary": "Over the past two weeks, key cross-cutting themes focus on governance optimization\u2014specifically transitioning from informal email sign-offs to rigid CLM/GSP system controls\u2014and mitigating acute resource bottlenecks across P&C delivery models. The new TAP process codifies this shift by introducing a preliminary Architecture Impact Assessment early in the triage phase to prevent late-stage procurement blocks. No work notes exist for the August 24 P&C IT directs meeting\u2014though neighboring discussions emphasize ongoing friction around shadow data architecture and the push for time-boxed consulting models.",
+        "summary": "You must address critical governance and security risks\u2014specifically the transition to the new TAP process, which introduces a hard CLM/GSP gate and upfront AIA triage to replace informal email approvals. Cross-cutting themes from the past two weeks reveal deep systemic friction\u2014including Guidewire application inflation, TVO security waiver reliance, and blocked funding for Solo's AI Gateway. No work notes match the P&C IT directs meeting from 8-24\u2014prepare to address these gaps directly with the leadership team.",
         "tasks": [
-          "Finalize the CLM system control release date by establishing a tracking check-in with Wes and Brian Osterkamp.",
-          "Coordinate with CIO partners Sri and Suhas to embed pending technology decisions directly into upcoming Deal Review packets.",
-          "Resolve the Solo Agent Gateway licensing delay by securing funding approval through Joe Monk.",
-          "Draft a standardized operating procedure mapping the transition from preliminary AIA triage to final CLM architecture approval."
+          "Track down outstanding action items from the August 24 P&C IT directs meeting\u2014focusing on Dan Weaver's unaligned data proposals.",
+          "Establish a tracking check-in with Wes and Brian Osterkamp to lock down the CLM system control release date.",
+          "Resolve the TVO security waiver exposures\u2014forcing Renters and Auto flows into standardized authentication.",
+          "Escalate the blocked Solo AI Gateway software license to Joe Monk for Dan's immediate sign-off.",
+          "Address the Guidewire application count inflation\u2014collaborating with business owners to consolidate the 25-plus redundant entries."
         ],
         "title": "Monthly Full Staff",
         "start_label": "2:00 PM",
@@ -171,12 +171,13 @@
       "summary": "Two way Text Follow up",
       "location": "",
       "prep": {
-        "summary": "You must address critical security gaps from the August 26 Apple Messages for Business\u2014AMB\u2014sync before moving forward. Infosec has not completed threat modeling or authentication workflows\u2014and critical engineering resources are blocked through the end of the year. You also face unresolved DLP requirements from Ann Hines and lack a viable fallback protocol for members who fail authentication. Because of these resource constraints\u2014and subsequent delivery hurdles\u2014you should prioritize asynchronous chat via the mobile app as your immediate business accelerator.",
+        "summary": "Review the critical bottlenecks from the August 26 meeting\u2014specifically the security resource constraints blocking Cognito and Connect profile testing through year-end. Address the unresolved fallback requirement\u2014Apple mandates routing to a human agent upon authentication failure, but your current digital chat protocol blocks unauthenticated users. Target asynchronous chat within the mobile app as the immediate strategic alternative\u2014this sidesteps the Apple Messages for Business hurdles while still avoiding expensive voice calls.",
         "tasks": [
-          "Secure dedicated security engineering and cloud security resources to unblock the blocked Cognito and Connect proof-of-concept testing.",
-          "Resolve the unauthenticated fallback dilemma to satisfy Apple's human-agent routing mandate.",
-          "Finalize formal threat modeling and authentication workflows with Infosec for the AMB protocol-switching behavior.",
-          "Address the outstanding Data Loss Prevention requirements raised by Ann Hines for authenticated channels."
+          "Resolve the outstanding Data Loss Prevention requirements raised by Ann Hines for authenticated messaging channels.",
+          "Finalize the threat modeling and authentication workflows for Apple's in-memory protocol transitions.",
+          "Define a compliant routing path for users who fail authentication to satisfy Apple's human-agent mandate without violating internal digital chat security policies.",
+          "Maintain AWS Connect as the primary architectural direction instead of expanding Twilio beyond its role as an outbound SMS aggregator.",
+          "Accelerate the rollout of asynchronous chat within the mobile app to bypass the year-end security engineering resource deficit."
         ],
         "title": "Two way Text Follow up",
         "start_label": "3:00 PM",
@@ -192,12 +193,12 @@
       "summary": "Aaron Bend 1on1",
       "location": "",
       "prep": {
-        "summary": "Prepare for your alignment with Aaron by reviewing the June 25 discussion\u2014which focused on the technology obsolescence dashboard, mainframe-reliant API bottlenecks, and agentic AI readiness. Analyze the August 24 technical decisions\u2014which approved Method Financial for debt consolidation, Delta Group for fraud team staffing, and Rent Risk for expanded distribution. Address these legacy system transitions and pilot programs to resolve outstanding architectural gaps.",
+        "summary": "Your last discussion with Aaron focused on retiring legacy systems via the Technology Obsolescence dashboard\u2014reducing the run-the-business burden\u2014and preparing APIs for agentic AI gateways. The August 24 meeting finalized several technical decisions\u2014including launching the Zesty wildfire pilot, transitioning legal tools, and decommissioning Defect Dojo in favor of ServiceNow.",
         "tasks": [
-          "Retrieve the Technology Obsolescence spreadsheet link to complete the final architecture review.",
-          "Assess whether current APIs can plug into the Model Context Protocol gateway without impacting existing configurations.",
-          "Finalize the production pilot comparing FIS Prophet and LCP InsureSight for loss reserving.",
-          "Initiate the transition of Defect Dojo to native ServiceNow vulnerability modules."
+          "Retrieve the Technology Obsolescence spreadsheet link\u2014ensuring alignment with the architecture team's submissions.",
+          "Assess the readiness of high-volume APIs for the Model Context Protocol gateway\u2014focusing on maintaining context without disrupting current gateways.",
+          "Monitor the pilot outcomes for both FIS Prophet and Zesty Z-Fire\u2014verifying data security protocols.",
+          "Execute the decommissioning of Defect Dojo\u2014transitioning all vulnerability management to native ServiceNow modules."
         ],
         "title": "Aaron Bend 1on1",
         "start_label": "3:30 PM",
@@ -213,12 +214,12 @@
       "summary": "AIA Next step",
       "location": "",
       "prep": {
-        "summary": "Transition the legacy email-based architecture approval process\u2014previously managed informally with Jeff\u2014to a formal physical gate within CLM/GSP. You must execute this new workflow early in the cycle through a preliminary AIA assessment\u2014preventing late-stage downstream surprises. Coordinate with Wes and Brian Osterkamp to lock in the final system control release date.",
+        "summary": "You are transitioning from an informal email-based architecture approval process\u2014previously managed via legacy exchanges with Jeff\u2014to a formal, physical approval gate embedded directly within CLM/GSP. This updated workflow introduces an upfront, lightweight preliminary Architecture Impact Assessment\u2014or AIA\u2014to eliminate late-stage surprises before plan approval triggers detailed due diligence. Implementation discussions with Wes and Brian Osterkamp are underway, but you must still finalize the rollout timeline and map the end-to-end \"To-Be\" process.",
         "tasks": [
-          "Clarify the rollout timeline for the physical CLM/GSP approval control\u2014coordinating directly with the implementation team.",
-          "Retrieve past email approval examples with Jeff\u2014providing the team with a baseline workflow comparison.",
-          "Document the end-to-end 'To-Be' workflow from triage to final CLM architecture approval.",
-          "Establish a recurring check-in with Wes and Brian Osterkamp\u2014finalizing the system control release target."
+          "Clarify the rollout timeline for the physical CLM/GSP architecture approval gate with Wes and Brian Osterkamp.",
+          "Document the complete \"To-Be\" workflow\u2014from triage and preliminary AIA to final CLM approval\u2014into a standard operating procedure.",
+          "Retrieve past email approval examples involving Jeff to establish the baseline workflow for the implementation team.",
+          "Establish a regular tracking cadence with Wes and Brian Osterkamp to finalize the system control release date."
         ],
         "title": "AIA Next step",
         "start_label": "4:30 PM",
@@ -226,127 +227,128 @@
       }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Two Way Text Alignment</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">You must navigate major roadblocks for the Apple Messages for Business\u2014AMB\u2014rollout, specifically critical resource constraints\u2014which block Cognito and Customer Profile testing\u2014and outstanding DLP requirements from Ann Hines. While AWS Connect remains your preferred architecture over Twilio, security resource bottlenecks block all POC progress through year-end. To maintain momentum, you must leverage asynchronous chat via the mobile app as an immediate strategic accelerator\u2014bypassing the AMB hurdles entirely for now.</p>\n                <ul class=\"focus-prep-tasks\"><li>Resolve the outstanding Data Loss Prevention requirements raised by Ann Hines for authenticated channels.</li><li>Establish an unauthenticated fallback routing protocol to human agents to satisfy Apple&#x27;s platform requirements.</li><li>Prioritize the mobile app asynchronous chat deployment to bypass the year-end security resource freeze.</li><li>Finalize the architectural transition away from Twilio in favor of the preferred AWS Connect platform.</li></ul>\n            </div>\n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; In session</div>\n            <div class=\"focus-time\">1:30 PM &mdash; 2:00 PM</div>\n            <h2 class=\"focus-title\">Skan.ai pilot</h2>\n            \n            \n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Two Way Text Alignment</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Enterprise Architecture Leadership</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Platform Strategy</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Staff </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:30 PM</div>\n                    <div class=\"t-end\">&mdash; 1:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">USAA Consortium: Peer Insurer - 2 way SMS</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Skan.ai pilot</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly Full Staff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Two way Text Follow up</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Aaron Bend 1on1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AIA Next step</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Skan AI Pilot docs - ALO email (7-30)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule sprinkler service</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Friction Free Quote architecture from ALO - Slack</span>\n                <span class=\"capsule capsule--neutral\">Due Aug 31</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--neutral\">Due Aug 31</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Automation Framework link from Jonathan</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Do the RCSA training </span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Respond to Andy - review notes</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
     "1jnvu1396s2l85fbj0568msu8v": {
-      "summary": "You must navigate major roadblocks for the Apple Messages for Business\u2014AMB\u2014rollout, specifically critical resource constraints\u2014which block Cognito and Customer Profile testing\u2014and outstanding DLP requirements from Ann Hines. While AWS Connect remains your preferred architecture over Twilio, security resource bottlenecks block all POC progress through year-end. To maintain momentum, you must leverage asynchronous chat via the mobile app as an immediate strategic accelerator\u2014bypassing the AMB hurdles entirely for now.",
+      "summary": "The August 26 sync reveals critical security and resource bottlenecks\u2014specifically outstanding threat modeling and a total lack of security engineering resources through year-end\u2014that block the Apple Messages for Business (AMB) proof of concept. You face unresolved Data Loss Prevention requirements from Ann Hines and an unauthenticated fallback gap, as Apple requires routing to human agents while internal systems prohibit unauthenticated digital chat. Consequently, the team is pivoting to asynchronous chat via the mobile app as the primary accelerator\u2014bypassing AMB hurdles while AWS Connect remains the preferred long-term architecture over Twilio.",
       "tasks": [
-        "Resolve the outstanding Data Loss Prevention requirements raised by Ann Hines for authenticated channels.",
-        "Establish an unauthenticated fallback routing protocol to human agents to satisfy Apple's platform requirements.",
-        "Prioritize the mobile app asynchronous chat deployment to bypass the year-end security resource freeze.",
-        "Finalize the architectural transition away from Twilio in favor of the preferred AWS Connect platform."
+        "Resolve the unauthenticated fallback dilemma to meet Apple's human-routing requirement without violating internal chat security policies.",
+        "Align with Ann Hines on Data Loss Prevention requirements for authenticated channels to resolve the contrast with voice and chat standards.",
+        "Secure cloud security, security engineering, and CCT resources to unblock the Cognito and Connect profile proof-of-concept testing.",
+        "Prioritize asynchronous chat via the mobile app as the immediate strategic alternative to bypass current AMB resource constraints."
       ],
       "title": "Two Way Text Alignment",
       "start_label": "8:00 AM",
       "end_label": "9:00 AM"
     },
     "3ldv0vh35tun1qkem432mfn3i2": {
-      "summary": "The new TAP model establishes a formal, physical approval gate directly within CLM/GSP\u2014decoupling technical decisions from procurement milestones\u2014and introduces a preliminary AIA stage to eliminate late-stage surprises. Your platform strategy\u2014driven by the go/capabilityplatforms mapping\u2014requires defining business capabilities strictly down to Level 2 to identify duplicate tooling across payment rails, communications, and insurance lines. You must finalize the outstanding CLM system control release date with Wes and Brian Osterkamp to solidify this governance transition.",
+      "summary": "You are transitioning to the new TAP model\u2014this decouples technical decisions from acquisition milestones to prevent procurement delays while establishing a physical architecture approval gate directly in CLM. The platform strategy focuses strictly on mapping Level 1 and Level 2 capabilities\u2014such as the newly defined Communications and Payments platforms\u2014to expose tool duplication and drive enterprise consolidation. You must align the procurement-focused AIA Light stream with the broader enterprise architecture impact assessments to finalize this target state taxonomy.",
       "tasks": [
-        "Establish a tracking check-in with Wes and Brian Osterkamp\u2014the primary CLM owners\u2014to finalize the system control release date.",
-        "Document the end-to-end 'To-Be' workflow\u2014spanning triage, preliminary AIA, plan approval, and final CLM gate\u2014into a visual process map.",
-        "Map existing software applications to the Level 1 and Level 2 capability placemats\u2014focusing on finance, payments, and external sourcing\u2014to calculate total cost of ownership.",
-        "Align the comprehensive enterprise AIA stream led by Brian and Pravina with the procurement 'AIA Light' stream managed by Mark and Robert."
+        "Confirm the rollout timeline for the physical CLM/GSP approval control with Wes and Brian Osterkamp.",
+        "Map the existing tools in TPM to the newly defined Level 1 and Level 2 platform placemats to calculate total cost of ownership.",
+        "Align the procurement-focused AIA Light stream led by Mark and Robert with the comprehensive enterprise AIA stream.",
+        "Document the finalized end-to-end TAP workflow\u2014from triage and preliminary AIA to final CLM architecture approval\u2014into a standard operating procedure."
       ],
       "title": "Enterprise Architecture Leadership",
       "start_label": "9:00 AM",
       "end_label": "10:00 AM"
     },
     "30i8i1lr1sa1p4kk1jg91va9oj": {
-      "summary": "You must align the operationalization of the Tech Acquisition Process (TAP)\u2014integrating the new architecture gating checkpoints in CLM and resolving the deal-review workflows discussed on August 11 and 24\u2014with the newly assigned director roles. Under the updated structure established in the August 24 and 25 syncs, directors will take direct ownership of the triage cadence and GSP meetings\u2014specifically Praveena leading triage, alongside Lori, Gavinol, and Mike Henry managing their respective governance domains. You need to finalize how these directors are recorded as formal owners in ServiceNow and confirm RV's sign-off protocols before contract execution.",
+      "summary": "Focus your preparation on operationalizing the Tech Acquisition Process\u2014commonly referred to as TAP\u2014by integrating independent architecture sign-offs directly into the CLM workflow before contract execution. You must align with the newly assigned director-level process owners\u2014Praveena leading Set Direction and triage, Lori on Govern Tech Direction, Gavinol on Govern Tech Portfolio, and Mike Henry driving Tech Strategy. This transition establishes the directors as the primary system owners in ServiceNow\u2014relegating counterparts to delegate roles\u2014while routing final approval authority directly to RV.",
       "tasks": [
-        "Configure ServiceNow and Risk management platforms to record directors as actual owners.",
-        "Finalize the transition of triage cadence and GSP meeting ownership to Praveena and the director cohort.",
-        "Define the communication mechanism for updating RV on Tech Decision Review Group outcomes.",
-        "Integrate the independent architecture sign-off gate into CLM to ensure reviews complete prior to contract execution."
+        "Retroactively clean up the Integrate.AI pilot artifacts to classify the decision\u2014this telematics pilot bypassed the formal TD process during its October signing.",
+        "Hand ownership of the tech acquisition triage cadence to Praveena\u2014and ensure Julie Lafferty is included in the transition.",
+        "Configure ServiceNow and risk management platforms to record the directors as official owners\u2014positioning your counterpart as a delegate approver.",
+        "Establish a formal communication mechanism to summarize Tech Decision Review Group outcomes\u2014ensuring RV remains informed of decisions when absent.",
+        "Cross-reference active architecture reviews against the Tech Spend dashboard\u2014identifying any missing pipeline initiatives before the sync."
       ],
       "title": "TD Sync",
       "start_label": "10:00 AM",
       "end_label": "10:30 AM"
     },
     "4g04qkj98k4jp1i4ovuicgnkfo": {
-      "summary": "Review the consolidated platform capabilities on the new HTML site\u2014this replaces the messy spreadsheet to streamline the presentation for RV. Prepare for the internal working session to align on architecture cost modeling\u2014specifically mapping total cost of ownership and licensing into products rather than isolated applications. Note the ongoing delivery timeline tensions regarding the Aquila pricing platform\u2014which relies heavily on un-remediated User-Defined Applications\u2014and the frustrations surrounding the proposed data lineage RFP.",
+      "summary": "You must leverage the newly consolidated go capabilities HTML site\u2014designed to steer RV away from disorganized spreadsheets\u2014during tomorrow's internal platform strategy alignment session. The August 26th standup exposed critical bottlenecks around total cost of ownership mapping\u2014forcing a shift from isolated applications to product-based services\u2014and revealed severe resource deficits regarding Aquila pricing platform dependencies. You will also need to address escalating frustrations over redundant third-party vendor tools and delayed pricing model delivery timelines.",
       "tasks": [
-        "Review the newly created drag-and-drop HTML site for L2 capability alignment before presenting to leadership.",
-        "Map total cost of ownership and licensing directly to products and services to avoid legacy application anchorage.",
-        "Resolve the December versus January timeline conflict for the Aquila pricing platform delivery.",
-        "Identify internal domain experts to remediate critical User-Defined Applications.",
-        "Implement the streamlined Technical Decision intake process prior to upcoming procurement and plan approvals."
+        "Align the internal architecture team\u2014resolving all outstanding L1 and L2 capability placements\u2014prior to the upcoming platform strategy presentation with RV.",
+        "Map total cost of ownership and licensing structures into defined products\u2014avoiding legacy TPM anchorage while maintaining platform-level visibility.",
+        "Acquire specialized domain expertise to remediate critical User-Defined Applications\u2014safeguarding the December delivery target for the Aquila pricing platform.",
+        "Establish the streamlined Technical Decision intake process\u2014forcing architecture governance review prior to final procurement and plan approvals."
       ],
       "title": "Platform Strategy",
       "start_label": "10:30 AM",
       "end_label": "11:00 AM"
     },
     "3jti05ftn7p5706060ptv32fdm": {
-      "summary": "Drive alignment on the new TAP process\u2014which introduces a formal approval gate in CLM/GSP and an early Architecture Impact Assessment\u2014to streamline procurement and eliminate late-stage surprises. Resolve the cross-cutting issues identified across recent architecture discussions\u2014notably the P&C capacity constraints, the Solo AI gateway funding delays, and the identity-proofing compliance risks. Note that no work notes exist for the August 24 P&C IT directs meeting\u2014you must gather updates directly from attendees during the staff sync.",
+      "summary": "Review your notes from the past week\u2014they reveal persistent friction between delivery speed and governance controls. You must introduce the new TAP process\u2014now establishing formal CLM/GSP approval gates and an early Architecture Impact Assessment\u2014to eliminate downstream surprises. Note that no work notes exist for the August 24 P&C IT directs meeting\u2014you will need to steer that update using related feedback on P&C shadow architecture and resource bottlenecks.",
       "tasks": [
-        "Establish the rollout timeline for the physical CLM/GSP approval control\u2014partnering with Wes and Brian Osterkamp to replace the legacy email process.",
-        "Unblock the Solo Agent Gateway license\u2014tracking the funding request with Joe Monk now that Dan has returned from travel.",
-        "Define the architecture engagement model for high-priority execution pods\u2014limiting involvement to a time-boxed consulting model of one to two hours daily.",
-        "Draft the standard operating procedure for the 'To-Be' workflow\u2014mapping technology triage through final CLM architecture approval."
+        "Track down the implementation timeline for the physical CLM/GSP approval controls with Wes and Brian Osterkamp.",
+        "Secure the delayed Solo Agent Gateway funding from Dan to resolve the critical software licensing blocker.",
+        "Reconcile modern application inflation\u2014specifically the Guidewire auto counts\u2014by aligning business owners before beginning consolidation.",
+        "Establish the time-boxed consulting model for the 90-day execution pods to protect limited architecture capacity."
       ],
       "title": "Weekly Staff ",
       "start_label": "11:00 AM",
       "end_label": "12:00 PM"
     },
     "17rqu379ant1hhac15jqj0pt4g": {
-      "summary": "You must review previous research on peer insurers\u2014specifically Progressive and Allstate\u2014regarding their risk acceptance models for two-way SMS and Data Loss Prevention (DLP) controls. Industry sharing groups and consortium discussions reveal that peers manage texting risks through policy constraints rather than outright blocking workflows\u2014a critical benchmark as you evaluate a soft launch without real-time DLP. You also need to weigh the technical limitations of Twilio as an outbound aggregator against AWS Connect as the core platform\u2014while resolving the encryption and unauthenticated fallback challenges of Apple Messages for Business.",
+      "summary": "You must leverage previous research from the August 25 and 26 syncs to benchmark Francis Inc.\u2019s two-way SMS strategy against peer insurers like Progressive and Allstate\u2014focusing on how they navigate Data Loss Prevention (DLP) risks without halting workflows. Unresolved security gaps remain a critical bottleneck\u2014specifically the lack of security engineering resources to validate Cognito profiles and the outstanding threat modeling for Apple Messages for Business. Ann Hines is currently coordinating with the Governance Council and peer sharing groups to map these industry standards\u2014making your alignment with these findings vital for the consortium meeting.",
       "tasks": [
-        "Review peer insurer DLP practices\u2014specifically Progressive and Allstate\u2014to benchmark risk acceptance thresholds for two-way messaging.",
-        "Obtain the specific Data Loss Prevention requirements for FDM on Convexia/Cody's Aid from Rosie Lafio.",
-        "Resolve the architectural trade-offs between Twilio as a last-mile aggregator and AWS Connect as the preferred conversational platform.",
-        "Coordinate with Ann Hines to schedule the Governance Council evaluation of policy constraints and launch risks.",
-        "Assess the Claims QA sampling process to establish baseline visibility into potential data incidents during a soft launch."
+        "Review the benchmarked DLP and risk acceptance strategies of peer insurers\u2014specifically Progressive and Allstate\u2014before entering the consortium discussions.",
+        "Confirm the status of Ann Hines' outreach to the Governance Council and peer financial services sharing groups regarding messaging risk management.",
+        "Resolve the outstanding security engineering and cloud resource constraints currently blocking the Cognito and AWS Connect profile proof-of-concept testing.",
+        "Analyze the proposed claims QA sampling process to determine if post-facto audits can sufficiently mitigate the risks of a two-way SMS soft launch without active DLP."
       ],
       "title": "USAA Consortium: Peer Insurer - 2 way SMS",
       "start_label": "12:30 PM",
       "end_label": "1:00 PM"
     },
     "5tmju68s3i8ldvvtm1360cvfdn": {
-      "summary": "Over the past two weeks, key cross-cutting themes focus on governance optimization\u2014specifically transitioning from informal email sign-offs to rigid CLM/GSP system controls\u2014and mitigating acute resource bottlenecks across P&C delivery models. The new TAP process codifies this shift by introducing a preliminary Architecture Impact Assessment early in the triage phase to prevent late-stage procurement blocks. No work notes exist for the August 24 P&C IT directs meeting\u2014though neighboring discussions emphasize ongoing friction around shadow data architecture and the push for time-boxed consulting models.",
+      "summary": "You must address critical governance and security risks\u2014specifically the transition to the new TAP process, which introduces a hard CLM/GSP gate and upfront AIA triage to replace informal email approvals. Cross-cutting themes from the past two weeks reveal deep systemic friction\u2014including Guidewire application inflation, TVO security waiver reliance, and blocked funding for Solo's AI Gateway. No work notes match the P&C IT directs meeting from 8-24\u2014prepare to address these gaps directly with the leadership team.",
       "tasks": [
-        "Finalize the CLM system control release date by establishing a tracking check-in with Wes and Brian Osterkamp.",
-        "Coordinate with CIO partners Sri and Suhas to embed pending technology decisions directly into upcoming Deal Review packets.",
-        "Resolve the Solo Agent Gateway licensing delay by securing funding approval through Joe Monk.",
-        "Draft a standardized operating procedure mapping the transition from preliminary AIA triage to final CLM architecture approval."
+        "Track down outstanding action items from the August 24 P&C IT directs meeting\u2014focusing on Dan Weaver's unaligned data proposals.",
+        "Establish a tracking check-in with Wes and Brian Osterkamp to lock down the CLM system control release date.",
+        "Resolve the TVO security waiver exposures\u2014forcing Renters and Auto flows into standardized authentication.",
+        "Escalate the blocked Solo AI Gateway software license to Joe Monk for Dan's immediate sign-off.",
+        "Address the Guidewire application count inflation\u2014collaborating with business owners to consolidate the 25-plus redundant entries."
       ],
       "title": "Monthly Full Staff",
       "start_label": "2:00 PM",
       "end_label": "3:00 PM"
     },
     "6tsf5dj7hqfgmjr9hqvjiovm7m": {
-      "summary": "You must address critical security gaps from the August 26 Apple Messages for Business\u2014AMB\u2014sync before moving forward. Infosec has not completed threat modeling or authentication workflows\u2014and critical engineering resources are blocked through the end of the year. You also face unresolved DLP requirements from Ann Hines and lack a viable fallback protocol for members who fail authentication. Because of these resource constraints\u2014and subsequent delivery hurdles\u2014you should prioritize asynchronous chat via the mobile app as your immediate business accelerator.",
+      "summary": "Review the critical bottlenecks from the August 26 meeting\u2014specifically the security resource constraints blocking Cognito and Connect profile testing through year-end. Address the unresolved fallback requirement\u2014Apple mandates routing to a human agent upon authentication failure, but your current digital chat protocol blocks unauthenticated users. Target asynchronous chat within the mobile app as the immediate strategic alternative\u2014this sidesteps the Apple Messages for Business hurdles while still avoiding expensive voice calls.",
       "tasks": [
-        "Secure dedicated security engineering and cloud security resources to unblock the blocked Cognito and Connect proof-of-concept testing.",
-        "Resolve the unauthenticated fallback dilemma to satisfy Apple's human-agent routing mandate.",
-        "Finalize formal threat modeling and authentication workflows with Infosec for the AMB protocol-switching behavior.",
-        "Address the outstanding Data Loss Prevention requirements raised by Ann Hines for authenticated channels."
+        "Resolve the outstanding Data Loss Prevention requirements raised by Ann Hines for authenticated messaging channels.",
+        "Finalize the threat modeling and authentication workflows for Apple's in-memory protocol transitions.",
+        "Define a compliant routing path for users who fail authentication to satisfy Apple's human-agent mandate without violating internal digital chat security policies.",
+        "Maintain AWS Connect as the primary architectural direction instead of expanding Twilio beyond its role as an outbound SMS aggregator.",
+        "Accelerate the rollout of asynchronous chat within the mobile app to bypass the year-end security engineering resource deficit."
       ],
       "title": "Two way Text Follow up",
       "start_label": "3:00 PM",
       "end_label": "3:30 PM"
     },
     "03e67b2c6barhgp4idg4j0668i": {
-      "summary": "Prepare for your alignment with Aaron by reviewing the June 25 discussion\u2014which focused on the technology obsolescence dashboard, mainframe-reliant API bottlenecks, and agentic AI readiness. Analyze the August 24 technical decisions\u2014which approved Method Financial for debt consolidation, Delta Group for fraud team staffing, and Rent Risk for expanded distribution. Address these legacy system transitions and pilot programs to resolve outstanding architectural gaps.",
+      "summary": "Your last discussion with Aaron focused on retiring legacy systems via the Technology Obsolescence dashboard\u2014reducing the run-the-business burden\u2014and preparing APIs for agentic AI gateways. The August 24 meeting finalized several technical decisions\u2014including launching the Zesty wildfire pilot, transitioning legal tools, and decommissioning Defect Dojo in favor of ServiceNow.",
       "tasks": [
-        "Retrieve the Technology Obsolescence spreadsheet link to complete the final architecture review.",
-        "Assess whether current APIs can plug into the Model Context Protocol gateway without impacting existing configurations.",
-        "Finalize the production pilot comparing FIS Prophet and LCP InsureSight for loss reserving.",
-        "Initiate the transition of Defect Dojo to native ServiceNow vulnerability modules."
+        "Retrieve the Technology Obsolescence spreadsheet link\u2014ensuring alignment with the architecture team's submissions.",
+        "Assess the readiness of high-volume APIs for the Model Context Protocol gateway\u2014focusing on maintaining context without disrupting current gateways.",
+        "Monitor the pilot outcomes for both FIS Prophet and Zesty Z-Fire\u2014verifying data security protocols.",
+        "Execute the decommissioning of Defect Dojo\u2014transitioning all vulnerability management to native ServiceNow modules."
       ],
       "title": "Aaron Bend 1on1",
       "start_label": "3:30 PM",
       "end_label": "4:00 PM"
     },
     "7f7ahkccop0gv28c9rk9pkc67m": {
-      "summary": "Transition the legacy email-based architecture approval process\u2014previously managed informally with Jeff\u2014to a formal physical gate within CLM/GSP. You must execute this new workflow early in the cycle through a preliminary AIA assessment\u2014preventing late-stage downstream surprises. Coordinate with Wes and Brian Osterkamp to lock in the final system control release date.",
+      "summary": "You are transitioning from an informal email-based architecture approval process\u2014previously managed via legacy exchanges with Jeff\u2014to a formal, physical approval gate embedded directly within CLM/GSP. This updated workflow introduces an upfront, lightweight preliminary Architecture Impact Assessment\u2014or AIA\u2014to eliminate late-stage surprises before plan approval triggers detailed due diligence. Implementation discussions with Wes and Brian Osterkamp are underway, but you must still finalize the rollout timeline and map the end-to-end \"To-Be\" process.",
       "tasks": [
-        "Clarify the rollout timeline for the physical CLM/GSP approval control\u2014coordinating directly with the implementation team.",
-        "Retrieve past email approval examples with Jeff\u2014providing the team with a baseline workflow comparison.",
-        "Document the end-to-end 'To-Be' workflow from triage to final CLM architecture approval.",
-        "Establish a recurring check-in with Wes and Brian Osterkamp\u2014finalizing the system control release target."
+        "Clarify the rollout timeline for the physical CLM/GSP architecture approval gate with Wes and Brian Osterkamp.",
+        "Document the complete \"To-Be\" workflow\u2014from triage and preliminary AIA to final CLM approval\u2014into a standard operating procedure.",
+        "Retrieve past email approval examples involving Jeff to establish the baseline workflow for the implementation team.",
+        "Establish a regular tracking cadence with Wes and Brian Osterkamp to finalize the system control release date."
       ],
       "title": "AIA Next step",
       "start_label": "4:30 PM",
