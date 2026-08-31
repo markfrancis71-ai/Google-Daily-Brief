@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-08-31T06:34:41.770939-05:00",
-  "refreshed_label": "6:34 AM",
+  "refreshed_at": "2026-08-31T07:58:23.666916-05:00",
+  "refreshed_label": "7:58 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,19 @@
       "end_label": "9:30 AM",
       "summary": "Jonathan 1on1",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Reviewing your last meeting with Jonathan on August 17 reveals critical coordination on Andy Napoli's architectural requests\u2014specifically end-to-end Foundry automation, the Sentinel concept, and deployment frameworks. You must also address the AI requirements directive targeting March and the resource constraints following Cody's departure\u2014though your notes contain no direct data regarding feedback from Jonathan's Slack messages.",
+        "tasks": [
+          "Finalize the BA Guild membership justification link with Jonathan to enable socialization with RV.",
+          "Review progress on the end-to-end Foundry automation target-state view with John Lombard.",
+          "Establish contact with Christie Jones regarding the early-stage Sentinel property pilot.",
+          "Resolve resource continuity plans with Jonathan following Cody's departure.",
+          "Solicit the specific Slack feedback directly from Jonathan during the session to bridge the gap in your files."
+        ],
+        "title": "Jonathan 1on1",
+        "start_label": "9:00 AM",
+        "end_label": "9:30 AM"
+      }
     },
     {
       "id": "6gq32e1g61h66b9n6kpj4b9k74pj2bb26go64b9o6cqjgpj1cko3eoj564",
@@ -31,7 +43,18 @@
       "end_label": "11:30 AM",
       "summary": "Justin 1on1",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You aligned with Justin on August 21 regarding severe 90-day delivery risks for the Gemini model\u2014specifically navigating Cloud Review Process requirements and potential GCP phase-out threats. Your August 20 session with Abe established a dual-path GenAI funding model\u2014balancing traditional ROI against a 30% \"fail-fast\" agile track\u2014while positioning AWS Bedrock as the enterprise LLM orchestration harness.",
+        "tasks": [
+          "Review the incoming forwarded email thread from Abe to Chris and Adam\u2014resolving CRP ownership and Gemini model dependencies immediately.",
+          "Align on the architecture strategy to determine if the team must maintain the 90-day Gemini deployment or execute a governance contingency plan.",
+          "Establish the dual-track GenAI portfolio funding model\u2014allocating 30% to agile, exploratory initiatives to bypass rigid waterfall approvals.",
+          "Coordinate with Capgemini and BCG to streamline pod operating models\u2014leveraging their insurance domain expertise to refine claims capabilities."
+        ],
+        "title": "Justin 1on1",
+        "start_label": "11:00 AM",
+        "end_label": "11:30 AM"
+      }
     },
     {
       "id": "6cqm4chhcos64bb5c5gj4b9kcgojabb260qmcbb264sjco9k74r68cj374",
@@ -71,7 +94,18 @@
       "end_label": "3:00 PM",
       "summary": "Platform strategy",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "The August 27 platform strategy meeting locked in the Level 1 to Level 3 capability mapping rules\u2014requiring placeholders where Level 3 is not yet defined\u2014to ensure accurate cost roll-ups. Nate will run daily morning syncs to keep the central spreadsheet and HTML workspace aligned, while shared tools like Kafka will use pointer links instead of duplicate ownership. You must prepare for the integration of TIME lifecycle metadata and UUIDs\u2014this automation will eventually drive your target architectures and Gantt charts.",
+        "tasks": [
+          "Finalize your Level 1 and Level 2 capability mappings in the central spreadsheet\u2014ensure all applications tie minimally to Level 3 using placeholders where needed.",
+          "Coordinate with Michael Summers before the Monday alignment meeting\u2014prevent unnecessary divergence between the technical architecture and the business taxonomies.",
+          "Review the pointer links and overlap flags for cross-platform tools\u2014specifically FiveTran and Kafka\u2014to avoid duplicate domain ownership.",
+          "Integrate TIME metadata and UUIDs into your application mapping\u2014this data feed will automate your future-state Gantt charts."
+        ],
+        "title": "Platform strategy",
+        "start_label": "2:30 PM",
+        "end_label": "3:00 PM"
+      }
     },
     {
       "id": "ccsjachlcks3ibb670sjgb9k6di3ibb2ckp3eb9kcgpj0cb3cksj2d1j60",
@@ -91,11 +125,72 @@
       "end_label": "4:30 PM",
       "summary": "NBE for P&C",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Review the 8-24 NBA and ATC sync notes\u2014you must address the transition of Next Best Experience (NBE) orchestration to the Member Value (MV) team under Mac Wheeler. Establish the integration of Salesforce CRM with the existing PCA API\u2014this bypasses Salesforce's native NBA engine in favor of Pega CDH. Prep for the migration of audience data ingestion to Salesforce CDP as the legacy XT pipeline phases out\u2014this is critical for real-time agent assist architecture.",
+        "tasks": [
+          "Confirm the integration roadmap for Salesforce CRM and the PCA API\u2014ensure Charlotte and the DNS team align on this near-term path.",
+          "Validate the timeline for phasing out the legacy XT pipeline in favor of Salesforce CDP.",
+          "Define the architecture for the real-time interaction intelligence layer\u2014specifically how to handle call-transcription cues for dynamic NBA invalidation.",
+          "Clarify the onboarding status of the new Director of Product and AVP under Mac Wheeler to drive the refreshed association-wide NBE roadmap."
+        ],
+        "title": "NBE for P&C",
+        "start_label": "4:00 PM",
+        "end_label": "4:30 PM"
+      }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">9:00 AM &mdash; 9:30 AM</div>\n            <h2 class=\"focus-title\">Jonathan 1on1</h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">9:00 AM &mdash; 9:30 AM</div>\n            <h2 class=\"focus-title\">Jonathan 1on1</h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Reviewing your last meeting with Jonathan on August 17 reveals critical coordination on Andy Napoli&#x27;s architectural requests\u2014specifically end-to-end Foundry automation, the Sentinel concept, and deployment frameworks. You must also address the AI requirements directive targeting March and the resource constraints following Cody&#x27;s departure\u2014though your notes contain no direct data regarding feedback from Jonathan&#x27;s Slack messages.</p>\n                <ul class=\"focus-prep-tasks\"><li>Finalize the BA Guild membership justification link with Jonathan to enable socialization with RV.</li><li>Review progress on the end-to-end Foundry automation target-state view with John Lombard.</li><li>Establish contact with Christie Jones regarding the early-stage Sentinel property pilot.</li><li>Resolve resource continuity plans with Jonathan following Cody&#x27;s departure.</li><li>Solicit the specific Slack feedback directly from Jonathan during the session to bridge the gap in your files.</li></ul>\n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Jonathan 1on1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">ATS Problem Solving future</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Justin 1on1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">12:00 PM</div>\n                    <div class=\"t-end\">&mdash; 12:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">EA annual risk metric refresh</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Technology town Hall</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">ATS process updates</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:30 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Platform strategy</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly P&amp;C iT directs</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">NBE for P&amp;C</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update no regrets backfills spreadsheet</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Kamath on mcp server</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Coordinate preliminary AIA workflow and CLM approval gate</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 28</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Validate authenticated in-app async chat strategy with Andy and Suresh</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 28</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Submit discussion questions for RV visit to John and Vinnie</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 28</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Refine Tech Acquisition Process (TAP) pilot intake criteria</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 28</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Skan AI Pilot docs - ALO email (7-30)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule sprinkler service</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Friction Free Quote architecture from ALO - Slack</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Automation Framework link from Jonathan</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Respond to Andy - review notes</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Aug 27</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
-  "preps": {}
+  "preps": {
+    "6th3gc9j6ssm8b9o60s34b9k71i68b9pccrm4b9h6or64cpgchhm2p9p70": {
+      "summary": "Reviewing your last meeting with Jonathan on August 17 reveals critical coordination on Andy Napoli's architectural requests\u2014specifically end-to-end Foundry automation, the Sentinel concept, and deployment frameworks. You must also address the AI requirements directive targeting March and the resource constraints following Cody's departure\u2014though your notes contain no direct data regarding feedback from Jonathan's Slack messages.",
+      "tasks": [
+        "Finalize the BA Guild membership justification link with Jonathan to enable socialization with RV.",
+        "Review progress on the end-to-end Foundry automation target-state view with John Lombard.",
+        "Establish contact with Christie Jones regarding the early-stage Sentinel property pilot.",
+        "Resolve resource continuity plans with Jonathan following Cody's departure.",
+        "Solicit the specific Slack feedback directly from Jonathan during the session to bridge the gap in your files."
+      ],
+      "title": "Jonathan 1on1",
+      "start_label": "9:00 AM",
+      "end_label": "9:30 AM"
+    },
+    "ckpjap1n6cqm8b9kcksj6b9kc9gjab9p6oq6ab9i68o3ccr66spj6oj16g": {
+      "summary": "You aligned with Justin on August 21 regarding severe 90-day delivery risks for the Gemini model\u2014specifically navigating Cloud Review Process requirements and potential GCP phase-out threats. Your August 20 session with Abe established a dual-path GenAI funding model\u2014balancing traditional ROI against a 30% \"fail-fast\" agile track\u2014while positioning AWS Bedrock as the enterprise LLM orchestration harness.",
+      "tasks": [
+        "Review the incoming forwarded email thread from Abe to Chris and Adam\u2014resolving CRP ownership and Gemini model dependencies immediately.",
+        "Align on the architecture strategy to determine if the team must maintain the 90-day Gemini deployment or execute a governance contingency plan.",
+        "Establish the dual-track GenAI portfolio funding model\u2014allocating 30% to agile, exploratory initiatives to bypass rigid waterfall approvals.",
+        "Coordinate with Capgemini and BCG to streamline pod operating models\u2014leveraging their insurance domain expertise to refine claims capabilities."
+      ],
+      "title": "Justin 1on1",
+      "start_label": "11:00 AM",
+      "end_label": "11:30 AM"
+    },
+    "74o3ie9l6sq68b9kcgq3ib9k74q3ebb26thjeb9h6thj0d9gcgp3ccb3c8": {
+      "summary": "The August 27 platform strategy meeting locked in the Level 1 to Level 3 capability mapping rules\u2014requiring placeholders where Level 3 is not yet defined\u2014to ensure accurate cost roll-ups. Nate will run daily morning syncs to keep the central spreadsheet and HTML workspace aligned, while shared tools like Kafka will use pointer links instead of duplicate ownership. You must prepare for the integration of TIME lifecycle metadata and UUIDs\u2014this automation will eventually drive your target architectures and Gantt charts.",
+      "tasks": [
+        "Finalize your Level 1 and Level 2 capability mappings in the central spreadsheet\u2014ensure all applications tie minimally to Level 3 using placeholders where needed.",
+        "Coordinate with Michael Summers before the Monday alignment meeting\u2014prevent unnecessary divergence between the technical architecture and the business taxonomies.",
+        "Review the pointer links and overlap flags for cross-platform tools\u2014specifically FiveTran and Kafka\u2014to avoid duplicate domain ownership.",
+        "Integrate TIME metadata and UUIDs into your application mapping\u2014this data feed will automate your future-state Gantt charts."
+      ],
+      "title": "Platform strategy",
+      "start_label": "2:30 PM",
+      "end_label": "3:00 PM"
+    },
+    "cdj38cb374o3ib9m60rjcb9k70q3abb26gp3ib9icdij2pb270r6cdpkco": {
+      "summary": "Review the 8-24 NBA and ATC sync notes\u2014you must address the transition of Next Best Experience (NBE) orchestration to the Member Value (MV) team under Mac Wheeler. Establish the integration of Salesforce CRM with the existing PCA API\u2014this bypasses Salesforce's native NBA engine in favor of Pega CDH. Prep for the migration of audience data ingestion to Salesforce CDP as the legacy XT pipeline phases out\u2014this is critical for real-time agent assist architecture.",
+      "tasks": [
+        "Confirm the integration roadmap for Salesforce CRM and the PCA API\u2014ensure Charlotte and the DNS team align on this near-term path.",
+        "Validate the timeline for phasing out the legacy XT pipeline in favor of Salesforce CDP.",
+        "Define the architecture for the real-time interaction intelligence layer\u2014specifically how to handle call-transcription cues for dynamic NBA invalidation.",
+        "Clarify the onboarding status of the new Director of Product and AVP under Mac Wheeler to drive the refreshed association-wide NBE roadmap."
+      ],
+      "title": "NBE for P&C",
+      "start_label": "4:00 PM",
+      "end_label": "4:30 PM"
+    }
+  }
 }
