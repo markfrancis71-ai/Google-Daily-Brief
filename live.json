@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-09-02T07:11:32.738149-05:00",
-  "refreshed_label": "7:11 AM",
+  "refreshed_at": "2026-09-02T07:36:23.099699-05:00",
+  "refreshed_label": "7:36 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -22,12 +22,12 @@
       "summary": "Biweekly with Jon",
       "location": "",
       "prep": {
-        "summary": "You must sync with Jon on the requirements tooling roadmap and the unresolved Neptune firewall blocker\u2014currently outstanding with Tito Warren\u2014following your recent architecture updates. No specific notes exist for an Arvy meeting on 9-1\u2014however, recent alignments with RV focus heavily on establishing independent architecture gating in CLM and resolving the Solution Architecture versus Solution Engineering boundaries.",
+        "summary": "You synced with Jon throughout late August on architectural boundaries\u2014specifically separating high-level blueprints from lower-level implementation\u2014and tracked critical infrastructure blockers including the Neptune database firewall issue. You also solidified process ownership for PL1/PL2 with directors running triage\u2014directly supporting RV's demand for independent architecture gating before contract sign-offs. No work notes exist for the September 1st meeting with Arvy\u2014known as RV in previous syncs\u2014but his recent directives focus on platform taxonomy, gating, and final CLM approvals.",
         "tasks": [
-          "Resolve the Neptune database read/write firewall blockage with Tito Warren to unblock the data layer compilation.",
-          "Align with RV on the independent architecture approval checkpoint in CLM before contract execution.",
-          "Draft the integrated PNC automation capability model and roadmap with Madhu and Ian's delegates.",
-          "Correct the redundant reporting hierarchy layers under RV within the OneSource organizational structure."
+          "Resolve the Neptune data read/write blocker with Tito Warren\u2014Joe Denton remains out on vacation\u2014to free up the infrastructure pipeline.",
+          "Deliver the integrated PNC automation capability model and roadmap to Jon\u2014collaborating with Madhu and Ian's delegates\u2014by the end of the week.",
+          "Align with RV on the updated PL1/PL2 process ownership\u2014ensuring directors are recorded as formal owners in ServiceNow and Risk management platforms.",
+          "Enforce the C4 model boundary\u2014retaining architecture accountability for C_0 to C_2 and leaving C_3 to C_4 to solution engineering\u2014to eliminate team role confusion."
         ],
         "title": "Biweekly with Jon",
         "start_label": "10:30 AM",
@@ -63,12 +63,12 @@
       "summary": "Mike 1on1",
       "location": "",
       "prep": {
-        "summary": "Transitioned ownership of Tech Strategy to Mike Henry during your last process alignment\u2014positioning you as his Executive Sponsor\u2014while your recent sync with Aaron focused on the unresolved Intelligent Printer dispute. Robert Lagutus is pushing to transfer this legacy platform to Property and Casualty due to Regulation W compliance\u2014a move that carries an unfunded migration cost of $1.5M to $2M and contradicts established platform ownership precedents.",
+        "summary": "During your last sync with Aaron on August 27\u2014focused heavily on the Intelligent Printer dispute\u2014you addressed Robert Lagutus's push to transfer ownership and its $1.5M\u2013$2M unfunded migration cost to P&C. This forced legacy transfer directly contradicts established platform ownership strategy\u2014an issue Aaron planned to escalate to RV. Meanwhile\u2014following the recent ATS process reorganization\u2014Mike Henry is slated to assume ownership of Tech Strategy under your executive sponsorship.",
         "tasks": [
-          "Establish your executive sponsorship guidelines with Mike\u2014clarifying boundaries for his newly assumed Tech Strategy process ownership.",
-          "Deliver the two-to-three-sentence talking points on the Intelligent Printer dispute to Aaron\u2014focusing on the unfunded $1.5M to $2M migration cost.",
-          "Share the email thread involving Mike Wilkins and Robert Lagutus with Aaron\u2014providing necessary context on the Regulation W claims.",
-          "Align with Mike on the technology acquisition and GSP intake routines\u2014ensuring the transition from Tech Fellows to Directors proceeds smoothly."
+          "Draft the concise Intelligent Printer ownership and funding summary for Aaron to present to RV.",
+          "Share the email thread involving Mike Wilkins and Robert Lagutus with Aaron to provide historical context.",
+          "Confirm Mike Henry's readiness and transition timeline for taking over the Tech Strategy process ownership.",
+          "Review the legacy system retirement pipeline on the Technology Obsolescence dashboard to identify further RBT savings."
         ],
         "title": "Mike 1on1",
         "start_label": "2:00 PM",
@@ -94,12 +94,12 @@
       "summary": "Sai, monthly one-on-one",
       "location": "",
       "prep": {
-        "summary": "Your last meeting with Sai on May 8 addressed severe governance bottlenecks\u2014specifically the Gen AI Council and Model Risk Management reviews halting progress on Intelligent Document Processing. You discussed transitioning from dozens of small initiatives to a focused 'Big Rocks' strategy to stabilize delivery during a leadership transition. You also debated the need for a standardized 'playbook' to check vendor AI risk in days rather than months.",
+        "summary": "Your last meeting with Sai on May 8 focused on shifting from dozens of small AI use cases to two or three high-impact \"Big Rocks\" \u2014 a critical transition complicated by a leadership vacuum and severe operational bottlenecks. You discussed how the Gen AI Council and Model Risk Management (MRM) review processes act as a chokehold on innovation \u2014 especially regarding Intelligent Document Processing (IDP) and vendor integration. To resolve this, you advocated for a streamlined playbook approach to evaluate AI risk in days rather than months while resisting vendor proliferation in favor of existing core platforms.",
         "tasks": [
-          "Establish a simplified vendor AI risk assessment playbook to bypass the current Model Risk Management bottleneck.",
-          "Align on the final resource allocation for the two to three designated 'Big Rocks' use cases.",
-          "Re-engage the startup platform Pace for a technical demo of its agentic capabilities as planned in your March sync.",
-          "Clarify the decision ownership boundaries between InfoSec and Privacy to unblock in-flight capabilities."
+          "Address the leadership confusion left by Romnik, Rachel, and Tina \u2014 stabilizing the AI strategy execution.",
+          "Finalize the proposed \"playbook\" risk-evaluation process \u2014 mimicking a SOC 2 check \u2014 to bypass the lengthy MRM and Gen AI Council bottlenecks.",
+          "Push for the consolidated \"Big Rocks\" strategy \u2014 specifically focusing resources on the 2\u20133 high-impact use cases instead of dozens of minor projects.",
+          "Establish clear guidelines on the build-versus-buy approach \u2014 prioritizing existing major investments like AWS over startup vendor proliferation."
         ],
         "title": "Sai, monthly one-on-one",
         "start_label": "3:30 PM",
@@ -122,36 +122,36 @@
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Friction Free Quote architecture from ALO - Slack</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule sprinkler service</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Skan AI Pilot docs - ALO email (7-30)</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Adam, Gunjan and Bryan on Rebecca</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Automation Framework link from Jonathan</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--caution\">Due Sep 3</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Respond to Andy - review notes</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
     "68pj8e9lcosjib9k71ijeb9kc5im6bb26dh36b9i75ij8oj56orjior56k": {
-      "summary": "You must sync with Jon on the requirements tooling roadmap and the unresolved Neptune firewall blocker\u2014currently outstanding with Tito Warren\u2014following your recent architecture updates. No specific notes exist for an Arvy meeting on 9-1\u2014however, recent alignments with RV focus heavily on establishing independent architecture gating in CLM and resolving the Solution Architecture versus Solution Engineering boundaries.",
+      "summary": "You synced with Jon throughout late August on architectural boundaries\u2014specifically separating high-level blueprints from lower-level implementation\u2014and tracked critical infrastructure blockers including the Neptune database firewall issue. You also solidified process ownership for PL1/PL2 with directors running triage\u2014directly supporting RV's demand for independent architecture gating before contract sign-offs. No work notes exist for the September 1st meeting with Arvy\u2014known as RV in previous syncs\u2014but his recent directives focus on platform taxonomy, gating, and final CLM approvals.",
       "tasks": [
-        "Resolve the Neptune database read/write firewall blockage with Tito Warren to unblock the data layer compilation.",
-        "Align with RV on the independent architecture approval checkpoint in CLM before contract execution.",
-        "Draft the integrated PNC automation capability model and roadmap with Madhu and Ian's delegates.",
-        "Correct the redundant reporting hierarchy layers under RV within the OneSource organizational structure."
+        "Resolve the Neptune data read/write blocker with Tito Warren\u2014Joe Denton remains out on vacation\u2014to free up the infrastructure pipeline.",
+        "Deliver the integrated PNC automation capability model and roadmap to Jon\u2014collaborating with Madhu and Ian's delegates\u2014by the end of the week.",
+        "Align with RV on the updated PL1/PL2 process ownership\u2014ensuring directors are recorded as formal owners in ServiceNow and Risk management platforms.",
+        "Enforce the C4 model boundary\u2014retaining architecture accountability for C_0 to C_2 and leaving C_3 to C_4 to solution engineering\u2014to eliminate team role confusion."
       ],
       "title": "Biweekly with Jon",
       "start_label": "10:30 AM",
       "end_label": "11:00 AM"
     },
     "c8pm8ohpc8o3gb9g6gqjgb9kcgr36b9p64p30b9k6lj32c1i74rm4d9ocg": {
-      "summary": "Transitioned ownership of Tech Strategy to Mike Henry during your last process alignment\u2014positioning you as his Executive Sponsor\u2014while your recent sync with Aaron focused on the unresolved Intelligent Printer dispute. Robert Lagutus is pushing to transfer this legacy platform to Property and Casualty due to Regulation W compliance\u2014a move that carries an unfunded migration cost of $1.5M to $2M and contradicts established platform ownership precedents.",
+      "summary": "During your last sync with Aaron on August 27\u2014focused heavily on the Intelligent Printer dispute\u2014you addressed Robert Lagutus's push to transfer ownership and its $1.5M\u2013$2M unfunded migration cost to P&C. This forced legacy transfer directly contradicts established platform ownership strategy\u2014an issue Aaron planned to escalate to RV. Meanwhile\u2014following the recent ATS process reorganization\u2014Mike Henry is slated to assume ownership of Tech Strategy under your executive sponsorship.",
       "tasks": [
-        "Establish your executive sponsorship guidelines with Mike\u2014clarifying boundaries for his newly assumed Tech Strategy process ownership.",
-        "Deliver the two-to-three-sentence talking points on the Intelligent Printer dispute to Aaron\u2014focusing on the unfunded $1.5M to $2M migration cost.",
-        "Share the email thread involving Mike Wilkins and Robert Lagutus with Aaron\u2014providing necessary context on the Regulation W claims.",
-        "Align with Mike on the technology acquisition and GSP intake routines\u2014ensuring the transition from Tech Fellows to Directors proceeds smoothly."
+        "Draft the concise Intelligent Printer ownership and funding summary for Aaron to present to RV.",
+        "Share the email thread involving Mike Wilkins and Robert Lagutus with Aaron to provide historical context.",
+        "Confirm Mike Henry's readiness and transition timeline for taking over the Tech Strategy process ownership.",
+        "Review the legacy system retirement pipeline on the Technology Obsolescence dashboard to identify further RBT savings."
       ],
       "title": "Mike 1on1",
       "start_label": "2:00 PM",
       "end_label": "2:30 PM"
     },
     "6osjacj3cos32bb36or3gb9k6hj3cbb26dij2bb46cp3ichmcco30dpi70": {
-      "summary": "Your last meeting with Sai on May 8 addressed severe governance bottlenecks\u2014specifically the Gen AI Council and Model Risk Management reviews halting progress on Intelligent Document Processing. You discussed transitioning from dozens of small initiatives to a focused 'Big Rocks' strategy to stabilize delivery during a leadership transition. You also debated the need for a standardized 'playbook' to check vendor AI risk in days rather than months.",
+      "summary": "Your last meeting with Sai on May 8 focused on shifting from dozens of small AI use cases to two or three high-impact \"Big Rocks\" \u2014 a critical transition complicated by a leadership vacuum and severe operational bottlenecks. You discussed how the Gen AI Council and Model Risk Management (MRM) review processes act as a chokehold on innovation \u2014 especially regarding Intelligent Document Processing (IDP) and vendor integration. To resolve this, you advocated for a streamlined playbook approach to evaluate AI risk in days rather than months while resisting vendor proliferation in favor of existing core platforms.",
       "tasks": [
-        "Establish a simplified vendor AI risk assessment playbook to bypass the current Model Risk Management bottleneck.",
-        "Align on the final resource allocation for the two to three designated 'Big Rocks' use cases.",
-        "Re-engage the startup platform Pace for a technical demo of its agentic capabilities as planned in your March sync.",
-        "Clarify the decision ownership boundaries between InfoSec and Privacy to unblock in-flight capabilities."
+        "Address the leadership confusion left by Romnik, Rachel, and Tina \u2014 stabilizing the AI strategy execution.",
+        "Finalize the proposed \"playbook\" risk-evaluation process \u2014 mimicking a SOC 2 check \u2014 to bypass the lengthy MRM and Gen AI Council bottlenecks.",
+        "Push for the consolidated \"Big Rocks\" strategy \u2014 specifically focusing resources on the 2\u20133 high-impact use cases instead of dozens of minor projects.",
+        "Establish clear guidelines on the build-versus-buy approach \u2014 prioritizing existing major investments like AWS over startup vendor proliferation."
       ],
       "title": "Sai, monthly one-on-one",
       "start_label": "3:30 PM",
