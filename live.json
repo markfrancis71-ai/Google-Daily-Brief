@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-09-02T04:07:32.915193-05:00",
-  "refreshed_label": "4:07 AM",
+  "refreshed_at": "2026-09-02T07:11:32.738149-05:00",
+  "refreshed_label": "7:11 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -21,7 +21,18 @@
       "end_label": "11:00 AM",
       "summary": "Biweekly with Jon",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You must sync with Jon on the requirements tooling roadmap and the unresolved Neptune firewall blocker\u2014currently outstanding with Tito Warren\u2014following your recent architecture updates. No specific notes exist for an Arvy meeting on 9-1\u2014however, recent alignments with RV focus heavily on establishing independent architecture gating in CLM and resolving the Solution Architecture versus Solution Engineering boundaries.",
+        "tasks": [
+          "Resolve the Neptune database read/write firewall blockage with Tito Warren to unblock the data layer compilation.",
+          "Align with RV on the independent architecture approval checkpoint in CLM before contract execution.",
+          "Draft the integrated PNC automation capability model and roadmap with Madhu and Ian's delegates.",
+          "Correct the redundant reporting hierarchy layers under RV within the OneSource organizational structure."
+        ],
+        "title": "Biweekly with Jon",
+        "start_label": "10:30 AM",
+        "end_label": "11:00 AM"
+      }
     },
     {
       "id": "70p6ccpg6crjcbb5c8qjeb9kc4r6ab9o6gsm8b9i74p32cb668pjge1g60",
@@ -51,7 +62,18 @@
       "end_label": "2:30 PM",
       "summary": "Mike 1on1",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Transitioned ownership of Tech Strategy to Mike Henry during your last process alignment\u2014positioning you as his Executive Sponsor\u2014while your recent sync with Aaron focused on the unresolved Intelligent Printer dispute. Robert Lagutus is pushing to transfer this legacy platform to Property and Casualty due to Regulation W compliance\u2014a move that carries an unfunded migration cost of $1.5M to $2M and contradicts established platform ownership precedents.",
+        "tasks": [
+          "Establish your executive sponsorship guidelines with Mike\u2014clarifying boundaries for his newly assumed Tech Strategy process ownership.",
+          "Deliver the two-to-three-sentence talking points on the Intelligent Printer dispute to Aaron\u2014focusing on the unfunded $1.5M to $2M migration cost.",
+          "Share the email thread involving Mike Wilkins and Robert Lagutus with Aaron\u2014providing necessary context on the Regulation W claims.",
+          "Align with Mike on the technology acquisition and GSP intake routines\u2014ensuring the transition from Tech Fellows to Directors proceeds smoothly."
+        ],
+        "title": "Mike 1on1",
+        "start_label": "2:00 PM",
+        "end_label": "2:30 PM"
+      }
     },
     {
       "id": "6cq38cr36gs38b9kcgr68b9k74oj6b9p6tj3ebb5cco32e1m65hm6e1k6s",
@@ -71,7 +93,18 @@
       "end_label": "4:00 PM",
       "summary": "Sai, monthly one-on-one",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your last meeting with Sai on May 8 addressed severe governance bottlenecks\u2014specifically the Gen AI Council and Model Risk Management reviews halting progress on Intelligent Document Processing. You discussed transitioning from dozens of small initiatives to a focused 'Big Rocks' strategy to stabilize delivery during a leadership transition. You also debated the need for a standardized 'playbook' to check vendor AI risk in days rather than months.",
+        "tasks": [
+          "Establish a simplified vendor AI risk assessment playbook to bypass the current Model Risk Management bottleneck.",
+          "Align on the final resource allocation for the two to three designated 'Big Rocks' use cases.",
+          "Re-engage the startup platform Pace for a technical demo of its agentic capabilities as planned in your March sync.",
+          "Clarify the decision ownership boundaries between InfoSec and Privacy to unblock in-flight capabilities."
+        ],
+        "title": "Sai, monthly one-on-one",
+        "start_label": "3:30 PM",
+        "end_label": "4:00 PM"
+      }
     },
     {
       "id": "c8qj0c32c4q34bb570p62b9k6gq3ibb1chgm8b9i6osjgc3264o3eo9p6o",
@@ -88,65 +121,41 @@
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Arch forum panel review</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Biweekly with Jon</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">P&amp;C IT standup</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">ATS all hands</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 2:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Mike 1on1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Set technology architecture direction</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sai, monthly one-on-one</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">4:30 PM</div>\n                    <div class=\"t-end\">&mdash; 5:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Claims huddle two-way SMS security</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Friction Free Quote architecture from ALO - Slack</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule sprinkler service</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Skan AI Pilot docs - ALO email (7-30)</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Adam, Gunjan and Bryan on Rebecca</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Automation Framework link from Jonathan</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--caution\">Due Sep 3</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Respond to Andy - review notes</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "4u4882obch6nbppu386ratbdpc": {
-      "summary": "You must address the pending operational shifts in TAP\u2014specifically the decoupling of Tech Decisions from acquisition milestones to prevent contract delays in GSP. The new workflow establishes a formal approval gate directly within CLM/GSP\u2014requiring you to finalize the rollout timeline with Wes and Brian Osterkamp. You must also reconcile the two active AIA streams\u2014the enterprise version and the \"AIA Light\" procurement stream\u2014while transitioning the weekly huddle to the newly branded ATS Problem Solving routine.",
+    "68pj8e9lcosjib9k71ijeb9kc5im6bb26dh36b9i75ij8oj56orjior56k": {
+      "summary": "You must sync with Jon on the requirements tooling roadmap and the unresolved Neptune firewall blocker\u2014currently outstanding with Tito Warren\u2014following your recent architecture updates. No specific notes exist for an Arvy meeting on 9-1\u2014however, recent alignments with RV focus heavily on establishing independent architecture gating in CLM and resolving the Solution Architecture versus Solution Engineering boundaries.",
       "tasks": [
-        "Establish a tracking check-in with Wes and Brian Osterkamp to finalize the CLM system control release date.",
-        "Document the end-to-end TAP workflow\u2014from triage to final CLM architecture approval\u2014into a standard operating procedure.",
-        "Align the enterprise AIA stream with the procurement \"AIA Light\" stream led by Mark and Robert.",
-        "Clean up duplicate calendar invites by deleting the legacy Architecture Huddle recurring series."
+        "Resolve the Neptune database read/write firewall blockage with Tito Warren to unblock the data layer compilation.",
+        "Align with RV on the independent architecture approval checkpoint in CLM before contract execution.",
+        "Draft the integrated PNC automation capability model and roadmap with Madhu and Ian's delegates.",
+        "Correct the redundant reporting hierarchy layers under RV within the OneSource organizational structure."
       ],
-      "title": "ATS Problem Solving",
-      "start_label": "9:00 AM",
-      "end_label": "10:00 AM"
-    },
-    "46sq29q4sukk3nlk0smf6p5jjj": {
-      "summary": "You last met with Mike on August 18 to clarify P&C architecture responsibilities under RV's leadership\u2014emphasizing platform strategy, governance, and left-shifting early impact assessments for the 2027 planning lifecycle. No work notes exist for your last meeting with Aaron\u2014requiring you to solicit a direct status update on his active tracks.",
-      "tasks": [
-        "Align with Mike on the 2027 planning lifecycle\u2014specifically focusing on early high-level feedback and left-shifting architecture reviews.",
-        "Establish clear boundaries for the customer-provider hierarchy\u2014ensuring business enablement remains the primary focus over horizontal dependencies.",
-        "Confirm the status of the application rationalization list\u2014specifically tracking the $50 million hygiene fund opportunities.",
-        "Reconstruct the context of your last discussion with Aaron\u2014since no historical work notes exist for his updates."
-      ],
-      "title": "Mike Wilkins 1on1",
-      "start_label": "10:00 AM",
-      "end_label": "10:30 AM"
-    },
-    "1qik7htvgsprtimjd1qmurem0j": {
-      "summary": "Align with Arvy on the platform strategy\u2014specifically the transition to formal CLM/GSP approval gates\u2014and review the MECE L1\u2013L3 capability mapping you established to eliminate redundant tools. Recognize that no work notes matched your topics on staffing, retirement, the MCP server, PNC payments, or the printer solution. Drive the discussion toward resolving modern application inflation\u2014especially within Guidewire\u2014by enforcing a strict \"one in, one out\" policy during technology acquisitions.",
-      "tasks": [
-        "Finalize the end-to-end \"To-Be\" workflow SOP and track check-ins with Wes and Brian Osterkamp regarding the CLM system control release.",
-        "Reconcile application ownership in TPM\u2014prioritizing business owner updates over consolidation\u2014following recent executive transitions.",
-        "Gather background information on the missing prep topics\u2014staffing, retirement, the MCP server, PNC payments, and the printer solution\u2014prior to your session.",
-        "Implement the biweekly Tech Decision Review cadence to evaluate new procurement requests and prevent rubber-stamping expiring contracts."
-      ],
-      "title": "Arvy 1on1",
+      "title": "Biweekly with Jon",
       "start_label": "10:30 AM",
       "end_label": "11:00 AM"
     },
-    "0ff57vdngkld8o0traq0d14lds": {
-      "summary": "You lack direct work notes matching Deepak Srinivasan, pods, the Foundry model, or incubation\u2014meaning you must establish baseline alignment on these topics during the session. Prepare to clarify how the 'pods' structure maps to our broader operating model evolution\u2014specifically the transition toward platform ownership and architecture-as-code. You will also need to define the Foundry model's current deployment status\u2014while positioning active incubation efforts alongside existing initiatives like the Scan AI task-mining pivot.",
+    "c8pm8ohpc8o3gb9g6gqjgb9kcgr36b9p64p30b9k6lj32c1i74rm4d9ocg": {
+      "summary": "Transitioned ownership of Tech Strategy to Mike Henry during your last process alignment\u2014positioning you as his Executive Sponsor\u2014while your recent sync with Aaron focused on the unresolved Intelligent Printer dispute. Robert Lagutus is pushing to transfer this legacy platform to Property and Casualty due to Regulation W compliance\u2014a move that carries an unfunded migration cost of $1.5M to $2M and contradicts established platform ownership precedents.",
       "tasks": [
-        "Request a status update on outstanding action items from your last 1on1 with Deepak.",
-        "Clarify the operational definition and governance of pods\u2014focusing on their alignment with P&C platform boundaries.",
-        "Evaluate the Foundry model\u2014determining its integration requirements with existing enterprise data streams and Snowflake.",
-        "Review the incubation portfolio\u2014specifically assessing delivery timelines for early-stage AI and automation trials."
+        "Establish your executive sponsorship guidelines with Mike\u2014clarifying boundaries for his newly assumed Tech Strategy process ownership.",
+        "Deliver the two-to-three-sentence talking points on the Intelligent Printer dispute to Aaron\u2014focusing on the unfunded $1.5M to $2M migration cost.",
+        "Share the email thread involving Mike Wilkins and Robert Lagutus with Aaron\u2014providing necessary context on the Regulation W claims.",
+        "Align with Mike on the technology acquisition and GSP intake routines\u2014ensuring the transition from Tech Fellows to Directors proceeds smoothly."
       ],
-      "title": "Deepak Srinivasan 1on1 ",
-      "start_label": "2:30 PM",
-      "end_label": "3:00 PM"
+      "title": "Mike 1on1",
+      "start_label": "2:00 PM",
+      "end_label": "2:30 PM"
     },
-    "7bdguu4k4i7pg484lm1r1gt9dv": {
-      "summary": "The last meeting with the consortium on August 27 focused on the critical security gap in outbound two-way SMS\u2014specifically the lack of an automated, centralized Data Loss Prevention (DLP) solution to monitor sensitive data. You evaluated enforcement points across endpoint, application, and inline API layers\u2014noting that Broadcom and Proofpoint currently lack the necessary integration capabilities. To resolve this, the consortium agreed to benchmark industry peer practices and assess existing enterprise tools\u2014like CrowdStrike and Island\u2014to enforce local browser controls.",
+    "6osjacj3cos32bb36or3gb9k6hj3cbb26dij2bb46cp3ichmcco30dpi70": {
+      "summary": "Your last meeting with Sai on May 8 addressed severe governance bottlenecks\u2014specifically the Gen AI Council and Model Risk Management reviews halting progress on Intelligent Document Processing. You discussed transitioning from dozens of small initiatives to a focused 'Big Rocks' strategy to stabilize delivery during a leadership transition. You also debated the need for a standardized 'playbook' to check vendor AI risk in days rather than months.",
       "tasks": [
-        "Review the industry peer research from Max Kowalski to benchmark how competitors architect outbound free-text DLP workflows.",
-        "Evaluate the capabilities of existing enterprise tools\u2014including CrowdStrike, Cyera, and Island\u2014to enforce local browser controls.",
-        "Consult DLP vendor partners regarding Guidewire and API integration capabilities to address the current outbound texting security gap.",
-        "Resolve the outstanding InfoSec constraints regarding outbound free-text messaging before initiating any broad claims pilot rollout."
+        "Establish a simplified vendor AI risk assessment playbook to bypass the current Model Risk Management bottleneck.",
+        "Align on the final resource allocation for the two to three designated 'Big Rocks' use cases.",
+        "Re-engage the startup platform Pace for a technical demo of its agentic capabilities as planned in your March sync.",
+        "Clarify the decision ownership boundaries between InfoSec and Privacy to unblock in-flight capabilities."
       ],
-      "title": "Consortium follow-up SMS + DLP ",
-      "start_label": "4:00 PM",
-      "end_label": "4:30 PM"
+      "title": "Sai, monthly one-on-one",
+      "start_label": "3:30 PM",
+      "end_label": "4:00 PM"
     }
   }
 }
