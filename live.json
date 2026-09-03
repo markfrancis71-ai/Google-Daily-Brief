@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-09-03T04:56:11.460241-05:00",
-  "refreshed_label": "4:56 AM",
+  "refreshed_at": "2026-09-03T07:39:43.206065-05:00",
+  "refreshed_label": "7:39 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -21,7 +21,18 @@
       "end_label": "10:00 AM",
       "summary": "ATS Leaderhip",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Your meetings from the past two days\u2014the ATS Town Hall on September 2 and ATS Problem Solving on September 1\u2014reveal a rapid centralization of technology governance. You are transitioning from line-of-business software silos to unified enterprise capability platforms\u2014enforced by mandatory Architecture Intake Assessments integrated directly into the contract procurement workflow. Additionally, the cloud strategy has officially pivoted to an all-in AWS model\u2014forcing an immediate exit of GCP workloads over to AWS Bedrock.",
+        "tasks": [
+          "Establish the mandatory checkpoints for the Architecture Intake Assessment within the Contract Lifecycle Management system to prevent unapproved software purchases.",
+          "Map the Total Cost of Ownership across all capability platforms\u2014prioritizing Build the Business by month-end\u2014to identify and eliminate redundant software.",
+          "Execute the migration of all GCP workloads\u2014specifically Vertex AI and Gemini models\u2014to AWS Bedrock to align with the native AWS resiliency mandate.",
+          "Deploy the newly adopted BPM+ standard for business process orchestration across all enterprise workflow systems."
+        ],
+        "title": "ATS Leaderhip",
+        "start_label": "9:00 AM",
+        "end_label": "10:00 AM"
+      }
     },
     {
       "id": "33kr9unu1de5t2865bp2fgpkuq",
@@ -31,7 +42,17 @@
       "end_label": "11:30 AM",
       "summary": "Check decisions ready for final review. ",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "You must resolve the conflict over the failed policy summary database\u2014which Aaron's team wants to abandon despite five years of stable usage in Auto. You also need to manage the integration of the newly finalized second investigation vendor\u2014onboarded to handle automated referrals from PWC Risk Detect\u2014while operational workflows remain manual. Focus your review on challenging the policy architects and examining the finalized decision artifacts.",
+        "tasks": [
+          "Challenge the policy architects regarding the reliability and long-term status of the Kafka-sourced policy summary database.",
+          "Examine the finalized decision artifacts and documentation stored from the SIU TD meeting.",
+          "Monitor the manual portal workflows for the new investigation vendor to prevent bottlenecks from the expected PWC Risk Detect referral uptick."
+        ],
+        "title": "Check decisions ready for final review. ",
+        "start_label": "11:00 AM",
+        "end_label": "11:30 AM"
+      }
     },
     {
       "id": "4hejpp3kg432v47cmj8pea0020",
@@ -41,7 +62,18 @@
       "end_label": "1:30 PM",
       "summary": "Bi-monthly sync with Ryan Rist",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "During your last meeting on July 20, you discussed major leadership changes at USAA\u2014specifically the departures of Jeff Kalyazinski and Deepak Shimaro\u2014alongside a strategic shift toward a \"Best of Suite\" tooling model. You reviewed operational recovery efforts after a massive 3,000-change system deployment caused outages, highlighting Randy's push for stronger diagnostic tools to protect core user flows. Finally, you evaluated the telematics strategy\u2014shifting focus from mobile-device CMT data to direct OEM integrations with Toyota, Stellantis, and Ford.",
+        "tasks": [
+          "Confirm the organizational footprint of RV\u2014the new leader who started orientation on July 20\u2014following the departures of Kalyazinski and Shimaro.",
+          "Assess the deployment of Randy's proposed diagnostic tools\u2014intended to stabilize core systems\u2014after the recent production outages.",
+          "Review the transition from CMT telematics to direct OEM data partnerships\u2014specifically Toyota, Stellantis, and Ford\u2014to eliminate third-party fees.",
+          "Verify the development status of Leapfrog\u2014noting whether it remains reliant on mobile CMT data or has transitioned to native vehicle usage features."
+        ],
+        "title": "Bi-monthly sync with Ryan Rist",
+        "start_label": "1:00 PM",
+        "end_label": "1:30 PM"
+      }
     },
     {
       "id": "4sdck8usk40rs568s799j43ql6",
@@ -51,7 +83,18 @@
       "end_label": "2:00 PM",
       "summary": "Platform strategy ",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Examine the consolidated platform hierarchy from the August 31 session\u2014you must align with the collapse of standalone Web and Mobile categories under Member Digital. Complete the outstanding Level 3 capability mappings\u2014this prevents double-counting during your financial roll-ups. Apply the TIME lifecycle metadata to your target architectures\u2014this will automate your roadmap and Gantt chart generation.",
+        "tasks": [
+          "Finalize Level 1 and Level 2 capability mappings in the central workspace spreadsheet.",
+          "Resolve duplicate mappings across Level 2 categories to prevent double-counting of infrastructure costs.",
+          "Incorporate the TIME model lifecycle metadata and UUIDs into the mapping database.",
+          "Assess the proposed \"Legacy Tax\" framework to incentivize line-of-business migrations."
+        ],
+        "title": "Platform strategy ",
+        "start_label": "1:30 PM",
+        "end_label": "2:00 PM"
+      }
     },
     {
       "id": "1ch23t4r2dajefq7g4e02hkvv7",
@@ -78,41 +121,52 @@
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Randy 1on1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">ATS Leaderhip</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Check decisions ready for final review. </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-monthly sync with Ryan Rist</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Platform strategy </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly staff </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">FLOD/SLOD effective challenge </div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send Arch Forum summary to Tammy/Robert</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out Insuretech radar</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Update Staffing spreadsheet</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Continue building out artifacts on Arch Forum chat</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review updates needed in TAP overview</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Justin and Chris in prep for the TD review</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Friction Free Quote architecture from ALO - Slack</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Partner IAM deck (Downloads)</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review -Cap demo material (Downloads)</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule sprinkler service</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Skan AI Pilot docs - ALO email (7-30)</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Sync with Adam, Gunjan and Bryan on Rebecca</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review the Automation Framework link from Jonathan</span>\n                <span class=\"capsule capsule--caution\">Due Sep 4</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Bring Ron the Neighbor Affidavid</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Respond to Andy - review notes</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Sep 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule Monthly Floor Agent Shadowing (Mark)</span>\n                \n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {
-    "68pj8e9lcosjib9k71ijeb9kc5im6bb26dh36b9i75ij8oj56orjior56k": {
-      "summary": "You synced with Jon throughout late August on architectural boundaries\u2014specifically separating high-level blueprints from lower-level implementation\u2014and tracked critical infrastructure blockers including the Neptune database firewall issue. You also solidified process ownership for PL1/PL2 with directors running triage\u2014directly supporting RV's demand for independent architecture gating before contract sign-offs. No work notes exist for the September 1st meeting with Arvy\u2014known as RV in previous syncs\u2014but his recent directives focus on platform taxonomy, gating, and final CLM approvals.",
+    "13v048pvilcr903jibid5gq7s3": {
+      "summary": "Your meetings from the past two days\u2014the ATS Town Hall on September 2 and ATS Problem Solving on September 1\u2014reveal a rapid centralization of technology governance. You are transitioning from line-of-business software silos to unified enterprise capability platforms\u2014enforced by mandatory Architecture Intake Assessments integrated directly into the contract procurement workflow. Additionally, the cloud strategy has officially pivoted to an all-in AWS model\u2014forcing an immediate exit of GCP workloads over to AWS Bedrock.",
       "tasks": [
-        "Resolve the Neptune data read/write blocker with Tito Warren\u2014Joe Denton remains out on vacation\u2014to free up the infrastructure pipeline.",
-        "Deliver the integrated PNC automation capability model and roadmap to Jon\u2014collaborating with Madhu and Ian's delegates\u2014by the end of the week.",
-        "Align with RV on the updated PL1/PL2 process ownership\u2014ensuring directors are recorded as formal owners in ServiceNow and Risk management platforms.",
-        "Enforce the C4 model boundary\u2014retaining architecture accountability for C_0 to C_2 and leaving C_3 to C_4 to solution engineering\u2014to eliminate team role confusion."
+        "Establish the mandatory checkpoints for the Architecture Intake Assessment within the Contract Lifecycle Management system to prevent unapproved software purchases.",
+        "Map the Total Cost of Ownership across all capability platforms\u2014prioritizing Build the Business by month-end\u2014to identify and eliminate redundant software.",
+        "Execute the migration of all GCP workloads\u2014specifically Vertex AI and Gemini models\u2014to AWS Bedrock to align with the native AWS resiliency mandate.",
+        "Deploy the newly adopted BPM+ standard for business process orchestration across all enterprise workflow systems."
       ],
-      "title": "Biweekly with Jon",
-      "start_label": "10:30 AM",
-      "end_label": "11:00 AM"
+      "title": "ATS Leaderhip",
+      "start_label": "9:00 AM",
+      "end_label": "10:00 AM"
     },
-    "c8pm8ohpc8o3gb9g6gqjgb9kcgr36b9p64p30b9k6lj32c1i74rm4d9ocg": {
-      "summary": "During your last sync with Aaron on August 27\u2014focused heavily on the Intelligent Printer dispute\u2014you addressed Robert Lagutus's push to transfer ownership and its $1.5M\u2013$2M unfunded migration cost to P&C. This forced legacy transfer directly contradicts established platform ownership strategy\u2014an issue Aaron planned to escalate to RV. Meanwhile\u2014following the recent ATS process reorganization\u2014Mike Henry is slated to assume ownership of Tech Strategy under your executive sponsorship.",
+    "33kr9unu1de5t2865bp2fgpkuq": {
+      "summary": "You must resolve the conflict over the failed policy summary database\u2014which Aaron's team wants to abandon despite five years of stable usage in Auto. You also need to manage the integration of the newly finalized second investigation vendor\u2014onboarded to handle automated referrals from PWC Risk Detect\u2014while operational workflows remain manual. Focus your review on challenging the policy architects and examining the finalized decision artifacts.",
       "tasks": [
-        "Draft the concise Intelligent Printer ownership and funding summary for Aaron to present to RV.",
-        "Share the email thread involving Mike Wilkins and Robert Lagutus with Aaron to provide historical context.",
-        "Confirm Mike Henry's readiness and transition timeline for taking over the Tech Strategy process ownership.",
-        "Review the legacy system retirement pipeline on the Technology Obsolescence dashboard to identify further RBT savings."
+        "Challenge the policy architects regarding the reliability and long-term status of the Kafka-sourced policy summary database.",
+        "Examine the finalized decision artifacts and documentation stored from the SIU TD meeting.",
+        "Monitor the manual portal workflows for the new investigation vendor to prevent bottlenecks from the expected PWC Risk Detect referral uptick."
       ],
-      "title": "Mike 1on1",
-      "start_label": "2:00 PM",
-      "end_label": "2:30 PM"
+      "title": "Check decisions ready for final review. ",
+      "start_label": "11:00 AM",
+      "end_label": "11:30 AM"
     },
-    "6osjacj3cos32bb36or3gb9k6hj3cbb26dij2bb46cp3ichmcco30dpi70": {
-      "summary": "Your last meeting with Sai on May 8 focused on shifting from dozens of small AI use cases to two or three high-impact \"Big Rocks\" \u2014 a critical transition complicated by a leadership vacuum and severe operational bottlenecks. You discussed how the Gen AI Council and Model Risk Management (MRM) review processes act as a chokehold on innovation \u2014 especially regarding Intelligent Document Processing (IDP) and vendor integration. To resolve this, you advocated for a streamlined playbook approach to evaluate AI risk in days rather than months while resisting vendor proliferation in favor of existing core platforms.",
+    "4hejpp3kg432v47cmj8pea0020": {
+      "summary": "During your last meeting on July 20, you discussed major leadership changes at USAA\u2014specifically the departures of Jeff Kalyazinski and Deepak Shimaro\u2014alongside a strategic shift toward a \"Best of Suite\" tooling model. You reviewed operational recovery efforts after a massive 3,000-change system deployment caused outages, highlighting Randy's push for stronger diagnostic tools to protect core user flows. Finally, you evaluated the telematics strategy\u2014shifting focus from mobile-device CMT data to direct OEM integrations with Toyota, Stellantis, and Ford.",
       "tasks": [
-        "Address the leadership confusion left by Romnik, Rachel, and Tina \u2014 stabilizing the AI strategy execution.",
-        "Finalize the proposed \"playbook\" risk-evaluation process \u2014 mimicking a SOC 2 check \u2014 to bypass the lengthy MRM and Gen AI Council bottlenecks.",
-        "Push for the consolidated \"Big Rocks\" strategy \u2014 specifically focusing resources on the 2\u20133 high-impact use cases instead of dozens of minor projects.",
-        "Establish clear guidelines on the build-versus-buy approach \u2014 prioritizing existing major investments like AWS over startup vendor proliferation."
+        "Confirm the organizational footprint of RV\u2014the new leader who started orientation on July 20\u2014following the departures of Kalyazinski and Shimaro.",
+        "Assess the deployment of Randy's proposed diagnostic tools\u2014intended to stabilize core systems\u2014after the recent production outages.",
+        "Review the transition from CMT telematics to direct OEM data partnerships\u2014specifically Toyota, Stellantis, and Ford\u2014to eliminate third-party fees.",
+        "Verify the development status of Leapfrog\u2014noting whether it remains reliant on mobile CMT data or has transitioned to native vehicle usage features."
       ],
-      "title": "Sai, monthly one-on-one",
-      "start_label": "3:30 PM",
-      "end_label": "4:00 PM"
+      "title": "Bi-monthly sync with Ryan Rist",
+      "start_label": "1:00 PM",
+      "end_label": "1:30 PM"
+    },
+    "4sdck8usk40rs568s799j43ql6": {
+      "summary": "Examine the consolidated platform hierarchy from the August 31 session\u2014you must align with the collapse of standalone Web and Mobile categories under Member Digital. Complete the outstanding Level 3 capability mappings\u2014this prevents double-counting during your financial roll-ups. Apply the TIME lifecycle metadata to your target architectures\u2014this will automate your roadmap and Gantt chart generation.",
+      "tasks": [
+        "Finalize Level 1 and Level 2 capability mappings in the central workspace spreadsheet.",
+        "Resolve duplicate mappings across Level 2 categories to prevent double-counting of infrastructure costs.",
+        "Incorporate the TIME model lifecycle metadata and UUIDs into the mapping database.",
+        "Assess the proposed \"Legacy Tax\" framework to incentivize line-of-business migrations."
+      ],
+      "title": "Platform strategy ",
+      "start_label": "1:30 PM",
+      "end_label": "2:00 PM"
     }
   }
 }
