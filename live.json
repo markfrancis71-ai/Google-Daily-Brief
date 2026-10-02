@@ -1,81 +1,41 @@
 {
-  "refreshed_at": "2026-10-01T19:54:29.330427-05:00",
-  "refreshed_label": "7:54 PM",
+  "refreshed_at": "2026-10-02T01:52:10.791069-05:00",
+  "refreshed_label": "1:52 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "cco62d1g6phmcb9i6lgm2b9kcphmcb9o6kqm8b9jc4r3epb5ckpmcdj26k",
-      "start_iso": "2026-10-01T08:30:00-05:00",
-      "end_iso": "2026-10-01T09:00:00-05:00",
+      "id": "6lan4q41gnif9agim0llka33cv",
+      "start_iso": "2026-10-02T08:30:00-05:00",
+      "end_iso": "2026-10-02T09:00:00-05:00",
       "start_label": "8:30 AM",
       "end_label": "9:00 AM",
-      "summary": "User experience mining",
+      "summary": "James 1on1",
       "location": "",
       "prep": null
     },
     {
-      "id": "6cpm6opk6kpjcbb46tim4b9kchj64b9o6csj2b9n6lgjcd1ic8o3acpg6g",
-      "start_iso": "2026-10-01T09:00:00-05:00",
-      "end_iso": "2026-10-01T10:00:00-05:00",
+      "id": "5tbme920lga9meeak3ggbab15b",
+      "start_iso": "2026-10-02T09:00:00-05:00",
+      "end_iso": "2026-10-02T09:30:00-05:00",
       "start_label": "9:00 AM",
+      "end_label": "9:30 AM",
+      "summary": "Steve-Mark Sync",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "318m66182nhpb2vpef5brp5l75",
+      "start_iso": "2026-10-02T09:30:00-05:00",
+      "end_iso": "2026-10-02T10:00:00-05:00",
+      "start_label": "9:30 AM",
       "end_label": "10:00 AM",
-      "summary": "ATS leadership",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "64q36e1k65j64bb26sq3eb9k71j64bb160r32b9m61hj6opkccsm8o9n6k",
-      "start_iso": "2026-10-01T10:00:00-05:00",
-      "end_iso": "2026-10-01T10:30:00-05:00",
-      "start_label": "10:00 AM",
-      "end_label": "10:30 AM",
-      "summary": "TD sync",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "ccpjie9n68r3ib9lc5gj8b9kckpm6b9oc4r3gbb2cormcp9mcgq3gd1gc4",
-      "start_iso": "2026-10-01T11:00:00-05:00",
-      "end_iso": "2026-10-01T12:00:00-05:00",
-      "start_label": "11:00 AM",
-      "end_label": "12:00 PM",
-      "summary": "Weekly staff",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "6gq30e1kcoo3cb9j64s68b9kc9j34bb174rm8bb36soj0d9n6dgjgchl6o",
-      "start_iso": "2026-10-01T13:00:00-05:00",
-      "end_iso": "2026-10-01T13:30:00-05:00",
-      "start_label": "1:00 PM",
-      "end_label": "1:30 PM",
-      "summary": "Randy Burris 1on1",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "cks64db66gq3cb9l6hgj6b9kc5i6ab9pc8smcb9jc4q38cb5cpj3ad1hcc",
-      "start_iso": "2026-10-01T13:30:00-05:00",
-      "end_iso": "2026-10-01T14:00:00-05:00",
-      "start_label": "1:30 PM",
-      "end_label": "2:00 PM",
-      "summary": "Platform Strategy",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "64pjicpo68smcb9k70ojeb9kclhjeb9p6tgjeb9m68q3gp9n6ph34oj1cc",
-      "start_iso": "2026-10-01T15:30:00-05:00",
-      "end_iso": "2026-10-01T16:00:00-05:00",
-      "start_label": "3:30 PM",
-      "end_label": "4:00 PM",
-      "summary": "Vince-Mark sync",
+      "summary": "Suresh 1on1",
       "location": "",
       "prep": null
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">User experience mining</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">ATS leadership</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">TD sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly staff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Randy Burris 1on1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Platform Strategy</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Vince-Mark sync</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Mark&#x27;s inbox for non-transcript material this week</span>\n                <span class=\"capsule capsule--caution\">Due Oct 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Contract Renewal list from Julie</span>\n                <span class=\"capsule capsule--caution\">Due Oct 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up on MS Copilot actions for the day</span>\n                <span class=\"capsule capsule--caution\">Due Oct 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Lifeco Platform strategy presentation - ATS Directs Slack from Jon</span>\n                <span class=\"capsule capsule--caution\">Due Oct 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review PICS overview  (see link)</span>\n                <span class=\"capsule capsule--caution\">Due Oct 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Slacks from Jonathan on companion presentation and the email</span>\n                <span class=\"capsule capsule--caution\">Due Oct 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Figure email address for that vendor</span>\n                <span class=\"capsule capsule--caution\">Due Oct 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">do COI form in workday</span>\n                <span class=\"capsule capsule--caution\">Due Oct 2</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Arvy - (Vinnie, Jon) on staffing discussion</span>\n                <span class=\"capsule capsule--neutral\">Due Oct 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">do SAWs exception</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review on board cruise options/ make reservations</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get names from Justin for Arch review session</span>\n                <span class=\"capsule capsule--neutral\">Due Oct 5</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">James 1on1</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">James 1on1</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Steve-Mark Sync</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Suresh 1on1</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Schedule segmentation walkthrough session</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a bi-monthly meeting with Vince</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Mark&#x27;s inbox for non-transcript material this week</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Contract Renewal list from Julie</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up on MS Copilot actions for the day</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Lifeco Platform strategy presentation - ATS Directs Slack from Jon</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review PICS overview  (see link)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Slacks from Jonathan on companion presentation and the email</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Figure email address for that vendor</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">do COI form in workday</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Arvy - (Vinnie, Jon) on staffing discussion</span>\n                <span class=\"capsule capsule--neutral\">Due Oct 19</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">do SAWs exception</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Oct 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review on board cruise options/ make reservations</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Oct 1</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">get names from Justin for Arch review session</span>\n                <span class=\"capsule capsule--caution\">Due Oct 5</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {}
 }
