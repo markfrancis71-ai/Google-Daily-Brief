@@ -1,101 +1,10 @@
 {
-  "refreshed_at": "2026-10-19T19:44:14.462287-05:00",
-  "refreshed_label": "7:44 PM",
+  "refreshed_at": "2026-10-20T00:25:32.737266-05:00",
+  "refreshed_label": "12:25 AM",
   "tz_label": "Chicago",
-  "events": [
-    {
-      "id": "3ci81kv35l3louir528ml29ui9",
-      "start_iso": "2026-10-19T09:00:00-05:00",
-      "end_iso": "2026-10-19T09:30:00-05:00",
-      "start_label": "9:00 AM",
-      "end_label": "9:30 AM",
-      "summary": "Calendar Review ",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "7rpoaebl295nci49bfct9shsac",
-      "start_iso": "2026-10-19T09:30:00-05:00",
-      "end_iso": "2026-10-19T10:00:00-05:00",
-      "start_label": "9:30 AM",
-      "end_label": "10:00 AM",
-      "summary": "Member Definition and P&C PLN kickoff",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "4sh7p8u5spkre4u4vac8fdjsqg",
-      "start_iso": "2026-10-19T10:30:00-05:00",
-      "end_iso": "2026-10-19T11:00:00-05:00",
-      "start_label": "10:30 AM",
-      "end_label": "11:00 AM",
-      "summary": "Simile - Mark & Jonathan ",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "2n6hvf6ntimiq8affbvlcplofh",
-      "start_iso": "2026-10-19T11:00:00-05:00",
-      "end_iso": "2026-10-19T11:30:00-05:00",
-      "start_label": "11:00 AM",
-      "end_label": "11:30 AM",
-      "summary": "Sync on TWT DLP discussion prior to Tuesday meeting",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "4n4npk8d9546u79jo2qfigt43f",
-      "start_iso": "2026-10-19T13:00:00-05:00",
-      "end_iso": "2026-10-19T13:30:00-05:00",
-      "start_label": "1:00 PM",
-      "end_label": "1:30 PM",
-      "summary": "Monthly EA touchpoint Ian Benoist",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "06cplkupbq2i3t8e4mq26ubavu",
-      "start_iso": "2026-10-19T13:30:00-05:00",
-      "end_iso": "2026-10-19T14:00:00-05:00",
-      "start_label": "1:30 PM",
-      "end_label": "2:00 PM",
-      "summary": "Platform Strategy",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "19qhcr2301uig1hecjdpl3ecbc_20261019T190000Z",
-      "start_iso": "2026-10-19T14:00:00-05:00",
-      "end_iso": "2026-10-19T15:00:00-05:00",
-      "start_label": "2:00 PM",
-      "end_label": "3:00 PM",
-      "summary": "Bi-weekly: Tech Decision Review Group",
-      "location": "https://usaa.zoom.us/j/9924...",
-      "prep": null
-    },
-    {
-      "id": "267tn9sivspkned877ss91ekek",
-      "start_iso": "2026-10-19T15:00:00-05:00",
-      "end_iso": "2026-10-19T16:00:00-05:00",
-      "start_label": "3:00 PM",
-      "end_label": "4:00 PM",
-      "summary": "Monthly D&S Partners meeting",
-      "location": "",
-      "prep": null
-    },
-    {
-      "id": "0jk08gqoeoesa6grqels03tgo6",
-      "start_iso": "2026-10-19T15:30:00-05:00",
-      "end_iso": "2026-10-19T16:00:00-05:00",
-      "start_label": "3:30 PM",
-      "end_label": "4:00 PM",
-      "summary": "Tech Engagement approval Process - follow up",
-      "location": "",
-      "prep": null
-    }
-  ],
+  "events": [],
   "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Calendar Review </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Member Definition and P&amp;C PLN kickoff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Simile - Mark &amp; Jonathan </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 11:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Sync on TWT DLP discussion prior to Tuesday meeting</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly EA touchpoint Ian Benoist</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Platform Strategy</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Bi-weekly: Tech Decision Review Group</div>\n                    <div class=\"t-loc\">https://usaa.zoom.us/j/9924...</div>\n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly D&amp;S Partners meeting</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Tech Engagement approval Process - follow up</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Ping Andy Jamison on his TD ask</span>\n                <span class=\"capsule capsule--caution\">Due Oct 20</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Create vendor analysis framework</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Scan emails from last week</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Contract Renewal list from Julie</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review PICS overview  (see link)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Lifeco Platform strategy presentation - ATS Directs Slack from Jon</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Arvy - (Vinnie, Jon) on staffing discussion</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
+  "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look up static DLP solutions</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Take your shot</span>\n                <span class=\"capsule capsule--neutral\">Due Oct 25</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Create vendor analysis framework</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Lifeco Platform strategy presentation - ATS Directs Slack from Jon</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Contract Renewal list from Julie</span>\n                <span class=\"capsule capsule--caution\">Due Oct 21</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review PICS overview  (see link)</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Send out TD review notes and email</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Ask Ryan about static DLP solution</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Ping Andy Jamison on his TD ask</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Add more withholding for taxes </span>\n                \n            </div>",
   "preps": {}
 }
