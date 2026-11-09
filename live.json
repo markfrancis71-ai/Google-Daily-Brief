@@ -1,21 +1,81 @@
 {
-  "refreshed_at": "2026-11-08T20:58:49.718597-06:00",
-  "refreshed_label": "8:58 PM",
+  "refreshed_at": "2026-11-09T05:19:00.940797-06:00",
+  "refreshed_label": "5:19 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "c5im6p1o6th3gbb6copjeb9k6ooj6b9ocgpjebb5cgq6cp1k6grj4oj36c",
-      "start_iso": "2026-11-08T07:30:00-06:00",
-      "end_iso": "2026-11-08T09:00:00-06:00",
-      "start_label": "7:30 AM",
-      "end_label": "9:00 AM",
-      "summary": "3rd game (8am start)",
-      "location": "5103 David Edwards Dr, San Antonio, TX 78233, USA",
+      "id": "2iobac3ohfvmsmpptrlhmr79lc",
+      "start_iso": "2026-11-09T08:00:00-06:00",
+      "end_iso": "2026-11-09T09:30:00-06:00",
+      "start_label": "8:00 AM",
+      "end_label": "9:30 AM",
+      "summary": "Archiecture Kickoff",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "03rk95s2e7m2bhnjfu83uim98o",
+      "start_iso": "2026-11-09T09:30:00-06:00",
+      "end_iso": "2026-11-09T10:00:00-06:00",
+      "start_label": "9:30 AM",
+      "end_label": "10:00 AM",
+      "summary": "Platform strategy ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "0d8v0ei9iqqa0q5a1362d2brmd",
+      "start_iso": "2026-11-09T10:00:00-06:00",
+      "end_iso": "2026-11-09T10:30:00-06:00",
+      "start_label": "10:00 AM",
+      "end_label": "10:30 AM",
+      "summary": "Calendar review ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "4vntsekuplgj1eh60g55t83sa2",
+      "start_iso": "2026-11-09T10:30:00-06:00",
+      "end_iso": "2026-11-09T11:00:00-06:00",
+      "start_label": "10:30 AM",
+      "end_label": "11:00 AM",
+      "summary": "Biweekly with Justin ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "6jl3e6j1or5n77hfbd8enf03s5",
+      "start_iso": "2026-11-09T11:00:00-06:00",
+      "end_iso": "2026-11-09T12:00:00-06:00",
+      "start_label": "11:00 AM",
+      "end_label": "12:00 PM",
+      "summary": "Tech Decision Review Group ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "73r2h9r0724fpkhurptvu2pcsj",
+      "start_iso": "2026-11-09T13:30:00-06:00",
+      "end_iso": "2026-11-09T14:00:00-06:00",
+      "start_label": "1:30 PM",
+      "end_label": "2:00 PM",
+      "summary": "Joint GSP tech communication ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "08d8dhu92i1pkq98vljhvc56i9",
+      "start_iso": "2026-11-09T15:00:00-06:00",
+      "end_iso": "2026-11-09T15:30:00-06:00",
+      "start_label": "3:00 PM",
+      "end_label": "3:30 PM",
+      "summary": "Jonathan biweekly ",
+      "location": "",
       "prep": null
     }
   ],
-  "focus_html": "",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">7:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">3rd game (8am start)</div>\n                    <div class=\"t-loc\">5103 David Edwards Dr, San Antonio, TX 78233, USA</div>\n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up a meeting with Ann Hines for monday</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Take your shot</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Kennen for next week \u2014 agent assist capabilities</span>\n                <span class=\"capsule capsule--caution\">Due Nov 9</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Map out the mod roadmap onto an HTML page</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Vince, Need to Answer Arvy</span>\n                <span class=\"capsule capsule--caution\">Due Nov 9</span>\n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:00 AM &mdash; 9:30 AM</div>\n            <h2 class=\"focus-title\">Archiecture Kickoff</h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Archiecture Kickoff</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:30 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Platform strategy </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Calendar review </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:30 AM</div>\n                    <div class=\"t-end\">&mdash; 11:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Biweekly with Justin </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Tech Decision Review Group </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Joint GSP tech communication </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Jonathan biweekly </div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Escape Academy 2</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Create a MS Co-pilot training course in Gemini Notebook</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 8</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up a meeting with Ann Hines for monday</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 8</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Set up a meeting with Kennen for next week \u2014 agent assist capabilities</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Map out the mod roadmap onto an HTML page</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 8</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up with Vince, Need to Answer Arvy</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
   "preps": {}
 }
