@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-11-11T00:46:29.088406-06:00",
-  "refreshed_label": "12:46 AM",
+  "refreshed_at": "2026-11-11T08:44:59.969131-06:00",
+  "refreshed_label": "8:44 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -24,7 +24,7 @@
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">6:00 AM &mdash; 7:00 PM</div>\n            <h2 class=\"focus-title\">Veterans Day off </h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; In session</div>\n            <div class=\"focus-time\">6:00 AM &mdash; 7:00 PM</div>\n            <h2 class=\"focus-title\">Veterans Day off </h2>\n            \n            \n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">6:00 AM</div>\n                    <div class=\"t-end\">&mdash; 7:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Veterans Day off </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 PM</div>\n                    <div class=\"t-end\">&mdash; 9:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Untitled</div>\n                    \n                </div>\n            </div>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Provide an AI fitment framework to Justin</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up a Pod 4 design review</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Map out the mod roadmap onto an HTML page</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Escape Academy 2</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
   "preps": {}
