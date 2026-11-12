@@ -1,31 +1,91 @@
 {
-  "refreshed_at": "2026-11-11T20:31:03.828779-06:00",
-  "refreshed_label": "8:31 PM",
+  "refreshed_at": "2026-11-12T04:18:04.993808-06:00",
+  "refreshed_label": "4:18 AM",
   "tz_label": "Chicago",
   "events": [
     {
-      "id": "2bp6jl2uj3ttc8hpd4nfashm8q",
-      "start_iso": "2026-11-11T06:00:00-06:00",
-      "end_iso": "2026-11-11T19:00:00-06:00",
-      "start_label": "6:00 AM",
-      "end_label": "7:00 PM",
-      "summary": "Veterans Day off ",
+      "id": "00voeictcecf4fkh37h6fh14vb",
+      "start_iso": "2026-11-12T08:30:00-06:00",
+      "end_iso": "2026-11-12T09:00:00-06:00",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM",
+      "summary": "Weekly Arch Foundations ",
       "location": "",
       "prep": null
     },
     {
-      "id": "2lts44li1kv3hhci7ik6spl581",
-      "start_iso": "2026-11-11T20:30:00-06:00",
-      "end_iso": "2026-11-11T21:00:00-06:00",
-      "start_label": "8:30 PM",
-      "end_label": "9:00 PM",
-      "summary": "Untitled",
+      "id": "2s8nti0klmonk4d3efllv8drh9",
+      "start_iso": "2026-11-12T09:00:00-06:00",
+      "end_iso": "2026-11-12T10:00:00-06:00",
+      "start_label": "9:00 AM",
+      "end_label": "10:00 AM",
+      "summary": "ATS leaders ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "6gpm6opi6pi6cb9mchi36b9k6soj6b9o60pj6b9hclij4d1g6com8c9g68",
+      "start_iso": "2026-11-12T09:15:00-06:00",
+      "end_iso": "2026-11-12T09:55:00-06:00",
+      "start_label": "9:15 AM",
+      "end_label": "9:55 AM",
+      "summary": "Usaa openAI colab session",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "64jkiv7gb1qh4firjq22u83oqu",
+      "start_iso": "2026-11-12T11:00:00-06:00",
+      "end_iso": "2026-11-12T12:00:00-06:00",
+      "start_label": "11:00 AM",
+      "end_label": "12:00 PM",
+      "summary": "Weekly staff ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "7elkj5bmhgoai9dk2msjnt0spe",
+      "start_iso": "2026-11-12T13:00:00-06:00",
+      "end_iso": "2026-11-12T13:30:00-06:00",
+      "start_label": "1:00 PM",
+      "end_label": "1:30 PM",
+      "summary": "Biweekly with Randy Burris ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "77ngppvi5ahnhqlpk3q7np59l2",
+      "start_iso": "2026-11-12T13:30:00-06:00",
+      "end_iso": "2026-11-12T14:00:00-06:00",
+      "start_label": "1:30 PM",
+      "end_label": "2:00 PM",
+      "summary": "Monthly one-on-one with Thomas ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "4o3lq6i66jv6feg6rro12gv717",
+      "start_iso": "2026-11-12T14:00:00-06:00",
+      "end_iso": "2026-11-12T15:00:00-06:00",
+      "start_label": "2:00 PM",
+      "end_label": "3:00 PM",
+      "summary": "Ask me anything. Full staff with Jon ",
+      "location": "",
+      "prep": null
+    },
+    {
+      "id": "77t34msjcmbdkijb7phghmqb14",
+      "start_iso": "2026-11-12T15:30:00-06:00",
+      "end_iso": "2026-11-12T16:00:00-06:00",
+      "start_label": "3:30 PM",
+      "end_label": "4:00 PM",
+      "summary": "Monthly one-on-one with Aaron Bend",
       "location": "",
       "prep": null
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; In session</div>\n            <div class=\"focus-time\">8:30 PM &mdash; 9:00 PM</div>\n            <h2 class=\"focus-title\">Untitled</h2>\n            \n            \n        </section>",
-  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">6:00 AM</div>\n                    <div class=\"t-end\">&mdash; 7:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Veterans Day off </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 PM</div>\n                    <div class=\"t-end\">&mdash; 9:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Untitled</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Provide an AI fitment framework to Justin</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up a Pod 4 design review</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Map out the mod roadmap onto an HTML page</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 10</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Escape Academy 2</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Weekly Arch Foundations </h2>\n            \n            \n        </section>",
+  "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly Arch Foundations </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">ATS leaders </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:15 AM</div>\n                    <div class=\"t-end\">&mdash; 9:55 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Usaa openAI colab session</div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Weekly staff </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Biweekly with Randy Burris </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:30 PM</div>\n                    <div class=\"t-end\">&mdash; 2:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly one-on-one with Thomas </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">2:00 PM</div>\n                    <div class=\"t-end\">&mdash; 3:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Ask me anything. Full staff with Jon </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">3:30 PM</div>\n                    <div class=\"t-end\">&mdash; 4:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly one-on-one with Aaron Bend</div>\n                    \n                </div>\n            </div>",
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Map out the mod roadmap onto an HTML page</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Escape Academy 2</span>\n                <span class=\"capsule capsule--caution\">Due Nov 13</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up a Pod 4 design review</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
   "preps": {}
 }
