@@ -1,6 +1,6 @@
 {
-  "refreshed_at": "2026-11-13T06:08:06.056756-06:00",
-  "refreshed_label": "6:08 AM",
+  "refreshed_at": "2026-11-13T09:56:02.934912-06:00",
+  "refreshed_label": "9:56 AM",
   "tz_label": "Chicago",
   "events": [
     {
@@ -11,7 +11,13 @@
       "end_label": "9:00 AM",
       "summary": "Opterix deep dive follow-up ",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+        "tasks": [],
+        "title": "Opterix deep dive follow-up ",
+        "start_label": "8:30 AM",
+        "end_label": "9:00 AM"
+      }
     },
     {
       "id": "07tc8dcu3d0ti022ta8fqpvt1i",
@@ -21,7 +27,13 @@
       "end_label": "9:30 AM",
       "summary": "Biweekly with James Karras ",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+        "tasks": [],
+        "title": "Biweekly with James Karras ",
+        "start_label": "9:00 AM",
+        "end_label": "9:30 AM"
+      }
     },
     {
       "id": "62j7ttqh495jreebcfgep7j7q1",
@@ -31,7 +43,13 @@
       "end_label": "10:30 AM",
       "summary": "Biweekly with Jon ",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+        "tasks": [],
+        "title": "Biweekly with Jon ",
+        "start_label": "10:00 AM",
+        "end_label": "10:30 AM"
+      }
     },
     {
       "id": "6dme2gc7f3d110hvks91d6lips",
@@ -51,11 +69,46 @@
       "end_label": "1:30 PM",
       "summary": "Monthly one-on-one with Aaron Bend",
       "location": "",
-      "prep": null
+      "prep": {
+        "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+        "tasks": [],
+        "title": "Monthly one-on-one with Aaron Bend",
+        "start_label": "1:00 PM",
+        "end_label": "1:30 PM"
+      }
     }
   ],
-  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">8:30 AM &mdash; 9:00 AM</div>\n            <h2 class=\"focus-title\">Opterix deep dive follow-up </h2>\n            \n            \n        </section>",
+  "focus_html": "\n        <section class=\"focus-card\">\n            <div class=\"eyebrow\">Focus &middot; Next up</div>\n            <div class=\"focus-time\">10:00 AM &mdash; 10:30 AM</div>\n            <h2 class=\"focus-title\">Biweekly with Jon </h2>\n            \n            \n            <div class=\"focus-prep\">\n                <div class=\"focus-prep-label\">Prep</div>\n                <p class=\"focus-prep-summary\">Prep unavailable \u2014 Gemini was unreachable when this brief was built.</p>\n                \n            </div>\n        </section>",
   "schedule_html": "\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">8:30 AM</div>\n                    <div class=\"t-end\">&mdash; 9:00 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Opterix deep dive follow-up </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">9:00 AM</div>\n                    <div class=\"t-end\">&mdash; 9:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Biweekly with James Karras </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">10:00 AM</div>\n                    <div class=\"t-end\">&mdash; 10:30 AM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Biweekly with Jon </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">11:00 AM</div>\n                    <div class=\"t-end\">&mdash; 12:00 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">AI overview and and Q&amp;A for Andy Napoli </div>\n                    \n                </div>\n            </div>\n            <div class=\"t-row\">\n                <div class=\"t-time\">\n                    <div class=\"t-start\">1:00 PM</div>\n                    <div class=\"t-end\">&mdash; 1:30 PM</div>\n                </div>\n                <div class=\"t-rail\"><span></span></div>\n                <div class=\"t-body\">\n                    <div class=\"t-title\">Monthly one-on-one with Aaron Bend</div>\n                    \n                </div>\n            </div>",
-  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">send Andy Napoli run of show artifacts to Adam and Jonathan</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Map out the mod roadmap onto an HTML page</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up a Pod 4 design review</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">send Justin Notes from Adjuster y-cord.. what&#x27;s up with MOI?</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">review Open Enrollment stuff (Due Nov 18th)</span>\n                <span class=\"capsule capsule--caution\">Due Nov 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Escape Academy 2</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
-  "preps": {}
+  "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review benefits with Ritu</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">send Andy Napoli run of show artifacts to Adam and Jonathan</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Map out the mod roadmap onto an HTML page</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up a Pod 4 design review</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">send Justin Notes from Adjuster y-cord.. what&#x27;s up with MOI?</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">review Open Enrollment stuff (Due Nov 18th)</span>\n                <span class=\"capsule capsule--caution\">Due Nov 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Escape Academy 2</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>",
+  "preps": {
+    "1muujg3cue9p07lp5od7ffdtuh": {
+      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+      "tasks": [],
+      "title": "Opterix deep dive follow-up ",
+      "start_label": "8:30 AM",
+      "end_label": "9:00 AM"
+    },
+    "07tc8dcu3d0ti022ta8fqpvt1i": {
+      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+      "tasks": [],
+      "title": "Biweekly with James Karras ",
+      "start_label": "9:00 AM",
+      "end_label": "9:30 AM"
+    },
+    "62j7ttqh495jreebcfgep7j7q1": {
+      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+      "tasks": [],
+      "title": "Biweekly with Jon ",
+      "start_label": "10:00 AM",
+      "end_label": "10:30 AM"
+    },
+    "77t34msjcmbdkijb7phghmqb14": {
+      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
+      "tasks": [],
+      "title": "Monthly one-on-one with Aaron Bend",
+      "start_label": "1:00 PM",
+      "end_label": "1:30 PM"
+    }
+  }
 }
