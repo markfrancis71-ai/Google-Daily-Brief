@@ -1,39 +1,10 @@
 {
-  "refreshed_at": "2026-11-14T08:03:15.979473-06:00",
-  "refreshed_label": "8:03 AM",
+  "refreshed_at": "2026-11-14T08:46:30.330139-06:00",
+  "refreshed_label": "8:46 AM",
   "tz_label": "Chicago",
   "events": [],
   "focus_html": "",
   "schedule_html": "<p class=\"empty\">Nothing on the calendar.</p>",
   "openwork_html": "\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Review Daily briefs</span>\n                <span class=\"capsule capsule--decision\">Due today</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">review Open Enrollment stuff (Due Nov 18th)</span>\n                <span class=\"capsule capsule--neutral\">Due Nov 18</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Follow up on Arvy&#x27;s ask regarding HI-Marley</span>\n                <span class=\"capsule capsule--caution\">Due Nov 16</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Answer Abe&#x27;s email about CCC</span>\n                <span class=\"capsule capsule--caution\">Due Nov 15</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">send Andy Napoli run of show artifacts to Adam and Jonathan</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 13</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Map out the mod roadmap onto an HTML page</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 13</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">set up a Pod 4 design review</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 13</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">send Justin Notes from Adjuster y-cord.. what&#x27;s up with MOI?</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 13</span>\n            </div>\n            <div class=\"task-row\">\n                <span class=\"capsule capsule--tinted\">Mark&#x27;s list</span>\n                <span class=\"task-title\">Look at Escape Academy 2</span>\n                <span class=\"capsule capsule--decision\">Overdue &middot; Nov 13</span>\n            </div>",
-  "preps": {
-    "1muujg3cue9p07lp5od7ffdtuh": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
-      "title": "Opterix deep dive follow-up ",
-      "start_label": "8:30 AM",
-      "end_label": "9:00 AM"
-    },
-    "07tc8dcu3d0ti022ta8fqpvt1i": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
-      "title": "Biweekly with James Karras ",
-      "start_label": "9:00 AM",
-      "end_label": "9:30 AM"
-    },
-    "62j7ttqh495jreebcfgep7j7q1": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
-      "title": "Biweekly with Jon ",
-      "start_label": "10:00 AM",
-      "end_label": "10:30 AM"
-    },
-    "77t34msjcmbdkijb7phghmqb14": {
-      "summary": "Prep unavailable \u2014 Gemini was unreachable when this brief was built.",
-      "tasks": [],
-      "title": "Monthly one-on-one with Aaron Bend",
-      "start_label": "1:00 PM",
-      "end_label": "1:30 PM"
-    }
-  }
+  "preps": {}
 }
